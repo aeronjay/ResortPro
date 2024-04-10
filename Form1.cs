@@ -70,7 +70,5 @@ namespace ResortPro
         {
             Application.Exit();
         }
-
-        
     }
 }
