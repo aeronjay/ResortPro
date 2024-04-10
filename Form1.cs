@@ -34,6 +34,16 @@ namespace ResortPro
             pictureBox1.MouseDown += Form_MouseDown;
             pictureBox1.MouseMove += Form_MouseMove;
             pictureBox1.MouseUp += Form_MouseUp;
+            label1.MouseDown += Form_MouseDown;
+            label1.MouseMove += Form_MouseMove;
+            label1.MouseUp += Form_MouseUp;
+            label2.MouseDown += Form_MouseDown;
+            label2.MouseMove += Form_MouseMove;
+            label2.MouseUp += Form_MouseUp;
+            label3.MouseDown += Form_MouseDown;
+            label3.MouseMove += Form_MouseMove;
+            label3.MouseUp += Form_MouseUp;
+
         }
 
         private void Form_MouseDown(object sender, MouseEventArgs e)
