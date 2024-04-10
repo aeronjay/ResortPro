@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace ResortPro
 {
@@ -69,6 +70,49 @@ namespace ResortPro
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            string username = usernameLabel.Text;     
+            string password = passwordLabel.Text;     
+
+            
+
+            using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    string query = "SELECT COUNT(*) FROM your_table_name WHERE staff_username = @username AND staff_password = @password";
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@username", username);
+                        command.Parameters.AddWithValue("@password", password);
+
+                        int count = (int)command.ExecuteScalar();  
+
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Login successful!");
+
+                            loggedIn form2 = new loggedIn();
+                            form2.Show();
+
+                            this.Hide();  // Hide Form1
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password. Please try again.");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
     }
 }
