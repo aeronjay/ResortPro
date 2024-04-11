@@ -119,5 +119,22 @@ namespace ResortPro
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                passwordLabel.UseSystemPasswordChar = false; // Show password in plain text
+            }
+            else
+            {
+                passwordLabel.UseSystemPasswordChar = true; // Hide password
+            }
+        }
     }
 }
