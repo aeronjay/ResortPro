@@ -85,7 +85,7 @@ namespace ResortPro
                 {
                     connection.Open();
 
-                    string query = "SELECT COUNT(*) FROM your_table_name WHERE staff_username = @username AND staff_password = @password";
+                    string query = "SELECT COUNT(*) FROM staff WHERE staff_username = @username AND staff_password = @password";
                     using (OleDbCommand command = new OleDbCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@username", username);
