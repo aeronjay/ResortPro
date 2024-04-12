@@ -74,8 +74,8 @@ namespace ResortPro
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            string TITE = usernameLabel.Text;     
-            string PEPE = passwordLabel.Text;     
+            string username = usernameLabel.Text;     
+            string password = passwordLabel.Text;     
 
             
 
@@ -88,8 +88,8 @@ namespace ResortPro
                     string query = "SELECT COUNT(*) FROM staff WHERE staff_username = @username AND staff_password = @password";
                     using (OleDbCommand command = new OleDbCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@username", TITE);
-                        command.Parameters.AddWithValue("@password", PEPE);
+                        command.Parameters.AddWithValue("@username", username);
+                        command.Parameters.AddWithValue("@password", password);
 
                         int count = (int)command.ExecuteScalar();  
 
