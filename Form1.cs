@@ -21,7 +21,7 @@ namespace ResortPro
         {
             InitializeComponent();
             AttachEventHandlers();
-            
+           
         }
 
         private void AttachEventHandlers()
