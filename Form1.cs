@@ -136,5 +136,10 @@ namespace ResortPro
                 passwordLabel.UseSystemPasswordChar = true; // Hide password
             }
         }
+
+        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
