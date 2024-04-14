@@ -331,7 +331,7 @@
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(223, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(914, 95);
+            this.topPanel.Size = new System.Drawing.Size(914, 112);
             this.topPanel.TabIndex = 1;
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
             // 
@@ -339,7 +339,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(255, 136);
+            this.label1.Location = new System.Drawing.Point(264, 152);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 32);
             this.label1.TabIndex = 0;
