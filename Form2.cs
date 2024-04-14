@@ -11,94 +11,89 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace ResortPro
 {
     public partial class Form2 : KryptonForm
     {
+        private Guna2Button currentButton;
+        private Dictionary<Guna2Button, IconPictureBox> buttonIconMap;
+
         public Form2()
         {
             InitializeComponent();
 
-            // Subscribe to MouseEnter and MouseLeave events for each button
-            dashboardButton.MouseEnter += Button_MouseEnter;
-            dashboardButton.MouseLeave += Button_MouseLeave;
-
-            statusButton.MouseEnter += Button_MouseEnter;
-            statusButton.MouseLeave += Button_MouseLeave;
-
-            bookingsButton.MouseEnter += Button_MouseEnter;
-            bookingsButton.MouseLeave += Button_MouseLeave;
-
-            calendarButton.MouseEnter += Button_MouseEnter;
-            calendarButton.MouseLeave += Button_MouseLeave;
-
-            suppliesButton.MouseEnter += Button_MouseEnter;
-            suppliesButton.MouseLeave += Button_MouseLeave;
-
-            historyButton.MouseEnter += Button_MouseEnter;
-            historyButton.MouseLeave += Button_MouseLeave;
+            InitializeButtonIconMap();
+            SubscribeEvents();
         }
 
-        private void Button_MouseEnter(object sender, EventArgs e)
+        private void InitializeButtonIconMap()
         {
-            // Determine which button raised the event
-            Guna2Button button = sender as Guna2Button;
-            if (button != null)
+            buttonIconMap = new Dictionary<Guna2Button, IconPictureBox>
             {
-                // Update corresponding FontAwesomePictureBox based on button name
-                switch (button.Name)
+                { dashboardButton, dashboardPicture },
+                { statusButton, statusPicture },
+                { bookingsButton, bookingsPicture },
+                { calendarButton, calendarPicture },
+                { suppliesButton, suppliesPicture },
+                { historyButton, historyPicture }
+            };
+        }
+
+        private void SubscribeEvents()
+        {
+            foreach (var button in buttonIconMap.Keys)
+            {
+                button.Click += Button_Click;
+                button.MouseEnter += Button_MouseEnter;
+                button.MouseLeave += Button_MouseLeave;
+            }
+        }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            if (sender is Guna2Button clickedButton)
+            {
+                activateButton(clickedButton);
+            }
+        }
+
+        private void activateButton(Guna2Button button)
+        {
+            if (button != null && button != currentButton)
+            {
+                disableButton();
+
+                currentButton = button;
+                currentButton.BorderRadius = 25;
+                currentButton.CustomBorderColor = Color.White;
+                currentButton.BorderColor = Color.White;
+                currentButton.FillColor = Color.White;
+                currentButton.ForeColor = Color.FromArgb(221, 95, 45);
+
+                if (buttonIconMap.TryGetValue(currentButton, out IconPictureBox pictureBox))
                 {
-                    case "dashboardButton":
-                        UpdatePicture(dashboardPicture, Color.FromArgb(221, 95, 45));
-                        break;
-                    case "statusButton":
-                        UpdatePicture(statusPicture, Color.FromArgb(221, 95, 45));
-                        break;
-                    case "bookingsButton":
-                        UpdatePicture(bookingsPicture, Color.FromArgb(221, 95, 45));
-                        break;
-                    case "calendarButton":
-                        UpdatePicture(calendarPicture, Color.FromArgb(221, 95, 45));
-                        break;
-                    case "suppliesButton":
-                        UpdatePicture(suppliesPicture, Color.FromArgb(221, 95, 45));
-                        break;
-                    case "historyButton":
-                        UpdatePicture(historyPicture, Color.FromArgb(221, 95, 45));
-                        break;
+                    UpdatePicture(pictureBox, Color.FromArgb(221, 95, 45));
                 }
             }
         }
 
-        private void Button_MouseLeave(object sender, EventArgs e)
+        private void disableButton()
         {
-            // Determine which button raised the event
-            Guna2Button button = sender as Guna2Button;
-            if (button != null)
+            if (currentButton != null)
             {
-                // Update corresponding FontAwesomePictureBox based on button name
-                switch (button.Name)
+                currentButton.CustomBorderColor = Color.FromArgb(6, 6, 6);
+                currentButton.BorderColor = Color.FromArgb(6, 6, 6);
+                currentButton.FillColor = Color.FromArgb(6, 6, 6);
+                currentButton.BorderRadius = 25;
+                currentButton.BackColor = Color.FromArgb(6, 6, 6);
+                currentButton.ForeColor = Color.White;
+
+                if (buttonIconMap.TryGetValue(currentButton, out IconPictureBox pictureBox))
                 {
-                    case "dashboardButton":
-                        ResetPicture(dashboardPicture);
-                        break;
-                    case "statusButton":
-                        ResetPicture(statusPicture);
-                        break;
-                    case "bookingsButton":
-                        ResetPicture(bookingsPicture);
-                        break;
-                    case "calendarButton":
-                        ResetPicture(calendarPicture);
-                        break;
-                    case "suppliesButton":
-                        ResetPicture(suppliesPicture);
-                        break;
-                    case "historyButton":
-                        ResetPicture(historyPicture);
-                        break;
+                    ResetPicture(pictureBox);
                 }
+
+                currentButton = null;
             }
         }
 
@@ -111,7 +106,36 @@ namespace ResortPro
         private void ResetPicture(IconPictureBox picture)
         {
             picture.BackColor = Color.Transparent;
-            picture.IconColor = Color.White; // Or set to original forecolor
+            picture.IconColor = Color.White;
+        }
+
+        private void Button_MouseEnter(object sender, EventArgs e)
+        {
+            if (sender is Guna2Button button)
+            {
+                if (buttonIconMap.TryGetValue(button, out IconPictureBox pictureBox))
+                {
+                    UpdatePicture(pictureBox, Color.FromArgb(221, 95, 45));
+                }
+            }
+        }
+
+        private void Button_MouseLeave(object sender, EventArgs e)
+        {
+            if (sender is Guna2Button button)
+            {
+                if (buttonIconMap.TryGetValue(button, out IconPictureBox pictureBox))
+                {
+                    if (button != currentButton)
+                    {
+                        ResetPicture(pictureBox);
+                    }
+                    else
+                    {
+                        UpdatePicture(pictureBox, Color.FromArgb(221, 95, 45));
+                    }
+                }
+            }
         }
     }
 }

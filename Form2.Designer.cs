@@ -49,6 +49,13 @@
             this.dashboardButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).BeginInit();
@@ -62,11 +69,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel8);
@@ -77,7 +89,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(223, 736);
+            this.panel1.Size = new System.Drawing.Size(223, 868);
             this.panel1.TabIndex = 0;
             // 
             // panel9
@@ -85,7 +97,7 @@
             this.panel9.Controls.Add(this.historyPicture);
             this.panel9.Controls.Add(this.historyButton);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 568);
+            this.panel9.Location = new System.Drawing.Point(0, 614);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(223, 86);
             this.panel9.TabIndex = 4;
@@ -130,7 +142,7 @@
             this.panel5.Controls.Add(this.suppliesPicture);
             this.panel5.Controls.Add(this.suppliesButton);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 488);
+            this.panel5.Location = new System.Drawing.Point(0, 534);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(223, 80);
             this.panel5.TabIndex = 2;
@@ -174,7 +186,7 @@
             this.panel8.Controls.Add(this.calendarPicture);
             this.panel8.Controls.Add(this.calendarButton);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 408);
+            this.panel8.Location = new System.Drawing.Point(0, 454);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(223, 80);
             this.panel8.TabIndex = 3;
@@ -218,7 +230,7 @@
             this.panel6.Controls.Add(this.bookingsPicture);
             this.panel6.Controls.Add(this.bookingsButton);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 328);
+            this.panel6.Location = new System.Drawing.Point(0, 374);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(223, 80);
             this.panel6.TabIndex = 3;
@@ -262,7 +274,7 @@
             this.panel7.Controls.Add(this.statusPicture);
             this.panel7.Controls.Add(this.statusButton);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 248);
+            this.panel7.Location = new System.Drawing.Point(0, 294);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(223, 80);
             this.panel7.TabIndex = 3;
@@ -306,7 +318,7 @@
             this.panel4.Controls.Add(this.dashboardPicture);
             this.panel4.Controls.Add(this.dashboardButton);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 168);
+            this.panel4.Location = new System.Drawing.Point(0, 214);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(223, 80);
             this.panel4.TabIndex = 1;
@@ -350,23 +362,126 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(223, 168);
+            this.panel3.Size = new System.Drawing.Size(223, 214);
             this.panel3.TabIndex = 0;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel11);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(223, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1014, 118);
             this.panel2.TabIndex = 1;
             // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel10.Location = new System.Drawing.Point(0, 783);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(223, 85);
+            this.panel10.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(30, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(204, 41);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Dashboard";
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.BorderRadius = 20;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Location = new System.Drawing.Point(31, 41);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(307, 48);
+            this.guna2TextBox1.TabIndex = 1;
+            this.guna2TextBox1.TextOffset = new System.Drawing.Point(50, 0);
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.guna2ComboBox1);
+            this.panel11.Controls.Add(this.label2);
+            this.panel11.Controls.Add(this.iconPictureBox1);
+            this.panel11.Controls.Add(this.guna2TextBox1);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel11.Location = new System.Drawing.Point(410, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(604, 118);
+            this.panel11.TabIndex = 2;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.Location = new System.Drawing.Point(45, 50);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox1.TabIndex = 2;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Enabled = false;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(92, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 19);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Search";
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderRadius = 20;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.FormattingEnabled = true;
+            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(380, 46);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Size = new System.Drawing.Size(202, 36);
+            this.guna2ComboBox1.TabIndex = 4;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
-            this.ClientSize = new System.Drawing.Size(1237, 736);
+            this.ClientSize = new System.Drawing.Size(1237, 868);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.CornerRoundingRadius = 20F;
@@ -391,6 +506,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -418,5 +538,12 @@
         private Guna.UI2.WinForms.Guna2Button bookingsButton;
         private FontAwesome.Sharp.IconPictureBox statusPicture;
         private Guna.UI2.WinForms.Guna2Button statusButton;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel11;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
     }
 }
