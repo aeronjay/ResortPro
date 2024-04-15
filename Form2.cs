@@ -20,13 +20,14 @@ namespace ResortPro
         private Guna2Button currentButton;
         private Dictionary<Guna2Button, IconPictureBox> buttonIconMap;
 
+
+
         public Form2()
         {
             InitializeComponent();
 
             InitializeButtonIconMap();
             SubscribeEvents();
-
 
         }
 
@@ -160,5 +161,7 @@ namespace ResortPro
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+
+        
     }
 }
