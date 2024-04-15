@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -64,7 +65,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
@@ -106,6 +106,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(223, 647);
             this.panel1.TabIndex = 0;
+            // 
+            // panel11
+            // 
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel11.Location = new System.Drawing.Point(0, 731);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(206, 33);
+            this.panel11.TabIndex = 2;
             // 
             // panel10
             // 
@@ -643,14 +651,6 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(298, 48);
             this.guna2TextBox1.TabIndex = 1;
             this.guna2TextBox1.TextOffset = new System.Drawing.Point(50, 0);
-            // 
-            // panel11
-            // 
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(0, 731);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(206, 33);
-            this.panel11.TabIndex = 2;
             // 
             // Form2
             // 
