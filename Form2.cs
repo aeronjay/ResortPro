@@ -184,32 +184,32 @@ namespace ResortPro
 
         private void dashboardButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new dashboard());
         }
 
         private void statusButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new status());
         }
 
         private void bookingsButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new bookings());
         }
 
         private void calendarButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new calendar());
         }
 
         private void suppliesButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new supplies());
         }
 
         private void historyButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new history());
         }
 
         private void signOutButton_Click(object sender, EventArgs e)
