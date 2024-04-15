@@ -30,6 +30,7 @@ namespace ResortPro
             SubscribeEvents();
 
             
+
         }
 
         private void InitializeButtonIconMap()
@@ -214,7 +215,11 @@ namespace ResortPro
 
         private void signOutButton_Click(object sender, EventArgs e)
         {
-
+            Form form1 = new Form1();
+            
+            this.Close();
+            form1.Show();
         }
+
     }
 }
