@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -65,6 +66,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.kryptonCustomPaletteBase1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
@@ -104,15 +106,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(223, 647);
+            this.panel1.Size = new System.Drawing.Size(223, 872);
             this.panel1.TabIndex = 0;
             // 
             // panel11
             // 
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(0, 731);
+            this.panel11.Location = new System.Drawing.Point(0, 754);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(206, 33);
+            this.panel11.Size = new System.Drawing.Size(223, 33);
             this.panel11.TabIndex = 2;
             // 
             // panel10
@@ -120,9 +122,9 @@
             this.panel10.Controls.Add(this.iconPictureBox4);
             this.panel10.Controls.Add(this.guna2Button2);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(0, 764);
+            this.panel10.Location = new System.Drawing.Point(0, 787);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(206, 85);
+            this.panel10.Size = new System.Drawing.Size(223, 85);
             this.panel10.TabIndex = 5;
             // 
             // iconPictureBox4
@@ -167,7 +169,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 645);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(206, 86);
+            this.panel9.Size = new System.Drawing.Size(223, 86);
             this.panel9.TabIndex = 4;
             // 
             // historyPicture
@@ -213,7 +215,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 565);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(206, 80);
+            this.panel5.Size = new System.Drawing.Size(223, 80);
             this.panel5.TabIndex = 2;
             // 
             // suppliesPicture
@@ -258,7 +260,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 485);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(206, 80);
+            this.panel8.Size = new System.Drawing.Size(223, 80);
             this.panel8.TabIndex = 3;
             // 
             // calendarPicture
@@ -303,7 +305,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 405);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(206, 80);
+            this.panel6.Size = new System.Drawing.Size(223, 80);
             this.panel6.TabIndex = 3;
             // 
             // bookingsPicture
@@ -348,7 +350,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 325);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(206, 80);
+            this.panel7.Size = new System.Drawing.Size(223, 80);
             this.panel7.TabIndex = 3;
             // 
             // statusPicture
@@ -393,7 +395,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 245);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(206, 80);
+            this.panel4.Size = new System.Drawing.Size(223, 80);
             this.panel4.TabIndex = 1;
             // 
             // dashboardPicture
@@ -439,7 +441,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(206, 245);
+            this.panel3.Size = new System.Drawing.Size(223, 245);
             this.panel3.TabIndex = 0;
             // 
             // panel2
@@ -449,7 +451,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 136);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(206, 109);
+            this.panel2.Size = new System.Drawing.Size(223, 109);
             this.panel2.TabIndex = 2;
             // 
             // iconPictureBox3
@@ -528,7 +530,7 @@
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(223, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1019, 112);
+            this.topPanel.Size = new System.Drawing.Size(1024, 112);
             this.topPanel.TabIndex = 1;
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
             // 
@@ -544,7 +546,7 @@
             this.iconButton2.IconColor = System.Drawing.Color.Black;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 35;
-            this.iconButton2.Location = new System.Drawing.Point(727, 33);
+            this.iconButton2.Location = new System.Drawing.Point(732, 33);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(3, 4, 0, 0);
             this.iconButton2.Size = new System.Drawing.Size(35, 35);
@@ -563,7 +565,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 35;
-            this.iconButton1.Location = new System.Drawing.Point(957, 32);
+            this.iconButton1.Location = new System.Drawing.Point(962, 32);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(3, 4, 0, 0);
             this.iconButton1.Size = new System.Drawing.Size(35, 35);
@@ -574,7 +576,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(482, 41);
+            this.label3.Location = new System.Drawing.Point(485, 41);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 19);
             this.label3.TabIndex = 5;
@@ -595,7 +597,7 @@
             this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(773, 32);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(778, 32);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Size = new System.Drawing.Size(176, 36);
@@ -607,7 +609,7 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(78, 39);
+            this.label2.Location = new System.Drawing.Point(72, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 19);
             this.label2.TabIndex = 3;
@@ -652,27 +654,37 @@
             this.guna2TextBox1.TabIndex = 1;
             this.guna2TextBox1.TextOffset = new System.Drawing.Point(50, 0);
             // 
+            // kryptonCustomPaletteBase1
+            // 
+            this.kryptonCustomPaletteBase1.BaseFont = new System.Drawing.Font("Segoe UI", 9F);
+            this.kryptonCustomPaletteBase1.BaseFontSize = 9F;
+            this.kryptonCustomPaletteBase1.BasePaletteType = Krypton.Toolkit.BasePaletteType.Custom;
+            this.kryptonCustomPaletteBase1.ThemeName = "";
+            this.kryptonCustomPaletteBase1.UseKryptonFileDialogs = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
-            this.ClientSize = new System.Drawing.Size(1242, 647);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(1247, 872);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.panel1);
             this.CornerRoundingRadius = 20F;
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MinimumSize = new System.Drawing.Size(937, 647);
             this.Name = "Form2";
+            this.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365BlackDarkMode;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
+            this.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateCommon.Border.Rounding = 20F;
+            this.Text = "ResortPro v1.0.0";
             this.panel1.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
@@ -739,5 +751,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Panel panel11;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonCustomPaletteBase1;
     }
 }
