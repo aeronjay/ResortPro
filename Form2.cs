@@ -160,8 +160,59 @@ namespace ResortPro
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
 
+            }
+            activeForm = childForm; 
+            childForm.TopLevel = false;
+            childForm.Dock = DockStyle.Fill;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            //childForm.ShowInTaskbar = false;
 
-        
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void dashboardButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bookingsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calendarButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void suppliesButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void historyButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void signOutButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

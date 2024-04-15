@@ -33,7 +33,7 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.signOutButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.historyPicture = new FontAwesome.Sharp.IconPictureBox();
             this.historyButton = new Guna.UI2.WinForms.Guna2Button();
@@ -67,6 +67,7 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.kryptonCustomPaletteBase1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
+            this.panelChildForm = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
@@ -120,7 +121,7 @@
             // panel10
             // 
             this.panel10.Controls.Add(this.iconPictureBox4);
-            this.panel10.Controls.Add(this.guna2Button2);
+            this.panel10.Controls.Add(this.signOutButton);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel10.Location = new System.Drawing.Point(0, 787);
             this.panel10.Name = "panel10";
@@ -140,27 +141,28 @@
             this.iconPictureBox4.TabIndex = 4;
             this.iconPictureBox4.TabStop = false;
             // 
-            // guna2Button2
+            // signOutButton
             // 
-            this.guna2Button2.BorderRadius = 25;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(14, 11);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(183, 51);
-            this.guna2Button2.TabIndex = 4;
-            this.guna2Button2.Text = "SignOut";
-            this.guna2Button2.TextOffset = new System.Drawing.Point(18, 0);
+            this.signOutButton.BorderRadius = 25;
+            this.signOutButton.CheckedState.Parent = this.signOutButton;
+            this.signOutButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signOutButton.CustomImages.Parent = this.signOutButton;
+            this.signOutButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.signOutButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signOutButton.ForeColor = System.Drawing.Color.White;
+            this.signOutButton.HoverState.BorderColor = System.Drawing.Color.White;
+            this.signOutButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.signOutButton.HoverState.FillColor = System.Drawing.Color.White;
+            this.signOutButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.signOutButton.HoverState.Parent = this.signOutButton;
+            this.signOutButton.Location = new System.Drawing.Point(14, 11);
+            this.signOutButton.Name = "signOutButton";
+            this.signOutButton.ShadowDecoration.Parent = this.signOutButton;
+            this.signOutButton.Size = new System.Drawing.Size(183, 51);
+            this.signOutButton.TabIndex = 4;
+            this.signOutButton.Text = "SignOut";
+            this.signOutButton.TextOffset = new System.Drawing.Point(18, 0);
+            this.signOutButton.Click += new System.EventHandler(this.signOutButton_Click);
             // 
             // panel9
             // 
@@ -207,6 +209,7 @@
             this.historyButton.TabIndex = 12;
             this.historyButton.Text = "History";
             this.historyButton.TextOffset = new System.Drawing.Point(12, 0);
+            this.historyButton.Click += new System.EventHandler(this.historyButton_Click);
             // 
             // panel5
             // 
@@ -252,6 +255,7 @@
             this.suppliesButton.TabIndex = 10;
             this.suppliesButton.Text = "Supplies";
             this.suppliesButton.TextOffset = new System.Drawing.Point(12, 0);
+            this.suppliesButton.Click += new System.EventHandler(this.suppliesButton_Click);
             // 
             // panel8
             // 
@@ -297,6 +301,7 @@
             this.calendarButton.TabIndex = 8;
             this.calendarButton.Text = "Calendar";
             this.calendarButton.TextOffset = new System.Drawing.Point(12, 0);
+            this.calendarButton.Click += new System.EventHandler(this.calendarButton_Click);
             // 
             // panel6
             // 
@@ -342,6 +347,7 @@
             this.bookingsButton.TabIndex = 6;
             this.bookingsButton.Text = "Bookings";
             this.bookingsButton.TextOffset = new System.Drawing.Point(12, 0);
+            this.bookingsButton.Click += new System.EventHandler(this.bookingsButton_Click);
             // 
             // panel7
             // 
@@ -387,6 +393,7 @@
             this.statusButton.TabIndex = 4;
             this.statusButton.Text = "Status";
             this.statusButton.TextOffset = new System.Drawing.Point(1, 0);
+            this.statusButton.Click += new System.EventHandler(this.statusButton_Click);
             // 
             // panel4
             // 
@@ -432,6 +439,7 @@
             this.dashboardButton.TabIndex = 2;
             this.dashboardButton.Text = "Dashboard";
             this.dashboardButton.TextOffset = new System.Drawing.Point(18, 0);
+            this.dashboardButton.Click += new System.EventHandler(this.dashboardButton_Click);
             // 
             // panel3
             // 
@@ -662,12 +670,22 @@
             this.kryptonCustomPaletteBase1.ThemeName = "";
             this.kryptonCustomPaletteBase1.UseKryptonFileDialogs = true;
             // 
+            // panelChildForm
+            // 
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(223, 112);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.ShadowDecoration.Parent = this.panelChildForm;
+            this.panelChildForm.Size = new System.Drawing.Size(1024, 760);
+            this.panelChildForm.TabIndex = 2;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(1247, 872);
+            this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.panel1);
             this.CornerRoundingRadius = 20F;
@@ -749,8 +767,9 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button signOutButton;
         private System.Windows.Forms.Panel panel11;
         private Krypton.Toolkit.KryptonCustomPaletteBase kryptonCustomPaletteBase1;
+        private Guna.UI2.WinForms.Guna2Panel panelChildForm;
     }
 }
