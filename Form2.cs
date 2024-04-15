@@ -29,6 +29,7 @@ namespace ResortPro
             InitializeButtonIconMap();
             SubscribeEvents();
 
+            
         }
 
         private void InitializeButtonIconMap()
@@ -52,6 +53,7 @@ namespace ResortPro
                 button.MouseEnter += Button_MouseEnter;
                 button.MouseLeave += Button_MouseLeave;
             }
+            
         }
 
         private void Button_Click(object sender, EventArgs e)
