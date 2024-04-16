@@ -43,6 +43,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.LOGIN = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -195,11 +196,12 @@
             // 
             // loginButton
             // 
-            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(42)))), ((int)(((byte)(55)))));
-            this.loginButton.FlatAppearance.BorderSize = 0;
+            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(12)))), ((int)(((byte)(23)))));
+            this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.loginButton.FlatAppearance.BorderSize = 2;
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginButton.ForeColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(729, 381);
+            this.loginButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.loginButton.Location = new System.Drawing.Point(644, 375);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(96, 37);
             this.loginButton.TabIndex = 4;
@@ -211,17 +213,28 @@
             // 
             this.LOGIN.AutoSize = true;
             this.LOGIN.Font = new System.Drawing.Font("Sylfaen", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LOGIN.Location = new System.Drawing.Point(668, 125);
+            this.LOGIN.Location = new System.Drawing.Point(633, 99);
             this.LOGIN.Name = "LOGIN";
             this.LOGIN.Size = new System.Drawing.Size(180, 62);
             this.LOGIN.TabIndex = 5;
             this.LOGIN.Text = "LOGIN";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(641, 161);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(202, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Welcome back! Log In To Your Account.";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(949, 546);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.LOGIN);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.panel3);
@@ -265,6 +278,7 @@
         private System.Windows.Forms.TextBox passwordLabel;
         private System.Windows.Forms.Label LOGIN;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label4;
     }
 }
 
