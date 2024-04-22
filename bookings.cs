@@ -16,5 +16,10 @@ namespace ResortPro
         {
             InitializeComponent();
         }
+
+        private void bookings_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

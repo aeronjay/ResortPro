@@ -53,6 +53,7 @@
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "bookings";
             this.Text = "bookings";
+            this.Load += new System.EventHandler(this.bookings_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

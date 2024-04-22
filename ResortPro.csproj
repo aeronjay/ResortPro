@@ -76,6 +76,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add.Designer.cs">
+      <DependentUpon>add.cs</DependentUpon>
+    </Compile>
     <Compile Include="bookings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     <Compile Include="supplies.Designer.cs">
       <DependentUpon>supplies.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="add.resx">
+      <DependentUpon>add.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bookings.resx">
       <DependentUpon>bookings.cs</DependentUpon>
     </EmbeddedResource>
