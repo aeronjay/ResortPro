@@ -77,7 +77,6 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(735, 448);
             this.guna2Panel1.TabIndex = 0;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // label1
             // 
@@ -136,7 +135,6 @@
             this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
             this.guna2TextBox3.Size = new System.Drawing.Size(185, 32);
             this.guna2TextBox3.TabIndex = 3;
-            this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
             // guna2TextBox4
             // 
@@ -161,7 +159,6 @@
             this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Size = new System.Drawing.Size(185, 32);
             this.guna2TextBox4.TabIndex = 4;
-            this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
             // 
             // label2
             // 
@@ -172,7 +169,6 @@
             this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "Name";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -183,7 +179,6 @@
             this.label3.Size = new System.Drawing.Size(41, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Email";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -205,7 +200,6 @@
             this.label5.Size = new System.Drawing.Size(36, 16);
             this.label5.TabIndex = 8;
             this.label5.Text = "Date";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -216,7 +210,6 @@
             this.label6.Size = new System.Drawing.Size(42, 16);
             this.label6.TabIndex = 10;
             this.label6.Text = "Cabin";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -237,7 +230,6 @@
             this.label8.Size = new System.Drawing.Size(38, 16);
             this.label8.TabIndex = 12;
             this.label8.Text = "Price";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // guna2TextBox6
             // 
@@ -295,7 +287,6 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(0, 16);
             this.label9.TabIndex = 16;
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // guna2Button1
             // 
@@ -312,7 +303,6 @@
             this.guna2Button1.Size = new System.Drawing.Size(81, 29);
             this.guna2Button1.TabIndex = 17;
             this.guna2Button1.Text = "ADD";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
             // 
@@ -400,7 +390,6 @@
             this.Controls.Add(this.guna2Panel1);
             this.Name = "add";
             this.Text = "add";
-            this.Load += new System.EventHandler(this.add_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
