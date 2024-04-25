@@ -230,5 +230,15 @@ namespace ResortPro
         {
 
         }
+
+        private void addBooking_Click(object sender, EventArgs e)
+        {
+            openChildForm(new add());
+        }
+
+        private void topPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

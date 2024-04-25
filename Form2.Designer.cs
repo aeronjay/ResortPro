@@ -496,6 +496,7 @@
             this.addBooking.TabIndex = 4;
             this.addBooking.Text = "Add Booking";
             this.addBooking.TextOffset = new System.Drawing.Point(20, 0);
+            this.addBooking.Click += new System.EventHandler(this.addBooking_Click);
             // 
             // label4
             // 
@@ -536,6 +537,7 @@
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(991, 112);
             this.topPanel.TabIndex = 1;
+            this.topPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.topPanel_Paint);
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
             // 
             // iconButton2
