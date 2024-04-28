@@ -127,7 +127,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
-            this.ClientSize = new System.Drawing.Size(933, 532);
+            this.ClientSize = new System.Drawing.Size(975, 532);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);

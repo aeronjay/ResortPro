@@ -97,7 +97,7 @@ namespace ResortPro
                         {
                             MessageBox.Show("Login successful!");
 
-                            loggedIn form2 = new loggedIn();
+                            Form2 form2 = new Form2();
                             form2.Show();
 
                             this.Hide();  // Hide Form1
