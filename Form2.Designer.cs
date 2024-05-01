@@ -461,7 +461,7 @@
             // 
             // iconPictureBox3
             // 
-            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.iconPictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.iconPictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.iconPictureBox3.ForeColor = System.Drawing.Color.Lime;
             this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
