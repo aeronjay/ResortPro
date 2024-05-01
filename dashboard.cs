@@ -9,9 +9,11 @@ using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using System.Drawing.Drawing2D;
 
 namespace ResortPro
 {
+
     public partial class dashboard : Form
     {
         private Guna2Panel currentPanel = null;
@@ -71,5 +73,36 @@ namespace ResortPro
         {
 
         }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void dashboard_Resize(object sender, EventArgs e)
+        {
+            foreach (Guna2GradientButton button in Controls.OfType<Guna2GradientButton>())
+            {
+                // Calculate the new size based on the form's client size
+                int newWidth = this.ClientSize.Width / 4; // Adjust as needed
+                int newHeight = this.ClientSize.Height / 10; // Adjust as needed
+
+                // Set the new size
+                button.Size = new Size(newWidth, newHeight);
+
+                // Optionally, reposition the buttons
+                // button.Location = new Point(newX, newY); // Adjust as needed
+            }
+        }
+
     }
 }
