@@ -59,6 +59,8 @@
             this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.guna2GradientButton9 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -66,8 +68,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2GradientButton8 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton9 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -639,12 +639,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.guna2Button1);
+            this.panel2.Controls.Add(this.guna2Button2);
+            this.panel2.Controls.Add(this.guna2Button3);
+            this.panel2.Controls.Add(this.guna2Button4);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.guna2GradientButton9);
-            this.panel2.Controls.Add(this.guna2Button4);
-            this.panel2.Controls.Add(this.guna2Button3);
-            this.panel2.Controls.Add(this.guna2Button2);
-            this.panel2.Controls.Add(this.guna2Button1);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.guna2GradientButton8);
@@ -653,6 +653,36 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1110, 255);
             this.panel2.TabIndex = 30;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.DimGray;
+            this.label11.Location = new System.Drawing.Point(619, 32);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(219, 23);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Confirmed Reservation";
+            // 
+            // guna2GradientButton9
+            // 
+            this.guna2GradientButton9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GradientButton9.CheckedState.Parent = this.guna2GradientButton9;
+            this.guna2GradientButton9.CustomImages.Parent = this.guna2GradientButton9;
+            this.guna2GradientButton9.FillColor = System.Drawing.Color.White;
+            this.guna2GradientButton9.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientButton9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton9.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton9.HoverState.Parent = this.guna2GradientButton9;
+            this.guna2GradientButton9.Location = new System.Drawing.Point(612, 22);
+            this.guna2GradientButton9.Name = "guna2GradientButton9";
+            this.guna2GradientButton9.ShadowDecoration.Parent = this.guna2GradientButton9;
+            this.guna2GradientButton9.Size = new System.Drawing.Size(352, 230);
+            this.guna2GradientButton9.TabIndex = 7;
             // 
             // guna2Button4
             // 
@@ -760,36 +790,6 @@
             this.guna2GradientButton8.Size = new System.Drawing.Size(557, 230);
             this.guna2GradientButton8.TabIndex = 0;
             this.guna2GradientButton8.Click += new System.EventHandler(this.guna2GradientButton8_Click);
-            // 
-            // guna2GradientButton9
-            // 
-            this.guna2GradientButton9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton9.CheckedState.Parent = this.guna2GradientButton9;
-            this.guna2GradientButton9.CustomImages.Parent = this.guna2GradientButton9;
-            this.guna2GradientButton9.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton9.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton9.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton9.HoverState.Parent = this.guna2GradientButton9;
-            this.guna2GradientButton9.Location = new System.Drawing.Point(612, 22);
-            this.guna2GradientButton9.Name = "guna2GradientButton9";
-            this.guna2GradientButton9.ShadowDecoration.Parent = this.guna2GradientButton9;
-            this.guna2GradientButton9.Size = new System.Drawing.Size(352, 230);
-            this.guna2GradientButton9.TabIndex = 7;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(619, 32);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(219, 23);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Confirmed Reservation";
             // 
             // dashboard
             // 
