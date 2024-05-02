@@ -59,6 +59,7 @@
             this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2GradientButton8 = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -67,6 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -88,7 +90,7 @@
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(18, 61);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(19, 3);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Size = new System.Drawing.Size(180, 103);
@@ -104,7 +106,7 @@
             this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(264, 61);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(265, 3);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
             this.guna2GradientButton2.Size = new System.Drawing.Size(180, 103);
@@ -120,7 +122,7 @@
             this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(527, 61);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(528, 3);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
             this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
             this.guna2GradientButton3.Size = new System.Drawing.Size(180, 103);
@@ -136,7 +138,7 @@
             this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton4.ForeColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(783, 61);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(784, 3);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
             this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
             this.guna2GradientButton4.Size = new System.Drawing.Size(180, 103);
@@ -152,7 +154,7 @@
             this.guna2GradientButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton5.ForeColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton5.HoverState.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Location = new System.Drawing.Point(18, 170);
+            this.guna2GradientButton5.Location = new System.Drawing.Point(19, 113);
             this.guna2GradientButton5.Name = "guna2GradientButton5";
             this.guna2GradientButton5.ShadowDecoration.Parent = this.guna2GradientButton5;
             this.guna2GradientButton5.Size = new System.Drawing.Size(180, 103);
@@ -168,7 +170,7 @@
             this.guna2GradientButton6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton6.ForeColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton6.HoverState.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.Location = new System.Drawing.Point(263, 118);
+            this.guna2GradientButton6.Location = new System.Drawing.Point(265, 113);
             this.guna2GradientButton6.Name = "guna2GradientButton6";
             this.guna2GradientButton6.ShadowDecoration.Parent = this.guna2GradientButton6;
             this.guna2GradientButton6.Size = new System.Drawing.Size(180, 103);
@@ -184,7 +186,7 @@
             this.guna2GradientButton7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton7.ForeColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton7.HoverState.Parent = this.guna2GradientButton7;
-            this.guna2GradientButton7.Location = new System.Drawing.Point(527, 170);
+            this.guna2GradientButton7.Location = new System.Drawing.Point(528, 113);
             this.guna2GradientButton7.Name = "guna2GradientButton7";
             this.guna2GradientButton7.ShadowDecoration.Parent = this.guna2GradientButton7;
             this.guna2GradientButton7.Size = new System.Drawing.Size(180, 103);
@@ -196,7 +198,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = global::ResortPro.Properties.Resources.room__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 71);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 34);
             this.pictureBox1.TabIndex = 8;
@@ -207,7 +209,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox2.Image = global::ResortPro.Properties.Resources.beach;
-            this.pictureBox2.Location = new System.Drawing.Point(277, 71);
+            this.pictureBox2.Location = new System.Drawing.Point(278, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 34);
             this.pictureBox2.TabIndex = 9;
@@ -218,7 +220,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox3.Image = global::ResortPro.Properties.Resources.nature;
-            this.pictureBox3.Location = new System.Drawing.Point(538, 71);
+            this.pictureBox3.Location = new System.Drawing.Point(539, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 34);
             this.pictureBox3.TabIndex = 10;
@@ -229,7 +231,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox4.Image = global::ResortPro.Properties.Resources.people;
-            this.pictureBox4.Location = new System.Drawing.Point(793, 71);
+            this.pictureBox4.Location = new System.Drawing.Point(794, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(35, 34);
             this.pictureBox4.TabIndex = 11;
@@ -240,7 +242,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox5.Image = global::ResortPro.Properties.Resources.pavilion;
-            this.pictureBox5.Location = new System.Drawing.Point(29, 180);
+            this.pictureBox5.Location = new System.Drawing.Point(29, 122);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(35, 34);
             this.pictureBox5.TabIndex = 12;
@@ -251,7 +253,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox6.Image = global::ResortPro.Properties.Resources.city_hall;
-            this.pictureBox6.Location = new System.Drawing.Point(277, 180);
+            this.pictureBox6.Location = new System.Drawing.Point(278, 122);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(35, 34);
             this.pictureBox6.TabIndex = 13;
@@ -262,7 +264,7 @@
             this.pictureBox7.BackColor = System.Drawing.Color.White;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox7.Image = global::ResortPro.Properties.Resources.gazebo;
-            this.pictureBox7.Location = new System.Drawing.Point(538, 180);
+            this.pictureBox7.Location = new System.Drawing.Point(539, 122);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(35, 34);
             this.pictureBox7.TabIndex = 14;
@@ -274,7 +276,7 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
-            this.label2.Location = new System.Drawing.Point(25, 108);
+            this.label2.Location = new System.Drawing.Point(29, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 16);
             this.label2.TabIndex = 15;
@@ -286,7 +288,7 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
-            this.label3.Location = new System.Drawing.Point(274, 108);
+            this.label3.Location = new System.Drawing.Point(275, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 16;
@@ -298,7 +300,7 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
-            this.label4.Location = new System.Drawing.Point(535, 108);
+            this.label4.Location = new System.Drawing.Point(536, 49);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 16);
             this.label4.TabIndex = 17;
@@ -310,7 +312,7 @@
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
-            this.label5.Location = new System.Drawing.Point(790, 108);
+            this.label5.Location = new System.Drawing.Point(791, 49);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 16);
             this.label5.TabIndex = 18;
@@ -322,7 +324,7 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
-            this.label6.Location = new System.Drawing.Point(25, 217);
+            this.label6.Location = new System.Drawing.Point(29, 159);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 16);
             this.label6.TabIndex = 19;
@@ -334,7 +336,7 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
-            this.label7.Location = new System.Drawing.Point(274, 217);
+            this.label7.Location = new System.Drawing.Point(275, 159);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 16);
             this.label7.TabIndex = 20;
@@ -346,7 +348,7 @@
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
-            this.label8.Location = new System.Drawing.Point(535, 217);
+            this.label8.Location = new System.Drawing.Point(536, 159);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 16);
             this.label8.TabIndex = 21;
@@ -368,7 +370,7 @@
             this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(29, 127);
+            this.guna2TextBox1.Location = new System.Drawing.Point(30, 70);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -396,7 +398,7 @@
             this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(277, 127);
+            this.guna2TextBox2.Location = new System.Drawing.Point(278, 70);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
@@ -423,7 +425,7 @@
             this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(538, 127);
+            this.guna2TextBox3.Location = new System.Drawing.Point(539, 70);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
@@ -450,7 +452,7 @@
             this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(793, 127);
+            this.guna2TextBox4.Location = new System.Drawing.Point(794, 70);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
@@ -477,7 +479,7 @@
             this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(29, 237);
+            this.guna2TextBox5.Location = new System.Drawing.Point(29, 179);
             this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
@@ -504,7 +506,7 @@
             this.guna2TextBox6.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Location = new System.Drawing.Point(277, 237);
+            this.guna2TextBox6.Location = new System.Drawing.Point(278, 179);
             this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PasswordChar = '\0';
@@ -531,7 +533,7 @@
             this.guna2TextBox7.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Location = new System.Drawing.Point(538, 237);
+            this.guna2TextBox7.Location = new System.Drawing.Point(539, 179);
             this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PasswordChar = '\0';
@@ -544,21 +546,64 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.guna2TextBox1);
+            this.panel1.Controls.Add(this.guna2TextBox7);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.guna2TextBox6);
+            this.panel1.Controls.Add(this.pictureBox7);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.guna2GradientButton1);
             this.panel1.Controls.Add(this.guna2GradientButton6);
-            this.panel1.Location = new System.Drawing.Point(1, 52);
+            this.panel1.Controls.Add(this.guna2TextBox5);
+            this.panel1.Controls.Add(this.guna2TextBox2);
+            this.panel1.Controls.Add(this.guna2TextBox4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.guna2TextBox3);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.guna2GradientButton2);
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.guna2GradientButton3);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.guna2GradientButton4);
+            this.panel1.Controls.Add(this.guna2GradientButton5);
+            this.panel1.Controls.Add(this.guna2GradientButton7);
+            this.panel1.Location = new System.Drawing.Point(1, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(991, 236);
+            this.panel1.Size = new System.Drawing.Size(1110, 236);
             this.panel1.TabIndex = 29;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(165, 311);
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.guna2GradientButton8);
+            this.panel2.Location = new System.Drawing.Point(1, 278);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.Size = new System.Drawing.Size(1110, 255);
             this.panel2.TabIndex = 30;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // guna2GradientButton8
+            // 
+            this.guna2GradientButton8.CheckedState.Parent = this.guna2GradientButton8;
+            this.guna2GradientButton8.CustomImages.Parent = this.guna2GradientButton8;
+            this.guna2GradientButton8.FillColor = System.Drawing.Color.White;
+            this.guna2GradientButton8.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientButton8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientButton8.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton8.HoverState.Parent = this.guna2GradientButton8;
+            this.guna2GradientButton8.Location = new System.Drawing.Point(17, 22);
+            this.guna2GradientButton8.Name = "guna2GradientButton8";
+            this.guna2GradientButton8.ShadowDecoration.Parent = this.guna2GradientButton8;
+            this.guna2GradientButton8.Size = new System.Drawing.Size(557, 202);
+            this.guna2GradientButton8.TabIndex = 0;
+            this.guna2GradientButton8.Click += new System.EventHandler(this.guna2GradientButton8_Click);
             // 
             // dashboard
             // 
@@ -567,35 +612,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(975, 532);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.guna2TextBox7);
-            this.Controls.Add(this.guna2TextBox6);
-            this.Controls.Add(this.guna2TextBox5);
-            this.Controls.Add(this.guna2TextBox4);
-            this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.guna2GradientButton7);
-            this.Controls.Add(this.guna2GradientButton5);
-            this.Controls.Add(this.guna2GradientButton4);
-            this.Controls.Add(this.guna2GradientButton3);
-            this.Controls.Add(this.guna2GradientButton2);
-            this.Controls.Add(this.guna2GradientButton1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "dashboard";
@@ -608,6 +626,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -646,5 +666,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton8;
     }
 }

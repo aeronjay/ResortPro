@@ -18,16 +18,30 @@ namespace ResortPro
     {
         private Guna2Panel currentPanel = null;
         private readonly Dictionary<Guna2Panel, Color> panelColors = new Dictionary<Guna2Panel, Color>();
-
+        private Size formOriginalSize;
+        private Dictionary<Guna2GradientButton, Rectangle> buttonRectangles = new Dictionary<Guna2GradientButton, Rectangle>();
+        private Dictionary<Label, Rectangle> labelRectangles = new Dictionary<Label, Rectangle>();
+        private Dictionary<PictureBox, Rectangle> pictureBoxRectangles = new Dictionary<PictureBox, Rectangle>();
+        private Dictionary<Guna2TextBox, Rectangle> textBoxRectangles = new Dictionary<Guna2TextBox, Rectangle>();
         public dashboard()
         {
             InitializeComponent();
             CustomizeButtons();
+            InitializeResizing();
         }
-
         private void CustomizeButtons()
         {
-            foreach (Guna2GradientButton button in Controls.OfType<Guna2GradientButton>())
+            foreach (Guna2GradientButton button in panel1.Controls.OfType<Guna2GradientButton>())
+            {
+                button.FillColor = Color.FromArgb(255, 255, 255);
+                button.FillColor2 = Color.FromArgb(255, 255, 255);
+                button.ForeColor = Color.White;
+                button.BorderRadius = 10;
+                button.UseTransparentBackground = true;
+                button.HoverState.FillColor = Color.FromArgb(255, 255, 255);
+                button.HoverState.FillColor2 = Color.FromArgb(229, 229, 229);
+            }
+            foreach (Guna2GradientButton button in panel2.Controls.OfType<Guna2GradientButton>())
             {
                 button.FillColor = Color.FromArgb(255, 255, 255);
                 button.FillColor2 = Color.FromArgb(255, 255, 255);
@@ -38,6 +52,70 @@ namespace ResortPro
                 button.HoverState.FillColor2 = Color.FromArgb(229, 229, 229);
             }
         }
+        private void InitializeResizing()
+        {
+            this.Resize += dashboard_Resize;
+            formOriginalSize = this.Size;
+            foreach (Guna2GradientButton button in panel1.Controls.OfType<Guna2GradientButton>())
+            {
+                buttonRectangles.Add(button, new Rectangle(button.Location, button.Size));
+            }
+            foreach (Label label in panel1.Controls.OfType<Label>())
+            {
+                Rectangle rect = new Rectangle(label.Location, label.Size);
+                labelRectangles.Add(label, rect);
+            }
+            foreach (PictureBox pictureBox in panel1.Controls.OfType<PictureBox>())
+            {
+                Rectangle rect = new Rectangle(pictureBox.Location, pictureBox.Size);
+                pictureBoxRectangles.Add(pictureBox, rect);
+            }
+            foreach (Guna2TextBox textBox in panel1.Controls.OfType<Guna2TextBox>())
+            {
+                Rectangle rect = new Rectangle(textBox.Location, textBox.Size);
+                textBoxRectangles.Add(textBox, rect);
+            }
+            foreach (Guna2GradientButton button in panel2.Controls.OfType<Guna2GradientButton>())
+            {
+                buttonRectangles.Add(button, new Rectangle(button.Location, button.Size));
+            }
+        }
+
+        private void dashboard_Resize(object sender, EventArgs e)
+        {
+            foreach (var kvp in buttonRectangles)
+            {
+                ResizeControl(kvp.Key, kvp.Value);
+            }
+            foreach (var kvp in labelRectangles)
+            {
+                ResizeControl(kvp.Key, kvp.Value);
+            }
+            foreach (var kvp in pictureBoxRectangles)
+            {
+                ResizeControl(kvp.Key, kvp.Value);
+            }
+            foreach (var kvp in textBoxRectangles)
+            {
+                ResizeControl(kvp.Key, kvp.Value);
+            }
+        }
+
+        private void ResizeControl(Control c, Rectangle r)
+        {
+            float xRatio = (float)(this.Width) / (float)(formOriginalSize.Width);
+            float yRatio = (float)(this.Height) / (float)(formOriginalSize.Height);
+            int newX = (int)(r.X * xRatio);
+            int newY = (int)(r.Y * yRatio);
+
+            int newWidth = (int)(r.Width * xRatio);
+            int newHeight = (int)(r.Height * yRatio);
+
+            c.Location = new Point(newX, newY);
+            c.Size = new Size(newWidth, newHeight);
+        }
+
+
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
@@ -88,21 +166,10 @@ namespace ResortPro
         {
 
         }
-        private void dashboard_Resize(object sender, EventArgs e)
+
+        private void guna2GradientButton8_Click(object sender, EventArgs e)
         {
-            foreach (Guna2GradientButton button in Controls.OfType<Guna2GradientButton>())
-            {
-                // Calculate the new size based on the form's client size
-                int newWidth = this.ClientSize.Width / 4; // Adjust as needed
-                int newHeight = this.ClientSize.Height / 10; // Adjust as needed
 
-                // Set the new size
-                button.Size = new Size(newWidth, newHeight);
-
-                // Optionally, reposition the buttons
-                // button.Location = new Point(newX, newY); // Adjust as needed
-            }
         }
-
     }
 }
