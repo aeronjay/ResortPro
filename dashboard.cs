@@ -16,7 +16,6 @@ namespace ResortPro
 
     public partial class dashboard : Form
     {
-        private Guna2Panel currentPanel = null;
         private readonly Dictionary<Guna2Panel, Color> panelColors = new Dictionary<Guna2Panel, Color>();
         private Size formOriginalSize;
         private Dictionary<Guna2GradientButton, Rectangle> buttonRectangles = new Dictionary<Guna2GradientButton, Rectangle>();
@@ -49,7 +48,7 @@ namespace ResortPro
                 button.BorderRadius = 10;
                 button.UseTransparentBackground = true;
                 button.HoverState.FillColor = Color.FromArgb(255, 255, 255);
-                button.HoverState.FillColor2 = Color.FromArgb(229, 229, 229);
+                button.HoverState.FillColor2 = Color.FromArgb(255, 255, 255);
             }
         }
         private void InitializeResizing()
@@ -168,6 +167,11 @@ namespace ResortPro
         }
 
         private void guna2GradientButton8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
