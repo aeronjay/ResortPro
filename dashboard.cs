@@ -22,6 +22,7 @@ namespace ResortPro
         private Dictionary<Label, Rectangle> labelRectangles = new Dictionary<Label, Rectangle>();
         private Dictionary<PictureBox, Rectangle> pictureBoxRectangles = new Dictionary<PictureBox, Rectangle>();
         private Dictionary<Guna2TextBox, Rectangle> textBoxRectangles = new Dictionary<Guna2TextBox, Rectangle>();
+        private Dictionary<Guna2Button, Rectangle> gunabuttonRectangles = new Dictionary<Guna2Button, Rectangle>();
         public dashboard()
         {
             InitializeComponent();
@@ -49,6 +50,12 @@ namespace ResortPro
                 button.UseTransparentBackground = true;
                 button.HoverState.FillColor = Color.FromArgb(255, 255, 255);
                 button.HoverState.FillColor2 = Color.FromArgb(255, 255, 255);
+            }
+            foreach (Guna2Button button in panel2.Controls.OfType<Guna2Button>())
+            {
+                button.BorderRadius = 10;
+                button.UseTransparentBackground = true;
+                button.HoverState.FillColor = Color.FromArgb(255, 255, 255);
             }
         }
         private void InitializeResizing()
@@ -78,6 +85,15 @@ namespace ResortPro
             {
                 buttonRectangles.Add(button, new Rectangle(button.Location, button.Size));
             }
+            foreach (Guna2Button button in panel2.Controls.OfType<Guna2Button>())
+            {
+                gunabuttonRectangles.Add(button, new Rectangle(button.Location, button.Size));
+            }
+            foreach (Label label in panel2.Controls.OfType<Label>())
+            {
+                Rectangle rect = new Rectangle(label.Location, label.Size);
+                labelRectangles.Add(label, rect);
+            }
         }
 
         private void dashboard_Resize(object sender, EventArgs e)
@@ -95,6 +111,10 @@ namespace ResortPro
                 ResizeControl(kvp.Key, kvp.Value);
             }
             foreach (var kvp in textBoxRectangles)
+            {
+                ResizeControl(kvp.Key, kvp.Value);
+            }
+            foreach (var kvp in gunabuttonRectangles)
             {
                 ResizeControl(kvp.Key, kvp.Value);
             }
@@ -172,6 +192,11 @@ namespace ResortPro
         }
 
         private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }
