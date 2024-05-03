@@ -30,17 +30,20 @@
         {
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.closeButton = new FontAwesome.Sharp.IconButton();
+            this.label4 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
             // 
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.guna2GradientPanel1.Controls.Add(this.label4);
             this.guna2GradientPanel1.Controls.Add(this.closeButton);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(427, 43);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(838, 53);
             this.guna2GradientPanel1.TabIndex = 0;
             this.guna2GradientPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.guna2GradientPanel1_MouseDown);
             // 
@@ -51,21 +54,34 @@
             this.closeButton.FlatAppearance.BorderSize = 0;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeButton.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.closeButton.IconColor = System.Drawing.Color.Black;
+            this.closeButton.IconColor = System.Drawing.Color.White;
             this.closeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.closeButton.IconSize = 30;
-            this.closeButton.Location = new System.Drawing.Point(380, 0);
+            this.closeButton.Location = new System.Drawing.Point(791, 0);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(47, 43);
+            this.closeButton.Size = new System.Drawing.Size(47, 53);
             this.closeButton.TabIndex = 0;
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(298, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(225, 28);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "ADD RESERVATION";
             // 
             // addReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 684);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
+            this.ClientSize = new System.Drawing.Size(838, 591);
             this.Controls.Add(this.guna2GradientPanel1);
             this.CornerRoundingRadius = 20F;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -74,9 +90,10 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateCommon.Border.Rounding = 20F;
-            this.Text = "addReservation";
+            this.Text = "z";
             this.Load += new System.EventHandler(this.addReservation_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
+            this.guna2GradientPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -85,5 +102,6 @@
 
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private FontAwesome.Sharp.IconButton closeButton;
+        private System.Windows.Forms.Label label4;
     }
 }
