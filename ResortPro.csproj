@@ -125,6 +125,12 @@
     <Compile Include="history.Designer.cs">
       <DependentUpon>history.cs</DependentUpon>
     </Compile>
+    <Compile Include="Log in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log in.Designer.cs">
+      <DependentUpon>Log in.cs</DependentUpon>
+    </Compile>
     <Compile Include="loggedIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="history.resx">
       <DependentUpon>history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log in.resx">
+      <DependentUpon>Log in.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loggedIn.resx">
       <DependentUpon>loggedIn.cs</DependentUpon>
