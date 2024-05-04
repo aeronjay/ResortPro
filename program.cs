@@ -17,7 +17,7 @@ namespace ResortPro1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new addReservation());
+            Application.Run(new Form2());
         }
     }
 }

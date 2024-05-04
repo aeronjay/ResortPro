@@ -30,6 +30,7 @@ namespace ResortPro
             Application.Exit();
 
         }
+        // code for dragging form
         private const int WM_NCLBUTTONDOWN = 0x00A1;
         private const int HT_CAPTION = 0x0002;
         [DllImport("user32.dll")]
@@ -39,8 +40,24 @@ namespace ResortPro
         private static extern void SendMessage(IntPtr hWnd, int wMsg, int wParam, int lParam);
         private void guna2GradientPanel1_MouseDown(object sender, MouseEventArgs e)
         {
+            // code for dragging form
             ReleaseCapture();
             SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
         }
+        private void label4_MouseDown(object sender, MouseEventArgs e)
+        {
+            // code for dragging form
+            ReleaseCapture();
+            SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+        }
+
+        private void confirmButton_Click(object sender, EventArgs e)
+        {
+            // add code algo
+            this.DialogResult= DialogResult.OK;
+            this.Close();
+        }
+
+        
     }
 }

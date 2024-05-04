@@ -223,7 +223,11 @@ namespace ResortPro
 
         private void addBooking_Click(object sender, EventArgs e)
         {
-            openChildForm(new add());
+            addReservation reserv = new addReservation();
+            if(reserv.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show("SUCCESSFULLY BOOKED!");
+            }
         }
     }
 }
