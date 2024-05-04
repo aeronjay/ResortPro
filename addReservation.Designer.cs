@@ -30,6 +30,7 @@
         {
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label4 = new System.Windows.Forms.Label();
+            this.closeButton = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@
             this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.label14 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.closeButton = new FontAwesome.Sharp.IconButton();
             this.accommodationLabel = new System.Windows.Forms.Label();
             this.confirmButton = new Guna.UI2.WinForms.Guna2Button();
             this.label18 = new System.Windows.Forms.Label();
@@ -92,6 +92,23 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "ADD BOOKING";
             this.label4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label4_MouseDown);
+            // 
+            // closeButton
+            // 
+            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.closeButton.FlatAppearance.BorderSize = 0;
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.closeButton.IconColor = System.Drawing.Color.White;
+            this.closeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.closeButton.IconSize = 30;
+            this.closeButton.Location = new System.Drawing.Point(819, 0);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(47, 53);
+            this.closeButton.TabIndex = 0;
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // label1
             // 
@@ -521,23 +538,6 @@
             this.label16.TabIndex = 28;
             this.label16.Text = "Payment Options: ";
             // 
-            // closeButton
-            // 
-            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.closeButton.FlatAppearance.BorderSize = 0;
-            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeButton.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.closeButton.IconColor = System.Drawing.Color.White;
-            this.closeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.closeButton.IconSize = 30;
-            this.closeButton.Location = new System.Drawing.Point(819, 0);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(47, 53);
-            this.closeButton.TabIndex = 0;
-            this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
             // accommodationLabel
             // 
             this.accommodationLabel.AutoSize = true;
@@ -586,9 +586,9 @@
             this.totalPriceLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.totalPriceLabel.Location = new System.Drawing.Point(620, 497);
             this.totalPriceLabel.Name = "totalPriceLabel";
-            this.totalPriceLabel.Size = new System.Drawing.Size(30, 24);
+            this.totalPriceLabel.Size = new System.Drawing.Size(33, 24);
             this.totalPriceLabel.TabIndex = 32;
-            this.totalPriceLabel.Text = "$0";
+            this.totalPriceLabel.Text = "₱0";
             // 
             // addReservation
             // 
