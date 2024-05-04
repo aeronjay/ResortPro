@@ -27,7 +27,8 @@ namespace ResortPro
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
 
         }
         // code for dragging form
