@@ -221,24 +221,9 @@ namespace ResortPro
             form1.Show();
         }
 
-        private void panelChildForm_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void addBooking_Click(object sender, EventArgs e)
         {
             openChildForm(new add());
-        }
-
-        private void topPanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

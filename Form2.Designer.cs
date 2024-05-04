@@ -31,61 +31,61 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.signOutButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.historyPicture = new FontAwesome.Sharp.IconPictureBox();
             this.historyButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.suppliesPicture = new FontAwesome.Sharp.IconPictureBox();
             this.suppliesButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.calendarPicture = new FontAwesome.Sharp.IconPictureBox();
             this.calendarButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.bookingsPicture = new FontAwesome.Sharp.IconPictureBox();
             this.bookingsButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.statusPicture = new FontAwesome.Sharp.IconPictureBox();
             this.statusButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dashboardPicture = new FontAwesome.Sharp.IconPictureBox();
             this.dashboardButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.addBooking = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.topPanel = new System.Windows.Forms.Panel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelChildForm = new Guna.UI2.WinForms.Guna2Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
+            this.historyPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.suppliesPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.calendarPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.bookingsPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.statusPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.dashboardPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).BeginInit();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -125,19 +125,6 @@
             this.panel10.Size = new System.Drawing.Size(206, 85);
             this.panel10.TabIndex = 5;
             // 
-            // iconPictureBox4
-            // 
-            this.iconPictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
-            this.iconPictureBox4.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 42;
-            this.iconPictureBox4.Location = new System.Drawing.Point(29, 16);
-            this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(42, 42);
-            this.iconPictureBox4.TabIndex = 4;
-            this.iconPictureBox4.TabStop = false;
-            // 
             // signOutButton
             // 
             this.signOutButton.BorderRadius = 25;
@@ -170,20 +157,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(206, 86);
             this.panel9.TabIndex = 4;
-            // 
-            // historyPicture
-            // 
-            this.historyPicture.BackColor = System.Drawing.Color.Transparent;
-            this.historyPicture.ForeColor = System.Drawing.SystemColors.Window;
-            this.historyPicture.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
-            this.historyPicture.IconColor = System.Drawing.SystemColors.Window;
-            this.historyPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.historyPicture.IconSize = 42;
-            this.historyPicture.Location = new System.Drawing.Point(28, 21);
-            this.historyPicture.Name = "historyPicture";
-            this.historyPicture.Size = new System.Drawing.Size(42, 42);
-            this.historyPicture.TabIndex = 13;
-            this.historyPicture.TabStop = false;
             // 
             // historyButton
             // 
@@ -218,19 +191,6 @@
             this.panel5.Size = new System.Drawing.Size(206, 80);
             this.panel5.TabIndex = 2;
             // 
-            // suppliesPicture
-            // 
-            this.suppliesPicture.BackColor = System.Drawing.Color.Transparent;
-            this.suppliesPicture.IconChar = FontAwesome.Sharp.IconChar.BoxesPacking;
-            this.suppliesPicture.IconColor = System.Drawing.Color.White;
-            this.suppliesPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.suppliesPicture.IconSize = 42;
-            this.suppliesPicture.Location = new System.Drawing.Point(28, 20);
-            this.suppliesPicture.Name = "suppliesPicture";
-            this.suppliesPicture.Size = new System.Drawing.Size(42, 42);
-            this.suppliesPicture.TabIndex = 11;
-            this.suppliesPicture.TabStop = false;
-            // 
             // suppliesButton
             // 
             this.suppliesButton.BorderRadius = 25;
@@ -263,19 +223,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(206, 80);
             this.panel8.TabIndex = 3;
-            // 
-            // calendarPicture
-            // 
-            this.calendarPicture.BackColor = System.Drawing.Color.Transparent;
-            this.calendarPicture.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
-            this.calendarPicture.IconColor = System.Drawing.Color.White;
-            this.calendarPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.calendarPicture.IconSize = 42;
-            this.calendarPicture.Location = new System.Drawing.Point(32, 21);
-            this.calendarPicture.Name = "calendarPicture";
-            this.calendarPicture.Size = new System.Drawing.Size(42, 42);
-            this.calendarPicture.TabIndex = 9;
-            this.calendarPicture.TabStop = false;
             // 
             // calendarButton
             // 
@@ -310,19 +257,6 @@
             this.panel6.Size = new System.Drawing.Size(206, 80);
             this.panel6.TabIndex = 3;
             // 
-            // bookingsPicture
-            // 
-            this.bookingsPicture.BackColor = System.Drawing.Color.Transparent;
-            this.bookingsPicture.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
-            this.bookingsPicture.IconColor = System.Drawing.Color.White;
-            this.bookingsPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bookingsPicture.IconSize = 42;
-            this.bookingsPicture.Location = new System.Drawing.Point(32, 22);
-            this.bookingsPicture.Name = "bookingsPicture";
-            this.bookingsPicture.Size = new System.Drawing.Size(42, 42);
-            this.bookingsPicture.TabIndex = 7;
-            this.bookingsPicture.TabStop = false;
-            // 
             // bookingsButton
             // 
             this.bookingsButton.BorderRadius = 25;
@@ -356,19 +290,6 @@
             this.panel7.Size = new System.Drawing.Size(206, 80);
             this.panel7.TabIndex = 3;
             // 
-            // statusPicture
-            // 
-            this.statusPicture.BackColor = System.Drawing.Color.Transparent;
-            this.statusPicture.IconChar = FontAwesome.Sharp.IconChar.Signal;
-            this.statusPicture.IconColor = System.Drawing.Color.White;
-            this.statusPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.statusPicture.IconSize = 42;
-            this.statusPicture.Location = new System.Drawing.Point(32, 20);
-            this.statusPicture.Name = "statusPicture";
-            this.statusPicture.Size = new System.Drawing.Size(42, 42);
-            this.statusPicture.TabIndex = 5;
-            this.statusPicture.TabStop = false;
-            // 
             // statusButton
             // 
             this.statusButton.BorderRadius = 25;
@@ -401,19 +322,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(206, 80);
             this.panel4.TabIndex = 1;
-            // 
-            // dashboardPicture
-            // 
-            this.dashboardPicture.BackColor = System.Drawing.Color.Transparent;
-            this.dashboardPicture.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
-            this.dashboardPicture.IconColor = System.Drawing.Color.White;
-            this.dashboardPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.dashboardPicture.IconSize = 42;
-            this.dashboardPicture.Location = new System.Drawing.Point(32, 22);
-            this.dashboardPicture.Name = "dashboardPicture";
-            this.dashboardPicture.Size = new System.Drawing.Size(42, 42);
-            this.dashboardPicture.TabIndex = 3;
-            this.dashboardPicture.TabStop = false;
             // 
             // dashboardButton
             // 
@@ -459,22 +367,6 @@
             this.panel2.Size = new System.Drawing.Size(206, 109);
             this.panel2.TabIndex = 2;
             // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.iconPictureBox3.ForeColor = System.Drawing.Color.Lime;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.Lime;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 42;
-            this.iconPictureBox3.Location = new System.Drawing.Point(28, 16);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(42, 42);
-            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox3.TabIndex = 5;
-            this.iconPictureBox3.TabStop = false;
-            // 
             // addBooking
             // 
             this.addBooking.BorderRadius = 25;
@@ -510,20 +402,6 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "ResortPro";
             // 
-            // iconPictureBox2
-            // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Ubuntu;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 83;
-            this.iconPictureBox2.Location = new System.Drawing.Point(7, 14);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(90, 83);
-            this.iconPictureBox2.TabIndex = 2;
-            this.iconPictureBox2.TabStop = false;
-            // 
             // topPanel
             // 
             this.topPanel.Controls.Add(this.iconButton2);
@@ -537,8 +415,75 @@
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(991, 112);
             this.topPanel.TabIndex = 1;
-            this.topPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.topPanel_Paint);
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(468, 41);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 19);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Time Now";
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderRadius = 20;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.FormattingEnabled = true;
+            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(745, 32);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Size = new System.Drawing.Size(176, 36);
+            this.guna2ComboBox1.TabIndex = 4;
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.BorderRadius = 20;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Location = new System.Drawing.Point(16, 24);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "Search";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(298, 48);
+            this.guna2TextBox1.TabIndex = 1;
+            this.guna2TextBox1.TextOffset = new System.Drawing.Point(50, 0);
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.BorderColor = System.Drawing.Color.Black;
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(223, 112);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.ShadowDecoration.Parent = this.panelChildForm;
+            this.panelChildForm.Size = new System.Drawing.Size(991, 571);
+            this.panelChildForm.TabIndex = 2;
             // 
             // iconButton2
             // 
@@ -578,37 +523,6 @@
             this.iconButton1.TabIndex = 6;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(468, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 19);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Time Now";
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 20;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(745, 32);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(176, 36);
-            this.guna2ComboBox1.TabIndex = 4;
-            // 
             // iconPictureBox1
             // 
             this.iconPictureBox1.BackColor = System.Drawing.Color.White;
@@ -622,43 +536,127 @@
             this.iconPictureBox1.TabIndex = 2;
             this.iconPictureBox1.TabStop = false;
             // 
-            // guna2TextBox1
+            // iconPictureBox4
             // 
-            this.guna2TextBox1.BorderRadius = 20;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(16, 24);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Search";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(298, 48);
-            this.guna2TextBox1.TabIndex = 1;
-            this.guna2TextBox1.TextOffset = new System.Drawing.Point(50, 0);
+            this.iconPictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
+            this.iconPictureBox4.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox4.IconSize = 42;
+            this.iconPictureBox4.Location = new System.Drawing.Point(29, 16);
+            this.iconPictureBox4.Name = "iconPictureBox4";
+            this.iconPictureBox4.Size = new System.Drawing.Size(42, 42);
+            this.iconPictureBox4.TabIndex = 4;
+            this.iconPictureBox4.TabStop = false;
             // 
-            // panelChildForm
+            // historyPicture
             // 
-            this.panelChildForm.BorderColor = System.Drawing.Color.Black;
-            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(223, 112);
-            this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.ShadowDecoration.Parent = this.panelChildForm;
-            this.panelChildForm.Size = new System.Drawing.Size(991, 571);
-            this.panelChildForm.TabIndex = 2;
-            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
+            this.historyPicture.BackColor = System.Drawing.Color.Transparent;
+            this.historyPicture.ForeColor = System.Drawing.SystemColors.Window;
+            this.historyPicture.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
+            this.historyPicture.IconColor = System.Drawing.SystemColors.Window;
+            this.historyPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.historyPicture.IconSize = 42;
+            this.historyPicture.Location = new System.Drawing.Point(28, 21);
+            this.historyPicture.Name = "historyPicture";
+            this.historyPicture.Size = new System.Drawing.Size(42, 42);
+            this.historyPicture.TabIndex = 13;
+            this.historyPicture.TabStop = false;
+            // 
+            // suppliesPicture
+            // 
+            this.suppliesPicture.BackColor = System.Drawing.Color.Transparent;
+            this.suppliesPicture.IconChar = FontAwesome.Sharp.IconChar.BoxesPacking;
+            this.suppliesPicture.IconColor = System.Drawing.Color.White;
+            this.suppliesPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.suppliesPicture.IconSize = 42;
+            this.suppliesPicture.Location = new System.Drawing.Point(28, 20);
+            this.suppliesPicture.Name = "suppliesPicture";
+            this.suppliesPicture.Size = new System.Drawing.Size(42, 42);
+            this.suppliesPicture.TabIndex = 11;
+            this.suppliesPicture.TabStop = false;
+            // 
+            // calendarPicture
+            // 
+            this.calendarPicture.BackColor = System.Drawing.Color.Transparent;
+            this.calendarPicture.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
+            this.calendarPicture.IconColor = System.Drawing.Color.White;
+            this.calendarPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.calendarPicture.IconSize = 42;
+            this.calendarPicture.Location = new System.Drawing.Point(32, 21);
+            this.calendarPicture.Name = "calendarPicture";
+            this.calendarPicture.Size = new System.Drawing.Size(42, 42);
+            this.calendarPicture.TabIndex = 9;
+            this.calendarPicture.TabStop = false;
+            // 
+            // bookingsPicture
+            // 
+            this.bookingsPicture.BackColor = System.Drawing.Color.Transparent;
+            this.bookingsPicture.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
+            this.bookingsPicture.IconColor = System.Drawing.Color.White;
+            this.bookingsPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bookingsPicture.IconSize = 42;
+            this.bookingsPicture.Location = new System.Drawing.Point(32, 22);
+            this.bookingsPicture.Name = "bookingsPicture";
+            this.bookingsPicture.Size = new System.Drawing.Size(42, 42);
+            this.bookingsPicture.TabIndex = 7;
+            this.bookingsPicture.TabStop = false;
+            // 
+            // statusPicture
+            // 
+            this.statusPicture.BackColor = System.Drawing.Color.Transparent;
+            this.statusPicture.IconChar = FontAwesome.Sharp.IconChar.Signal;
+            this.statusPicture.IconColor = System.Drawing.Color.White;
+            this.statusPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.statusPicture.IconSize = 42;
+            this.statusPicture.Location = new System.Drawing.Point(32, 20);
+            this.statusPicture.Name = "statusPicture";
+            this.statusPicture.Size = new System.Drawing.Size(42, 42);
+            this.statusPicture.TabIndex = 5;
+            this.statusPicture.TabStop = false;
+            // 
+            // dashboardPicture
+            // 
+            this.dashboardPicture.BackColor = System.Drawing.Color.Transparent;
+            this.dashboardPicture.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
+            this.dashboardPicture.IconColor = System.Drawing.Color.White;
+            this.dashboardPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.dashboardPicture.IconSize = 42;
+            this.dashboardPicture.Location = new System.Drawing.Point(32, 22);
+            this.dashboardPicture.Name = "dashboardPicture";
+            this.dashboardPicture.Size = new System.Drawing.Size(42, 42);
+            this.dashboardPicture.TabIndex = 3;
+            this.dashboardPicture.TabStop = false;
+            // 
+            // iconPictureBox3
+            // 
+            this.iconPictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.iconPictureBox3.ForeColor = System.Drawing.Color.Lime;
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.iconPictureBox3.IconColor = System.Drawing.Color.Lime;
+            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox3.IconSize = 42;
+            this.iconPictureBox3.Location = new System.Drawing.Point(28, 16);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(42, 42);
+            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox3.TabIndex = 5;
+            this.iconPictureBox3.TabStop = false;
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Ubuntu;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 83;
+            this.iconPictureBox2.Location = new System.Drawing.Point(7, 14);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(90, 83);
+            this.iconPictureBox2.TabIndex = 2;
+            this.iconPictureBox2.TabStop = false;
             // 
             // Form2
             // 
@@ -684,30 +682,29 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateCommon.Border.Rounding = 20F;
             this.Text = "ResortPro v1.0.0";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).EndInit();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).EndInit();
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).EndInit();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).EndInit();
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
