@@ -418,7 +418,7 @@
             this.videokeCheckBox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.videokeCheckBox.CheckedState.BorderRadius = 2;
             this.videokeCheckBox.CheckedState.BorderThickness = 0;
-            this.videokeCheckBox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.videokeCheckBox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.videokeCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.videokeCheckBox.ForeColor = System.Drawing.Color.Black;
             this.videokeCheckBox.Location = new System.Drawing.Point(478, 242);
@@ -566,8 +566,8 @@
             this.confirmButton.CustomImages.Parent = this.confirmButton;
             this.confirmButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.confirmButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmButton.ForeColor = System.Drawing.Color.White;
-            this.confirmButton.HoverState.FillColor = System.Drawing.Color.SeaGreen;
+            this.confirmButton.ForeColor = System.Drawing.Color.Black;
+            this.confirmButton.HoverState.FillColor = System.Drawing.Color.LightGreen;
             this.confirmButton.HoverState.Parent = this.confirmButton;
             this.confirmButton.Location = new System.Drawing.Point(680, 533);
             this.confirmButton.Name = "confirmButton";
