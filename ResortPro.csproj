@@ -226,5 +226,8 @@
   <ItemGroup>
     <None Include="Resources\beach.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Custom Controls\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
