@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Windows.Interop;
 using System.Runtime.InteropServices;
 using System.Data.OleDb;
+using System.Security.Cryptography;
 
 namespace ResortPro
 {
@@ -104,145 +105,163 @@ namespace ResortPro
         private int totalPrice = 0;
         private void newPrice()
         {
-            String accomod = accommodationComboBox.SelectedItem.ToString();
-
-            int adultCount = (int)adultNumericUpDown.Value;
-            int kidCount = (int)kidNumericUpDown.Value;
-
-            int peopleCount = adultCount + kidCount;
-
-            bool videoke = videokeCheckBox.Checked;
-            int videokeCount = 0;
-            int additionalMatress = (int)additionalMattressNumericUpDown.Value;
-
-            int adultPrice = 300;
-            int kidPrice = 200;
-            int videokePrice = 700;
-            int matressPrice = 500;
-
-            if (videoke)
+            try
             {
-                videokeCount = 1;
-            }
-            else
-            {
-                videokeCount = 0;
-            }
+                String accomod = accommodationComboBox.SelectedItem.ToString();
 
-            foreach (DataRow row in pricing.Rows)
-            {
-                if (row["type"].ToString() == "Entrance Fee" && row["name"].ToString() == "ADULT")
+                int adultCount = (int)adultNumericUpDown.Value;
+                int kidCount = (int)kidNumericUpDown.Value;
+
+                int peopleCount = adultCount + kidCount;
+
+                bool videoke = videokeCheckBox.Checked;
+                int videokeCount = 0;
+                int additionalMatress = (int)additionalMattressNumericUpDown.Value;
+
+                int adultPrice = 300;
+                int kidPrice = 200;
+                int videokePrice = 700;
+                int matressPrice = 500;
+
+                if (videoke)
                 {
-                    adultPrice = (int)row["price"];
-                    break;
-                }
-            }
-            foreach (DataRow row in pricing.Rows)
-            {
-                if (row["type"].ToString() == "Entrance Fee" && row["name"].ToString() == "KIDS")
-                {
-                    kidPrice = (int)row["price"];
-                    break;
-                }
-            }
-            foreach (DataRow row in pricing.Rows)
-            {
-                if (row["type"].ToString() == "Add Ons" && row["name"].ToString() == "VIDEOKE")
-                {
-                    videokePrice = (int)row["price"];
-                    break;
-                }
-            }
-            foreach (DataRow row in pricing.Rows)
-            {
-                if (row["type"].ToString() == "Add Ons" && row["name"].ToString() == "ADDITIONAL MATRESS")
-                {
-                    matressPrice = (int)row["price"];
-                    break;
-                }
-            }
-
-
-
-            if (accomod == "Entrance Only")
-            {
-                totalPrice = (adultCount * adultPrice) + (kidCount * kidPrice) + (matressPrice * additionalMatress) + (videokeCount * videokePrice);
-            }
-            else
-            {
-                int accomPrice = 0;
-                int freePeeps = 0;
-
-                foreach (DataRow row in pricing.Rows)
-                {
-                    if (row["type"].ToString() == "Accommodation" && row["type"] != DBNull.Value && row["name"].ToString() == accomod)
-                    {
-                        accomPrice = (int)row["price"];
-
-                        break;
-                    }
-                }
-                foreach(DataRow row in pricing.Rows)
-                {
-                    if (row["type"].ToString() == "Accommodation"  && row["name"].ToString() == accomod)
-                    {
-                        freePeeps = (int)row["freeEntrancePax"];
-                        break;
-                    }
-                }
-                if(peopleCount <= freePeeps)
-                {
-                    totalPrice = (matressPrice * additionalMatress) + (videokeCount * videokePrice) + accomPrice;
-
+                    videokeCount = 1;
                 }
                 else
                 {
-                    totalPrice = (((peopleCount - freePeeps) * adultPrice) + (matressPrice * additionalMatress) + (videokeCount * videokePrice) + accomPrice);
+                    videokeCount = 0;
+                }
+
+                foreach (DataRow row in pricing.Rows)
+                {
+                    if (row["type"].ToString() == "Entrance Fee" && row["name"].ToString() == "ADULT")
+                    {
+                        adultPrice = (int)row["price"];
+                        break;
+                    }
+                }
+                foreach (DataRow row in pricing.Rows)
+                {
+                    if (row["type"].ToString() == "Entrance Fee" && row["name"].ToString() == "KIDS")
+                    {
+                        kidPrice = (int)row["price"];
+                        break;
+                    }
+                }
+                foreach (DataRow row in pricing.Rows)
+                {
+                    if (row["type"].ToString() == "Add Ons" && row["name"].ToString() == "VIDEOKE")
+                    {
+                        videokePrice = (int)row["price"];
+                        break;
+                    }
+                }
+                foreach (DataRow row in pricing.Rows)
+                {
+                    if (row["type"].ToString() == "Add Ons" && row["name"].ToString() == "ADDITIONAL MATRESS")
+                    {
+                        matressPrice = (int)row["price"];
+                        break;
+                    }
                 }
 
 
+
+                if (accomod == "Entrance Only")
+                {
+                    totalPrice = (adultCount * adultPrice) + (kidCount * kidPrice) + (matressPrice * additionalMatress) + (videokeCount * videokePrice);
+                }
+                else
+                {
+                    int accomPrice = 0;
+                    int freePeeps = 0;
+
+                    foreach (DataRow row in pricing.Rows)
+                    {
+                        if (row["type"].ToString() == "Accommodation" && row["type"] != DBNull.Value && row["name"].ToString() == accomod)
+                        {
+                            accomPrice = (int)row["price"];
+
+                            break;
+                        }
+                    }
+                    foreach (DataRow row in pricing.Rows)
+                    {
+                        if (row["type"].ToString() == "Accommodation" && row["name"].ToString() == accomod)
+                        {
+                            freePeeps = (int)row["freeEntrancePax"];
+                            break;
+                        }
+                    }
+                    if (peopleCount <= freePeeps)
+                    {
+                        totalPrice = (matressPrice * additionalMatress) + (videokeCount * videokePrice) + accomPrice;
+
+                    }
+                    else
+                    {
+                        totalPrice = (((peopleCount - freePeeps) * adultPrice) + (matressPrice * additionalMatress) + (videokeCount * videokePrice) + accomPrice);
+                    }
+
+
+                }
+                totalPriceLabel.Text = totalPrice.ToString("N");
             }
-            totalPriceLabel.Text = totalPrice.ToString("N");
+            catch(Exception ex)
+            {
+                MessageBox.Show("AN ERROR HAS OCCURED WITH: " + ex.Message);
+            }
+            
 
         }
 
         private void accommodationComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(accommodationComboBox.SelectedItem.ToString() == "Entrance Only")
+            try
             {
-                paxLabel.Text = "...";
-                paxLabel.Visible = false;
-                accommodationLabel.Visible = false;
-
-                freeEntranceLabel.Text = "0";
-                entranceLabel.Visible = false;
-                freeEntranceLabel.Visible = false;
-            }
-            else
-            {
-                
-                String accommod = accommodationComboBox.SelectedItem.ToString();
-                foreach (DataRow row in pricing.Rows)
+                if (accommodationComboBox.SelectedItem.ToString() == "Entrance Only")
                 {
-                    if (row["type"].ToString() == "Accommodation" && row["type"] != DBNull.Value && row["name"].ToString() == accommod)
-                    {
-                        paxLabel.Visible = true;
-                        accommodationLabel.Visible = true;
+                    paxLabel.Text = "...";
+                    paxLabel.Visible = false;
+                    accommodationLabel.Visible = false;
 
-                        entranceLabel.Visible = true;
-                        freeEntranceLabel.Visible = true;
+                    freeEntranceLabel.Text = "0";
+                    entranceLabel.Visible = false;
+                    freeEntranceLabel.Visible = false;
 
-                        freeEntranceLabel.Text = row["freeEntrancePax"].ToString();
-                        paxLabel.Text = row["pax"].ToString();
-
-                        newPrice();
-
-                        break;
-                    }
                 }
+                else
+                {
 
+                    String accommod = accommodationComboBox.SelectedItem.ToString();
+                    foreach (DataRow row in pricing.Rows)
+                    {
+                        if (row["type"].ToString() == "Accommodation" && row["type"] != DBNull.Value && row["name"].ToString() == accommod)
+                        {
+                            paxLabel.Visible = true;
+                            accommodationLabel.Visible = true;
+
+                            entranceLabel.Visible = true;
+                            freeEntranceLabel.Visible = true;
+
+                            freeEntranceLabel.Text = row["freeEntrancePax"].ToString();
+                            paxLabel.Text = row["pax"].ToString();
+
+
+
+                            break;
+                        }
+                    }
+
+                }
+                newPrice();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
             
+
         }
 
         private void additionalMattressNumericUpDown_ValueChanged(object sender, EventArgs e)
@@ -282,6 +301,8 @@ namespace ResortPro
 
                 String paymentMethod = paymentMethodComboBox.SelectedItem.ToString();
                 bool paid = bookingPaidToggle.Checked;
+
+                int finalprice = totalPrice;
 
                 this.DialogResult = DialogResult.OK;
                 this.Close();
