@@ -25,6 +25,7 @@ namespace ResortPro
         {
             
             initValues();
+            newPrice();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -100,33 +101,168 @@ namespace ResortPro
                 }
             }
         }
-        private void confirmButton_Click(object sender, EventArgs e)
+        private int totalPrice = 0;
+        private void newPrice()
         {
-            // add code algo
-            String fullname = fullNameTextBox.Text;
-            String email = emailTextBox.Text;
-            String number = numberTextBox.Text;
+            String accomod = accommodationComboBox.SelectedItem.ToString();
 
-            DateTime checkIn = checkInDatePicker.Value;
             int adultCount = (int)adultNumericUpDown.Value;
             int kidCount = (int)kidNumericUpDown.Value;
 
-            String accommodation = accommodationComboBox.SelectedItem.ToString();
+            int peopleCount = adultCount + kidCount;
+
             bool videoke = videokeCheckBox.Checked;
+            int videokeCount = 0;
             int additionalMatress = (int)additionalMattressNumericUpDown.Value;
 
-            String paymentMethod = paymentMethodComboBox.SelectedItem.ToString();
-            bool paid = bookingPaidToggle.Checked;
+            int adultPrice = 300;
+            int kidPrice = 200;
+            int videokePrice = 700;
+            int matressPrice = 500;
+
+            if (videoke)
+            {
+                videokeCount = 1;
+            }
+            else
+            {
+                videokeCount = 0;
+            }
+
+            foreach (DataRow row in pricing.Rows)
+            {
+                if (row["type"].ToString() == "Entrance Fee" && row["name"].ToString() == "ADULT")
+                {
+                    adultPrice = (int)row["price"];
+                    break;
+                }
+            }
+            foreach (DataRow row in pricing.Rows)
+            {
+                if (row["type"].ToString() == "Entrance Fee" && row["name"].ToString() == "KIDS")
+                {
+                    kidPrice = (int)row["price"];
+                    break;
+                }
+            }
+            foreach (DataRow row in pricing.Rows)
+            {
+                if (row["type"].ToString() == "Add Ons" && row["name"].ToString() == "VIDEOKE")
+                {
+                    videokePrice = (int)row["price"];
+                    break;
+                }
+            }
+            foreach (DataRow row in pricing.Rows)
+            {
+                if (row["type"].ToString() == "Add Ons" && row["name"].ToString() == "ADDITIONAL MATRESS")
+                {
+                    matressPrice = (int)row["price"];
+                    break;
+                }
+            }
 
 
 
-            this.DialogResult= DialogResult.OK;
-            this.Close();
+            if (accomod == "Entrance Only")
+            {
+                totalPrice = (adultCount * adultPrice) + (kidCount * kidPrice) + (matressPrice * additionalMatress) + (videokeCount * videokePrice);
+                totalPriceLabel.Text = totalPrice.ToString("N");
+            }
+            else
+            {
+
+            }
+
         }
 
-        private void totalPriceLabel_Click(object sender, EventArgs e)
+        private void accommodationComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if(accommodationComboBox.SelectedItem.ToString() == "Entrance Only")
+            {
+                paxLabel.Text = "...";
+                paxLabel.Visible = false;
+                accommodationLabel.Visible = false;
+
+                freeEntranceLabel.Text = "0";
+                entranceLabel.Visible = false;
+                freeEntranceLabel.Visible = false;
+            }
+            else
+            {
+                
+                String accommod = accommodationComboBox.SelectedItem.ToString();
+                foreach (DataRow row in pricing.Rows)
+                {
+                    if (row["type"].ToString() == "Accommodation" && row["type"] != DBNull.Value && row["name"].ToString() == accommod)
+                    {
+                        paxLabel.Visible = true;
+                        accommodationLabel.Visible = true;
+
+                        entranceLabel.Visible = true;
+                        freeEntranceLabel.Visible = true;
+
+                        freeEntranceLabel.Text = row["freeEntrancePax"].ToString();
+                        paxLabel.Text = row["pax"].ToString();
+
+                        newPrice();
+
+                        break;
+                    }
+                }
+
+            }
+            
+        }
+
+        private void additionalMattressNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            newPrice();
+        }
+
+        private void adultNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            newPrice();
+        }
+
+        private void kidNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            newPrice();
+        }
+        private void videokeCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            newPrice();
+        }
+        private void confirmButton_Click(object sender, EventArgs e)
+        {
+            // add code algo
+            try
+            {
+                String fullname = fullNameTextBox.Text;
+                String email = emailTextBox.Text;
+                String number = numberTextBox.Text;
+
+                DateTime checkIn = checkInDatePicker.Value;
+                int adultCount = (int)adultNumericUpDown.Value;
+                int kidCount = (int)kidNumericUpDown.Value;
+
+                String accommodation = accommodationComboBox.SelectedItem.ToString();
+                bool videoke = videokeCheckBox.Checked;
+                int additionalMatress = (int)additionalMattressNumericUpDown.Value;
+
+                String paymentMethod = paymentMethodComboBox.SelectedItem.ToString();
+                bool paid = bookingPaidToggle.Checked;
+
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
 
         }
+
+        
     }
 }

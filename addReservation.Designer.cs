@@ -62,6 +62,9 @@
             this.label18 = new System.Windows.Forms.Label();
             this.totalPriceLabel = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.paxLabel = new System.Windows.Forms.Label();
+            this.entranceLabel = new System.Windows.Forms.Label();
+            this.freeEntranceLabel = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.adultNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kidNumericUpDown)).BeginInit();
@@ -345,6 +348,7 @@
             this.adultNumericUpDown.Size = new System.Drawing.Size(219, 36);
             this.adultNumericUpDown.TabIndex = 15;
             this.adultNumericUpDown.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.adultNumericUpDown.ValueChanged += new System.EventHandler(this.adultNumericUpDown_ValueChanged);
             // 
             // kidNumericUpDown
             // 
@@ -373,6 +377,7 @@
             this.kidNumericUpDown.Size = new System.Drawing.Size(219, 36);
             this.kidNumericUpDown.TabIndex = 16;
             this.kidNumericUpDown.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.kidNumericUpDown.ValueChanged += new System.EventHandler(this.kidNumericUpDown_ValueChanged);
             // 
             // accommodationComboBox
             // 
@@ -383,7 +388,7 @@
             this.accommodationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.accommodationComboBox.FocusedColor = System.Drawing.Color.Empty;
             this.accommodationComboBox.FocusedState.Parent = this.accommodationComboBox;
-            this.accommodationComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.accommodationComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accommodationComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.accommodationComboBox.FormattingEnabled = true;
             this.accommodationComboBox.HoverState.Parent = this.accommodationComboBox;
@@ -394,6 +399,7 @@
             this.accommodationComboBox.ShadowDecoration.Parent = this.accommodationComboBox;
             this.accommodationComboBox.Size = new System.Drawing.Size(209, 36);
             this.accommodationComboBox.TabIndex = 17;
+            this.accommodationComboBox.SelectedIndexChanged += new System.EventHandler(this.accommodationComboBox_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -425,6 +431,7 @@
             this.videokeCheckBox.UncheckedState.BorderThickness = 0;
             this.videokeCheckBox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.videokeCheckBox.UseVisualStyleBackColor = true;
+            this.videokeCheckBox.CheckedChanged += new System.EventHandler(this.videokeCheckBox_CheckedChanged);
             // 
             // additionalMattressNumericUpDown
             // 
@@ -453,6 +460,7 @@
             this.additionalMattressNumericUpDown.Size = new System.Drawing.Size(209, 36);
             this.additionalMattressNumericUpDown.TabIndex = 20;
             this.additionalMattressNumericUpDown.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.additionalMattressNumericUpDown.ValueChanged += new System.EventHandler(this.additionalMattressNumericUpDown_ValueChanged);
             // 
             // label13
             // 
@@ -546,9 +554,9 @@
             this.accommodationLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.accommodationLabel.Location = new System.Drawing.Point(635, 163);
             this.accommodationLabel.Name = "accommodationLabel";
-            this.accommodationLabel.Size = new System.Drawing.Size(85, 18);
+            this.accommodationLabel.Size = new System.Drawing.Size(49, 18);
             this.accommodationLabel.TabIndex = 29;
-            this.accommodationLabel.Text = "MAX PAX : ";
+            this.accommodationLabel.Text = "PAX : ";
             // 
             // confirmButton
             // 
@@ -591,7 +599,6 @@
             this.totalPriceLabel.Size = new System.Drawing.Size(20, 24);
             this.totalPriceLabel.TabIndex = 32;
             this.totalPriceLabel.Text = "0";
-            this.totalPriceLabel.Click += new System.EventHandler(this.totalPriceLabel_Click);
             // 
             // label17
             // 
@@ -604,12 +611,48 @@
             this.label17.TabIndex = 33;
             this.label17.Text = "₱";
             // 
+            // paxLabel
+            // 
+            this.paxLabel.AutoSize = true;
+            this.paxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paxLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.paxLabel.Location = new System.Drawing.Point(684, 163);
+            this.paxLabel.Name = "paxLabel";
+            this.paxLabel.Size = new System.Drawing.Size(20, 18);
+            this.paxLabel.TabIndex = 34;
+            this.paxLabel.Text = "...";
+            // 
+            // entranceLabel
+            // 
+            this.entranceLabel.AutoSize = true;
+            this.entranceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entranceLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.entranceLabel.Location = new System.Drawing.Point(635, 187);
+            this.entranceLabel.Name = "entranceLabel";
+            this.entranceLabel.Size = new System.Drawing.Size(109, 18);
+            this.entranceLabel.TabIndex = 35;
+            this.entranceLabel.Text = "Free Entrance: ";
+            // 
+            // freeEntranceLabel
+            // 
+            this.freeEntranceLabel.AutoSize = true;
+            this.freeEntranceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.freeEntranceLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.freeEntranceLabel.Location = new System.Drawing.Point(743, 187);
+            this.freeEntranceLabel.Name = "freeEntranceLabel";
+            this.freeEntranceLabel.Size = new System.Drawing.Size(16, 18);
+            this.freeEntranceLabel.TabIndex = 36;
+            this.freeEntranceLabel.Text = "0";
+            // 
             // addReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(233)))), ((int)(((byte)(225)))));
             this.ClientSize = new System.Drawing.Size(866, 615);
+            this.Controls.Add(this.freeEntranceLabel);
+            this.Controls.Add(this.entranceLabel);
+            this.Controls.Add(this.paxLabel);
             this.Controls.Add(this.totalPriceLabel);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.confirmButton);
@@ -700,5 +743,8 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label totalPriceLabel;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label paxLabel;
+        private System.Windows.Forms.Label entranceLabel;
+        private System.Windows.Forms.Label freeEntranceLabel;
     }
 }
