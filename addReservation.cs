@@ -167,12 +167,42 @@ namespace ResortPro
             if (accomod == "Entrance Only")
             {
                 totalPrice = (adultCount * adultPrice) + (kidCount * kidPrice) + (matressPrice * additionalMatress) + (videokeCount * videokePrice);
-                totalPriceLabel.Text = totalPrice.ToString("N");
             }
             else
             {
+                int accomPrice = 0;
+                int freePeeps = 0;
+
+                foreach (DataRow row in pricing.Rows)
+                {
+                    if (row["type"].ToString() == "Accommodation" && row["type"] != DBNull.Value && row["name"].ToString() == accomod)
+                    {
+                        accomPrice = (int)row["price"];
+
+                        break;
+                    }
+                }
+                foreach(DataRow row in pricing.Rows)
+                {
+                    if (row["type"].ToString() == "Accommodation"  && row["name"].ToString() == accomod)
+                    {
+                        freePeeps = (int)row["freeEntrancePax"];
+                        break;
+                    }
+                }
+                if(peopleCount <= freePeeps)
+                {
+                    totalPrice = (matressPrice * additionalMatress) + (videokeCount * videokePrice) + accomPrice;
+
+                }
+                else
+                {
+                    totalPrice = (((peopleCount - freePeeps) * adultPrice) + (matressPrice * additionalMatress) + (videokeCount * videokePrice) + accomPrice);
+                }
+
 
             }
+            totalPriceLabel.Text = totalPrice.ToString("N");
 
         }
 
