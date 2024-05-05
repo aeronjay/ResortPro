@@ -46,7 +46,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.adultNumericUpDown = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.kidNumbericUpDown = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.kidNumericUpDown = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.accommodationComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.videokeCheckBox = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -54,7 +54,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.paymentMethodComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.bookingPaidToggle = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.label14 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.accommodationLabel = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@
             this.totalPriceLabel = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.adultNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kidNumbericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kidNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.additionalMattressNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
@@ -345,33 +345,33 @@
             this.adultNumericUpDown.TabIndex = 15;
             this.adultNumericUpDown.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             // 
-            // kidNumbericUpDown
+            // kidNumericUpDown
             // 
-            this.kidNumbericUpDown.BackColor = System.Drawing.Color.Transparent;
-            this.kidNumbericUpDown.BorderRadius = 10;
-            this.kidNumbericUpDown.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.kidNumbericUpDown.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.kidNumbericUpDown.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.kidNumbericUpDown.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.kidNumbericUpDown.DisabledState.Parent = this.kidNumbericUpDown;
-            this.kidNumbericUpDown.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.kidNumbericUpDown.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.kidNumbericUpDown.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.kidNumbericUpDown.FocusedState.Parent = this.kidNumbericUpDown;
-            this.kidNumbericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.kidNumbericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.kidNumbericUpDown.Location = new System.Drawing.Point(202, 464);
-            this.kidNumbericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kidNumbericUpDown.Maximum = new decimal(new int[] {
+            this.kidNumericUpDown.BackColor = System.Drawing.Color.Transparent;
+            this.kidNumericUpDown.BorderRadius = 10;
+            this.kidNumericUpDown.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.kidNumericUpDown.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.kidNumericUpDown.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.kidNumericUpDown.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.kidNumericUpDown.DisabledState.Parent = this.kidNumericUpDown;
+            this.kidNumericUpDown.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.kidNumericUpDown.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.kidNumericUpDown.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.kidNumericUpDown.FocusedState.Parent = this.kidNumericUpDown;
+            this.kidNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.kidNumericUpDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.kidNumericUpDown.Location = new System.Drawing.Point(202, 464);
+            this.kidNumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kidNumericUpDown.Maximum = new decimal(new int[] {
             90,
             0,
             0,
             0});
-            this.kidNumbericUpDown.Name = "kidNumbericUpDown";
-            this.kidNumbericUpDown.ShadowDecoration.Parent = this.kidNumbericUpDown;
-            this.kidNumbericUpDown.Size = new System.Drawing.Size(219, 36);
-            this.kidNumbericUpDown.TabIndex = 16;
-            this.kidNumbericUpDown.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.kidNumericUpDown.Name = "kidNumericUpDown";
+            this.kidNumericUpDown.ShadowDecoration.Parent = this.kidNumericUpDown;
+            this.kidNumericUpDown.Size = new System.Drawing.Size(219, 36);
+            this.kidNumericUpDown.TabIndex = 16;
+            this.kidNumericUpDown.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             // 
             // accommodationComboBox
             // 
@@ -382,7 +382,7 @@
             this.accommodationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.accommodationComboBox.FocusedColor = System.Drawing.Color.Empty;
             this.accommodationComboBox.FocusedState.Parent = this.accommodationComboBox;
-            this.accommodationComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.accommodationComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.accommodationComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.accommodationComboBox.FormattingEnabled = true;
             this.accommodationComboBox.HoverState.Parent = this.accommodationComboBox;
@@ -496,25 +496,25 @@
             this.paymentMethodComboBox.Size = new System.Drawing.Size(141, 36);
             this.paymentMethodComboBox.TabIndex = 23;
             // 
-            // guna2ToggleSwitch1
+            // bookingPaidToggle
             // 
-            this.guna2ToggleSwitch1.Animated = true;
-            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.CheckedState.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(628, 435);
-            this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
-            this.guna2ToggleSwitch1.ShadowDecoration.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(65, 29);
-            this.guna2ToggleSwitch1.TabIndex = 26;
-            this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.UncheckedState.Parent = this.guna2ToggleSwitch1;
+            this.bookingPaidToggle.Animated = true;
+            this.bookingPaidToggle.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.bookingPaidToggle.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.bookingPaidToggle.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.bookingPaidToggle.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.bookingPaidToggle.CheckedState.Parent = this.bookingPaidToggle;
+            this.bookingPaidToggle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bookingPaidToggle.Location = new System.Drawing.Point(628, 435);
+            this.bookingPaidToggle.Name = "bookingPaidToggle";
+            this.bookingPaidToggle.ShadowDecoration.Parent = this.bookingPaidToggle;
+            this.bookingPaidToggle.Size = new System.Drawing.Size(65, 29);
+            this.bookingPaidToggle.TabIndex = 26;
+            this.bookingPaidToggle.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.bookingPaidToggle.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.bookingPaidToggle.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.bookingPaidToggle.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.bookingPaidToggle.UncheckedState.Parent = this.bookingPaidToggle;
             // 
             // label14
             // 
@@ -602,7 +602,7 @@
             this.Controls.Add(this.accommodationLabel);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.guna2ToggleSwitch1);
+            this.Controls.Add(this.bookingPaidToggle);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.paymentMethodComboBox);
             this.Controls.Add(this.label13);
@@ -610,7 +610,7 @@
             this.Controls.Add(this.videokeCheckBox);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.accommodationComboBox);
-            this.Controls.Add(this.kidNumbericUpDown);
+            this.Controls.Add(this.kidNumericUpDown);
             this.Controls.Add(this.adultNumericUpDown);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -642,7 +642,7 @@
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.adultNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kidNumbericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kidNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.additionalMattressNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -669,7 +669,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2NumericUpDown adultNumericUpDown;
-        private Guna.UI2.WinForms.Guna2NumericUpDown kidNumbericUpDown;
+        private Guna.UI2.WinForms.Guna2NumericUpDown kidNumericUpDown;
         private Guna.UI2.WinForms.Guna2ComboBox accommodationComboBox;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2CheckBox videokeCheckBox;
@@ -677,7 +677,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2ComboBox paymentMethodComboBox;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch bookingPaidToggle;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label accommodationLabel;
