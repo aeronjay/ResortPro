@@ -61,6 +61,7 @@
             this.confirmButton = new Guna.UI2.WinForms.Guna2Button();
             this.label18 = new System.Windows.Forms.Label();
             this.totalPriceLabel = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.adultNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kidNumericUpDown)).BeginInit();
@@ -582,13 +583,26 @@
             // totalPriceLabel
             // 
             this.totalPriceLabel.AutoSize = true;
+            this.totalPriceLabel.BackColor = System.Drawing.Color.Transparent;
             this.totalPriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalPriceLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.totalPriceLabel.Location = new System.Drawing.Point(620, 497);
+            this.totalPriceLabel.Location = new System.Drawing.Point(637, 498);
             this.totalPriceLabel.Name = "totalPriceLabel";
-            this.totalPriceLabel.Size = new System.Drawing.Size(33, 24);
+            this.totalPriceLabel.Size = new System.Drawing.Size(20, 24);
             this.totalPriceLabel.TabIndex = 32;
-            this.totalPriceLabel.Text = "₱0";
+            this.totalPriceLabel.Text = "0";
+            this.totalPriceLabel.Click += new System.EventHandler(this.totalPriceLabel_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.label17.Location = new System.Drawing.Point(619, 498);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(23, 24);
+            this.label17.TabIndex = 33;
+            this.label17.Text = "₱";
             // 
             // addReservation
             // 
@@ -627,6 +641,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2GradientPanel1);
+            this.Controls.Add(this.label17);
             this.CornerRoundingRadius = 20F;
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
@@ -637,7 +652,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateCommon.Border.Rounding = 20F;
-            this.Text = "z";
+            this.Text = "s";
             this.Load += new System.EventHandler(this.addReservation_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
@@ -684,5 +699,6 @@
         private Guna.UI2.WinForms.Guna2Button confirmButton;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label totalPriceLabel;
+        private System.Windows.Forms.Label label17;
     }
 }

@@ -123,6 +123,10 @@ namespace ResortPro
             this.DialogResult= DialogResult.OK;
             this.Close();
         }
-        
+
+        private void totalPriceLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
