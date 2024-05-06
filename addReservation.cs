@@ -302,10 +302,45 @@ namespace ResortPro
                 String paymentMethod = paymentMethodComboBox.SelectedItem.ToString();
                 bool paid = bookingPaidToggle.Checked;
 
-                int finalprice = totalPrice;
+                decimal finalprice = (decimal)totalPrice;
 
-                this.DialogResult = DialogResult.OK;
-                this.Close();
+                String sql = "INSERT INTO bookings (fullName, email, contactNumber, checkInDate, numberAdults, numberKids, accommodationType, videoke, additionalMatress, paymentMethod, paid, totalPrice) VALUES (@fullName, @email, @contactNumber, @checkInDate, @numberAdults, @numberKids, @accommodationType, @videoke, @additionalMatress, @paymentMethod, @paid, @totalPrice)";
+
+                using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+                {
+                    using (OleDbCommand command = new OleDbCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@fullName", fullname);
+                        command.Parameters.AddWithValue("@email", email);
+                        command.Parameters.AddWithValue("@contactNumber", number);
+                        command.Parameters.AddWithValue("@checkInDate", checkIn);
+                        command.Parameters.AddWithValue("@numberAdults", adultCount);
+                        command.Parameters.AddWithValue("@numberKids", kidCount);
+                        command.Parameters.AddWithValue("@accommodationType", accommodation);
+                        command.Parameters.AddWithValue("@videoke", videoke);
+                        command.Parameters.AddWithValue("@additionalMatress", additionalMatress);
+                        command.Parameters.AddWithValue("@paymentMethod", paymentMethod);
+                        command.Parameters.AddWithValue("@paid", paid);
+                        command.Parameters.AddWithValue("@totalPrice", totalPrice);
+
+                        connection.Open();
+                        int rowsAffected = command.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+
+                            MessageBox.Show("Booking added successfully!");
+                            this.DialogResult = DialogResult.OK;
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to add booking!");
+                        }
+                    }
+                }
+                
+
+                
             }
             catch (Exception ex)
             {
