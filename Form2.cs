@@ -29,8 +29,20 @@ namespace ResortPro
             InitializeButtonIconMap();
             SubscribeEvents();
 
-            
+            timer1.Interval = 1000; // Interval in milliseconds (1 second)
+            timer1.Start(); // Start the timer
 
+            // Display initial date and time
+            UpdateDateTimeLabel();
+
+        }
+        private void UpdateDateTimeLabel()
+        {
+            DateTime now = DateTime.Now;
+
+            string formattedDateTime = $"{now.ToString("dddd, M/d/yyyy")}\n       {now.ToString("h:mm:ss tt")}";
+
+            label3.Text = formattedDateTime;
         }
 
         private void InitializeButtonIconMap()
@@ -271,6 +283,11 @@ namespace ResortPro
 
             addBookingPicture.BackColor = Color.Transparent;
             addBookingPicture.IconColor = Color.White;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            UpdateDateTimeLabel();
         }
     }
 }
