@@ -673,7 +673,7 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimumSize = new System.Drawing.Size(937, 647);
+            this.MinimumSize = new System.Drawing.Size(1101, 647);
             this.Name = "Form2";
             this.PaletteMode = Krypton.Toolkit.PaletteMode.Microsoft365BlackDarkMode;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
