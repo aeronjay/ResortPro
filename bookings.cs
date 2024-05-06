@@ -59,13 +59,6 @@ namespace ResortPro
                             bunifuDataGridView1.Rows[rowIndex].Cells["totalPrice"].Value = row["totalPrice"];
                             bunifuDataGridView1.Rows[rowIndex].Cells["Done"].Value = row["Done"];
                         }
-
-                        // Customize column header style
-                        foreach (DataGridViewColumn column in bunifuDataGridView1.Columns)
-                        {
-                            column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                            column.HeaderCell.Style.BackColor = Color.FromArgb(221, 95, 45);
-                        }
                     }
                 }
             }

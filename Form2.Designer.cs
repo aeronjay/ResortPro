@@ -463,9 +463,8 @@
             // 
             this.addBookingPicture.BackColor = System.Drawing.Color.Transparent;
             this.addBookingPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.addBookingPicture.ForeColor = System.Drawing.Color.Lime;
             this.addBookingPicture.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.addBookingPicture.IconColor = System.Drawing.Color.Lime;
+            this.addBookingPicture.IconColor = System.Drawing.Color.White;
             this.addBookingPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.addBookingPicture.IconSize = 42;
             this.addBookingPicture.Location = new System.Drawing.Point(28, 16);
