@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms.BunifuButton;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,8 @@ namespace ResortPro
         private void bookings_Load(object sender, EventArgs e)
         {
             LoadTable();
+            bunifuButton1.PerformClick();
+            this.ActiveControl = bunifuButton1;
         }
 
         private void LoadTable()
@@ -68,6 +71,5 @@ namespace ResortPro
             }
 
         }
-        
     }
 }

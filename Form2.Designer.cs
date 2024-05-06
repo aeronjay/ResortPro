@@ -496,6 +496,8 @@
             this.addBooking.Text = "Add Booking";
             this.addBooking.TextOffset = new System.Drawing.Point(20, 0);
             this.addBooking.Click += new System.EventHandler(this.addBooking_Click);
+            this.addBooking.MouseEnter += new System.EventHandler(this.addBooking_MouseEnter);
+            this.addBooking.MouseLeave += new System.EventHandler(this.addBooking_MouseLeave);
             // 
             // label4
             // 
