@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -65,6 +66,7 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelChildForm = new Guna.UI2.WinForms.Guna2Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.signOutPicture)).BeginInit();
@@ -463,9 +465,8 @@
             // 
             this.addBookingPicture.BackColor = System.Drawing.Color.Transparent;
             this.addBookingPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.addBookingPicture.ForeColor = System.Drawing.Color.Lime;
             this.addBookingPicture.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.addBookingPicture.IconColor = System.Drawing.Color.Lime;
+            this.addBookingPicture.IconColor = System.Drawing.Color.White;
             this.addBookingPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.addBookingPicture.IconSize = 42;
             this.addBookingPicture.Location = new System.Drawing.Point(28, 16);
@@ -497,6 +498,8 @@
             this.addBooking.Text = "Add Booking";
             this.addBooking.TextOffset = new System.Drawing.Point(20, 0);
             this.addBooking.Click += new System.EventHandler(this.addBooking_Click);
+            this.addBooking.MouseEnter += new System.EventHandler(this.addBooking_MouseEnter);
+            this.addBooking.MouseLeave += new System.EventHandler(this.addBooking_MouseLeave);
             // 
             // label4
             // 
@@ -660,6 +663,11 @@
             this.panelChildForm.Size = new System.Drawing.Size(991, 571);
             this.panelChildForm.TabIndex = 2;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -751,5 +759,6 @@
         private Guna.UI2.WinForms.Guna2Button signOutButton;
         private System.Windows.Forms.Panel panel11;
         private Guna.UI2.WinForms.Guna2Panel panelChildForm;
+        private System.Windows.Forms.Timer timer1;
     }
 }

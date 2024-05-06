@@ -29,8 +29,20 @@ namespace ResortPro
             InitializeButtonIconMap();
             SubscribeEvents();
 
-            
+            timer1.Interval = 1000; // Interval in milliseconds (1 second)
+            timer1.Start(); // Start the timer
 
+            // Display initial date and time
+            UpdateDateTimeLabel();
+
+        }
+        private void UpdateDateTimeLabel()
+        {
+            DateTime now = DateTime.Now;
+
+            string formattedDateTime = $"{now.ToString("dddd, M/d/yyyy")}\n       {now.ToString("h:mm:ss tt")}";
+
+            label3.Text = formattedDateTime;
         }
 
         private void InitializeButtonIconMap()
@@ -43,7 +55,6 @@ namespace ResortPro
         { calendarButton, calendarPicture },
         { suppliesButton, suppliesPicture },
         { historyButton, historyPicture },
-        { addBooking,addBookingPicture }, // Add addBookingButton here
         { signOutButton, signOutPicture } // Add signOutButton here
     };
         }
@@ -59,8 +70,7 @@ namespace ResortPro
             }
 
             // Subscribe to addBookingButton events
-            addBooking.MouseEnter += Button_MouseEnter;
-            addBooking.MouseLeave += Button_MouseLeave;
+            
 
             // Subscribe to signOutButton events
             signOutButton.MouseEnter += Button_MouseEnter;
@@ -248,6 +258,36 @@ namespace ResortPro
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void addBooking_MouseEnter(object sender, EventArgs e)
+        {
+            addBooking.BorderRadius = 25;
+            addBooking.CustomBorderColor = Color.White;
+            addBooking.BorderColor = Color.White;
+            addBooking.FillColor = Color.White;
+            addBooking.ForeColor = Color.FromArgb(221, 95, 45);
+
+            addBookingPicture.BackColor = Color.White;
+            addBookingPicture.IconColor = Color.FromArgb(221, 95, 45);
+        }
+
+        private void addBooking_MouseLeave(object sender, EventArgs e)
+        {
+            addBooking.CustomBorderColor = Color.FromArgb(6, 6, 6);
+            addBooking.BorderColor = Color.FromArgb(6, 6, 6);
+            addBooking.FillColor = Color.FromArgb(6, 6, 6);
+            addBooking.BorderRadius = 25;
+            addBooking.BackColor = Color.FromArgb(6, 6, 6);
+            addBooking.ForeColor = Color.White;
+
+            addBookingPicture.BackColor = Color.Transparent;
+            addBookingPicture.IconColor = Color.White;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            UpdateDateTimeLabel();
         }
     }
 }

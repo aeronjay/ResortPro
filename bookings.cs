@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms.BunifuButton;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,8 @@ namespace ResortPro
         private void bookings_Load(object sender, EventArgs e)
         {
             LoadTable();
+            bunifuButton1.PerformClick();
+            this.ActiveControl = bunifuButton1;
         }
 
         private void LoadTable()
@@ -59,13 +62,6 @@ namespace ResortPro
                             bunifuDataGridView1.Rows[rowIndex].Cells["totalPrice"].Value = row["totalPrice"];
                             bunifuDataGridView1.Rows[rowIndex].Cells["Done"].Value = row["Done"];
                         }
-
-                        // Customize column header style
-                        foreach (DataGridViewColumn column in bunifuDataGridView1.Columns)
-                        {
-                            column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                            column.HeaderCell.Style.BackColor = Color.FromArgb(221, 95, 45);
-                        }
                     }
                 }
             }
@@ -75,6 +71,5 @@ namespace ResortPro
             }
 
         }
-        
     }
 }
