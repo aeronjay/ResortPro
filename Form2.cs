@@ -36,17 +36,20 @@ namespace ResortPro
         private void InitializeButtonIconMap()
         {
             buttonIconMap = new Dictionary<Guna2Button, IconPictureBox>
-            {
-                { dashboardButton, dashboardPicture },
-                { statusButton, statusPicture },
-                { bookingsButton, bookingsPicture },
-                { calendarButton, calendarPicture },
-                { suppliesButton, suppliesPicture },
-                { historyButton, historyPicture }
-            };
+    {
+        { dashboardButton, dashboardPicture },
+        { statusButton, statusPicture },
+        { bookingsButton, bookingsPicture },
+        { calendarButton, calendarPicture },
+        { suppliesButton, suppliesPicture },
+        { historyButton, historyPicture },
+        { addBooking,addBookingPicture }, // Add addBookingButton here
+        { signOutButton, signOutPicture } // Add signOutButton here
+    };
         }
 
-        private void SubscribeEvents()
+
+       private void SubscribeEvents()
         {
             foreach (var button in buttonIconMap.Keys)
             {
@@ -54,7 +57,14 @@ namespace ResortPro
                 button.MouseEnter += Button_MouseEnter;
                 button.MouseLeave += Button_MouseLeave;
             }
-            
+
+            // Subscribe to addBookingButton events
+            addBooking.MouseEnter += Button_MouseEnter;
+            addBooking.MouseLeave += Button_MouseLeave;
+
+            // Subscribe to signOutButton events
+            signOutButton.MouseEnter += Button_MouseEnter;
+            signOutButton.MouseLeave += Button_MouseLeave;
         }
 
         private void Button_Click(object sender, EventArgs e)

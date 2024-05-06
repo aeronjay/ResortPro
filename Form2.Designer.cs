@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
+            this.signOutPicture = new FontAwesome.Sharp.IconPictureBox();
             this.signOutButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.historyPicture = new FontAwesome.Sharp.IconPictureBox();
@@ -53,7 +53,7 @@
             this.dashboardButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.addBookingPicture = new FontAwesome.Sharp.IconPictureBox();
             this.addBooking = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
@@ -67,7 +67,7 @@
             this.panelChildForm = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signOutPicture)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).BeginInit();
             this.panel5.SuspendLayout();
@@ -82,7 +82,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addBookingPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -117,7 +117,7 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.iconPictureBox4);
+            this.panel10.Controls.Add(this.signOutPicture);
             this.panel10.Controls.Add(this.signOutButton);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel10.Location = new System.Drawing.Point(0, 764);
@@ -125,18 +125,18 @@
             this.panel10.Size = new System.Drawing.Size(206, 85);
             this.panel10.TabIndex = 5;
             // 
-            // iconPictureBox4
+            // signOutPicture
             // 
-            this.iconPictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
-            this.iconPictureBox4.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 42;
-            this.iconPictureBox4.Location = new System.Drawing.Point(29, 16);
-            this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(42, 42);
-            this.iconPictureBox4.TabIndex = 4;
-            this.iconPictureBox4.TabStop = false;
+            this.signOutPicture.BackColor = System.Drawing.Color.Transparent;
+            this.signOutPicture.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
+            this.signOutPicture.IconColor = System.Drawing.Color.White;
+            this.signOutPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.signOutPicture.IconSize = 42;
+            this.signOutPicture.Location = new System.Drawing.Point(29, 16);
+            this.signOutPicture.Name = "signOutPicture";
+            this.signOutPicture.Size = new System.Drawing.Size(42, 42);
+            this.signOutPicture.TabIndex = 4;
+            this.signOutPicture.TabStop = false;
             // 
             // signOutButton
             // 
@@ -451,7 +451,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.iconPictureBox3);
+            this.panel2.Controls.Add(this.addBookingPicture);
             this.panel2.Controls.Add(this.addBooking);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 136);
@@ -459,21 +459,21 @@
             this.panel2.Size = new System.Drawing.Size(206, 109);
             this.panel2.TabIndex = 2;
             // 
-            // iconPictureBox3
+            // addBookingPicture
             // 
-            this.iconPictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.iconPictureBox3.ForeColor = System.Drawing.Color.Lime;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.Lime;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 42;
-            this.iconPictureBox3.Location = new System.Drawing.Point(28, 16);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(42, 42);
-            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox3.TabIndex = 5;
-            this.iconPictureBox3.TabStop = false;
+            this.addBookingPicture.BackColor = System.Drawing.Color.Transparent;
+            this.addBookingPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.addBookingPicture.ForeColor = System.Drawing.Color.Lime;
+            this.addBookingPicture.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.addBookingPicture.IconColor = System.Drawing.Color.Lime;
+            this.addBookingPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.addBookingPicture.IconSize = 42;
+            this.addBookingPicture.Location = new System.Drawing.Point(28, 16);
+            this.addBookingPicture.Name = "addBookingPicture";
+            this.addBookingPicture.Size = new System.Drawing.Size(42, 42);
+            this.addBookingPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.addBookingPicture.TabIndex = 5;
+            this.addBookingPicture.TabStop = false;
             // 
             // addBooking
             // 
@@ -687,7 +687,7 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signOutPicture)).EndInit();
             this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).EndInit();
             this.panel5.ResumeLayout(false);
@@ -703,7 +703,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addBookingPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
@@ -745,9 +745,9 @@
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        private FontAwesome.Sharp.IconPictureBox addBookingPicture;
         private Guna.UI2.WinForms.Guna2Button addBooking;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
+        private FontAwesome.Sharp.IconPictureBox signOutPicture;
         private Guna.UI2.WinForms.Guna2Button signOutButton;
         private System.Windows.Forms.Panel panel11;
         private Guna.UI2.WinForms.Guna2Panel panelChildForm;
