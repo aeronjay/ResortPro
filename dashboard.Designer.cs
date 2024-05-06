@@ -635,9 +635,6 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.guna2Button1);
             this.panel2.Controls.Add(this.guna2Button2);
@@ -648,10 +645,11 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.guna2GradientButton8);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.ForeColor = System.Drawing.Color.RosyBrown;
-            this.panel2.Location = new System.Drawing.Point(1, 278);
+            this.panel2.Location = new System.Drawing.Point(0, 277);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1110, 255);
+            this.panel2.Size = new System.Drawing.Size(975, 255);
             this.panel2.TabIndex = 30;
             // 
             // guna2Button1
@@ -741,7 +739,7 @@
             this.guna2GradientButton9.Location = new System.Drawing.Point(612, 22);
             this.guna2GradientButton9.Name = "guna2GradientButton9";
             this.guna2GradientButton9.ShadowDecoration.Parent = this.guna2GradientButton9;
-            this.guna2GradientButton9.Size = new System.Drawing.Size(352, 230);
+            this.guna2GradientButton9.Size = new System.Drawing.Size(351, 230);
             this.guna2GradientButton9.TabIndex = 7;
             // 
             // label10
@@ -787,7 +785,7 @@
             this.guna2GradientButton8.Location = new System.Drawing.Point(17, 22);
             this.guna2GradientButton8.Name = "guna2GradientButton8";
             this.guna2GradientButton8.ShadowDecoration.Parent = this.guna2GradientButton8;
-            this.guna2GradientButton8.Size = new System.Drawing.Size(557, 230);
+            this.guna2GradientButton8.Size = new System.Drawing.Size(528, 230);
             this.guna2GradientButton8.TabIndex = 0;
             this.guna2GradientButton8.Click += new System.EventHandler(this.guna2GradientButton8_Click);
             // 
@@ -804,6 +802,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "dashboard";
             this.Text = "dashboard";
+            this.Load += new System.EventHandler(this.dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
