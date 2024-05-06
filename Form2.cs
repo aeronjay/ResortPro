@@ -247,6 +247,8 @@ namespace ResortPro
             if(reserv.ShowDialog() == DialogResult.OK)
             {
                 MessageBox.Show("SUCCESSFULLY BOOKED!");
+                bookingsButton.PerformClick();
+                openChildForm(new bookings());
             }
         }
 
@@ -257,7 +259,7 @@ namespace ResortPro
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            dashboardButton.PerformClick();
         }
 
         private void addBooking_MouseEnter(object sender, EventArgs e)

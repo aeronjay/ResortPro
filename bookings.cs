@@ -24,13 +24,13 @@ namespace ResortPro
         private void bookings_Load(object sender, EventArgs e)
         {
             LoadTable();
-            bunifuButton1.PerformClick();
-            this.ActiveControl = bunifuButton1;
+            bunifuButton3.PerformClick();
+            this.ActiveControl = bunifuButton3;
         }
 
         public void LoadTable()
         {
-            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings WHERE Done = False";
+            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings";
 
             try
             {

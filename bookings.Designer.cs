@@ -49,6 +49,8 @@
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.editRowButton = new Guna.UI2.WinForms.Guna2Button();
+            this.markAsDoneButton = new Guna.UI2.WinForms.Guna2Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,8 +61,6 @@
             this.paid = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
             this.totalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Done = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
-            this.editRowButton = new Guna.UI2.WinForms.Guna2Button();
-            this.markAsDoneButton = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -358,7 +358,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(233)))), ((int)(((byte)(225)))));
+            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -424,6 +424,45 @@
             this.bunifuDataGridView1.TabIndex = 8;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
             // 
+            // editRowButton
+            // 
+            this.editRowButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.editRowButton.BorderRadius = 10;
+            this.editRowButton.CheckedState.Parent = this.editRowButton;
+            this.editRowButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.editRowButton.CustomImages.Parent = this.editRowButton;
+            this.editRowButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.editRowButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editRowButton.ForeColor = System.Drawing.Color.Black;
+            this.editRowButton.HoverState.FillColor = System.Drawing.Color.LightGreen;
+            this.editRowButton.HoverState.Parent = this.editRowButton;
+            this.editRowButton.Location = new System.Drawing.Point(871, 464);
+            this.editRowButton.Name = "editRowButton";
+            this.editRowButton.ShadowDecoration.Parent = this.editRowButton;
+            this.editRowButton.Size = new System.Drawing.Size(92, 45);
+            this.editRowButton.TabIndex = 31;
+            this.editRowButton.Text = "Edit Row";
+            // 
+            // markAsDoneButton
+            // 
+            this.markAsDoneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.markAsDoneButton.BorderRadius = 10;
+            this.markAsDoneButton.CheckedState.Parent = this.markAsDoneButton;
+            this.markAsDoneButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.markAsDoneButton.CustomImages.Parent = this.markAsDoneButton;
+            this.markAsDoneButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.markAsDoneButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.markAsDoneButton.ForeColor = System.Drawing.Color.Black;
+            this.markAsDoneButton.HoverState.FillColor = System.Drawing.Color.LightGreen;
+            this.markAsDoneButton.HoverState.Parent = this.markAsDoneButton;
+            this.markAsDoneButton.Location = new System.Drawing.Point(739, 464);
+            this.markAsDoneButton.Name = "markAsDoneButton";
+            this.markAsDoneButton.ShadowDecoration.Parent = this.markAsDoneButton;
+            this.markAsDoneButton.Size = new System.Drawing.Size(126, 45);
+            this.markAsDoneButton.TabIndex = 32;
+            this.markAsDoneButton.Text = "Mark As Done";
+            this.markAsDoneButton.Click += new System.EventHandler(this.markAsDoneButton_Click);
+            // 
             // ID
             // 
             this.ID.FillWeight = 50F;
@@ -435,6 +474,7 @@
             // 
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.fullName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.fullName.FillWeight = 80F;
             this.fullName.HeaderText = "Full Name";
             this.fullName.Name = "fullName";
             this.fullName.ReadOnly = true;
@@ -463,10 +503,11 @@
             dataGridViewCellStyle6.Format = "d";
             dataGridViewCellStyle6.NullValue = null;
             this.checkInDate.DefaultCellStyle = dataGridViewCellStyle6;
+            this.checkInDate.FillWeight = 120F;
             this.checkInDate.HeaderText = "Check In Date";
             this.checkInDate.Name = "checkInDate";
             this.checkInDate.ReadOnly = true;
-            this.checkInDate.Width = 125;
+            this.checkInDate.Width = 148;
             // 
             // peopleNumber
             // 
@@ -517,51 +558,12 @@
             dataGridViewCellStyle11.NullValue = false;
             this.Done.DefaultCellStyle = dataGridViewCellStyle11;
             this.Done.FalseValue = null;
-            this.Done.FillWeight = 40F;
+            this.Done.FillWeight = 55F;
             this.Done.HeaderText = "Done";
             this.Done.IndeterminateValue = null;
             this.Done.Name = "Done";
             this.Done.ReadOnly = true;
             this.Done.TrueValue = null;
-            // 
-            // editRowButton
-            // 
-            this.editRowButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.editRowButton.BorderRadius = 10;
-            this.editRowButton.CheckedState.Parent = this.editRowButton;
-            this.editRowButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.editRowButton.CustomImages.Parent = this.editRowButton;
-            this.editRowButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.editRowButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editRowButton.ForeColor = System.Drawing.Color.Black;
-            this.editRowButton.HoverState.FillColor = System.Drawing.Color.LightGreen;
-            this.editRowButton.HoverState.Parent = this.editRowButton;
-            this.editRowButton.Location = new System.Drawing.Point(871, 464);
-            this.editRowButton.Name = "editRowButton";
-            this.editRowButton.ShadowDecoration.Parent = this.editRowButton;
-            this.editRowButton.Size = new System.Drawing.Size(92, 45);
-            this.editRowButton.TabIndex = 31;
-            this.editRowButton.Text = "Edit Row";
-            // 
-            // markAsDoneButton
-            // 
-            this.markAsDoneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.markAsDoneButton.BorderRadius = 10;
-            this.markAsDoneButton.CheckedState.Parent = this.markAsDoneButton;
-            this.markAsDoneButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.markAsDoneButton.CustomImages.Parent = this.markAsDoneButton;
-            this.markAsDoneButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.markAsDoneButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.markAsDoneButton.ForeColor = System.Drawing.Color.Black;
-            this.markAsDoneButton.HoverState.FillColor = System.Drawing.Color.LightGreen;
-            this.markAsDoneButton.HoverState.Parent = this.markAsDoneButton;
-            this.markAsDoneButton.Location = new System.Drawing.Point(739, 464);
-            this.markAsDoneButton.Name = "markAsDoneButton";
-            this.markAsDoneButton.ShadowDecoration.Parent = this.markAsDoneButton;
-            this.markAsDoneButton.Size = new System.Drawing.Size(126, 45);
-            this.markAsDoneButton.TabIndex = 32;
-            this.markAsDoneButton.Text = "Mark As Done";
-            this.markAsDoneButton.Click += new System.EventHandler(this.markAsDoneButton_Click);
             // 
             // bookings
             // 
