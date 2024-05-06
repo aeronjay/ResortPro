@@ -200,5 +200,10 @@ namespace ResortPro
         {
 
         }
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

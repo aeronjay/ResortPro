@@ -231,22 +231,21 @@ namespace ResortPro
             form1.Show();
         }
 
-        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        private void addBooking_Click(object sender, EventArgs e)
+        {
+            addReservation reserv = new addReservation();
+            if(reserv.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show("SUCCESSFULLY BOOKED!");
+            }
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addBooking_Click(object sender, EventArgs e)
-        {
-            openChildForm(new add());
-        }
-
-        private void topPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
