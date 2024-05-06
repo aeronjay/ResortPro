@@ -28,7 +28,7 @@ namespace ResortPro
             this.ActiveControl = bunifuButton1;
         }
 
-        private void LoadTable()
+        public void LoadTable()
         {
             string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings";
 
@@ -70,6 +70,56 @@ namespace ResortPro
                 MessageBox.Show("Error loading data: " + ex.Message);
             }
 
+        }
+
+        private void markAsDoneButton_Click(object sender, EventArgs e)
+        {
+            // Check if a row is selected
+            if (bunifuDataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = bunifuDataGridView1.SelectedRows[0];
+                int selectedBookingID = (int)selectedRow.Cells["ID"].Value;
+                string fullName = selectedRow.Cells["fullName"].Value.ToString();
+
+                DialogResult result = MessageBox.Show($"Are you sure you want to mark the booking for {fullName} (ID: {selectedBookingID}) as done?",
+                                                        "Confirm Action", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        UpdateBookingStatus(selectedBookingID, true); // Set 'Done' to true (Yes)
+
+                        LoadTable();
+
+                        MessageBox.Show("Booking marked as done successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error marking booking as done: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a booking to mark as done.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        private void UpdateBookingStatus(int bookingID, bool done)
+        {
+            string updateSql = "UPDATE bookings SET Done = @done WHERE ID = @id";
+
+            using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+            {
+                using (OleDbCommand command = new OleDbCommand(updateSql, connection))
+                {
+                    command.Parameters.AddWithValue("@done", done);
+                    command.Parameters.AddWithValue("@id", bookingID);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
         }
     }
 }

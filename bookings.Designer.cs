@@ -561,6 +561,7 @@
             this.markAsDoneButton.Size = new System.Drawing.Size(126, 45);
             this.markAsDoneButton.TabIndex = 32;
             this.markAsDoneButton.Text = "Mark As Done";
+            this.markAsDoneButton.Click += new System.EventHandler(this.markAsDoneButton_Click);
             // 
             // bookings
             // 
