@@ -117,7 +117,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 42);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Reosrt Pr";
+            this.label1.Text = "Resort Pr";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Button1
