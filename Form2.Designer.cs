@@ -662,6 +662,7 @@
             this.panelChildForm.ShadowDecoration.Parent = this.panelChildForm;
             this.panelChildForm.Size = new System.Drawing.Size(991, 571);
             this.panelChildForm.TabIndex = 2;
+            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
             // timer1
             // 

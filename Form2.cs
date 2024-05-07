@@ -289,5 +289,11 @@ namespace ResortPro
         {
             UpdateDateTimeLabel();
         }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }

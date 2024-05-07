@@ -72,6 +72,7 @@
             this.panel31 = new System.Windows.Forms.Panel();
             this.panel32 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.kryptonMonthCalendar1 = new Krypton.Toolkit.KryptonMonthCalendar();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -469,12 +470,20 @@
             this.label8.TabIndex = 23;
             this.label8.Text = "MONTH";
             // 
+            // kryptonMonthCalendar1
+            // 
+            this.kryptonMonthCalendar1.Location = new System.Drawing.Point(23, 96);
+            this.kryptonMonthCalendar1.Name = "kryptonMonthCalendar1";
+            this.kryptonMonthCalendar1.Size = new System.Drawing.Size(230, 182);
+            this.kryptonMonthCalendar1.TabIndex = 25;
+            // 
             // calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(975, 532);
+            this.Controls.Add(this.kryptonMonthCalendar1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
@@ -544,5 +553,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private Krypton.Toolkit.KryptonMonthCalendar kryptonMonthCalendar1;
     }
 }
