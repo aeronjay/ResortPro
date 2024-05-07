@@ -27,6 +27,7 @@ namespace ResortPro
             
             initValues();
             newPrice();
+            checkInDatePicker.Value = DateTime.UtcNow;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -291,7 +292,8 @@ namespace ResortPro
                 String email = emailTextBox.Text;
                 String number = numberTextBox.Text;
 
-                DateTime checkIn = checkInDatePicker.Value;
+                //DateTime checkIn = checkInDatePicker.Value;
+                string checkIn = checkInDatePicker.Value.ToString("MM/dd/yyyy");
                 int adultCount = (int)adultNumericUpDown.Value;
                 int kidCount = (int)kidNumericUpDown.Value;
 
@@ -348,7 +350,5 @@ namespace ResortPro
             }
 
         }
-
-        
     }
 }
