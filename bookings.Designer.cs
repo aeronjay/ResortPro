@@ -29,28 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(bookings));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.editRowButton = new Guna.UI2.WinForms.Guna2Button();
-            this.markAsDoneButton = new Guna.UI2.WinForms.Guna2Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +59,7 @@
             this.paid = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
             this.totalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Done = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
+            this.editRowButton = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,11 +94,11 @@
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = false;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = false;
-            this.bunifuButton1.CustomizableEdges = borderEdges1;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = false;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = false;
+            this.bunifuButton1.CustomizableEdges = borderEdges4;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -185,11 +184,11 @@
             this.bunifuButton2.ColorContrastOnClick = 45;
             this.bunifuButton2.ColorContrastOnHover = 45;
             this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = false;
-            borderEdges2.BottomRight = false;
-            borderEdges2.TopLeft = false;
-            borderEdges2.TopRight = false;
-            this.bunifuButton2.CustomizableEdges = borderEdges2;
+            borderEdges5.BottomLeft = false;
+            borderEdges5.BottomRight = false;
+            borderEdges5.TopLeft = false;
+            borderEdges5.TopRight = false;
+            this.bunifuButton2.CustomizableEdges = borderEdges5;
             this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -275,11 +274,11 @@
             this.bunifuButton3.ColorContrastOnClick = 45;
             this.bunifuButton3.ColorContrastOnHover = 45;
             this.bunifuButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges3.BottomLeft = false;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = false;
-            borderEdges3.TopRight = true;
-            this.bunifuButton3.CustomizableEdges = borderEdges3;
+            borderEdges6.BottomLeft = false;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = false;
+            borderEdges6.TopRight = true;
+            this.bunifuButton3.CustomizableEdges = borderEdges6;
             this.bunifuButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -351,9 +350,9 @@
             this.bunifuDataGridView1.AllowUserToAddRows = false;
             this.bunifuDataGridView1.AllowUserToDeleteRows = false;
             this.bunifuDataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.bunifuDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -362,14 +361,14 @@
             this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.bunifuDataGridView1.ColumnHeadersHeight = 40;
             this.bunifuDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -400,20 +399,20 @@
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle24;
             this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
             this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(12, 81);
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(13, 81);
             this.bunifuDataGridView1.Name = "bunifuDataGridView1";
             this.bunifuDataGridView1.ReadOnly = true;
             this.bunifuDataGridView1.RowHeadersVisible = false;
@@ -423,6 +422,108 @@
             this.bunifuDataGridView1.Size = new System.Drawing.Size(951, 357);
             this.bunifuDataGridView1.TabIndex = 8;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
+            // 
+            // ID
+            // 
+            this.ID.FillWeight = 50F;
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // fullName
+            // 
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.fullName.DefaultCellStyle = dataGridViewCellStyle15;
+            this.fullName.FillWeight = 80F;
+            this.fullName.HeaderText = "Full Name";
+            this.fullName.Name = "fullName";
+            this.fullName.ReadOnly = true;
+            // 
+            // email
+            // 
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.email.DefaultCellStyle = dataGridViewCellStyle16;
+            this.email.HeaderText = "Email";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            // 
+            // contactNumber
+            // 
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.contactNumber.DefaultCellStyle = dataGridViewCellStyle17;
+            this.contactNumber.FillWeight = 80F;
+            this.contactNumber.HeaderText = "Contact";
+            this.contactNumber.Name = "contactNumber";
+            this.contactNumber.ReadOnly = true;
+            // 
+            // checkInDate
+            // 
+            this.checkInDate.Checked = false;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.Format = "d";
+            dataGridViewCellStyle18.NullValue = null;
+            this.checkInDate.DefaultCellStyle = dataGridViewCellStyle18;
+            this.checkInDate.FillWeight = 120F;
+            this.checkInDate.HeaderText = "Check In Date";
+            this.checkInDate.Name = "checkInDate";
+            this.checkInDate.ReadOnly = true;
+            this.checkInDate.Width = 148;
+            // 
+            // peopleNumber
+            // 
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.peopleNumber.DefaultCellStyle = dataGridViewCellStyle19;
+            this.peopleNumber.FillWeight = 50F;
+            this.peopleNumber.HeaderText = "People";
+            this.peopleNumber.Name = "peopleNumber";
+            this.peopleNumber.ReadOnly = true;
+            this.peopleNumber.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.peopleNumber.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // accommodationType
+            // 
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.accommodationType.DefaultCellStyle = dataGridViewCellStyle20;
+            this.accommodationType.FillWeight = 105F;
+            this.accommodationType.HeaderText = "Accommodation";
+            this.accommodationType.Name = "accommodationType";
+            this.accommodationType.ReadOnly = true;
+            // 
+            // paid
+            // 
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.NullValue = false;
+            this.paid.DefaultCellStyle = dataGridViewCellStyle21;
+            this.paid.FalseValue = null;
+            this.paid.FillWeight = 35F;
+            this.paid.HeaderText = "Paid";
+            this.paid.IndeterminateValue = null;
+            this.paid.Name = "paid";
+            this.paid.ReadOnly = true;
+            this.paid.TrueValue = null;
+            // 
+            // totalPrice
+            // 
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.Format = "C2";
+            dataGridViewCellStyle22.NullValue = "0";
+            this.totalPrice.DefaultCellStyle = dataGridViewCellStyle22;
+            this.totalPrice.HeaderText = "Total Price";
+            this.totalPrice.Name = "totalPrice";
+            this.totalPrice.ReadOnly = true;
+            // 
+            // Done
+            // 
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.NullValue = false;
+            this.Done.DefaultCellStyle = dataGridViewCellStyle23;
+            this.Done.FalseValue = null;
+            this.Done.FillWeight = 55F;
+            this.Done.HeaderText = "Done";
+            this.Done.IndeterminateValue = null;
+            this.Done.Name = "Done";
+            this.Done.ReadOnly = true;
+            this.Done.TrueValue = null;
             // 
             // editRowButton
             // 
@@ -441,129 +542,7 @@
             this.editRowButton.ShadowDecoration.Parent = this.editRowButton;
             this.editRowButton.Size = new System.Drawing.Size(92, 45);
             this.editRowButton.TabIndex = 31;
-            this.editRowButton.Text = "Edit Row";
-            // 
-            // markAsDoneButton
-            // 
-            this.markAsDoneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.markAsDoneButton.BorderRadius = 10;
-            this.markAsDoneButton.CheckedState.Parent = this.markAsDoneButton;
-            this.markAsDoneButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.markAsDoneButton.CustomImages.Parent = this.markAsDoneButton;
-            this.markAsDoneButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.markAsDoneButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.markAsDoneButton.ForeColor = System.Drawing.Color.Black;
-            this.markAsDoneButton.HoverState.FillColor = System.Drawing.Color.LightGreen;
-            this.markAsDoneButton.HoverState.Parent = this.markAsDoneButton;
-            this.markAsDoneButton.Location = new System.Drawing.Point(739, 464);
-            this.markAsDoneButton.Name = "markAsDoneButton";
-            this.markAsDoneButton.ShadowDecoration.Parent = this.markAsDoneButton;
-            this.markAsDoneButton.Size = new System.Drawing.Size(126, 45);
-            this.markAsDoneButton.TabIndex = 32;
-            this.markAsDoneButton.Text = "Mark As Done";
-            this.markAsDoneButton.Click += new System.EventHandler(this.markAsDoneButton_Click);
-            // 
-            // ID
-            // 
-            this.ID.FillWeight = 50F;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // fullName
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.fullName.DefaultCellStyle = dataGridViewCellStyle3;
-            this.fullName.FillWeight = 80F;
-            this.fullName.HeaderText = "Full Name";
-            this.fullName.Name = "fullName";
-            this.fullName.ReadOnly = true;
-            // 
-            // email
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.email.DefaultCellStyle = dataGridViewCellStyle4;
-            this.email.HeaderText = "Email";
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            // 
-            // contactNumber
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.contactNumber.DefaultCellStyle = dataGridViewCellStyle5;
-            this.contactNumber.FillWeight = 80F;
-            this.contactNumber.HeaderText = "Contact";
-            this.contactNumber.Name = "contactNumber";
-            this.contactNumber.ReadOnly = true;
-            // 
-            // checkInDate
-            // 
-            this.checkInDate.Checked = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.Format = "d";
-            dataGridViewCellStyle6.NullValue = null;
-            this.checkInDate.DefaultCellStyle = dataGridViewCellStyle6;
-            this.checkInDate.FillWeight = 120F;
-            this.checkInDate.HeaderText = "Check In Date";
-            this.checkInDate.Name = "checkInDate";
-            this.checkInDate.ReadOnly = true;
-            this.checkInDate.Width = 148;
-            // 
-            // peopleNumber
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.peopleNumber.DefaultCellStyle = dataGridViewCellStyle7;
-            this.peopleNumber.FillWeight = 50F;
-            this.peopleNumber.HeaderText = "People";
-            this.peopleNumber.Name = "peopleNumber";
-            this.peopleNumber.ReadOnly = true;
-            this.peopleNumber.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.peopleNumber.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // accommodationType
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.accommodationType.DefaultCellStyle = dataGridViewCellStyle8;
-            this.accommodationType.FillWeight = 105F;
-            this.accommodationType.HeaderText = "Accommodation";
-            this.accommodationType.Name = "accommodationType";
-            this.accommodationType.ReadOnly = true;
-            // 
-            // paid
-            // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.NullValue = false;
-            this.paid.DefaultCellStyle = dataGridViewCellStyle9;
-            this.paid.FalseValue = null;
-            this.paid.FillWeight = 35F;
-            this.paid.HeaderText = "Paid";
-            this.paid.IndeterminateValue = null;
-            this.paid.Name = "paid";
-            this.paid.ReadOnly = true;
-            this.paid.TrueValue = null;
-            // 
-            // totalPrice
-            // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.Format = "C2";
-            dataGridViewCellStyle10.NullValue = "0";
-            this.totalPrice.DefaultCellStyle = dataGridViewCellStyle10;
-            this.totalPrice.HeaderText = "Total Price";
-            this.totalPrice.Name = "totalPrice";
-            this.totalPrice.ReadOnly = true;
-            // 
-            // Done
-            // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.NullValue = false;
-            this.Done.DefaultCellStyle = dataGridViewCellStyle11;
-            this.Done.FalseValue = null;
-            this.Done.FillWeight = 55F;
-            this.Done.HeaderText = "Done";
-            this.Done.IndeterminateValue = null;
-            this.Done.Name = "Done";
-            this.Done.ReadOnly = true;
-            this.Done.TrueValue = null;
+            this.editRowButton.Text = "Edit Booking";
             // 
             // bookings
             // 
@@ -571,7 +550,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(975, 532);
-            this.Controls.Add(this.markAsDoneButton);
             this.Controls.Add(this.editRowButton);
             this.Controls.Add(this.bunifuButton3);
             this.Controls.Add(this.bunifuButton2);
@@ -597,7 +575,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton3;
         private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
         private Guna.UI2.WinForms.Guna2Button editRowButton;
-        private Guna.UI2.WinForms.Guna2Button markAsDoneButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn fullName;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;

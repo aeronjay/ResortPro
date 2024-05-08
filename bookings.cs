@@ -30,7 +30,7 @@ namespace ResortPro
 
         public void LoadTable()
         {
-            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings";
+            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings WHERE Done = False";
 
             try
             {
