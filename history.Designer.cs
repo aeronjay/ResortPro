@@ -55,18 +55,18 @@
             this.paid = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
             this.totalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Done = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
-            this.canceled = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.canceled = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(17, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 32);
+            this.label1.Size = new System.Drawing.Size(107, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "History";
             // 
@@ -232,7 +232,7 @@
             this.checkInDate.HeaderText = "Check In Date";
             this.checkInDate.Name = "checkInDate";
             this.checkInDate.ReadOnly = true;
-            this.checkInDate.Width = 137;
+            this.checkInDate.Width = 133;
             // 
             // peopleNumber
             // 
@@ -293,15 +293,21 @@
             // canceled
             // 
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.NullValue = false;
             this.canceled.DefaultCellStyle = dataGridViewCellStyle12;
-            this.canceled.FillWeight = 50F;
+            this.canceled.FalseValue = null;
+            this.canceled.FillWeight = 70F;
             this.canceled.HeaderText = "Canceled";
+            this.canceled.IndeterminateValue = null;
             this.canceled.Name = "canceled";
             this.canceled.ReadOnly = true;
+            this.canceled.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.canceled.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.canceled.TrueValue = null;
             // 
             // history
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(975, 532);
@@ -309,7 +315,7 @@
             this.Controls.Add(this.editRowButton);
             this.Controls.Add(this.bunifuDataGridView1);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "history";
             this.Text = "history";
@@ -336,6 +342,6 @@
         private Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn paid;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalPrice;
         private Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn Done;
-        private System.Windows.Forms.DataGridViewTextBoxColumn canceled;
+        private Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn canceled;
     }
 }
