@@ -83,6 +83,16 @@ namespace ResortPro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chart_sample {
+            get {
+                object obj = ResourceManager.GetObject("chart-sample", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap city_hall {
             get {
                 object obj = ResourceManager.GetObject("city-hall", resourceCulture);

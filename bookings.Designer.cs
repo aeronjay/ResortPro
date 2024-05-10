@@ -61,6 +61,7 @@
             this.Done = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
             this.editRowButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.markAsDoneButton = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -180,7 +181,7 @@
             this.bunifuButton2.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.bunifuButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton2.BackgroundImage")));
             this.bunifuButton2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton2.ButtonText = "Done";
+            this.bunifuButton2.ButtonText = "Paid";
             this.bunifuButton2.ButtonTextMarginLeft = 0;
             this.bunifuButton2.ColorContrastOnClick = 45;
             this.bunifuButton2.ColorContrastOnHover = 45;
@@ -538,10 +539,10 @@
             this.editRowButton.ForeColor = System.Drawing.Color.Black;
             this.editRowButton.HoverState.FillColor = System.Drawing.Color.LightGreen;
             this.editRowButton.HoverState.Parent = this.editRowButton;
-            this.editRowButton.Location = new System.Drawing.Point(871, 464);
+            this.editRowButton.Location = new System.Drawing.Point(851, 464);
             this.editRowButton.Name = "editRowButton";
             this.editRowButton.ShadowDecoration.Parent = this.editRowButton;
-            this.editRowButton.Size = new System.Drawing.Size(92, 45);
+            this.editRowButton.Size = new System.Drawing.Size(112, 45);
             this.editRowButton.TabIndex = 31;
             this.editRowButton.Text = "Edit Booking";
             // 
@@ -557,12 +558,32 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.LightGreen;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(728, 464);
+            this.guna2Button1.Location = new System.Drawing.Point(552, 464);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(125, 45);
             this.guna2Button1.TabIndex = 32;
             this.guna2Button1.Text = "Cancel Booking";
+            // 
+            // markAsDoneButton
+            // 
+            this.markAsDoneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.markAsDoneButton.BorderRadius = 10;
+            this.markAsDoneButton.CheckedState.Parent = this.markAsDoneButton;
+            this.markAsDoneButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.markAsDoneButton.CustomImages.Parent = this.markAsDoneButton;
+            this.markAsDoneButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.markAsDoneButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.markAsDoneButton.ForeColor = System.Drawing.Color.Black;
+            this.markAsDoneButton.HoverState.FillColor = System.Drawing.Color.LightGreen;
+            this.markAsDoneButton.HoverState.Parent = this.markAsDoneButton;
+            this.markAsDoneButton.Location = new System.Drawing.Point(703, 464);
+            this.markAsDoneButton.Name = "markAsDoneButton";
+            this.markAsDoneButton.ShadowDecoration.Parent = this.markAsDoneButton;
+            this.markAsDoneButton.Size = new System.Drawing.Size(125, 45);
+            this.markAsDoneButton.TabIndex = 33;
+            this.markAsDoneButton.Text = "Mark As Done";
+            this.markAsDoneButton.Click += new System.EventHandler(this.markAsDoneButton_Click_1);
             // 
             // bookings
             // 
@@ -570,6 +591,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(975, 532);
+            this.Controls.Add(this.markAsDoneButton);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.editRowButton);
             this.Controls.Add(this.bunifuButton3);
@@ -607,5 +629,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn totalPrice;
         private Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn Done;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button markAsDoneButton;
     }
 }
