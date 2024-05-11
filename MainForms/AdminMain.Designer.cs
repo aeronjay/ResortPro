@@ -35,13 +35,13 @@
             this.manageStaffButton = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.navbarPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.managePricingButton = new FontAwesome.Sharp.IconButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.manageSuppliesButton = new FontAwesome.Sharp.IconButton();
-            this.resortHistoryButton = new FontAwesome.Sharp.IconButton();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.logoutButton = new FontAwesome.Sharp.IconButton();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.resortHistoryButton = new FontAwesome.Sharp.IconButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.manageSuppliesButton = new FontAwesome.Sharp.IconButton();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.managePricingButton = new FontAwesome.Sharp.IconButton();
             this.panelChildForm = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.topPanel.SuspendLayout();
             this.navbarPanel.SuspendLayout();
@@ -151,65 +151,34 @@
             this.navbarPanel.Size = new System.Drawing.Size(203, 579);
             this.navbarPanel.TabIndex = 1;
             // 
-            // managePricingButton
+            // logoutButton
             // 
-            this.managePricingButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.managePricingButton.FlatAppearance.BorderSize = 0;
-            this.managePricingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.managePricingButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.managePricingButton.IconChar = FontAwesome.Sharp.IconChar.HandHoldingUsd;
-            this.managePricingButton.IconColor = System.Drawing.Color.Black;
-            this.managePricingButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.managePricingButton.IconSize = 45;
-            this.managePricingButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.managePricingButton.Location = new System.Drawing.Point(0, 194);
-            this.managePricingButton.Name = "managePricingButton";
-            this.managePricingButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.managePricingButton.Size = new System.Drawing.Size(186, 82);
-            this.managePricingButton.TabIndex = 6;
-            this.managePricingButton.Text = "Manage Pricing";
-            this.managePricingButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.managePricingButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.managePricingButton.UseVisualStyleBackColor = true;
-            this.managePricingButton.Click += new System.EventHandler(this.managePricingButton_Click);
+            this.logoutButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.logoutButton.FlatAppearance.BorderSize = 0;
+            this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutButton.IconChar = FontAwesome.Sharp.IconChar.RightToBracket;
+            this.logoutButton.IconColor = System.Drawing.Color.Black;
+            this.logoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.logoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logoutButton.Location = new System.Drawing.Point(0, 520);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.logoutButton.Size = new System.Drawing.Size(186, 82);
+            this.logoutButton.TabIndex = 11;
+            this.logoutButton.Text = "Log Out";
+            this.logoutButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logoutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
-            // panel3
+            // panel5
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 368);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(186, 10);
-            this.panel3.TabIndex = 7;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 276);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(186, 10);
-            this.panel4.TabIndex = 8;
-            // 
-            // manageSuppliesButton
-            // 
-            this.manageSuppliesButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.manageSuppliesButton.FlatAppearance.BorderSize = 0;
-            this.manageSuppliesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.manageSuppliesButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manageSuppliesButton.IconChar = FontAwesome.Sharp.IconChar.BoxesAlt;
-            this.manageSuppliesButton.IconColor = System.Drawing.Color.Black;
-            this.manageSuppliesButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.manageSuppliesButton.IconSize = 45;
-            this.manageSuppliesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.manageSuppliesButton.Location = new System.Drawing.Point(0, 286);
-            this.manageSuppliesButton.Name = "manageSuppliesButton";
-            this.manageSuppliesButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.manageSuppliesButton.Size = new System.Drawing.Size(186, 82);
-            this.manageSuppliesButton.TabIndex = 9;
-            this.manageSuppliesButton.Text = "Manage Supplies";
-            this.manageSuppliesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.manageSuppliesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.manageSuppliesButton.UseVisualStyleBackColor = true;
-            this.manageSuppliesButton.Click += new System.EventHandler(this.manageSuppliesButton_Click);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 460);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(186, 70);
+            this.panel5.TabIndex = 2;
             // 
             // resortHistoryButton
             // 
@@ -233,34 +202,65 @@
             this.resortHistoryButton.UseVisualStyleBackColor = true;
             this.resortHistoryButton.Click += new System.EventHandler(this.resortHistoryButton_Click);
             // 
-            // panel5
+            // panel3
             // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 460);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(186, 70);
-            this.panel5.TabIndex = 2;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 368);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(186, 10);
+            this.panel3.TabIndex = 7;
             // 
-            // logoutButton
+            // manageSuppliesButton
             // 
-            this.logoutButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.logoutButton.FlatAppearance.BorderSize = 0;
-            this.logoutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoutButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.IconChar = FontAwesome.Sharp.IconChar.RightToBracket;
-            this.logoutButton.IconColor = System.Drawing.Color.Black;
-            this.logoutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.logoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logoutButton.Location = new System.Drawing.Point(0, 520);
-            this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.logoutButton.Size = new System.Drawing.Size(186, 82);
-            this.logoutButton.TabIndex = 11;
-            this.logoutButton.Text = "Log Out";
-            this.logoutButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logoutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.logoutButton.UseVisualStyleBackColor = true;
-            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            this.manageSuppliesButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.manageSuppliesButton.FlatAppearance.BorderSize = 0;
+            this.manageSuppliesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manageSuppliesButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageSuppliesButton.IconChar = FontAwesome.Sharp.IconChar.BoxesAlt;
+            this.manageSuppliesButton.IconColor = System.Drawing.Color.Black;
+            this.manageSuppliesButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.manageSuppliesButton.IconSize = 45;
+            this.manageSuppliesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageSuppliesButton.Location = new System.Drawing.Point(0, 286);
+            this.manageSuppliesButton.Name = "manageSuppliesButton";
+            this.manageSuppliesButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.manageSuppliesButton.Size = new System.Drawing.Size(186, 82);
+            this.manageSuppliesButton.TabIndex = 9;
+            this.manageSuppliesButton.Text = "Manage Supplies";
+            this.manageSuppliesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.manageSuppliesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.manageSuppliesButton.UseVisualStyleBackColor = true;
+            this.manageSuppliesButton.Click += new System.EventHandler(this.manageSuppliesButton_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 276);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(186, 10);
+            this.panel4.TabIndex = 8;
+            // 
+            // managePricingButton
+            // 
+            this.managePricingButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.managePricingButton.FlatAppearance.BorderSize = 0;
+            this.managePricingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.managePricingButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.managePricingButton.IconChar = FontAwesome.Sharp.IconChar.HandHoldingUsd;
+            this.managePricingButton.IconColor = System.Drawing.Color.Black;
+            this.managePricingButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.managePricingButton.IconSize = 45;
+            this.managePricingButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.managePricingButton.Location = new System.Drawing.Point(0, 194);
+            this.managePricingButton.Name = "managePricingButton";
+            this.managePricingButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.managePricingButton.Size = new System.Drawing.Size(186, 82);
+            this.managePricingButton.TabIndex = 6;
+            this.managePricingButton.Text = "Manage Pricing";
+            this.managePricingButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.managePricingButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.managePricingButton.UseVisualStyleBackColor = true;
+            this.managePricingButton.Click += new System.EventHandler(this.managePricingButton_Click);
             // 
             // panelChildForm
             // 
@@ -270,6 +270,7 @@
             this.panelChildForm.ShadowDecoration.Parent = this.panelChildForm;
             this.panelChildForm.Size = new System.Drawing.Size(1011, 579);
             this.panelChildForm.TabIndex = 2;
+            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
             // AdminMain
             // 

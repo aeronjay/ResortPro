@@ -16,5 +16,10 @@ namespace ResortPro
         {
             InitializeComponent();
         }
+
+        private void Resort_History_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

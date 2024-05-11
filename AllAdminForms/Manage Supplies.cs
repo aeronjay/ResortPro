@@ -26,5 +26,10 @@ namespace ResortPro.AllAdminForms
         {
 
         }
+
+        private void Manage_Pricing_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

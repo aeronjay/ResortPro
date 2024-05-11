@@ -1,5 +1,6 @@
 ﻿using FontAwesome.Sharp;
 using Guna.UI2.WinForms;
+using ResortPro.AllAdminForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -67,9 +68,9 @@ namespace ResortPro.superUser
                     currentButton.IconColor = Color.Black;
                 }
 
-                button.BackColor = Color.FromArgb(245, 236, 246);
-                button.ForeColor = Color.Red;
-                button.IconColor = Color.Red;
+                button.BackColor = Color.FromArgb(94, 148, 255);
+                button.ForeColor = Color.LightSteelBlue;
+                button.IconColor = Color.LightSteelBlue;
                 currentButton = button;
             }
         }
@@ -78,9 +79,9 @@ namespace ResortPro.superUser
         {
             if (sender is IconButton button && button != currentButton)
             {
-                button.BackColor = Color.FromArgb(245, 236, 246);
-                button.ForeColor = Color.Red;
-                button.IconColor = Color.Red;
+                button.BackColor = Color.FromArgb(94, 148, 255);
+                button.ForeColor = Color.LightSteelBlue;
+                button.IconColor = Color.LightSteelBlue;
             }
         }
 
@@ -125,12 +126,12 @@ namespace ResortPro.superUser
 
         private void managePricingButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Manage_Supplies());
         }
 
         private void manageSuppliesButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Manage_Pricing());
         }
 
         private void resortHistoryButton_Click(object sender, EventArgs e)
@@ -139,6 +140,11 @@ namespace ResortPro.superUser
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
         {
 
         }
