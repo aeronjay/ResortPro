@@ -63,6 +63,16 @@ namespace ResortPro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _360_F_127158923_P9mXxJQ2sSsMlMkYuVxk6b4yBZMo2usI_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("360_F_127158923_P9mXxJQ2sSsMlMkYuVxk6b4yBZMo2usI-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap beach {
             get {
                 object obj = ResourceManager.GetObject("beach", resourceCulture);

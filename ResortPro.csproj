@@ -135,6 +135,12 @@
     <Compile Include="AllStaffForms\calendar.Designer.cs">
       <DependentUpon>calendar.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllStaffForms\Dashboard try.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStaffForms\Dashboard try.Designer.cs">
+      <DependentUpon>Dashboard try.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllStaffForms\dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllStaffForms\calendar.resx">
       <DependentUpon>calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStaffForms\Dashboard try.resx">
+      <DependentUpon>Dashboard try.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllStaffForms\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
@@ -294,6 +303,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\chart-sample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_127158923_P9mXxJQ2sSsMlMkYuVxk6b4yBZMo2usI-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
