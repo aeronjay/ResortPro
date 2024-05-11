@@ -120,7 +120,7 @@ namespace ResortPro.superUser
 
         private void manageStaffButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new manage_staff());
         }
 
         private void managePricingButton_Click(object sender, EventArgs e)
@@ -135,7 +135,7 @@ namespace ResortPro.superUser
 
         private void resortHistoryButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Resort_History());
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
