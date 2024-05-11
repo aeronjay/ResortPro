@@ -220,6 +220,7 @@
             this.emailTextBox.ShadowDecoration.Parent = this.emailTextBox;
             this.emailTextBox.Size = new System.Drawing.Size(221, 34);
             this.emailTextBox.TabIndex = 8;
+            this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
             // label7
             // 

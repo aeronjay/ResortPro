@@ -12,6 +12,7 @@ using System.Windows.Interop;
 using System.Runtime.InteropServices;
 using System.Data.OleDb;
 using System.Security.Cryptography;
+using System.Net.Mail;
 
 namespace ResortPro
 {
@@ -305,6 +306,8 @@ namespace ResortPro
                 bool paid = bookingPaidToggle.Checked;
 
                 decimal finalprice = (decimal)totalPrice;
+               
+
 
                 String sql = "INSERT INTO bookings (fullName, email, contactNumber, checkInDate, numberAdults, numberKids, accommodationType, videoke, additionalMatress, paymentMethod, paid, totalPrice) VALUES (@fullName, @email, @contactNumber, @checkInDate, @numberAdults, @numberKids, @accommodationType, @videoke, @additionalMatress, @paymentMethod, @paid, @totalPrice)";
 
@@ -348,6 +351,13 @@ namespace ResortPro
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+
+        }
+
+        
+
+        private void emailTextBox_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
