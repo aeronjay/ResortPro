@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
@@ -171,6 +174,12 @@
     <Compile Include="status.Designer.cs">
       <DependentUpon>status.cs</DependentUpon>
     </Compile>
+    <Compile Include="superUser\AdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="superUser\AdminMain.Designer.cs">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="supplies.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +229,9 @@
     </Compile>
     <EmbeddedResource Include="status.resx">
       <DependentUpon>status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="superUser\AdminMain.resx">
+      <DependentUpon>AdminMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="supplies.resx">
       <DependentUpon>supplies.cs</DependentUpon>
