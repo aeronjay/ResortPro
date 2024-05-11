@@ -36,31 +36,31 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.label13 = new System.Windows.Forms.Label();
+            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
@@ -91,53 +91,101 @@
             this.panel1.Size = new System.Drawing.Size(982, 147);
             this.panel1.TabIndex = 0;
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanel6
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.AliceBlue;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 15);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(154, 112);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.flowLayoutPanel6.BackColor = System.Drawing.Color.AliceBlue;
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(333, 15);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(154, 112);
+            this.flowLayoutPanel6.TabIndex = 3;
             // 
-            // label1
+            // label10
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.AliceBlue;
-            this.label1.Location = new System.Drawing.Point(34, 106);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Guest Check In Today";
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.AliceBlue;
+            this.label10.Location = new System.Drawing.Point(860, 110);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(104, 13);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Other Accomodation";
             // 
-            // label2
+            // label9
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.AliceBlue;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(99, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 39);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "0";
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.AliceBlue;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(910, 57);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 39);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "0";
             // 
-            // flowLayoutPanel2
+            // flowLayoutPanel5
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.AliceBlue;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(171, 15);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(154, 112);
-            this.flowLayoutPanel2.TabIndex = 2;
+            this.flowLayoutPanel5.BackColor = System.Drawing.Color.AliceBlue;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(814, 15);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(154, 112);
+            this.flowLayoutPanel5.TabIndex = 9;
             // 
-            // label3
+            // label7
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.AliceBlue;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(258, 53);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 39);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "0";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.AliceBlue;
+            this.label7.Location = new System.Drawing.Point(715, 110);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 13);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Rooms Available";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.AliceBlue;
+            this.label6.Location = new System.Drawing.Point(554, 109);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 13);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Cottage Available";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.AliceBlue;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(585, 55);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(37, 39);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.AliceBlue;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(750, 55);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 39);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "0";
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.BackColor = System.Drawing.Color.AliceBlue;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(494, 15);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(154, 112);
+            this.flowLayoutPanel3.TabIndex = 3;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.AliceBlue;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(654, 15);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(154, 112);
+            this.flowLayoutPanel4.TabIndex = 8;
             // 
             // label4
             // 
@@ -151,101 +199,53 @@
             this.label4.Text = "Total Guest Expected this week";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // flowLayoutPanel3
+            // label3
             // 
-            this.flowLayoutPanel3.BackColor = System.Drawing.Color.AliceBlue;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(494, 15);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(154, 112);
-            this.flowLayoutPanel3.TabIndex = 3;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.AliceBlue;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(258, 53);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 39);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "0";
             // 
-            // label5
+            // flowLayoutPanel2
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.AliceBlue;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(585, 55);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 39);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "0";
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.AliceBlue;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(171, 15);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(154, 112);
+            this.flowLayoutPanel2.TabIndex = 2;
             // 
-            // label6
+            // label2
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.AliceBlue;
-            this.label6.Location = new System.Drawing.Point(554, 109);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 13);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Cottage Available";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.AliceBlue;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(99, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 39);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "0";
             // 
-            // label7
+            // label1
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.AliceBlue;
-            this.label7.Location = new System.Drawing.Point(715, 110);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Rooms Available";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.AliceBlue;
+            this.label1.Location = new System.Drawing.Point(34, 106);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Guest Check In Today";
             // 
-            // label8
+            // flowLayoutPanel1
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.AliceBlue;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(750, 55);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 39);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "0";
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.BackColor = System.Drawing.Color.AliceBlue;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(654, 15);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(154, 112);
-            this.flowLayoutPanel4.TabIndex = 8;
-            // 
-            // flowLayoutPanel5
-            // 
-            this.flowLayoutPanel5.BackColor = System.Drawing.Color.AliceBlue;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(814, 15);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(154, 112);
-            this.flowLayoutPanel5.TabIndex = 9;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.AliceBlue;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(910, 57);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 39);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "0";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.AliceBlue;
-            this.label10.Location = new System.Drawing.Point(860, 110);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 13);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Other Accomodation";
-            // 
-            // flowLayoutPanel6
-            // 
-            this.flowLayoutPanel6.BackColor = System.Drawing.Color.AliceBlue;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(333, 15);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(154, 112);
-            this.flowLayoutPanel6.TabIndex = 3;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.AliceBlue;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 15);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(154, 112);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // label11
             // 
@@ -285,6 +285,17 @@
             this.panel2.Size = new System.Drawing.Size(402, 207);
             this.panel2.TabIndex = 15;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(5, 5);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(171, 24);
+            this.label13.TabIndex = 16;
+            this.label13.Text = "Guest List Today";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
             // bunifuDataGridView1
             // 
             this.bunifuDataGridView1.AllowCustomTheming = false;
@@ -303,7 +314,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -344,17 +355,6 @@
             this.bunifuDataGridView1.TabIndex = 0;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(5, 5);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(171, 24);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "Guest List Today";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.chart1);
@@ -363,16 +363,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(514, 344);
             this.panel3.TabIndex = 16;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(3, 5);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(172, 24);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Weekly Progress";
             // 
             // chart1
             // 
@@ -389,6 +379,16 @@
             this.chart1.Size = new System.Drawing.Size(300, 300);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(3, 5);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(172, 24);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Weekly Progress";
             // 
             // Dashboard_try
             // 
