@@ -1,6 +1,6 @@
 ﻿namespace ResortPro
 {
-    partial class Form2
+    partial class staffForm
     {
         /// <summary>
         /// Required designer variable.

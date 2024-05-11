@@ -11,17 +11,17 @@ using System.Data.OleDb;
 
 namespace ResortPro
 {
-    public partial class Form1 : Form
+    public partial class loginForm : Form
     {
         private bool formDrag = false;
         private Point startPoint = new Point(0, 0);
 
 
-        public Form1()
+        public loginForm()
         {
             InitializeComponent();
             AttachEventHandlers();
-           
+
         }
 
         private void AttachEventHandlers()
@@ -74,10 +74,10 @@ namespace ResortPro
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            string username = usernameLabel.Text;     
-            string password = passwordLabel.Text;     
+            string username = usernameLabel.Text;
+            string password = passwordLabel.Text;
 
-            
+
 
             using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
             {
@@ -91,13 +91,13 @@ namespace ResortPro
                         command.Parameters.AddWithValue("@username", username);
                         command.Parameters.AddWithValue("@password", password);
 
-                        int count = (int)command.ExecuteScalar();  
+                        int count = (int)command.ExecuteScalar();
 
                         if (count > 0)
                         {
                             MessageBox.Show("Login successful!");
 
-                            Form2 form2 = new Form2();
+                            staffForm form2 = new staffForm();
                             form2.Show();
 
                             this.Hide();  // Hide Form1

@@ -130,17 +130,17 @@
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="dbOp.cs" />
-    <Compile Include="MainForms\Form1.cs">
+    <Compile Include="MainForms\loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForms\loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForms\Form2.cs">
+    <Compile Include="MainForms\staffForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForms\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="MainForms\staffForm.Designer.cs">
+      <DependentUpon>staffForm.cs</DependentUpon>
     </Compile>
     <Compile Include="AllStaffForms\history.cs">
       <SubType>Form</SubType>
@@ -198,11 +198,11 @@
     <EmbeddedResource Include="AllStaffForms\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForms\loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForms\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="MainForms\staffForm.resx">
+      <DependentUpon>staffForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllStaffForms\history.resx">
       <DependentUpon>history.cs</DependentUpon>

@@ -15,14 +15,14 @@ using System.Windows.Forms;
 
 namespace ResortPro
 {
-    public partial class Form2 : KryptonForm
+    public partial class staffForm : KryptonForm
     {
         private Guna2Button currentButton;
         private Dictionary<Guna2Button, IconPictureBox> buttonIconMap;
 
 
 
-        public Form2()
+        public staffForm()
         {
             InitializeComponent();
 
@@ -235,7 +235,7 @@ namespace ResortPro
 
         private void signOutButton_Click(object sender, EventArgs e)
         {
-            Form form1 = new Form1();
+            Form form1 = new loginForm();
             
             this.Close();
             form1.Show();
