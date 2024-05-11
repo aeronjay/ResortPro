@@ -32,62 +32,62 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.signOutPicture = new FontAwesome.Sharp.IconPictureBox();
             this.signOutButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.historyPicture = new FontAwesome.Sharp.IconPictureBox();
             this.historyButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.suppliesPicture = new FontAwesome.Sharp.IconPictureBox();
             this.suppliesButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.calendarPicture = new FontAwesome.Sharp.IconPictureBox();
             this.calendarButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.bookingsPicture = new FontAwesome.Sharp.IconPictureBox();
             this.bookingsButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.statusPicture = new FontAwesome.Sharp.IconPictureBox();
             this.statusButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dashboardPicture = new FontAwesome.Sharp.IconPictureBox();
             this.dashboardButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.addBookingPicture = new FontAwesome.Sharp.IconPictureBox();
             this.addBooking = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.topPanel = new System.Windows.Forms.Panel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelChildForm = new Guna.UI2.WinForms.Guna2Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.signOutPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.historyPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.suppliesPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.calendarPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.bookingsPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.statusPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.dashboardPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.addBookingPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.signOutPicture)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).BeginInit();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.addBookingPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signOutPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addBookingPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -127,19 +127,6 @@
             this.panel10.Size = new System.Drawing.Size(206, 85);
             this.panel10.TabIndex = 5;
             // 
-            // signOutPicture
-            // 
-            this.signOutPicture.BackColor = System.Drawing.Color.Transparent;
-            this.signOutPicture.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
-            this.signOutPicture.IconColor = System.Drawing.Color.White;
-            this.signOutPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.signOutPicture.IconSize = 42;
-            this.signOutPicture.Location = new System.Drawing.Point(29, 16);
-            this.signOutPicture.Name = "signOutPicture";
-            this.signOutPicture.Size = new System.Drawing.Size(42, 42);
-            this.signOutPicture.TabIndex = 4;
-            this.signOutPicture.TabStop = false;
-            // 
             // signOutButton
             // 
             this.signOutButton.BorderRadius = 25;
@@ -172,20 +159,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(206, 86);
             this.panel9.TabIndex = 4;
-            // 
-            // historyPicture
-            // 
-            this.historyPicture.BackColor = System.Drawing.Color.Transparent;
-            this.historyPicture.ForeColor = System.Drawing.SystemColors.Window;
-            this.historyPicture.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
-            this.historyPicture.IconColor = System.Drawing.SystemColors.Window;
-            this.historyPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.historyPicture.IconSize = 42;
-            this.historyPicture.Location = new System.Drawing.Point(28, 21);
-            this.historyPicture.Name = "historyPicture";
-            this.historyPicture.Size = new System.Drawing.Size(42, 42);
-            this.historyPicture.TabIndex = 13;
-            this.historyPicture.TabStop = false;
             // 
             // historyButton
             // 
@@ -220,19 +193,6 @@
             this.panel5.Size = new System.Drawing.Size(206, 80);
             this.panel5.TabIndex = 2;
             // 
-            // suppliesPicture
-            // 
-            this.suppliesPicture.BackColor = System.Drawing.Color.Transparent;
-            this.suppliesPicture.IconChar = FontAwesome.Sharp.IconChar.BoxesPacking;
-            this.suppliesPicture.IconColor = System.Drawing.Color.White;
-            this.suppliesPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.suppliesPicture.IconSize = 42;
-            this.suppliesPicture.Location = new System.Drawing.Point(28, 20);
-            this.suppliesPicture.Name = "suppliesPicture";
-            this.suppliesPicture.Size = new System.Drawing.Size(42, 42);
-            this.suppliesPicture.TabIndex = 11;
-            this.suppliesPicture.TabStop = false;
-            // 
             // suppliesButton
             // 
             this.suppliesButton.BorderRadius = 25;
@@ -265,19 +225,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(206, 80);
             this.panel8.TabIndex = 3;
-            // 
-            // calendarPicture
-            // 
-            this.calendarPicture.BackColor = System.Drawing.Color.Transparent;
-            this.calendarPicture.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
-            this.calendarPicture.IconColor = System.Drawing.Color.White;
-            this.calendarPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.calendarPicture.IconSize = 42;
-            this.calendarPicture.Location = new System.Drawing.Point(32, 21);
-            this.calendarPicture.Name = "calendarPicture";
-            this.calendarPicture.Size = new System.Drawing.Size(42, 42);
-            this.calendarPicture.TabIndex = 9;
-            this.calendarPicture.TabStop = false;
             // 
             // calendarButton
             // 
@@ -312,19 +259,6 @@
             this.panel6.Size = new System.Drawing.Size(206, 80);
             this.panel6.TabIndex = 3;
             // 
-            // bookingsPicture
-            // 
-            this.bookingsPicture.BackColor = System.Drawing.Color.Transparent;
-            this.bookingsPicture.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
-            this.bookingsPicture.IconColor = System.Drawing.Color.White;
-            this.bookingsPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bookingsPicture.IconSize = 42;
-            this.bookingsPicture.Location = new System.Drawing.Point(32, 22);
-            this.bookingsPicture.Name = "bookingsPicture";
-            this.bookingsPicture.Size = new System.Drawing.Size(42, 42);
-            this.bookingsPicture.TabIndex = 7;
-            this.bookingsPicture.TabStop = false;
-            // 
             // bookingsButton
             // 
             this.bookingsButton.BorderRadius = 25;
@@ -358,19 +292,6 @@
             this.panel7.Size = new System.Drawing.Size(206, 80);
             this.panel7.TabIndex = 3;
             // 
-            // statusPicture
-            // 
-            this.statusPicture.BackColor = System.Drawing.Color.Transparent;
-            this.statusPicture.IconChar = FontAwesome.Sharp.IconChar.Signal;
-            this.statusPicture.IconColor = System.Drawing.Color.White;
-            this.statusPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.statusPicture.IconSize = 42;
-            this.statusPicture.Location = new System.Drawing.Point(32, 20);
-            this.statusPicture.Name = "statusPicture";
-            this.statusPicture.Size = new System.Drawing.Size(42, 42);
-            this.statusPicture.TabIndex = 5;
-            this.statusPicture.TabStop = false;
-            // 
             // statusButton
             // 
             this.statusButton.BorderRadius = 25;
@@ -403,19 +324,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(206, 80);
             this.panel4.TabIndex = 1;
-            // 
-            // dashboardPicture
-            // 
-            this.dashboardPicture.BackColor = System.Drawing.Color.Transparent;
-            this.dashboardPicture.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
-            this.dashboardPicture.IconColor = System.Drawing.Color.White;
-            this.dashboardPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.dashboardPicture.IconSize = 42;
-            this.dashboardPicture.Location = new System.Drawing.Point(32, 22);
-            this.dashboardPicture.Name = "dashboardPicture";
-            this.dashboardPicture.Size = new System.Drawing.Size(42, 42);
-            this.dashboardPicture.TabIndex = 3;
-            this.dashboardPicture.TabStop = false;
             // 
             // dashboardButton
             // 
@@ -461,21 +369,6 @@
             this.panel2.Size = new System.Drawing.Size(206, 109);
             this.panel2.TabIndex = 2;
             // 
-            // addBookingPicture
-            // 
-            this.addBookingPicture.BackColor = System.Drawing.Color.Transparent;
-            this.addBookingPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.addBookingPicture.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.addBookingPicture.IconColor = System.Drawing.Color.White;
-            this.addBookingPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.addBookingPicture.IconSize = 42;
-            this.addBookingPicture.Location = new System.Drawing.Point(28, 16);
-            this.addBookingPicture.Name = "addBookingPicture";
-            this.addBookingPicture.Size = new System.Drawing.Size(42, 42);
-            this.addBookingPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.addBookingPicture.TabIndex = 5;
-            this.addBookingPicture.TabStop = false;
-            // 
             // addBooking
             // 
             this.addBooking.BorderRadius = 25;
@@ -513,20 +406,6 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "ResortPro";
             // 
-            // iconPictureBox2
-            // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Ubuntu;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 83;
-            this.iconPictureBox2.Location = new System.Drawing.Point(7, 14);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(90, 83);
-            this.iconPictureBox2.TabIndex = 2;
-            this.iconPictureBox2.TabStop = false;
-            // 
             // topPanel
             // 
             this.topPanel.Controls.Add(this.iconButton2);
@@ -541,44 +420,6 @@
             this.topPanel.Size = new System.Drawing.Size(991, 112);
             this.topPanel.TabIndex = 1;
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.Black;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Bell;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 35;
-            this.iconButton2.Location = new System.Drawing.Point(699, 33);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(3, 4, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(35, 35);
-            this.iconButton2.TabIndex = 7;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.Black;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Gear;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 35;
-            this.iconButton1.Location = new System.Drawing.Point(929, 32);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(3, 4, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(35, 35);
-            this.iconButton1.TabIndex = 6;
-            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -610,19 +451,6 @@
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Size = new System.Drawing.Size(176, 36);
             this.guna2ComboBox1.TabIndex = 4;
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.White;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(28, 32);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox1.TabIndex = 2;
-            this.iconPictureBox1.TabStop = false;
             // 
             // guna2TextBox1
             // 
@@ -668,6 +496,178 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // iconButton2
+            // 
+            this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.ForeColor = System.Drawing.Color.Black;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 35;
+            this.iconButton2.Location = new System.Drawing.Point(699, 33);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Padding = new System.Windows.Forms.Padding(3, 4, 0, 0);
+            this.iconButton2.Size = new System.Drawing.Size(35, 35);
+            this.iconButton2.TabIndex = 7;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.Black;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Gear;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 35;
+            this.iconButton1.Location = new System.Drawing.Point(929, 32);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(3, 4, 0, 0);
+            this.iconButton1.Size = new System.Drawing.Size(35, 35);
+            this.iconButton1.TabIndex = 6;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.Location = new System.Drawing.Point(28, 32);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox1.TabIndex = 2;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // signOutPicture
+            // 
+            this.signOutPicture.BackColor = System.Drawing.Color.Transparent;
+            this.signOutPicture.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
+            this.signOutPicture.IconColor = System.Drawing.Color.White;
+            this.signOutPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.signOutPicture.IconSize = 42;
+            this.signOutPicture.Location = new System.Drawing.Point(29, 16);
+            this.signOutPicture.Name = "signOutPicture";
+            this.signOutPicture.Size = new System.Drawing.Size(42, 42);
+            this.signOutPicture.TabIndex = 4;
+            this.signOutPicture.TabStop = false;
+            // 
+            // historyPicture
+            // 
+            this.historyPicture.BackColor = System.Drawing.Color.Transparent;
+            this.historyPicture.ForeColor = System.Drawing.SystemColors.Window;
+            this.historyPicture.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
+            this.historyPicture.IconColor = System.Drawing.SystemColors.Window;
+            this.historyPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.historyPicture.IconSize = 42;
+            this.historyPicture.Location = new System.Drawing.Point(28, 21);
+            this.historyPicture.Name = "historyPicture";
+            this.historyPicture.Size = new System.Drawing.Size(42, 42);
+            this.historyPicture.TabIndex = 13;
+            this.historyPicture.TabStop = false;
+            // 
+            // suppliesPicture
+            // 
+            this.suppliesPicture.BackColor = System.Drawing.Color.Transparent;
+            this.suppliesPicture.IconChar = FontAwesome.Sharp.IconChar.BoxesPacking;
+            this.suppliesPicture.IconColor = System.Drawing.Color.White;
+            this.suppliesPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.suppliesPicture.IconSize = 42;
+            this.suppliesPicture.Location = new System.Drawing.Point(28, 20);
+            this.suppliesPicture.Name = "suppliesPicture";
+            this.suppliesPicture.Size = new System.Drawing.Size(42, 42);
+            this.suppliesPicture.TabIndex = 11;
+            this.suppliesPicture.TabStop = false;
+            // 
+            // calendarPicture
+            // 
+            this.calendarPicture.BackColor = System.Drawing.Color.Transparent;
+            this.calendarPicture.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
+            this.calendarPicture.IconColor = System.Drawing.Color.White;
+            this.calendarPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.calendarPicture.IconSize = 42;
+            this.calendarPicture.Location = new System.Drawing.Point(32, 21);
+            this.calendarPicture.Name = "calendarPicture";
+            this.calendarPicture.Size = new System.Drawing.Size(42, 42);
+            this.calendarPicture.TabIndex = 9;
+            this.calendarPicture.TabStop = false;
+            // 
+            // bookingsPicture
+            // 
+            this.bookingsPicture.BackColor = System.Drawing.Color.Transparent;
+            this.bookingsPicture.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
+            this.bookingsPicture.IconColor = System.Drawing.Color.White;
+            this.bookingsPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bookingsPicture.IconSize = 42;
+            this.bookingsPicture.Location = new System.Drawing.Point(32, 22);
+            this.bookingsPicture.Name = "bookingsPicture";
+            this.bookingsPicture.Size = new System.Drawing.Size(42, 42);
+            this.bookingsPicture.TabIndex = 7;
+            this.bookingsPicture.TabStop = false;
+            // 
+            // statusPicture
+            // 
+            this.statusPicture.BackColor = System.Drawing.Color.Transparent;
+            this.statusPicture.IconChar = FontAwesome.Sharp.IconChar.Signal;
+            this.statusPicture.IconColor = System.Drawing.Color.White;
+            this.statusPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.statusPicture.IconSize = 42;
+            this.statusPicture.Location = new System.Drawing.Point(32, 20);
+            this.statusPicture.Name = "statusPicture";
+            this.statusPicture.Size = new System.Drawing.Size(42, 42);
+            this.statusPicture.TabIndex = 5;
+            this.statusPicture.TabStop = false;
+            // 
+            // dashboardPicture
+            // 
+            this.dashboardPicture.BackColor = System.Drawing.Color.Transparent;
+            this.dashboardPicture.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
+            this.dashboardPicture.IconColor = System.Drawing.Color.White;
+            this.dashboardPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.dashboardPicture.IconSize = 42;
+            this.dashboardPicture.Location = new System.Drawing.Point(32, 22);
+            this.dashboardPicture.Name = "dashboardPicture";
+            this.dashboardPicture.Size = new System.Drawing.Size(42, 42);
+            this.dashboardPicture.TabIndex = 3;
+            this.dashboardPicture.TabStop = false;
+            // 
+            // addBookingPicture
+            // 
+            this.addBookingPicture.BackColor = System.Drawing.Color.Transparent;
+            this.addBookingPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.addBookingPicture.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.addBookingPicture.IconColor = System.Drawing.Color.White;
+            this.addBookingPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.addBookingPicture.IconSize = 42;
+            this.addBookingPicture.Location = new System.Drawing.Point(28, 16);
+            this.addBookingPicture.Name = "addBookingPicture";
+            this.addBookingPicture.Size = new System.Drawing.Size(42, 42);
+            this.addBookingPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.addBookingPicture.TabIndex = 5;
+            this.addBookingPicture.TabStop = false;
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Ubuntu;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 83;
+            this.iconPictureBox2.Location = new System.Drawing.Point(7, 14);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(90, 83);
+            this.iconPictureBox2.TabIndex = 2;
+            this.iconPictureBox2.TabStop = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -695,27 +695,27 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.signOutPicture)).EndInit();
             this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).EndInit();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).EndInit();
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).EndInit();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).EndInit();
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.addBookingPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signOutPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addBookingPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

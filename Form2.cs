@@ -48,15 +48,15 @@ namespace ResortPro
         private void InitializeButtonIconMap()
         {
             buttonIconMap = new Dictionary<Guna2Button, IconPictureBox>
-    {
-        { dashboardButton, dashboardPicture },
-        { statusButton, statusPicture },
-        { bookingsButton, bookingsPicture },
-        { calendarButton, calendarPicture },
-        { suppliesButton, suppliesPicture },
-        { historyButton, historyPicture },
-        { signOutButton, signOutPicture } // Add signOutButton here
-    };
+                {
+                    { dashboardButton, dashboardPicture },
+                    { statusButton, statusPicture },
+                    { bookingsButton, bookingsPicture },
+                    { calendarButton, calendarPicture },
+                    { suppliesButton, suppliesPicture },
+                    { historyButton, historyPicture },
+                    { signOutButton, signOutPicture } // Add signOutButton here
+                };
         }
 
 
