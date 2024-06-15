@@ -46,6 +46,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
+      <HintPath>..\..\..\..\..\prog\midtermProgLab\library\Bunifu\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
       <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
     </Reference>
