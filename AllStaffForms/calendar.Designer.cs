@@ -56,7 +56,7 @@
             this.label1.Location = new System.Drawing.Point(17, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 32);
+            this.label1.Size = new System.Drawing.Size(171, 40);
             this.label1.TabIndex = 2;
             this.label1.Text = "Calendar";
             // 
@@ -64,7 +64,7 @@
             // 
             this.kryptonMonthCalendar1.Location = new System.Drawing.Point(12, 6);
             this.kryptonMonthCalendar1.Name = "kryptonMonthCalendar1";
-            this.kryptonMonthCalendar1.Size = new System.Drawing.Size(230, 182);
+            this.kryptonMonthCalendar1.Size = new System.Drawing.Size(293, 218);
             this.kryptonMonthCalendar1.TabIndex = 25;
             // 
             // guna2GradientPanel1
@@ -79,6 +79,7 @@
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(975, 48);
             this.guna2GradientPanel1.TabIndex = 26;
+            this.guna2GradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
             // iconButton1
             // 
@@ -125,7 +126,7 @@
             this.label9.Location = new System.Drawing.Point(495, 9);
             this.label9.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(164, 32);
+            this.label9.Size = new System.Drawing.Size(206, 40);
             this.label9.TabIndex = 3;
             this.label9.Text = "Month Year";
             // 
@@ -170,7 +171,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label6.Location = new System.Drawing.Point(626, 17);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 24);
+            this.label6.Size = new System.Drawing.Size(107, 29);
             this.label6.TabIndex = 10;
             this.label6.Text = "Saturday";
             // 
@@ -181,7 +182,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label7.Location = new System.Drawing.Point(534, 17);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 24);
+            this.label7.Size = new System.Drawing.Size(80, 29);
             this.label7.TabIndex = 9;
             this.label7.Text = "Friday";
             // 
@@ -192,7 +193,7 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label8.Location = new System.Drawing.Point(422, 17);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 24);
+            this.label8.Size = new System.Drawing.Size(113, 29);
             this.label8.TabIndex = 8;
             this.label8.Text = "Thursday";
             // 
@@ -203,7 +204,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label4.Location = new System.Drawing.Point(308, 17);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 24);
+            this.label4.Size = new System.Drawing.Size(140, 29);
             this.label4.TabIndex = 6;
             this.label4.Text = "Wednesday";
             // 
@@ -214,7 +215,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label5.Location = new System.Drawing.Point(218, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 24);
+            this.label5.Size = new System.Drawing.Size(106, 29);
             this.label5.TabIndex = 5;
             this.label5.Text = "Tuesday";
             // 
@@ -225,7 +226,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label3.Location = new System.Drawing.Point(113, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 24);
+            this.label3.Size = new System.Drawing.Size(98, 29);
             this.label3.TabIndex = 4;
             this.label3.Text = "Monday";
             // 
@@ -236,13 +237,13 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(16, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 24);
+            this.label2.Size = new System.Drawing.Size(93, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Sunday";
             // 
             // calendar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(975, 532);

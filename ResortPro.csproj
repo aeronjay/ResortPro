@@ -336,5 +336,8 @@
   <ItemGroup>
     <None Include="Resources\360_F_127158923_P9mXxJQ2sSsMlMkYuVxk6b4yBZMo2usI-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Minimalist Ocean Wave Logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

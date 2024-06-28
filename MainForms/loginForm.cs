@@ -72,7 +72,41 @@ namespace ResortPro
             Application.Exit();
         }
 
-        private void loginButton_Click(object sender, EventArgs e)
+        
+
+        private void usernameLabel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                passwordLabel.UseSystemPasswordChar = false; // Show password in plain text
+            }
+            else
+            {
+                passwordLabel.UseSystemPasswordChar = true; // Hide password
+            }
+        }
+
+        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             string username = usernameLabel.Text;
             string password = passwordLabel.Text;
@@ -115,34 +149,17 @@ namespace ResortPro
             }
         }
 
-        private void usernameLabel_TextChanged(object sender, EventArgs e)
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked)
-            {
-                passwordLabel.UseSystemPasswordChar = false; // Show password in plain text
-            }
-            else
-            {
-                passwordLabel.UseSystemPasswordChar = true; // Hide password
-            }
-        }
-
-        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }

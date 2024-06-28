@@ -84,5 +84,10 @@ namespace ResortPro
             base.OnResize(e);
             LayoutControls(); // Adjust controls size when the form is resized
         }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
