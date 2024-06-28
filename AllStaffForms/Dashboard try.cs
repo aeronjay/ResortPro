@@ -42,7 +42,7 @@ namespace ResortPro.AllStaffForms
 
         }
 
-        private void label13_Click(object sender, EvaentArgs e)
+        private void label13_Click(object sender, EventArgs e)
         {
 
         }
