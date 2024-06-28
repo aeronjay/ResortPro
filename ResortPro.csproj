@@ -144,6 +144,18 @@
     <Compile Include="AllStaffForms\dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllStaffForms\UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllStaffForms\UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllStaffForms\UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllStaffForms\UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbOp.cs" />
     <Compile Include="MainForms\loginForm.cs">
       <SubType>Form</SubType>
@@ -224,6 +236,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllStaffForms\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStaffForms\UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStaffForms\UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForms\loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
