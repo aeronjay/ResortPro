@@ -47,10 +47,16 @@
       <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
-      <HintPath>..\..\..\..\..\prog\midtermProgLab\library\Bunifu\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+      <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
       <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
     </Reference>
     <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
@@ -59,20 +65,25 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Libraries\Guna.UI2.dll</HintPath>
     </Reference>
-    <Reference Include="Krypton.Docking, Version=80.24.3.64, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>packages\Krypton.Docking.80.24.3.64\lib\net472\Krypton.Docking.dll</HintPath>
+    <Reference Include="Krypton.Docking, Version=85.24.6.176, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>packages\Krypton.Docking.85.24.6.176\lib\net472\Krypton.Docking.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Krypton.Navigator, Version=80.24.3.64, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>packages\Krypton.Navigator.80.24.3.64\lib\net472\Krypton.Navigator.dll</HintPath>
+    <Reference Include="Krypton.Navigator, Version=85.24.6.176, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>packages\Krypton.Navigator.85.24.6.176\lib\net472\Krypton.Navigator.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Krypton.Ribbon, Version=80.24.3.64, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>packages\Krypton.Ribbon.80.24.3.64\lib\net472\Krypton.Ribbon.dll</HintPath>
+    <Reference Include="Krypton.Ribbon, Version=85.24.6.176, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>packages\Krypton.Ribbon.85.24.6.176\lib\net472\Krypton.Ribbon.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Krypton.Toolkit, Version=80.24.3.64, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>packages\Krypton.Toolkit.80.24.3.64\lib\net472\Krypton.Toolkit.dll</HintPath>
+    <Reference Include="Krypton.Toolkit, Version=85.24.6.176, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>packages\Krypton.Toolkit.85.24.6.176\lib\net472\Krypton.Toolkit.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Krypton.Workspace, Version=80.24.3.64, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>packages\Krypton.Workspace.80.24.3.64\lib\net472\Krypton.Workspace.dll</HintPath>
+    <Reference Include="Krypton.Workspace, Version=85.24.6.176, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>packages\Krypton.Workspace.85.24.6.176\lib\net472\Krypton.Workspace.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationCore" />

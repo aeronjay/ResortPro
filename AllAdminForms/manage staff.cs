@@ -16,5 +16,10 @@ namespace ResortPro
         {
             InitializeComponent();
         }
+
+        private void manage_staff_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
