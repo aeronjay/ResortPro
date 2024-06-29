@@ -24,8 +24,8 @@ namespace ResortPro
         private void bookings_Load(object sender, EventArgs e)
         {
             LoadTable();
-            bunifuButton3.PerformClick();
-            this.ActiveControl = bunifuButton3;
+            this.ActiveControl = selectAllButton;
+            selectAllButton.PerformClick();
         }
 
         public void LoadTable()
@@ -124,6 +124,109 @@ namespace ResortPro
             else
             {
                 MessageBox.Show("Please select a booking to mark as done.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void selectAllButton_Click(object sender, EventArgs e)
+        {
+            LoadTable();
+        }
+
+        private void paidButton_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings WHERE Done = False AND paid = True";
+
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+                {
+                    using (OleDbDataAdapter adapter = new OleDbDataAdapter(sql, connection))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        // Clear existing rows from the DataGridView
+                        bunifuDataGridView1.Rows.Clear();
+
+                        // Populate existing columns with data from the DataTable
+                        foreach (DataRow row in dataTable.Rows)
+                        {
+                            // Add a new row to the DataGridView
+                            int rowIndex = bunifuDataGridView1.Rows.Add();
+
+                            // Map data from the DataTable to corresponding DataGridView columns
+                            bunifuDataGridView1.Rows[rowIndex].Cells["ID"].Value = row["ID"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["fullName"].Value = row["fullName"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["email"].Value = row["email"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["contactNumber"].Value = row["contactNumber"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["checkInDate"].Value = row["checkInDate"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["peopleNumber"].Value = row["peopleNumber"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["accommodationType"].Value = row["accommodationType"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["paid"].Value = row["paid"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["totalPrice"].Value = row["totalPrice"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["Done"].Value = row["Done"];
+
+                            bunifuDataGridView1.Columns["Done"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            bunifuDataGridView1.Columns["paid"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            bunifuDataGridView1.Columns["peopleNumber"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            bunifuDataGridView1.Columns["totalPrice"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading data: " + ex.Message);
+            }
+        }
+
+        private void pendingButton_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings WHERE Done = False AND paid = False";
+
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+                {
+                    using (OleDbDataAdapter adapter = new OleDbDataAdapter(sql, connection))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        // Clear existing rows from the DataGridView
+                        bunifuDataGridView1.Rows.Clear();
+
+                        // Populate existing columns with data from the DataTable
+                        foreach (DataRow row in dataTable.Rows)
+                        {
+                            // Add a new row to the DataGridView
+                            int rowIndex = bunifuDataGridView1.Rows.Add();
+
+                            // Map data from the DataTable to corresponding DataGridView columns
+                            bunifuDataGridView1.Rows[rowIndex].Cells["ID"].Value = row["ID"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["fullName"].Value = row["fullName"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["email"].Value = row["email"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["contactNumber"].Value = row["contactNumber"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["checkInDate"].Value = row["checkInDate"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["peopleNumber"].Value = row["peopleNumber"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["accommodationType"].Value = row["accommodationType"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["paid"].Value = row["paid"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["totalPrice"].Value = row["totalPrice"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["Done"].Value = row["Done"];
+
+                            bunifuDataGridView1.Columns["Done"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            bunifuDataGridView1.Columns["paid"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            bunifuDataGridView1.Columns["peopleNumber"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            bunifuDataGridView1.Columns["totalPrice"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading data: " + ex.Message);
             }
         }
     }
