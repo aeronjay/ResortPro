@@ -125,6 +125,12 @@
     <Compile Include="AllAdminForms\Manage Pricing.Designer.cs">
       <DependentUpon>Manage Pricing.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllStaffForms\editReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStaffForms\editReservation.Designer.cs">
+      <DependentUpon>editReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllStaffForms\addReservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllAdminForms\Manage Pricing.resx">
       <DependentUpon>Manage Pricing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStaffForms\editReservation.resx">
+      <DependentUpon>editReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllStaffForms\addReservation.resx">
       <DependentUpon>addReservation.cs</DependentUpon>

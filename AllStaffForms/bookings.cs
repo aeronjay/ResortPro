@@ -278,5 +278,39 @@ namespace ResortPro
                 }
             }
         }
+
+        private void editRowButton_Click(object sender, EventArgs e)
+            {
+                if (bunifuDataGridView1.SelectedRows.Count > 0)
+                {
+                    DataGridViewRow selectedRow = bunifuDataGridView1.SelectedRows[0];
+
+                    
+                    editReservation editForm = new editReservation();
+
+                    
+                    editForm.BookingID = (int)selectedRow.Cells["ID"].Value;
+                    editForm.FullName = selectedRow.Cells["fullName"].Value.ToString();
+                    editForm.Email = selectedRow.Cells["email"].Value.ToString();
+                    editForm.ContactNumber = selectedRow.Cells["contactNumber"].Value.ToString();
+                    editForm.CheckInDate = (DateTime)selectedRow.Cells["checkInDate"].Value;
+                    editForm.PeopleNumber = (int)selectedRow.Cells["peopleNumber"].Value;
+                    editForm.AccommodationType = selectedRow.Cells["accommodationType"].Value.ToString();
+                    editForm.Paid = (bool)selectedRow.Cells["paid"].Value;
+                    editForm.TotalPrice = (decimal)selectedRow.Cells["totalPrice"].Value;
+
+                    // Show the editReservation form
+                    if (editForm.ShowDialog() == DialogResult.OK)
+                    {
+                        
+                        LoadTable();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please select a booking to edit.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+
     }
 }
