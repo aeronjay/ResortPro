@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
             this.passwordLabel = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -69,7 +71,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label3.Size = new System.Drawing.Size(97, 25);
+            this.label3.Size = new System.Drawing.Size(79, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "@AFLLL";
             // 
@@ -82,7 +84,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(139, 25);
+            this.label2.Size = new System.Drawing.Size(111, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Developed By ";
             // 
@@ -95,7 +97,7 @@
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(348, 25);
+            this.label1.Size = new System.Drawing.Size(287, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Last Gate Resort Management System";
             // 
@@ -133,7 +135,7 @@
             this.checkBox1.Location = new System.Drawing.Point(740, 414);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(68, 23);
+            this.checkBox1.Size = new System.Drawing.Size(56, 20);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Show";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -147,7 +149,7 @@
             this.LOGIN.Location = new System.Drawing.Point(730, 216);
             this.LOGIN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LOGIN.Name = "LOGIN";
-            this.LOGIN.Size = new System.Drawing.Size(166, 58);
+            this.LOGIN.Size = new System.Drawing.Size(132, 46);
             this.LOGIN.TabIndex = 5;
             this.LOGIN.Text = "LOGIN";
             // 
@@ -158,7 +160,7 @@
             this.label4.Location = new System.Drawing.Point(734, 274);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(282, 19);
+            this.label4.Size = new System.Drawing.Size(221, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Welcome back! Log In To Your Account.";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -182,6 +184,7 @@
             // 
             // usernameLabel
             // 
+            this.usernameLabel.BorderRadius = 10;
             this.usernameLabel.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.usernameLabel.DefaultText = "";
             this.usernameLabel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -195,7 +198,7 @@
             this.usernameLabel.HoverState.Parent = this.usernameLabel;
             this.usernameLabel.IconLeft = global::ResortPro.Properties.Resources.person;
             this.usernameLabel.IconLeftSize = new System.Drawing.Size(40, 40);
-            this.usernameLabel.Location = new System.Drawing.Point(740, 309);
+            this.usernameLabel.Location = new System.Drawing.Point(739, 309);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.PasswordChar = '\0';
@@ -208,6 +211,7 @@
             // 
             // passwordLabel
             // 
+            this.passwordLabel.BorderRadius = 10;
             this.passwordLabel.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.passwordLabel.DefaultText = "";
             this.passwordLabel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -238,7 +242,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.label5.Location = new System.Drawing.Point(726, 120);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(278, 79);
+            this.label5.Size = new System.Drawing.Size(222, 62);
             this.label5.TabIndex = 10;
             this.label5.Text = "Resort Pr";
             // 
@@ -250,15 +254,20 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 42;
-            this.iconPictureBox2.Location = new System.Drawing.Point(983, 148);
+            this.iconPictureBox2.Location = new System.Drawing.Point(930, 140);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(68, 42);
             this.iconPictureBox2.TabIndex = 11;
             this.iconPictureBox2.TabStop = false;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 20;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // loginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(1107, 672);
@@ -305,6 +314,7 @@
         private Guna.UI2.WinForms.Guna2TextBox passwordLabel;
         private System.Windows.Forms.Label label5;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
 
