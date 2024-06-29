@@ -229,5 +229,54 @@ namespace ResortPro
                 MessageBox.Show("Error loading data: " + ex.Message);
             }
         }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = bunifuDataGridView1.SelectedRows[0];
+                int selectedBookingID = (int)selectedRow.Cells["ID"].Value;
+                string fullName = selectedRow.Cells["fullName"].Value.ToString();
+
+                DialogResult result = MessageBox.Show($"Are you sure you want to CANCEL the booking \nfor {fullName} (ID: {selectedBookingID})?",
+                                                        "CANCEL BOOKING?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        CancelBooking(selectedBookingID, true); // Set 'Done' to true (Yes)
+
+                        LoadTable();
+
+                        MessageBox.Show("Booking Cancelled Successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An Error Has Occurred While Canceling Booking: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a booking to mark as done.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        private void CancelBooking(int bookingID, bool done)
+        {
+            string updateSql = "UPDATE bookings SET Canceled = @done WHERE ID = @id";
+
+            using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+            {
+                using (OleDbCommand command = new OleDbCommand(updateSql, connection))
+                {
+                    command.Parameters.AddWithValue("@done", done);
+                    command.Parameters.AddWithValue("@id", bookingID);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }
