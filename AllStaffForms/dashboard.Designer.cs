@@ -106,7 +106,6 @@
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Size = new System.Drawing.Size(180, 103);
             this.guna2GradientButton1.TabIndex = 1;
-            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // guna2GradientButton2
             // 
@@ -125,7 +124,6 @@
             this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
             this.guna2GradientButton2.Size = new System.Drawing.Size(180, 103);
             this.guna2GradientButton2.TabIndex = 2;
-            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2GradientButton3
             // 
@@ -144,7 +142,6 @@
             this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
             this.guna2GradientButton3.Size = new System.Drawing.Size(180, 103);
             this.guna2GradientButton3.TabIndex = 3;
-            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // guna2GradientButton4
             // 
@@ -163,7 +160,6 @@
             this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
             this.guna2GradientButton4.Size = new System.Drawing.Size(180, 103);
             this.guna2GradientButton4.TabIndex = 4;
-            this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
             // 
             // guna2GradientButton5
             // 
@@ -182,7 +178,6 @@
             this.guna2GradientButton5.ShadowDecoration.Parent = this.guna2GradientButton5;
             this.guna2GradientButton5.Size = new System.Drawing.Size(180, 103);
             this.guna2GradientButton5.TabIndex = 5;
-            this.guna2GradientButton5.Click += new System.EventHandler(this.guna2GradientButton5_Click);
             // 
             // guna2GradientButton6
             // 
@@ -201,7 +196,6 @@
             this.guna2GradientButton6.ShadowDecoration.Parent = this.guna2GradientButton6;
             this.guna2GradientButton6.Size = new System.Drawing.Size(180, 103);
             this.guna2GradientButton6.TabIndex = 6;
-            this.guna2GradientButton6.Click += new System.EventHandler(this.guna2GradientButton6_Click);
             // 
             // guna2GradientButton7
             // 
@@ -220,7 +214,6 @@
             this.guna2GradientButton7.ShadowDecoration.Parent = this.guna2GradientButton7;
             this.guna2GradientButton7.Size = new System.Drawing.Size(180, 103);
             this.guna2GradientButton7.TabIndex = 7;
-            this.guna2GradientButton7.Click += new System.EventHandler(this.guna2GradientButton7_Click);
             // 
             // pictureBox1
             // 
@@ -412,7 +405,6 @@
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(80, 36);
             this.guna2TextBox1.TabIndex = 22;
-            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // guna2TextBox2
             // 
@@ -631,7 +623,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1110, 236);
             this.panel1.TabIndex = 29;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -753,7 +744,6 @@
             this.label10.Size = new System.Drawing.Size(520, 23);
             this.label10.TabIndex = 2;
             this.label10.Text = "___________________________________________________";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -766,7 +756,6 @@
             this.label9.Size = new System.Drawing.Size(71, 23);
             this.label9.TabIndex = 1;
             this.label9.Text = "Guests";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // guna2GradientButton8
             // 
@@ -785,7 +774,6 @@
             this.guna2GradientButton8.ShadowDecoration.Parent = this.guna2GradientButton8;
             this.guna2GradientButton8.Size = new System.Drawing.Size(528, 230);
             this.guna2GradientButton8.TabIndex = 0;
-            this.guna2GradientButton8.Click += new System.EventHandler(this.guna2GradientButton8_Click);
             // 
             // dashboard
             // 
@@ -800,7 +788,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "dashboard";
             this.Text = "dashboard";
-            this.Load += new System.EventHandler(this.dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

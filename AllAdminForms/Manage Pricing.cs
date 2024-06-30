@@ -142,11 +142,6 @@ namespace ResortPro.AllAdminForms
             }
         }
 
-        private void addPrice_Click(object sender, EventArgs e)
-        {
-            // Your code to add a new pricing record
-        }
-
         private void SearchTextBox_TextChanged(object sender, EventArgs e)
         {
             loadData(SearchTextBox.Text);
