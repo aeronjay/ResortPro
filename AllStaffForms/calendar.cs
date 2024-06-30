@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,83 +12,94 @@ using System.Windows.Forms;
 
 namespace ResortPro
 {
-    public partial class calendar : Form
+    public partial class Calendar : Form
     {
-        private const int ControlsPerRow = 7;
-        private const int ControlHeight = 64;
-
-        public calendar()
+        int month, year;
+        public Calendar()
         {
             InitializeComponent();
         }
 
-        private void calendar_Load(object sender, EventArgs e)
-        {
-            displayDays();
-        }
 
-        private void displayDays()
+        private void Calendar_Load(object sender, EventArgs e)
+        {
+            displaDays();
+        }
+        private void displaDays()
         {
             DateTime now = DateTime.Now;
-            DateTime startOfTheMonth = new DateTime(now.Year, now.Month, 1);
-            int days = DateTime.DaysInMonth(now.Year, now.Month);
-            int dayOfTheWeek = Convert.ToInt32(startOfTheMonth.DayOfWeek.ToString("d")) + 1;
+            month = now.Month;
+            year = now.Year;
+            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+            LBDATE.Text =monthname + "" + year;
+            DateTime startofthemonth = new DateTime(year, month,1);
+            int days = DateTime.DaysInMonth(year, month);
+            int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
 
-            dayContainer.Controls.Clear(); // Clear existing controls
-
-            for (int i = 1; i < dayOfTheWeek; i++)
+            for (int i = 1; i < daysoftheweek; i++)
             {
-                UserControlBlank uc = new UserControlBlank();
-                uc.Margin = new Padding(0); // Remove margin
-                dayContainer.Controls.Add(uc);
+                UserControlBlank ucBlank = new UserControlBlank();
+                daycontainer.Controls.Add(ucBlank);
+                
+            }
+            for (int i=1; i <= days; i++)
+            {
+                UserControlDays ucdays = new UserControlDays();
+                ucdays.days(i);
+                daycontainer.Controls.Add(ucdays);
+            }
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            daycontainer.Controls.Clear();
+            month--;
+            
+            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+            LBDATE.Text = monthname + "" + year;
+
+            DateTime now = DateTime.Now;
+            DateTime startofthemonth = new DateTime(year, month, 1);
+            int days = DateTime.DaysInMonth(year, month);
+            int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"));
+
+            for (int i = 1; i < daysoftheweek; i++)
+            {
+                UserControlBlank ucBlank = new UserControlBlank();
+                daycontainer.Controls.Add(ucBlank);
             }
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucd = new UserControlDays();
-                ucd.days(i);
-                ucd.Margin = new Padding(0); // Remove margin
-                dayContainer.Controls.Add(ucd);
+                UserControlDays ucdays = new UserControlDays();
+                ucdays.days(i);
+                daycontainer.Controls.Add(ucdays);
             }
-
-            // Make the FlowLayoutPanel responsive
-            LayoutControls();
         }
 
-        private void LayoutControls()
+        private void btnNext_Click(object sender, EventArgs e)
         {
-            int containerWidth = dayContainer.ClientSize.Width;
-            int controlWidth = containerWidth / ControlsPerRow;
+            daycontainer.Controls.Clear();
+            month++;
 
-            int x = 0;
-            int y = 0;
+            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+            LBDATE.Text = monthname + "" + year;
 
-            dayContainer.SuspendLayout();
+            DateTime now = DateTime.Now;
+            DateTime startofthemonth = new DateTime(year, month, 1);
+            int days = DateTime.DaysInMonth(year, month);
+            int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"));
 
-            foreach (Control ctrl in dayContainer.Controls)
+            for (int i = 0; i < daysoftheweek; i++)
             {
-                ctrl.Size = new Size(controlWidth, ControlHeight);
-                ctrl.Location = new Point(x, y);
-
-                x += controlWidth;
-                if (x + controlWidth > containerWidth)
-                {
-                    x = 0;
-                    y += ControlHeight;
-                }
+                UserControlBlank ucBlank = new UserControlBlank();
+                daycontainer.Controls.Add(ucBlank);
             }
-
-            dayContainer.ResumeLayout();
-        }
-
-        protected override void OnResize(EventArgs e)
-        {
-            base.OnResize(e);
-            LayoutControls(); // Adjust controls size when the form is resized
-        }
-
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            for (int i = 1; i <= days; i++)
+            {
+                UserControlDays ucdays = new UserControlDays();
+                ucdays.days(i);
+                daycontainer.Controls.Add(ucdays);
+            }
         }
     }
 }

@@ -47,9 +47,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lbDays);
-            this.MaximumSize = new System.Drawing.Size(97, 64);
             this.Name = "UserControlDays";
-            this.Size = new System.Drawing.Size(97, 64);
+            this.Size = new System.Drawing.Size(130, 95);
             this.Load += new System.EventHandler(this.UserControlDays_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

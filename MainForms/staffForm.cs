@@ -220,7 +220,7 @@ namespace ResortPro
 
         private void calendarButton_Click(object sender, EventArgs e)
         {
-            openChildForm(new calendar());
+
         }
 
         private void suppliesButton_Click(object sender, EventArgs e)
