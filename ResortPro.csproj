@@ -107,6 +107,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllAdminForms\addStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllAdminForms\addStaff.Designer.cs">
+      <DependentUpon>addStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllAdminForms\adminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     <Compile Include="AllStaffForms\supplies.Designer.cs">
       <DependentUpon>supplies.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AllAdminForms\addStaff.resx">
+      <DependentUpon>addStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllAdminForms\adminDashboard.resx">
       <DependentUpon>adminDashboard.cs</DependentUpon>
     </EmbeddedResource>

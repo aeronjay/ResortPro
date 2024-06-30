@@ -38,9 +38,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.addStaff = new Guna.UI2.WinForms.Guna2Button();
+            this.editStaff = new Guna.UI2.WinForms.Guna2Button();
+            this.deleteStaff = new Guna.UI2.WinForms.Guna2Button();
             this.firstNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.addressTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.genderTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -57,6 +57,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lastNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.datagridview = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.staff_first_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.staff_last_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,8 +68,8 @@
             this.staff_gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.staff_username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.staff_password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.asdasd = new System.Windows.Forms.Label();
+            this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.datagridview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,62 +77,61 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 51);
+            this.label1.Size = new System.Drawing.Size(256, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Staff";
             // 
-            // guna2Button1
+            // addStaff
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.LightGreen;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(405, 52);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(112, 36);
-            this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Text = "Add";
+            this.addStaff.BorderRadius = 10;
+            this.addStaff.CheckedState.Parent = this.addStaff;
+            this.addStaff.CustomImages.Parent = this.addStaff;
+            this.addStaff.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.addStaff.ForeColor = System.Drawing.Color.White;
+            this.addStaff.HoverState.FillColor = System.Drawing.Color.LightGreen;
+            this.addStaff.HoverState.Parent = this.addStaff;
+            this.addStaff.Location = new System.Drawing.Point(304, 42);
+            this.addStaff.Name = "addStaff";
+            this.addStaff.ShadowDecoration.Parent = this.addStaff;
+            this.addStaff.Size = new System.Drawing.Size(84, 29);
+            this.addStaff.TabIndex = 2;
+            this.addStaff.Text = "Add";
+            this.addStaff.Click += new System.EventHandler(this.addStaff_Click);
             // 
-            // guna2Button2
+            // editStaff
             // 
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(525, 52);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(112, 36);
-            this.guna2Button2.TabIndex = 3;
-            this.guna2Button2.Text = "Edit";
+            this.editStaff.BorderRadius = 10;
+            this.editStaff.CheckedState.Parent = this.editStaff;
+            this.editStaff.CustomImages.Parent = this.editStaff;
+            this.editStaff.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.editStaff.ForeColor = System.Drawing.Color.White;
+            this.editStaff.HoverState.Parent = this.editStaff;
+            this.editStaff.Location = new System.Drawing.Point(394, 42);
+            this.editStaff.Name = "editStaff";
+            this.editStaff.ShadowDecoration.Parent = this.editStaff;
+            this.editStaff.Size = new System.Drawing.Size(84, 29);
+            this.editStaff.TabIndex = 3;
+            this.editStaff.Text = "Edit";
+            this.editStaff.Click += new System.EventHandler(this.editStaff_Click);
             // 
-            // guna2Button3
+            // deleteStaff
             // 
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.LightCoral;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(645, 52);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(112, 36);
-            this.guna2Button3.TabIndex = 4;
-            this.guna2Button3.Text = "Delete";
+            this.deleteStaff.BorderRadius = 10;
+            this.deleteStaff.CheckedState.Parent = this.deleteStaff;
+            this.deleteStaff.CustomImages.Parent = this.deleteStaff;
+            this.deleteStaff.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.deleteStaff.ForeColor = System.Drawing.Color.White;
+            this.deleteStaff.HoverState.FillColor = System.Drawing.Color.LightCoral;
+            this.deleteStaff.HoverState.Parent = this.deleteStaff;
+            this.deleteStaff.Location = new System.Drawing.Point(484, 42);
+            this.deleteStaff.Name = "deleteStaff";
+            this.deleteStaff.ShadowDecoration.Parent = this.deleteStaff;
+            this.deleteStaff.Size = new System.Drawing.Size(84, 29);
+            this.deleteStaff.TabIndex = 4;
+            this.deleteStaff.Text = "Delete";
+            this.deleteStaff.Click += new System.EventHandler(this.deleteStaff_Click);
             // 
             // firstNameTextBox
             // 
@@ -146,14 +147,14 @@
             this.firstNameTextBox.FocusedState.Parent = this.firstNameTextBox;
             this.firstNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTextBox.HoverState.Parent = this.firstNameTextBox;
-            this.firstNameTextBox.Location = new System.Drawing.Point(65, 130);
-            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.firstNameTextBox.Location = new System.Drawing.Point(7, 105);
+            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.PasswordChar = '\0';
             this.firstNameTextBox.PlaceholderText = "Full Name";
             this.firstNameTextBox.SelectedText = "";
             this.firstNameTextBox.ShadowDecoration.Parent = this.firstNameTextBox;
-            this.firstNameTextBox.Size = new System.Drawing.Size(231, 39);
+            this.firstNameTextBox.Size = new System.Drawing.Size(131, 32);
             this.firstNameTextBox.TabIndex = 6;
             // 
             // addressTextBox
@@ -170,14 +171,14 @@
             this.addressTextBox.FocusedState.Parent = this.addressTextBox;
             this.addressTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.addressTextBox.HoverState.Parent = this.addressTextBox;
-            this.addressTextBox.Location = new System.Drawing.Point(67, 324);
-            this.addressTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.addressTextBox.Location = new System.Drawing.Point(156, 181);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.PasswordChar = '\0';
             this.addressTextBox.PlaceholderText = "Address";
             this.addressTextBox.SelectedText = "";
             this.addressTextBox.ShadowDecoration.Parent = this.addressTextBox;
-            this.addressTextBox.Size = new System.Drawing.Size(229, 39);
+            this.addressTextBox.Size = new System.Drawing.Size(130, 32);
             this.addressTextBox.TabIndex = 7;
             // 
             // genderTextBox
@@ -194,14 +195,14 @@
             this.genderTextBox.FocusedState.Parent = this.genderTextBox;
             this.genderTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.genderTextBox.HoverState.Parent = this.genderTextBox;
-            this.genderTextBox.Location = new System.Drawing.Point(65, 396);
-            this.genderTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.genderTextBox.Location = new System.Drawing.Point(6, 248);
+            this.genderTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.genderTextBox.Name = "genderTextBox";
             this.genderTextBox.PasswordChar = '\0';
             this.genderTextBox.PlaceholderText = "Sex";
             this.genderTextBox.SelectedText = "";
             this.genderTextBox.ShadowDecoration.Parent = this.genderTextBox;
-            this.genderTextBox.Size = new System.Drawing.Size(231, 41);
+            this.genderTextBox.Size = new System.Drawing.Size(131, 33);
             this.genderTextBox.TabIndex = 8;
             // 
             // numberTextBox
@@ -219,53 +220,49 @@
             this.numberTextBox.FocusedState.Parent = this.numberTextBox;
             this.numberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.numberTextBox.HoverState.Parent = this.numberTextBox;
-            this.numberTextBox.Location = new System.Drawing.Point(67, 256);
-            this.numberTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.numberTextBox.Location = new System.Drawing.Point(12, 181);
+            this.numberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numberTextBox.Name = "numberTextBox";
             this.numberTextBox.PasswordChar = '\0';
             this.numberTextBox.PlaceholderText = "No.";
             this.numberTextBox.SelectedText = "";
             this.numberTextBox.ShadowDecoration.Parent = this.numberTextBox;
-            this.numberTextBox.Size = new System.Drawing.Size(229, 41);
+            this.numberTextBox.Size = new System.Drawing.Size(130, 33);
             this.numberTextBox.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(72, 112);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(12, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 16);
+            this.label2.Size = new System.Drawing.Size(103, 13);
             this.label2.TabIndex = 11;
             this.label2.Text = "Employee FirstName";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(67, 303);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(157, 164);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 16);
+            this.label4.Size = new System.Drawing.Size(94, 13);
             this.label4.TabIndex = 13;
             this.label4.Text = "Employee Address";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(67, 378);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(7, 233);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 16);
+            this.label5.Size = new System.Drawing.Size(91, 13);
             this.label5.TabIndex = 14;
             this.label5.Text = "Employee Gender";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(67, 235);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(12, 164);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 16);
+            this.label6.Size = new System.Drawing.Size(107, 13);
             this.label6.TabIndex = 15;
             this.label6.Text = "Employee Phone No.";
             // 
@@ -285,33 +282,31 @@
             this.searchTextBox.FocusedState.Parent = this.searchTextBox;
             this.searchTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTextBox.HoverState.Parent = this.searchTextBox;
-            this.searchTextBox.Location = new System.Drawing.Point(957, 47);
-            this.searchTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.searchTextBox.Location = new System.Drawing.Point(718, 38);
+            this.searchTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.PasswordChar = '\0';
             this.searchTextBox.PlaceholderText = "Search";
             this.searchTextBox.SelectedText = "";
             this.searchTextBox.ShadowDecoration.Parent = this.searchTextBox;
-            this.searchTextBox.Size = new System.Drawing.Size(267, 44);
+            this.searchTextBox.Size = new System.Drawing.Size(200, 36);
             this.searchTextBox.TabIndex = 17;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(71, 505);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(158, 303);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 16);
+            this.label3.Size = new System.Drawing.Size(102, 13);
             this.label3.TabIndex = 21;
             this.label3.Text = "Employee Password";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(71, 441);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(3, 303);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(135, 16);
+            this.label8.Size = new System.Drawing.Size(104, 13);
             this.label8.TabIndex = 20;
             this.label8.Text = "Employee Username";
             // 
@@ -329,14 +324,14 @@
             this.usernameTextBox.FocusedState.Parent = this.usernameTextBox;
             this.usernameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextBox.HoverState.Parent = this.usernameTextBox;
-            this.usernameTextBox.Location = new System.Drawing.Point(69, 460);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.usernameTextBox.Location = new System.Drawing.Point(2, 319);
+            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.PasswordChar = '•';
+            this.usernameTextBox.PasswordChar = '\0';
             this.usernameTextBox.PlaceholderText = "";
             this.usernameTextBox.SelectedText = "";
             this.usernameTextBox.ShadowDecoration.Parent = this.usernameTextBox;
-            this.usernameTextBox.Size = new System.Drawing.Size(231, 41);
+            this.usernameTextBox.Size = new System.Drawing.Size(131, 33);
             this.usernameTextBox.TabIndex = 18;
             // 
             // passwordTextBox
@@ -353,23 +348,22 @@
             this.passwordTextBox.FocusedState.Parent = this.passwordTextBox;
             this.passwordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextBox.HoverState.Parent = this.passwordTextBox;
-            this.passwordTextBox.Location = new System.Drawing.Point(69, 524);
-            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.passwordTextBox.Location = new System.Drawing.Point(157, 319);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.PasswordChar = '•';
+            this.passwordTextBox.PasswordChar = '\0';
             this.passwordTextBox.PlaceholderText = "";
             this.passwordTextBox.SelectedText = "";
             this.passwordTextBox.ShadowDecoration.Parent = this.passwordTextBox;
-            this.passwordTextBox.Size = new System.Drawing.Size(231, 41);
+            this.passwordTextBox.Size = new System.Drawing.Size(131, 33);
             this.passwordTextBox.TabIndex = 22;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(68, 175);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(160, 90);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(134, 16);
+            this.label7.Size = new System.Drawing.Size(104, 13);
             this.label7.TabIndex = 24;
             this.label7.Text = "Employee LastName";
             // 
@@ -387,14 +381,14 @@
             this.lastNameTextBox.FocusedState.Parent = this.lastNameTextBox;
             this.lastNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lastNameTextBox.HoverState.Parent = this.lastNameTextBox;
-            this.lastNameTextBox.Location = new System.Drawing.Point(64, 192);
-            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.lastNameTextBox.Location = new System.Drawing.Point(157, 104);
+            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.PasswordChar = '\0';
             this.lastNameTextBox.PlaceholderText = "Full Name";
             this.lastNameTextBox.SelectedText = "";
             this.lastNameTextBox.ShadowDecoration.Parent = this.lastNameTextBox;
-            this.lastNameTextBox.Size = new System.Drawing.Size(231, 39);
+            this.lastNameTextBox.Size = new System.Drawing.Size(131, 32);
             this.lastNameTextBox.TabIndex = 23;
             // 
             // datagridview
@@ -464,8 +458,7 @@
             this.datagridview.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.datagridview.HeaderBgColor = System.Drawing.Color.Empty;
             this.datagridview.HeaderForeColor = System.Drawing.Color.WhiteSmoke;
-            this.datagridview.Location = new System.Drawing.Point(405, 100);
-            this.datagridview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.datagridview.Location = new System.Drawing.Point(304, 81);
             this.datagridview.Name = "datagridview";
             this.datagridview.ReadOnly = true;
             this.datagridview.RowHeadersVisible = false;
@@ -473,10 +466,28 @@
             this.datagridview.RowTemplate.Height = 40;
             this.datagridview.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagridview.Size = new System.Drawing.Size(844, 465);
+            this.datagridview.Size = new System.Drawing.Size(633, 378);
             this.datagridview.TabIndex = 25;
             this.datagridview.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
-            this.datagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_CellContentClick);
+            this.datagridview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_CellClick);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(15, 59);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(24, 13);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "ID: ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(40, 59);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(19, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "00";
             // 
             // ID
             // 
@@ -532,7 +543,7 @@
             // 
             // staff_address
             // 
-            this.staff_address.FillWeight = 80F;
+            this.staff_address.FillWeight = 50F;
             this.staff_address.HeaderText = "Address";
             this.staff_address.MinimumWidth = 6;
             this.staff_address.Name = "staff_address";
@@ -566,32 +577,47 @@
             this.staff_password.Name = "staff_password";
             this.staff_password.ReadOnly = true;
             // 
-            // label9
+            // asdasd
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(72, 75);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(26, 16);
-            this.label9.TabIndex = 27;
-            this.label9.Text = "ID: ";
+            this.asdasd.AutoSize = true;
+            this.asdasd.Location = new System.Drawing.Point(154, 233);
+            this.asdasd.Name = "asdasd";
+            this.asdasd.Size = new System.Drawing.Size(81, 13);
+            this.asdasd.TabIndex = 30;
+            this.asdasd.Text = "Employee Email";
             // 
-            // label10
+            // emailTextBox
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(107, 78);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(21, 16);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "00";
+            this.emailTextBox.BorderRadius = 15;
+            this.emailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.emailTextBox.DefaultText = "";
+            this.emailTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.emailTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.emailTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.emailTextBox.DisabledState.Parent = this.emailTextBox;
+            this.emailTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.emailTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.emailTextBox.FocusedState.Parent = this.emailTextBox;
+            this.emailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.emailTextBox.HoverState.Parent = this.emailTextBox;
+            this.emailTextBox.Location = new System.Drawing.Point(153, 248);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.PasswordChar = '\0';
+            this.emailTextBox.PlaceholderText = "email";
+            this.emailTextBox.SelectedText = "";
+            this.emailTextBox.ShadowDecoration.Parent = this.emailTextBox;
+            this.emailTextBox.Size = new System.Drawing.Size(131, 33);
+            this.emailTextBox.TabIndex = 29;
             // 
             // manage_staff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1265, 582);
+            this.ClientSize = new System.Drawing.Size(949, 473);
+            this.Controls.Add(this.asdasd);
+            this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.datagridview);
@@ -610,11 +636,10 @@
             this.Controls.Add(this.genderTextBox);
             this.Controls.Add(this.addressTextBox);
             this.Controls.Add(this.firstNameTextBox);
-            this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.deleteStaff);
+            this.Controls.Add(this.editStaff);
+            this.Controls.Add(this.addStaff);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "manage_staff";
             this.Text = " ";
             this.Load += new System.EventHandler(this.manage_staff_Load);
@@ -627,9 +652,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button addStaff;
+        private Guna.UI2.WinForms.Guna2Button editStaff;
+        private Guna.UI2.WinForms.Guna2Button deleteStaff;
         private Guna.UI2.WinForms.Guna2TextBox firstNameTextBox;
         private Guna.UI2.WinForms.Guna2TextBox addressTextBox;
         private Guna.UI2.WinForms.Guna2TextBox genderTextBox;
@@ -646,6 +671,8 @@
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox lastNameTextBox;
         private Bunifu.UI.WinForms.BunifuDataGridView datagridview;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn staff_first_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn staff_last_name;
@@ -655,7 +682,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn staff_gender;
         private System.Windows.Forms.DataGridViewTextBoxColumn staff_username;
         private System.Windows.Forms.DataGridViewTextBoxColumn staff_password;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label asdasd;
+        private Guna.UI2.WinForms.Guna2TextBox emailTextBox;
     }
 }
