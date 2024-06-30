@@ -16,5 +16,10 @@ namespace ResortPro
         {
             InitializeComponent();
         }
+
+        private void datagridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
