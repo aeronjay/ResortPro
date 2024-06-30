@@ -18,6 +18,7 @@ namespace ResortPro
 {
     public partial class dashboard : Form
     {
+      
         private readonly Dictionary<Guna2CustomGradientPanel, Color> panelColors = new Dictionary<Guna2CustomGradientPanel, Color>();
         private Size formOriginalSize;
         private Dictionary<Guna2CustomGradientPanel, Rectangle> panelRectangles = new Dictionary<Guna2CustomGradientPanel, Rectangle>();
@@ -31,6 +32,7 @@ namespace ResortPro
             InitializeComponent();
             CustomizePanels();
             InitializeResizing();
+          
         }
 
         private void CustomizePanels()
@@ -196,6 +198,18 @@ namespace ResortPro
             kuboTextBox.Text = kubo.ToString();
             functionHallTextBox.Text = functionhall.ToString();
             gazeboTextBox.Text = gazebo.ToString();
+            
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

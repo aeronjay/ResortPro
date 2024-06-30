@@ -13,11 +13,15 @@ using System.Runtime.InteropServices;
 using System.Data.OleDb;
 using System.Security.Cryptography;
 using System.Net.Mail;
+using Bunifu.UI.WinForms;
+using System.Web.UI.WebControls;
 
 namespace ResortPro
 {
+
     public partial class addReservation : KryptonForm
     {
+
         public addReservation()
         {
             InitializeComponent();
@@ -25,7 +29,7 @@ namespace ResortPro
 
         private void addReservation_Load(object sender, EventArgs e)
         {
-            
+
             initValues();
             newPrice();
             checkInDatePicker.Value = DateTime.Now;
@@ -60,16 +64,16 @@ namespace ResortPro
 
         public DataTable pricing = new DataTable();
 
-        private void initValues() 
+        private void initValues()
         {
 
             try
             {
                 String sql = "SELECT * FROM pricing";
 
-                using(OleDbConnection conn = new OleDbConnection(dbOp.ConnectionString))
+                using (OleDbConnection conn = new OleDbConnection(dbOp.ConnectionString))
                 {
-                    using(OleDbCommand cmd = new OleDbCommand(sql, conn)) 
+                    using (OleDbCommand cmd = new OleDbCommand(sql, conn))
                     {
                         conn.Open();
                         using (OleDbDataAdapter dataAdapter = new OleDbDataAdapter(cmd))
@@ -86,15 +90,15 @@ namespace ResortPro
                 paymentMethodComboBox.SelectedItem = "Cash";
                 paymentMethodComboBox.Items.Add("Gcash");
                 paymentMethodComboBox.Items.Add("Bank Transfer");
-                
-                
+
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-        private void getAccomodations() 
+        private void getAccomodations()
         {
             foreach (DataRow row in pricing.Rows)
             {
@@ -209,11 +213,11 @@ namespace ResortPro
                 }
                 totalPriceLabel.Text = totalPrice.ToString("N");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("AN ERROR HAS OCCURED WITH: " + ex.Message);
             }
-            
+
 
         }
 
@@ -258,11 +262,11 @@ namespace ResortPro
                 }
                 newPrice();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-            
+
 
         }
 
@@ -284,14 +288,17 @@ namespace ResortPro
         {
             newPrice();
         }
+
         private void confirmButton_Click(object sender, EventArgs e)
         {
+            
             // add code algo
             try
             {
                 String fullname = fullNameTextBox.Text;
                 String email = emailTextBox.Text;
                 String number = numberTextBox.Text;
+
 
                 //DateTime checkIn = checkInDatePicker.Value;
                 string checkIn = checkInDatePicker.Value.ToString("MM/dd/yyyy");
@@ -306,7 +313,7 @@ namespace ResortPro
                 bool paid = bookingPaidToggle.Checked;
 
                 decimal finalprice = (decimal)totalPrice;
-               
+
 
 
                 String sql = "INSERT INTO bookings (fullName, email, contactNumber, checkInDate, numberAdults, numberKids, accommodationType, videoke, additionalMatress, paymentMethod, paid, totalPrice) VALUES (@fullName, @email, @contactNumber, @checkInDate, @numberAdults, @numberKids, @accommodationType, @videoke, @additionalMatress, @paymentMethod, @paid, @totalPrice)";
@@ -343,9 +350,9 @@ namespace ResortPro
                         }
                     }
                 }
-                
 
-                
+
+
             }
             catch (Exception ex)
             {
@@ -353,7 +360,7 @@ namespace ResortPro
             }
 
         }
-
+    
         
 
         private void emailTextBox_TextChanged(object sender, EventArgs e)
@@ -362,6 +369,11 @@ namespace ResortPro
         }
 
         private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fullNameTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
