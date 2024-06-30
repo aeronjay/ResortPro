@@ -54,11 +54,16 @@ namespace ResortPro
         {
             daycontainer.Controls.Clear();
             month--;
-            
-            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            LBDATE.Text = monthname + "" + year;
 
-            DateTime now = DateTime.Now;
+            if (month < 1)
+            {
+                month = 12;
+                year--;
+            }
+
+            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+            LBDATE.Text = monthname + " " + year;
+
             DateTime startofthemonth = new DateTime(year, month, 1);
             int days = DateTime.DaysInMonth(year, month);
             int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"));
@@ -81,15 +86,20 @@ namespace ResortPro
             daycontainer.Controls.Clear();
             month++;
 
-            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            LBDATE.Text = monthname + "" + year;
+            if (month > 12)
+            {
+                month = 1;
+                year++;
+            }
 
-            DateTime now = DateTime.Now;
+            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+            LBDATE.Text = monthname + " " + year;
+
             DateTime startofthemonth = new DateTime(year, month, 1);
             int days = DateTime.DaysInMonth(year, month);
             int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"));
 
-            for (int i = 0; i < daysoftheweek; i++)
+            for (int i = 1; i < daysoftheweek; i++)
             {
                 UserControlBlank ucBlank = new UserControlBlank();
                 daycontainer.Controls.Add(ucBlank);
@@ -101,5 +111,6 @@ namespace ResortPro
                 daycontainer.Controls.Add(ucdays);
             }
         }
+
     }
 }

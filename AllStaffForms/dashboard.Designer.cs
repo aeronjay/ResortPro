@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton7 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -50,23 +43,30 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.activeRoomTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.familyRoomTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.treeHouseTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.peopleTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.kuboTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.functionHallTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gazeboTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel6 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel7 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.guna2GradientButton9 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.guna2GradientButton8 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2CustomGradientPanel8 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel9 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -84,135 +84,9 @@
             this.label1.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 33);
+            this.label1.Size = new System.Drawing.Size(339, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cottage / Rooms";
-            // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(19, 3);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(180, 103);
-            this.guna2GradientButton1.TabIndex = 1;
-            // 
-            // guna2GradientButton2
-            // 
-            this.guna2GradientButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(265, 3);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(180, 103);
-            this.guna2GradientButton2.TabIndex = 2;
-            // 
-            // guna2GradientButton3
-            // 
-            this.guna2GradientButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(528, 3);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
-            this.guna2GradientButton3.Size = new System.Drawing.Size(180, 103);
-            this.guna2GradientButton3.TabIndex = 3;
-            // 
-            // guna2GradientButton4
-            // 
-            this.guna2GradientButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton4.CheckedState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.CustomImages.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton4.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(784, 3);
-            this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Size = new System.Drawing.Size(180, 103);
-            this.guna2GradientButton4.TabIndex = 4;
-            // 
-            // guna2GradientButton5
-            // 
-            this.guna2GradientButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton5.CheckedState.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.CustomImages.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton5.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton5.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton5.HoverState.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Location = new System.Drawing.Point(19, 113);
-            this.guna2GradientButton5.Name = "guna2GradientButton5";
-            this.guna2GradientButton5.ShadowDecoration.Parent = this.guna2GradientButton5;
-            this.guna2GradientButton5.Size = new System.Drawing.Size(180, 103);
-            this.guna2GradientButton5.TabIndex = 5;
-            // 
-            // guna2GradientButton6
-            // 
-            this.guna2GradientButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton6.CheckedState.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.CustomImages.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton6.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton6.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton6.HoverState.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.Location = new System.Drawing.Point(265, 113);
-            this.guna2GradientButton6.Name = "guna2GradientButton6";
-            this.guna2GradientButton6.ShadowDecoration.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.Size = new System.Drawing.Size(180, 103);
-            this.guna2GradientButton6.TabIndex = 6;
-            // 
-            // guna2GradientButton7
-            // 
-            this.guna2GradientButton7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton7.CheckedState.Parent = this.guna2GradientButton7;
-            this.guna2GradientButton7.CustomImages.Parent = this.guna2GradientButton7;
-            this.guna2GradientButton7.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton7.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton7.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton7.HoverState.Parent = this.guna2GradientButton7;
-            this.guna2GradientButton7.Location = new System.Drawing.Point(528, 113);
-            this.guna2GradientButton7.Name = "guna2GradientButton7";
-            this.guna2GradientButton7.ShadowDecoration.Parent = this.guna2GradientButton7;
-            this.guna2GradientButton7.Size = new System.Drawing.Size(180, 103);
-            this.guna2GradientButton7.TabIndex = 7;
+            this.label1.Text = "Cottage / Rooms In Use";
             // 
             // pictureBox1
             // 
@@ -263,7 +137,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox5.Image = global::ResortPro.Properties.Resources.pavilion;
-            this.pictureBox5.Location = new System.Drawing.Point(29, 122);
+            this.pictureBox5.Location = new System.Drawing.Point(29, 135);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(35, 34);
             this.pictureBox5.TabIndex = 12;
@@ -274,7 +148,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox6.Image = global::ResortPro.Properties.Resources.city_hall;
-            this.pictureBox6.Location = new System.Drawing.Point(278, 122);
+            this.pictureBox6.Location = new System.Drawing.Point(278, 135);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(35, 34);
             this.pictureBox6.TabIndex = 13;
@@ -285,7 +159,7 @@
             this.pictureBox7.BackColor = System.Drawing.Color.White;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox7.Image = global::ResortPro.Properties.Resources.gazebo;
-            this.pictureBox7.Location = new System.Drawing.Point(539, 122);
+            this.pictureBox7.Location = new System.Drawing.Point(539, 135);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(35, 34);
             this.pictureBox7.TabIndex = 14;
@@ -299,9 +173,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
             this.label2.Location = new System.Drawing.Point(29, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 16);
+            this.label2.Size = new System.Drawing.Size(137, 16);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Active Room";
+            this.label2.Text = "Entrance Only People";
             // 
             // label3
             // 
@@ -345,7 +219,7 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
-            this.label6.Location = new System.Drawing.Point(29, 159);
+            this.label6.Location = new System.Drawing.Point(29, 172);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 16);
             this.label6.TabIndex = 19;
@@ -357,7 +231,7 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
-            this.label7.Location = new System.Drawing.Point(275, 159);
+            this.label7.Location = new System.Drawing.Point(275, 172);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 16);
             this.label7.TabIndex = 20;
@@ -369,221 +243,228 @@
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
-            this.label8.Location = new System.Drawing.Point(536, 159);
+            this.label8.Location = new System.Drawing.Point(536, 172);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 16);
             this.label8.TabIndex = 21;
             this.label8.Text = "Gazebo";
             // 
-            // guna2TextBox1
+            // activeRoomTextBox
             // 
-            this.guna2TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.activeRoomTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(30, 70);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.White;
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(80, 36);
-            this.guna2TextBox1.TabIndex = 22;
+            this.activeRoomTextBox.BorderColor = System.Drawing.Color.White;
+            this.activeRoomTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.activeRoomTextBox.DefaultText = "";
+            this.activeRoomTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.activeRoomTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.activeRoomTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.activeRoomTextBox.DisabledState.Parent = this.activeRoomTextBox;
+            this.activeRoomTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.activeRoomTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.activeRoomTextBox.FocusedState.Parent = this.activeRoomTextBox;
+            this.activeRoomTextBox.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activeRoomTextBox.ForeColor = System.Drawing.Color.Black;
+            this.activeRoomTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.activeRoomTextBox.HoverState.Parent = this.activeRoomTextBox;
+            this.activeRoomTextBox.Location = new System.Drawing.Point(30, 65);
+            this.activeRoomTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.activeRoomTextBox.Name = "activeRoomTextBox";
+            this.activeRoomTextBox.PasswordChar = '\0';
+            this.activeRoomTextBox.PlaceholderForeColor = System.Drawing.Color.White;
+            this.activeRoomTextBox.PlaceholderText = "";
+            this.activeRoomTextBox.ReadOnly = true;
+            this.activeRoomTextBox.SelectedText = "";
+            this.activeRoomTextBox.ShadowDecoration.Parent = this.activeRoomTextBox;
+            this.activeRoomTextBox.Size = new System.Drawing.Size(80, 36);
+            this.activeRoomTextBox.TabIndex = 22;
             // 
-            // guna2TextBox2
+            // familyRoomTextBox
             // 
-            this.guna2TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.familyRoomTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(278, 70);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.White;
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(80, 36);
-            this.guna2TextBox2.TabIndex = 23;
+            this.familyRoomTextBox.BorderColor = System.Drawing.Color.White;
+            this.familyRoomTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.familyRoomTextBox.DefaultText = "";
+            this.familyRoomTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.familyRoomTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.familyRoomTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.familyRoomTextBox.DisabledState.Parent = this.familyRoomTextBox;
+            this.familyRoomTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.familyRoomTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.familyRoomTextBox.FocusedState.Parent = this.familyRoomTextBox;
+            this.familyRoomTextBox.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.familyRoomTextBox.ForeColor = System.Drawing.Color.Black;
+            this.familyRoomTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.familyRoomTextBox.HoverState.Parent = this.familyRoomTextBox;
+            this.familyRoomTextBox.Location = new System.Drawing.Point(278, 65);
+            this.familyRoomTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.familyRoomTextBox.Name = "familyRoomTextBox";
+            this.familyRoomTextBox.PasswordChar = '\0';
+            this.familyRoomTextBox.PlaceholderForeColor = System.Drawing.Color.White;
+            this.familyRoomTextBox.PlaceholderText = "";
+            this.familyRoomTextBox.ReadOnly = true;
+            this.familyRoomTextBox.SelectedText = "";
+            this.familyRoomTextBox.ShadowDecoration.Parent = this.familyRoomTextBox;
+            this.familyRoomTextBox.Size = new System.Drawing.Size(80, 36);
+            this.familyRoomTextBox.TabIndex = 23;
             // 
-            // guna2TextBox3
+            // treeHouseTextBox
             // 
-            this.guna2TextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.treeHouseTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(539, 70);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.White;
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(80, 36);
-            this.guna2TextBox3.TabIndex = 24;
+            this.treeHouseTextBox.BorderColor = System.Drawing.Color.White;
+            this.treeHouseTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.treeHouseTextBox.DefaultText = "";
+            this.treeHouseTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.treeHouseTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.treeHouseTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.treeHouseTextBox.DisabledState.Parent = this.treeHouseTextBox;
+            this.treeHouseTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.treeHouseTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.treeHouseTextBox.FocusedState.Parent = this.treeHouseTextBox;
+            this.treeHouseTextBox.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treeHouseTextBox.ForeColor = System.Drawing.Color.Black;
+            this.treeHouseTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.treeHouseTextBox.HoverState.Parent = this.treeHouseTextBox;
+            this.treeHouseTextBox.Location = new System.Drawing.Point(539, 65);
+            this.treeHouseTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.treeHouseTextBox.Name = "treeHouseTextBox";
+            this.treeHouseTextBox.PasswordChar = '\0';
+            this.treeHouseTextBox.PlaceholderForeColor = System.Drawing.Color.White;
+            this.treeHouseTextBox.PlaceholderText = "";
+            this.treeHouseTextBox.ReadOnly = true;
+            this.treeHouseTextBox.SelectedText = "";
+            this.treeHouseTextBox.ShadowDecoration.Parent = this.treeHouseTextBox;
+            this.treeHouseTextBox.Size = new System.Drawing.Size(80, 36);
+            this.treeHouseTextBox.TabIndex = 24;
             // 
-            // guna2TextBox4
+            // peopleTextBox
             // 
-            this.guna2TextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.peopleTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(794, 70);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.White;
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(80, 36);
-            this.guna2TextBox4.TabIndex = 25;
+            this.peopleTextBox.BorderColor = System.Drawing.Color.White;
+            this.peopleTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.peopleTextBox.DefaultText = "";
+            this.peopleTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.peopleTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.peopleTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.peopleTextBox.DisabledState.Parent = this.peopleTextBox;
+            this.peopleTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.peopleTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.peopleTextBox.FocusedState.Parent = this.peopleTextBox;
+            this.peopleTextBox.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.peopleTextBox.ForeColor = System.Drawing.Color.Black;
+            this.peopleTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.peopleTextBox.HoverState.Parent = this.peopleTextBox;
+            this.peopleTextBox.Location = new System.Drawing.Point(794, 65);
+            this.peopleTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.peopleTextBox.Name = "peopleTextBox";
+            this.peopleTextBox.PasswordChar = '\0';
+            this.peopleTextBox.PlaceholderForeColor = System.Drawing.Color.White;
+            this.peopleTextBox.PlaceholderText = "";
+            this.peopleTextBox.ReadOnly = true;
+            this.peopleTextBox.SelectedText = "";
+            this.peopleTextBox.ShadowDecoration.Parent = this.peopleTextBox;
+            this.peopleTextBox.Size = new System.Drawing.Size(80, 36);
+            this.peopleTextBox.TabIndex = 25;
             // 
-            // guna2TextBox5
+            // kuboTextBox
             // 
-            this.guna2TextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.kuboTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox5.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(29, 179);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderForeColor = System.Drawing.Color.White;
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(80, 36);
-            this.guna2TextBox5.TabIndex = 26;
+            this.kuboTextBox.BorderColor = System.Drawing.Color.White;
+            this.kuboTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.kuboTextBox.DefaultText = "";
+            this.kuboTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.kuboTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.kuboTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.kuboTextBox.DisabledState.Parent = this.kuboTextBox;
+            this.kuboTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.kuboTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.kuboTextBox.FocusedState.Parent = this.kuboTextBox;
+            this.kuboTextBox.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kuboTextBox.ForeColor = System.Drawing.Color.Black;
+            this.kuboTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.kuboTextBox.HoverState.Parent = this.kuboTextBox;
+            this.kuboTextBox.Location = new System.Drawing.Point(29, 188);
+            this.kuboTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.kuboTextBox.Name = "kuboTextBox";
+            this.kuboTextBox.PasswordChar = '\0';
+            this.kuboTextBox.PlaceholderForeColor = System.Drawing.Color.White;
+            this.kuboTextBox.PlaceholderText = "";
+            this.kuboTextBox.ReadOnly = true;
+            this.kuboTextBox.SelectedText = "";
+            this.kuboTextBox.ShadowDecoration.Parent = this.kuboTextBox;
+            this.kuboTextBox.Size = new System.Drawing.Size(80, 36);
+            this.kuboTextBox.TabIndex = 26;
             // 
-            // guna2TextBox6
+            // functionHallTextBox
             // 
-            this.guna2TextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.functionHallTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox6.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.FocusedState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox6.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Location = new System.Drawing.Point(278, 179);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderForeColor = System.Drawing.Color.White;
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Size = new System.Drawing.Size(80, 36);
-            this.guna2TextBox6.TabIndex = 27;
+            this.functionHallTextBox.BorderColor = System.Drawing.Color.White;
+            this.functionHallTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.functionHallTextBox.DefaultText = "";
+            this.functionHallTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.functionHallTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.functionHallTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.functionHallTextBox.DisabledState.Parent = this.functionHallTextBox;
+            this.functionHallTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.functionHallTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.functionHallTextBox.FocusedState.Parent = this.functionHallTextBox;
+            this.functionHallTextBox.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.functionHallTextBox.ForeColor = System.Drawing.Color.Black;
+            this.functionHallTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.functionHallTextBox.HoverState.Parent = this.functionHallTextBox;
+            this.functionHallTextBox.Location = new System.Drawing.Point(278, 188);
+            this.functionHallTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.functionHallTextBox.Name = "functionHallTextBox";
+            this.functionHallTextBox.PasswordChar = '\0';
+            this.functionHallTextBox.PlaceholderForeColor = System.Drawing.Color.White;
+            this.functionHallTextBox.PlaceholderText = "";
+            this.functionHallTextBox.ReadOnly = true;
+            this.functionHallTextBox.SelectedText = "";
+            this.functionHallTextBox.ShadowDecoration.Parent = this.functionHallTextBox;
+            this.functionHallTextBox.Size = new System.Drawing.Size(80, 36);
+            this.functionHallTextBox.TabIndex = 27;
             // 
-            // guna2TextBox7
+            // gazeboTextBox
             // 
-            this.guna2TextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.gazeboTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox7.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.FocusedState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox7.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Location = new System.Drawing.Point(539, 179);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderForeColor = System.Drawing.Color.White;
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.ShadowDecoration.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Size = new System.Drawing.Size(80, 36);
-            this.guna2TextBox7.TabIndex = 28;
+            this.gazeboTextBox.BorderColor = System.Drawing.Color.White;
+            this.gazeboTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gazeboTextBox.DefaultText = "";
+            this.gazeboTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gazeboTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gazeboTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gazeboTextBox.DisabledState.Parent = this.gazeboTextBox;
+            this.gazeboTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gazeboTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gazeboTextBox.FocusedState.Parent = this.gazeboTextBox;
+            this.gazeboTextBox.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gazeboTextBox.ForeColor = System.Drawing.Color.Black;
+            this.gazeboTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gazeboTextBox.HoverState.Parent = this.gazeboTextBox;
+            this.gazeboTextBox.Location = new System.Drawing.Point(539, 188);
+            this.gazeboTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.gazeboTextBox.Name = "gazeboTextBox";
+            this.gazeboTextBox.PasswordChar = '\0';
+            this.gazeboTextBox.PlaceholderForeColor = System.Drawing.Color.White;
+            this.gazeboTextBox.PlaceholderText = "";
+            this.gazeboTextBox.ReadOnly = true;
+            this.gazeboTextBox.SelectedText = "";
+            this.gazeboTextBox.ShadowDecoration.Parent = this.gazeboTextBox;
+            this.gazeboTextBox.Size = new System.Drawing.Size(80, 36);
+            this.gazeboTextBox.TabIndex = 28;
             // 
             // panel1
             // 
@@ -591,37 +472,100 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.guna2TextBox1);
-            this.panel1.Controls.Add(this.guna2TextBox7);
+            this.panel1.Controls.Add(this.activeRoomTextBox);
+            this.panel1.Controls.Add(this.gazeboTextBox);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.guna2TextBox6);
+            this.panel1.Controls.Add(this.functionHallTextBox);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.guna2GradientButton1);
-            this.panel1.Controls.Add(this.guna2GradientButton6);
-            this.panel1.Controls.Add(this.guna2TextBox5);
-            this.panel1.Controls.Add(this.guna2TextBox2);
-            this.panel1.Controls.Add(this.guna2TextBox4);
+            this.panel1.Controls.Add(this.kuboTextBox);
+            this.panel1.Controls.Add(this.familyRoomTextBox);
+            this.panel1.Controls.Add(this.peopleTextBox);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.guna2TextBox3);
+            this.panel1.Controls.Add(this.treeHouseTextBox);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.guna2GradientButton2);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.guna2GradientButton3);
             this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.guna2GradientButton4);
-            this.panel1.Controls.Add(this.guna2GradientButton5);
-            this.panel1.Controls.Add(this.guna2GradientButton7);
+            this.panel1.Controls.Add(this.guna2CustomGradientPanel1);
+            this.panel1.Controls.Add(this.guna2CustomGradientPanel2);
+            this.panel1.Controls.Add(this.guna2CustomGradientPanel3);
+            this.panel1.Controls.Add(this.guna2CustomGradientPanel4);
+            this.panel1.Controls.Add(this.guna2CustomGradientPanel5);
+            this.panel1.Controls.Add(this.guna2CustomGradientPanel6);
+            this.panel1.Controls.Add(this.guna2CustomGradientPanel7);
             this.panel1.Location = new System.Drawing.Point(1, 45);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1110, 236);
             this.panel1.TabIndex = 29;
+            // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BorderRadius = 20;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(17, 5);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(180, 103);
+            this.guna2CustomGradientPanel1.TabIndex = 29;
+            // 
+            // guna2CustomGradientPanel2
+            // 
+            this.guna2CustomGradientPanel2.BorderRadius = 20;
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(265, 5);
+            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
+            this.guna2CustomGradientPanel2.ShadowDecoration.Parent = this.guna2CustomGradientPanel2;
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(180, 103);
+            this.guna2CustomGradientPanel2.TabIndex = 30;
+            // 
+            // guna2CustomGradientPanel3
+            // 
+            this.guna2CustomGradientPanel3.BorderRadius = 20;
+            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(528, 4);
+            this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
+            this.guna2CustomGradientPanel3.ShadowDecoration.Parent = this.guna2CustomGradientPanel3;
+            this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(180, 103);
+            this.guna2CustomGradientPanel3.TabIndex = 30;
+            // 
+            // guna2CustomGradientPanel4
+            // 
+            this.guna2CustomGradientPanel4.BorderRadius = 20;
+            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(782, 4);
+            this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
+            this.guna2CustomGradientPanel4.ShadowDecoration.Parent = this.guna2CustomGradientPanel4;
+            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(180, 103);
+            this.guna2CustomGradientPanel4.TabIndex = 30;
+            // 
+            // guna2CustomGradientPanel5
+            // 
+            this.guna2CustomGradientPanel5.BorderRadius = 20;
+            this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(528, 125);
+            this.guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
+            this.guna2CustomGradientPanel5.ShadowDecoration.Parent = this.guna2CustomGradientPanel5;
+            this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(180, 103);
+            this.guna2CustomGradientPanel5.TabIndex = 31;
+            // 
+            // guna2CustomGradientPanel6
+            // 
+            this.guna2CustomGradientPanel6.BorderRadius = 20;
+            this.guna2CustomGradientPanel6.Location = new System.Drawing.Point(265, 125);
+            this.guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
+            this.guna2CustomGradientPanel6.ShadowDecoration.Parent = this.guna2CustomGradientPanel6;
+            this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(180, 103);
+            this.guna2CustomGradientPanel6.TabIndex = 30;
+            // 
+            // guna2CustomGradientPanel7
+            // 
+            this.guna2CustomGradientPanel7.BorderRadius = 20;
+            this.guna2CustomGradientPanel7.Location = new System.Drawing.Point(16, 125);
+            this.guna2CustomGradientPanel7.Name = "guna2CustomGradientPanel7";
+            this.guna2CustomGradientPanel7.ShadowDecoration.Parent = this.guna2CustomGradientPanel7;
+            this.guna2CustomGradientPanel7.Size = new System.Drawing.Size(180, 103);
+            this.guna2CustomGradientPanel7.TabIndex = 30;
             // 
             // panel2
             // 
@@ -631,9 +575,9 @@
             this.panel2.Controls.Add(this.guna2Button3);
             this.panel2.Controls.Add(this.guna2Button4);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.guna2GradientButton9);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.guna2GradientButton8);
+            this.panel2.Controls.Add(this.guna2CustomGradientPanel8);
+            this.panel2.Controls.Add(this.guna2CustomGradientPanel9);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.ForeColor = System.Drawing.Color.RosyBrown;
             this.panel2.Location = new System.Drawing.Point(0, 277);
@@ -713,24 +657,6 @@
             this.label11.TabIndex = 8;
             this.label11.Text = "Confirmed Reservation";
             // 
-            // guna2GradientButton9
-            // 
-            this.guna2GradientButton9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton9.CheckedState.Parent = this.guna2GradientButton9;
-            this.guna2GradientButton9.CustomImages.Parent = this.guna2GradientButton9;
-            this.guna2GradientButton9.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton9.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton9.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton9.HoverState.Parent = this.guna2GradientButton9;
-            this.guna2GradientButton9.Location = new System.Drawing.Point(612, 22);
-            this.guna2GradientButton9.Name = "guna2GradientButton9";
-            this.guna2GradientButton9.ShadowDecoration.Parent = this.guna2GradientButton9;
-            this.guna2GradientButton9.Size = new System.Drawing.Size(351, 230);
-            this.guna2GradientButton9.TabIndex = 7;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -743,23 +669,23 @@
             this.label9.TabIndex = 1;
             this.label9.Text = "Guests";
             // 
-            // guna2GradientButton8
+            // guna2CustomGradientPanel8
             // 
-            this.guna2GradientButton8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientButton8.CheckedState.Parent = this.guna2GradientButton8;
-            this.guna2GradientButton8.CustomImages.Parent = this.guna2GradientButton8;
-            this.guna2GradientButton8.FillColor = System.Drawing.Color.White;
-            this.guna2GradientButton8.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientButton8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton8.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton8.HoverState.Parent = this.guna2GradientButton8;
-            this.guna2GradientButton8.Location = new System.Drawing.Point(17, 22);
-            this.guna2GradientButton8.Name = "guna2GradientButton8";
-            this.guna2GradientButton8.ShadowDecoration.Parent = this.guna2GradientButton8;
-            this.guna2GradientButton8.Size = new System.Drawing.Size(528, 230);
-            this.guna2GradientButton8.TabIndex = 0;
+            this.guna2CustomGradientPanel8.BorderRadius = 20;
+            this.guna2CustomGradientPanel8.Location = new System.Drawing.Point(612, 22);
+            this.guna2CustomGradientPanel8.Name = "guna2CustomGradientPanel8";
+            this.guna2CustomGradientPanel8.ShadowDecoration.Parent = this.guna2CustomGradientPanel8;
+            this.guna2CustomGradientPanel8.Size = new System.Drawing.Size(351, 230);
+            this.guna2CustomGradientPanel8.TabIndex = 32;
+            // 
+            // guna2CustomGradientPanel9
+            // 
+            this.guna2CustomGradientPanel9.BorderRadius = 20;
+            this.guna2CustomGradientPanel9.Location = new System.Drawing.Point(12, 22);
+            this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
+            this.guna2CustomGradientPanel9.ShadowDecoration.Parent = this.guna2CustomGradientPanel9;
+            this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(554, 230);
+            this.guna2CustomGradientPanel9.TabIndex = 33;
             // 
             // dashboard
             // 
@@ -774,6 +700,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "dashboard";
             this.Text = "dashboard";
+            this.Load += new System.EventHandler(this.dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -793,13 +720,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -814,22 +734,29 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
+        private Guna.UI2.WinForms.Guna2TextBox activeRoomTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox familyRoomTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox treeHouseTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox peopleTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox kuboTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox functionHallTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox gazeboTextBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton8;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton9;
         private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel3;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel4;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel5;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel6;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel7;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel8;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel9;
     }
 }
