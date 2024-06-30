@@ -33,10 +33,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.datagridview = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Available = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Borrowed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalStocks = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.add = new Guna.UI2.WinForms.Guna2Button();
+            this.edit = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagridview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,9 +80,9 @@
             this.datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.datagridview.ColumnHeadersHeight = 40;
             this.datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ItemName,
             this.Available,
             this.Borrowed,
-            this.Column1,
             this.TotalStocks});
             this.datagridview.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
             this.datagridview.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -113,7 +115,7 @@
             this.datagridview.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.datagridview.HeaderBgColor = System.Drawing.Color.Empty;
             this.datagridview.HeaderForeColor = System.Drawing.Color.White;
-            this.datagridview.Location = new System.Drawing.Point(13, 75);
+            this.datagridview.Location = new System.Drawing.Point(13, 62);
             this.datagridview.Margin = new System.Windows.Forms.Padding(4);
             this.datagridview.Name = "datagridview";
             this.datagridview.ReadOnly = true;
@@ -122,10 +124,17 @@
             this.datagridview.RowTemplate.Height = 40;
             this.datagridview.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagridview.Size = new System.Drawing.Size(955, 300);
+            this.datagridview.Size = new System.Drawing.Size(949, 300);
             this.datagridview.TabIndex = 26;
             this.datagridview.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
             this.datagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_CellContentClick);
+            // 
+            // ItemName
+            // 
+            this.ItemName.HeaderText = "Item Name";
+            this.ItemName.MinimumWidth = 6;
+            this.ItemName.Name = "ItemName";
+            this.ItemName.ReadOnly = true;
             // 
             // Available
             // 
@@ -141,13 +150,6 @@
             this.Borrowed.Name = "Borrowed";
             this.Borrowed.ReadOnly = true;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
             // TotalStocks
             // 
             this.TotalStocks.HeaderText = "Total Stocks";
@@ -155,18 +157,52 @@
             this.TotalStocks.Name = "TotalStocks";
             this.TotalStocks.ReadOnly = true;
             // 
+            // add
+            // 
+            this.add.BorderRadius = 5;
+            this.add.CheckedState.Parent = this.add;
+            this.add.CustomImages.Parent = this.add;
+            this.add.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.add.ForeColor = System.Drawing.Color.White;
+            this.add.HoverState.Parent = this.add;
+            this.add.Location = new System.Drawing.Point(24, 369);
+            this.add.Name = "add";
+            this.add.ShadowDecoration.Parent = this.add;
+            this.add.Size = new System.Drawing.Size(93, 30);
+            this.add.TabIndex = 27;
+            this.add.Text = "Add";
+            this.add.Click += new System.EventHandler(this.add_Click);
+            // 
+            // edit
+            // 
+            this.edit.BorderRadius = 5;
+            this.edit.CheckedState.Parent = this.edit;
+            this.edit.CustomImages.Parent = this.edit;
+            this.edit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.edit.ForeColor = System.Drawing.Color.White;
+            this.edit.HoverState.Parent = this.edit;
+            this.edit.Location = new System.Drawing.Point(162, 369);
+            this.edit.Name = "edit";
+            this.edit.ShadowDecoration.Parent = this.edit;
+            this.edit.Size = new System.Drawing.Size(93, 30);
+            this.edit.TabIndex = 28;
+            this.edit.Text = "edit";
+            // 
             // supplies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(975, 532);
+            this.Controls.Add(this.edit);
+            this.Controls.Add(this.add);
             this.Controls.Add(this.datagridview);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "supplies";
             this.Text = "supplies";
+            this.Load += new System.EventHandler(this.supplies_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagridview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -177,9 +213,11 @@
 
         private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuDataGridView datagridview;
+        private Guna.UI2.WinForms.Guna2Button add;
+        private Guna.UI2.WinForms.Guna2Button edit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Available;
         private System.Windows.Forms.DataGridViewTextBoxColumn Borrowed;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalStocks;
     }
 }
