@@ -1,6 +1,6 @@
-﻿namespace ResortPro.AllStaffForms
+﻿namespace ResortPro
 {
-    partial class UserControlBlank
+    partial class UserControlDays
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,19 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lbdays = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // UserControlBlank
+            // lbdays
+            // 
+            this.lbdays.AutoSize = true;
+            this.lbdays.Location = new System.Drawing.Point(3, 13);
+            this.lbdays.Name = "lbdays";
+            this.lbdays.Size = new System.Drawing.Size(19, 13);
+            this.lbdays.TabIndex = 0;
+            this.lbdays.Text = "00";
+            // 
+            // UserControlDays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.MaximumSize = new System.Drawing.Size(97, 64);
-            this.Name = "UserControlBlank";
-            this.Size = new System.Drawing.Size(97, 64);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.lbdays);
+            this.Name = "UserControlDays";
+            this.Size = new System.Drawing.Size(132, 86);
+            this.Load += new System.EventHandler(this.UserControlDays_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lbdays;
     }
 }
