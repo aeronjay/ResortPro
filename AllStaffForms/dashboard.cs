@@ -10,46 +10,48 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using System.Drawing.Drawing2D;
+using ResortPro.AllStaffForms;
+using System.Data.OleDb;
+using System.Windows.Markup;
 
 namespace ResortPro
 {
-
     public partial class dashboard : Form
     {
-        private readonly Dictionary<Guna2Panel, Color> panelColors = new Dictionary<Guna2Panel, Color>();
+        private readonly Dictionary<Guna2CustomGradientPanel, Color> panelColors = new Dictionary<Guna2CustomGradientPanel, Color>();
         private Size formOriginalSize;
-        private Dictionary<Guna2GradientButton, Rectangle> buttonRectangles = new Dictionary<Guna2GradientButton, Rectangle>();
+        private Dictionary<Guna2CustomGradientPanel, Rectangle> panelRectangles = new Dictionary<Guna2CustomGradientPanel, Rectangle>();
         private Dictionary<Label, Rectangle> labelRectangles = new Dictionary<Label, Rectangle>();
         private Dictionary<PictureBox, Rectangle> pictureBoxRectangles = new Dictionary<PictureBox, Rectangle>();
         private Dictionary<Guna2TextBox, Rectangle> textBoxRectangles = new Dictionary<Guna2TextBox, Rectangle>();
         private Dictionary<Guna2Button, Rectangle> gunabuttonRectangles = new Dictionary<Guna2Button, Rectangle>();
+
         public dashboard()
         {
             InitializeComponent();
-            CustomizeButtons();
+            CustomizePanels();
             InitializeResizing();
         }
-        private void CustomizeButtons()
+
+        private void CustomizePanels()
         {
-            foreach (Guna2GradientButton button in panel1.Controls.OfType<Guna2GradientButton>())
+            foreach (Guna2CustomGradientPanel panel in panel1.Controls.OfType<Guna2CustomGradientPanel>())
             {
-                button.FillColor = Color.FromArgb(255, 255, 255);
-                button.FillColor2 = Color.FromArgb(255, 255, 255);
-                button.ForeColor = Color.White;
-                button.BorderRadius = 10;
-                button.UseTransparentBackground = true;
-                button.HoverState.FillColor = Color.FromArgb(255, 255, 255);
-                button.HoverState.FillColor2 = Color.FromArgb(229, 229, 229);
+                panel.FillColor = Color.FromArgb(255, 255, 255);
+                panel.FillColor2 = Color.FromArgb(255, 255, 255);
+                panel.FillColor3 = Color.FromArgb(255, 255, 255);
+                panel.FillColor4 = Color.FromArgb(255, 255, 255);
+                panel.BorderRadius = 10;
+
             }
-            foreach (Guna2GradientButton button in panel2.Controls.OfType<Guna2GradientButton>())
+            foreach (Guna2CustomGradientPanel panel in panel2.Controls.OfType<Guna2CustomGradientPanel>())
             {
-                button.FillColor = Color.FromArgb(255, 255, 255);
-                button.FillColor2 = Color.FromArgb(255, 255, 255);
-                button.ForeColor = Color.White;
-                button.BorderRadius = 10;
-                button.UseTransparentBackground = true;
-                button.HoverState.FillColor = Color.FromArgb(255, 255, 255);
-                button.HoverState.FillColor2 = Color.FromArgb(255, 255, 255);
+                panel.FillColor = Color.FromArgb(255, 255, 255);
+                panel.FillColor2 = Color.FromArgb(255, 255, 255);
+                panel.FillColor3 = Color.FromArgb(255, 255, 255);
+                panel.FillColor4 = Color.FromArgb(255, 255, 255);
+                panel.BorderRadius = 10;
+                
             }
             foreach (Guna2Button button in panel2.Controls.OfType<Guna2Button>())
             {
@@ -58,13 +60,15 @@ namespace ResortPro
                 button.HoverState.FillColor = Color.FromArgb(255, 255, 255);
             }
         }
+
         private void InitializeResizing()
         {
             this.Resize += dashboard_Resize;
             formOriginalSize = this.Size;
-            foreach (Guna2GradientButton button in panel1.Controls.OfType<Guna2GradientButton>())
+
+            foreach (Guna2CustomGradientPanel panel in panel1.Controls.OfType<Guna2CustomGradientPanel>())
             {
-                buttonRectangles.Add(button, new Rectangle(button.Location, button.Size));
+                panelRectangles.Add(panel, new Rectangle(panel.Location, panel.Size));
             }
             foreach (Label label in panel1.Controls.OfType<Label>())
             {
@@ -81,9 +85,9 @@ namespace ResortPro
                 Rectangle rect = new Rectangle(textBox.Location, textBox.Size);
                 textBoxRectangles.Add(textBox, rect);
             }
-            foreach (Guna2GradientButton button in panel2.Controls.OfType<Guna2GradientButton>())
+            foreach (Guna2CustomGradientPanel panel in panel2.Controls.OfType<Guna2CustomGradientPanel>())
             {
-                buttonRectangles.Add(button, new Rectangle(button.Location, button.Size));
+                panelRectangles.Add(panel, new Rectangle(panel.Location, panel.Size));
             }
             foreach (Guna2Button button in panel2.Controls.OfType<Guna2Button>())
             {
@@ -98,7 +102,7 @@ namespace ResortPro
 
         private void dashboard_Resize(object sender, EventArgs e)
         {
-            foreach (var kvp in buttonRectangles)
+            foreach (var kvp in panelRectangles)
             {
                 ResizeControl(kvp.Key, kvp.Value);
             }
@@ -134,5 +138,64 @@ namespace ResortPro
             c.Size = new Size(newWidth, newHeight);
         }
 
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+            int activeroom = 0, familyroom = 0, people = 0, kubo = 0, functionhall = 0, gazebo = 0, treeHouse = 0;
+
+            string query = "SELECT * FROM bookings WHERE Format(checkInDate, 'MM/dd/yyyy') = @currentDate";
+
+            using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+            {
+                using (OleDbCommand command = new OleDbCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@currentDate", DateTime.Now.ToString("MM/dd/yyyy"));
+                    connection.Open();
+
+                    using (OleDbDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string accommodationType = reader["accommodationType"].ToString();
+                            int numberAdults = Convert.ToInt32(reader["numberAdults"]);
+                            int numberKids = Convert.ToInt32(reader["numberKids"]);
+
+                            people += numberAdults + numberKids;
+
+                            switch (accommodationType)
+                            {
+                                case "Entrance Only":
+                                    activeroom++;
+                                    break;
+                                case "Function Hall":
+                                    functionhall++;
+                                    break;
+                                case "Family Room":
+                                    familyroom++;
+                                    break;
+                                case "Kubo Room":
+                                    kubo++;
+                                    break;
+                                case "Gazebo (Ground)":
+                                case "Gazebo (Up)":
+                                case "Gazebo Farm":
+                                    gazebo++;
+                                    break;
+                                case "Tree House":
+                                    treeHouse++;
+                                    break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            activeRoomTextBox.Text = activeroom.ToString();
+            familyRoomTextBox.Text = familyroom.ToString();
+            treeHouseTextBox.Text = treeHouse.ToString();
+            peopleTextBox.Text = people.ToString();
+            kuboTextBox.Text = kubo.ToString();
+            functionHallTextBox.Text = functionhall.ToString();
+            gazeboTextBox.Text = gazebo.ToString();
+        }
     }
 }

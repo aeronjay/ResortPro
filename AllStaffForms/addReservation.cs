@@ -28,7 +28,7 @@ namespace ResortPro
             
             initValues();
             newPrice();
-            checkInDatePicker.Value = DateTime.UtcNow;
+            checkInDatePicker.Value = DateTime.Now;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
