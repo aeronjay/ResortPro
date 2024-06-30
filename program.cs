@@ -18,7 +18,7 @@ namespace ResortPro1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new staffForm());
+            Application.Run(new status());
         }
     }
 }
