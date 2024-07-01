@@ -149,9 +149,7 @@
     <Compile Include="AllStaffForms\bookings.Designer.cs">
       <DependentUpon>bookings.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllStaffForms\calendar.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="AllStaffForms\calendar.cs" />
     <Compile Include="AllStaffForms\calendar.Designer.cs">
       <DependentUpon>calendar.cs</DependentUpon>
     </Compile>
