@@ -170,6 +170,7 @@
     <Compile Include="AllStaffForms\dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllStaffForms\otp.cs" />
     <Compile Include="AllStaffForms\UserControlBlank.cs">
       <SubType>UserControl</SubType>
     </Compile>

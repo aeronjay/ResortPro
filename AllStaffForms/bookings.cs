@@ -30,7 +30,7 @@ namespace ResortPro
 
         public void LoadTable()
         {
-            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings WHERE Done = False";
+            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings WHERE Done = False ORDER BY ID DESC";
 
             try
             {
@@ -134,7 +134,7 @@ namespace ResortPro
 
         private void paidButton_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings WHERE Done = False AND paid = True";
+            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings WHERE Done = False AND paid = True ORDER BY ID DESC";
 
             try
             {
@@ -183,7 +183,7 @@ namespace ResortPro
 
         private void pendingButton_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings WHERE Done = False AND paid = False";
+            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings WHERE Done = False AND paid = False ORDER BY ID DESC";
 
             try
             {
@@ -312,5 +312,9 @@ namespace ResortPro
                 }
             }
 
+        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

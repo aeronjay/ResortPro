@@ -19,12 +19,14 @@ namespace ResortPro
     {
         private Guna2Button currentButton;
         private Dictionary<Guna2Button, IconPictureBox> buttonIconMap;
+        private string username;
 
 
-
-        public staffForm()
+        public staffForm(String username)
         {
             InitializeComponent();
+            this.username = username;
+            guna2TextBox2.Text = $"Welcome, {username}!";
 
             InitializeButtonIconMap();
             SubscribeEvents();
@@ -220,7 +222,7 @@ namespace ResortPro
 
         private void calendarButton_Click(object sender, EventArgs e)
         {
-      
+            
         }
 
         private void suppliesButton_Click(object sender, EventArgs e)
@@ -297,5 +299,19 @@ namespace ResortPro
 
         }
 
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

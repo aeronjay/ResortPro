@@ -52,5 +52,10 @@ namespace ResortPro.AllAdminForms
                 MessageBox.Show($"An error occurred while adding staff data: {ex.Message}");
             }
         }
+
+        private void addStaff_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

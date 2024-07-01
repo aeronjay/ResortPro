@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ResortPro.AllStaffForms
 {
-    public partial class UserControlDays : UserControl
+    public partial class add_supplies : Form
     {
-        public UserControlDays()
+        public add_supplies()
         {
             InitializeComponent();
-        }
-
-        private void UserControlDays_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        public void days(int numday)
-        {
-            lbDays.Text = numday.ToString();
         }
     }
 }

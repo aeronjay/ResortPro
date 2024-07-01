@@ -381,6 +381,7 @@
             this.Controls.Add(this.firstNameTextBox);
             this.Name = "addStaff";
             this.Text = "addStaff";
+            this.Load += new System.EventHandler(this.addStaff_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.ResumeLayout(false);

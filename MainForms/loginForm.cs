@@ -131,7 +131,7 @@ namespace ResortPro
                         {
                             MessageBox.Show("Login successful!");
 
-                            staffForm form2 = new staffForm();
+                            staffForm form2 = new staffForm(username);
                             form2.Show();
 
                             this.Hide();  // Hide Form1
