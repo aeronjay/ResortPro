@@ -122,7 +122,7 @@ namespace ResortPro.AllAdminForms
             try
             {
                 string connectionString = dbOp.ConnectionString;
-                string query = "UPDATE Users SET Password = @NewPassword WHERE Password = @CurrentPassword";
+                string query = "UPDATE staff SET staff_password = @NewPassword WHERE staff_password = @CurrentPassword";
 
                 using (OleDbConnection conn = new OleDbConnection(connectionString))
                 using (OleDbCommand cmd = new OleDbCommand(query, conn))
