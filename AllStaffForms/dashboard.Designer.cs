@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -69,15 +69,15 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel8 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.confirmedReservation = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.ID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NAME2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paid = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
             this.guna2CustomGradientPanel9 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guestDataGrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NAME1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.people = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.confirmedReservation = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.ID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NAME2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paid = new Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -88,9 +88,9 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.guna2CustomGradientPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.confirmedReservation)).BeginInit();
             this.guna2CustomGradientPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guestDataGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.confirmedReservation)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -631,108 +631,6 @@
             this.guna2CustomGradientPanel8.Size = new System.Drawing.Size(351, 230);
             this.guna2CustomGradientPanel8.TabIndex = 32;
             // 
-            // guna2CustomGradientPanel9
-            // 
-            this.guna2CustomGradientPanel9.BorderRadius = 20;
-            this.guna2CustomGradientPanel9.Controls.Add(this.guestDataGrid);
-            this.guna2CustomGradientPanel9.Location = new System.Drawing.Point(12, 22);
-            this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
-            this.guna2CustomGradientPanel9.ShadowDecoration.Parent = this.guna2CustomGradientPanel9;
-            this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(554, 230);
-            this.guna2CustomGradientPanel9.TabIndex = 33;
-            // 
-            // guestDataGrid
-            // 
-            this.guestDataGrid.AllowCustomTheming = true;
-            this.guestDataGrid.AllowUserToAddRows = false;
-            this.guestDataGrid.AllowUserToDeleteRows = false;
-            this.guestDataGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.guestDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.guestDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guestDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guestDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
-            this.guestDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guestDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guestDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guestDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.guestDataGrid.ColumnHeadersHeight = 40;
-            this.guestDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.NAME1,
-            this.people});
-            this.guestDataGrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guestDataGrid.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.guestDataGrid.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.guestDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(153)))));
-            this.guestDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.guestDataGrid.CurrentTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
-            this.guestDataGrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.guestDataGrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.guestDataGrid.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.guestDataGrid.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guestDataGrid.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
-            this.guestDataGrid.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.guestDataGrid.CurrentTheme.Name = null;
-            this.guestDataGrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guestDataGrid.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.guestDataGrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.guestDataGrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
-            this.guestDataGrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guestDataGrid.DefaultCellStyle = dataGridViewCellStyle7;
-            this.guestDataGrid.EnableHeadersVisualStyles = false;
-            this.guestDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.guestDataGrid.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.guestDataGrid.HeaderBgColor = System.Drawing.Color.Empty;
-            this.guestDataGrid.HeaderForeColor = System.Drawing.Color.White;
-            this.guestDataGrid.Location = new System.Drawing.Point(18, 40);
-            this.guestDataGrid.Name = "guestDataGrid";
-            this.guestDataGrid.ReadOnly = true;
-            this.guestDataGrid.RowHeadersVisible = false;
-            this.guestDataGrid.RowTemplate.Height = 40;
-            this.guestDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.guestDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guestDataGrid.Size = new System.Drawing.Size(520, 185);
-            this.guestDataGrid.TabIndex = 9;
-            this.guestDataGrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
-            // 
-            // ID
-            // 
-            this.ID.FillWeight = 35F;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // NAME1
-            // 
-            this.NAME1.HeaderText = "GUEST NAME";
-            this.NAME1.Name = "NAME1";
-            this.NAME1.ReadOnly = true;
-            // 
-            // people
-            // 
-            this.people.FillWeight = 40F;
-            this.people.HeaderText = "PEOPLE WITH";
-            this.people.Name = "people";
-            this.people.ReadOnly = true;
-            // 
             // confirmedReservation
             // 
             this.confirmedReservation.AllowCustomTheming = true;
@@ -836,6 +734,108 @@
             this.paid.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.paid.TrueValue = null;
             // 
+            // guna2CustomGradientPanel9
+            // 
+            this.guna2CustomGradientPanel9.BorderRadius = 20;
+            this.guna2CustomGradientPanel9.Controls.Add(this.guestDataGrid);
+            this.guna2CustomGradientPanel9.Location = new System.Drawing.Point(12, 22);
+            this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
+            this.guna2CustomGradientPanel9.ShadowDecoration.Parent = this.guna2CustomGradientPanel9;
+            this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(554, 230);
+            this.guna2CustomGradientPanel9.TabIndex = 33;
+            // 
+            // guestDataGrid
+            // 
+            this.guestDataGrid.AllowCustomTheming = true;
+            this.guestDataGrid.AllowUserToAddRows = false;
+            this.guestDataGrid.AllowUserToDeleteRows = false;
+            this.guestDataGrid.AllowUserToResizeRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.guestDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.guestDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guestDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.guestDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
+            this.guestDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.guestDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guestDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guestDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.guestDataGrid.ColumnHeadersHeight = 40;
+            this.guestDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.NAME1,
+            this.people});
+            this.guestDataGrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.guestDataGrid.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.guestDataGrid.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.guestDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(153)))));
+            this.guestDataGrid.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.guestDataGrid.CurrentTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
+            this.guestDataGrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.guestDataGrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.guestDataGrid.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.guestDataGrid.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guestDataGrid.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
+            this.guestDataGrid.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guestDataGrid.CurrentTheme.Name = null;
+            this.guestDataGrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guestDataGrid.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.guestDataGrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.guestDataGrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
+            this.guestDataGrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(161)))), ((int)(((byte)(117)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guestDataGrid.DefaultCellStyle = dataGridViewCellStyle7;
+            this.guestDataGrid.EnableHeadersVisualStyles = false;
+            this.guestDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.guestDataGrid.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.guestDataGrid.HeaderBgColor = System.Drawing.Color.Empty;
+            this.guestDataGrid.HeaderForeColor = System.Drawing.Color.White;
+            this.guestDataGrid.Location = new System.Drawing.Point(18, 40);
+            this.guestDataGrid.Name = "guestDataGrid";
+            this.guestDataGrid.ReadOnly = true;
+            this.guestDataGrid.RowHeadersVisible = false;
+            this.guestDataGrid.RowTemplate.Height = 40;
+            this.guestDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.guestDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.guestDataGrid.Size = new System.Drawing.Size(520, 185);
+            this.guestDataGrid.TabIndex = 9;
+            this.guestDataGrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
+            // 
+            // ID
+            // 
+            this.ID.FillWeight = 35F;
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // NAME1
+            // 
+            this.NAME1.HeaderText = "GUEST NAME";
+            this.NAME1.Name = "NAME1";
+            this.NAME1.ReadOnly = true;
+            // 
+            // people
+            // 
+            this.people.FillWeight = 40F;
+            this.people.HeaderText = "PEOPLE WITH";
+            this.people.Name = "people";
+            this.people.ReadOnly = true;
+            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -862,9 +862,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.guna2CustomGradientPanel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.confirmedReservation)).EndInit();
             this.guna2CustomGradientPanel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guestDataGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.confirmedReservation)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
