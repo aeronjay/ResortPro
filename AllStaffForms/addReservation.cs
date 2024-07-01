@@ -317,6 +317,7 @@ namespace ResortPro
 
 
                 String sql = "INSERT INTO bookings (fullName, email, contactNumber, checkInDate, numberAdults, numberKids, accommodationType, videoke, additionalMatress, paymentMethod, paid, totalPrice) VALUES (@fullName, @email, @contactNumber, @checkInDate, @numberAdults, @numberKids, @accommodationType, @videoke, @additionalMatress, @paymentMethod, @paid, @totalPrice)";
+               
 
                 using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
                 {
@@ -336,7 +337,10 @@ namespace ResortPro
                         command.Parameters.AddWithValue("@totalPrice", totalPrice);
 
                         connection.Open();
+                        
                         int rowsAffected = command.ExecuteNonQuery();
+                       
+
                         if (rowsAffected > 0)
                         {
 

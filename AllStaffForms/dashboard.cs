@@ -13,6 +13,7 @@ using System.Drawing.Drawing2D;
 using ResortPro.AllStaffForms;
 using System.Data.OleDb;
 using System.Windows.Markup;
+using Bunifu.UI.WinForms;
 
 namespace ResortPro
 {
@@ -139,7 +140,6 @@ namespace ResortPro
             c.Location = new Point(newX, newY);
             c.Size = new Size(newWidth, newHeight);
         }
-
         private void dashboard_Load(object sender, EventArgs e)
         {
             int activeroom = 0, familyroom = 0, people = 0, kubo = 0, functionhall = 0, gazebo = 0, treeHouse = 0;
@@ -198,7 +198,7 @@ namespace ResortPro
             kuboTextBox.Text = kubo.ToString();
             functionHallTextBox.Text = functionhall.ToString();
             gazeboTextBox.Text = gazebo.ToString();
-            
+
 
         }
 
@@ -209,7 +209,7 @@ namespace ResortPro
 
         private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+           
         }
     }
 }

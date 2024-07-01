@@ -72,7 +72,7 @@
             this.label1.Location = new System.Drawing.Point(6, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 31);
+            this.label1.Size = new System.Drawing.Size(166, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "Bookings";
             // 
@@ -148,17 +148,20 @@
             this.bunifuDataGridView1.Name = "bunifuDataGridView1";
             this.bunifuDataGridView1.ReadOnly = true;
             this.bunifuDataGridView1.RowHeadersVisible = false;
+            this.bunifuDataGridView1.RowHeadersWidth = 51;
             this.bunifuDataGridView1.RowTemplate.Height = 40;
             this.bunifuDataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.bunifuDataGridView1.Size = new System.Drawing.Size(951, 357);
             this.bunifuDataGridView1.TabIndex = 8;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
+            this.bunifuDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridView1_CellContentClick);
             // 
             // ID
             // 
             this.ID.FillWeight = 50F;
             this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
             // 
@@ -168,6 +171,7 @@
             this.fullName.DefaultCellStyle = dataGridViewCellStyle3;
             this.fullName.FillWeight = 80F;
             this.fullName.HeaderText = "Full Name";
+            this.fullName.MinimumWidth = 6;
             this.fullName.Name = "fullName";
             this.fullName.ReadOnly = true;
             // 
@@ -176,6 +180,7 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             this.email.DefaultCellStyle = dataGridViewCellStyle4;
             this.email.HeaderText = "Email";
+            this.email.MinimumWidth = 6;
             this.email.Name = "email";
             this.email.ReadOnly = true;
             // 
@@ -185,6 +190,7 @@
             this.contactNumber.DefaultCellStyle = dataGridViewCellStyle5;
             this.contactNumber.FillWeight = 80F;
             this.contactNumber.HeaderText = "Contact";
+            this.contactNumber.MinimumWidth = 6;
             this.contactNumber.Name = "contactNumber";
             this.contactNumber.ReadOnly = true;
             // 
@@ -197,6 +203,7 @@
             this.checkInDate.DefaultCellStyle = dataGridViewCellStyle6;
             this.checkInDate.FillWeight = 120F;
             this.checkInDate.HeaderText = "Check In Date";
+            this.checkInDate.MinimumWidth = 6;
             this.checkInDate.Name = "checkInDate";
             this.checkInDate.ReadOnly = true;
             this.checkInDate.Width = 148;
@@ -207,6 +214,7 @@
             this.peopleNumber.DefaultCellStyle = dataGridViewCellStyle7;
             this.peopleNumber.FillWeight = 50F;
             this.peopleNumber.HeaderText = "People";
+            this.peopleNumber.MinimumWidth = 6;
             this.peopleNumber.Name = "peopleNumber";
             this.peopleNumber.ReadOnly = true;
             this.peopleNumber.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -218,6 +226,7 @@
             this.accommodationType.DefaultCellStyle = dataGridViewCellStyle8;
             this.accommodationType.FillWeight = 105F;
             this.accommodationType.HeaderText = "Accommodation";
+            this.accommodationType.MinimumWidth = 6;
             this.accommodationType.Name = "accommodationType";
             this.accommodationType.ReadOnly = true;
             // 
@@ -230,6 +239,7 @@
             this.paid.FillWeight = 35F;
             this.paid.HeaderText = "Paid";
             this.paid.IndeterminateValue = null;
+            this.paid.MinimumWidth = 6;
             this.paid.Name = "paid";
             this.paid.ReadOnly = true;
             this.paid.TrueValue = null;
@@ -241,6 +251,7 @@
             dataGridViewCellStyle10.NullValue = "0";
             this.totalPrice.DefaultCellStyle = dataGridViewCellStyle10;
             this.totalPrice.HeaderText = "Total Price";
+            this.totalPrice.MinimumWidth = 6;
             this.totalPrice.Name = "totalPrice";
             this.totalPrice.ReadOnly = true;
             // 
@@ -253,6 +264,7 @@
             this.Done.FillWeight = 55F;
             this.Done.HeaderText = "Done";
             this.Done.IndeterminateValue = null;
+            this.Done.MinimumWidth = 6;
             this.Done.Name = "Done";
             this.Done.ReadOnly = true;
             this.Done.TrueValue = null;
@@ -592,7 +604,7 @@
             // 
             // bookings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(21F, 39F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(975, 532);
