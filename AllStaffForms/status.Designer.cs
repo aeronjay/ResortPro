@@ -68,8 +68,7 @@
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(27, 45);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.ShadowDecoration.BorderRadius = 10;
-            this.guna2CustomGradientPanel1.ShadowDecoration.Depth = 40;
-            this.guna2CustomGradientPanel1.ShadowDecoration.Enabled = true;
+            this.guna2CustomGradientPanel1.ShadowDecoration.Depth = 6;
             this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(446, 103);
             this.guna2CustomGradientPanel1.TabIndex = 31;
@@ -136,8 +135,7 @@
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(533, 45);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.ShadowDecoration.BorderRadius = 10;
-            this.guna2CustomGradientPanel2.ShadowDecoration.Depth = 40;
-            this.guna2CustomGradientPanel2.ShadowDecoration.Enabled = true;
+            this.guna2CustomGradientPanel2.ShadowDecoration.Depth = 6;
             this.guna2CustomGradientPanel2.ShadowDecoration.Parent = this.guna2CustomGradientPanel2;
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(411, 103);
             this.guna2CustomGradientPanel2.TabIndex = 32;

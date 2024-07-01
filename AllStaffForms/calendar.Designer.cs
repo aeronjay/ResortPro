@@ -42,6 +42,7 @@
             this.LBDATE = new System.Windows.Forms.Label();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.closeButton = new FontAwesome.Sharp.IconButton();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.SuspendLayout();
             // 
             // daycontainer
@@ -172,6 +173,11 @@
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 20;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // Calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,5 +220,6 @@
         private System.Windows.Forms.Label LBDATE;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private FontAwesome.Sharp.IconButton closeButton;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
