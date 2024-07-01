@@ -344,7 +344,9 @@ namespace ResortPro
                         if (rowsAffected > 0)
                         {
 
-                            MessageBox.Show("Booking added successfully!");
+                            bool emailSent = EmailHelper.SendBookingConfirmation(email, fullname, checkIn, adultCount, kidCount, accommodation, videoke, additionalMatress, paymentMethod, totalPrice);
+
+                            MessageBox.Show("Booking added successfully and confirmation email sent!");
                             this.DialogResult = DialogResult.OK;
                             this.Close();
                         }
@@ -364,7 +366,7 @@ namespace ResortPro
             }
 
         }
-    
+
         
 
         private void emailTextBox_TextChanged(object sender, EventArgs e)
