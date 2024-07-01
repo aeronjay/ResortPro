@@ -24,67 +24,59 @@ namespace ResortPro.AllAdminForms
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void StaffSettings_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void currentPass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void newPass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void emailBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void conOTP_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void sendOtp_Click(object sender, EventArgs e)
         {
             // Generate OTP and send it via email
             otpNum = GenerateOTP();
-            SendOTPByEmail(emailBox.Text, otpNum);
+            
+            SendOTPByEmailF2(emailBox.Text, otpNum);
+
+
+
+        }
+        public static bool SendOTPByEmailF2(string userEmail, string otpNum)
+        {
+            try
+            {
+                string fromMail = "lastgateresort@gmail.com";
+                string fromPassword = "qlvymofmgmipxsjj";
+
+                MailMessage message = new MailMessage(fromMail, userEmail);
+                message.Subject = "OTP Confirmation";
+                message.Body = $"Your OTP is: {otpNum}";
+
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+                smtpClient.Credentials = new NetworkCredential(fromMail, fromPassword);
+                smtpClient.EnableSsl = true;
+
+                smtpClient.Send(message);
+                MessageBox.Show("OTP SENT TO YOUR EMAIL");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         private void confirmChange_Click(object sender, EventArgs e)
         {
             // Validate OTP entered by the user
             string enteredOTP = conOTP.Text.Trim();
-            if (enteredOTP == otpNum)
-            {
-                MessageBox.Show("OTP Verified. Proceed with changes.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                UpdatePassword(currentPass.Text, newPass.Text);
 
-                // Show StaffSettings form and hide current form
-                StaffSettings staffSettingsForm = new StaffSettings();
-                staffSettingsForm.Show();
-                this.Hide();
-            }
+
+                if (enteredOTP == otpNum)
+                {
+                    MessageBox.Show("OTP Verified. Proceed with changes.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    UpdatePassword(currentPass.Text, newPass.Text);
+
+                    // Show StaffSettings form and hide current form
+                    StaffSettings staffSettingsForm = new StaffSettings();
+                    staffSettingsForm.Show();
+                    this.Hide();
+                }
+
             else
             {
                 MessageBox.Show("Invalid OTP. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -161,7 +153,12 @@ namespace ResortPro.AllAdminForms
         private void closeButton_Click(object sender, EventArgs e)
         {
 
-            this.Hide();  // H
+            this.Close();  // H
+        }
+
+        private void StaffSettings_Load_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }

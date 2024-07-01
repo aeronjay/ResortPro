@@ -316,13 +316,10 @@ namespace ResortPro
 
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void iconButton1_Click_1(object sender, EventArgs e)
         {
             StaffSettings staffSettingsForm = new StaffSettings();
             staffSettingsForm.Show();
-
-            
         }
-
     }
 }

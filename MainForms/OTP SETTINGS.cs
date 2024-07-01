@@ -53,7 +53,7 @@ class Program
         try
         {
             string fromMail = "lastgateresort@gmail.com";
-            string fromPassword = "dvrc yzqy isuw rlgm";
+            string fromPassword = "qlvymofmgmipxsjj";
 
             MailMessage message = new MailMessage(fromMail, userEmail);
             message.Subject = "OTP Confirmation";
@@ -76,7 +76,7 @@ class Program
         try
         {
             string fromMail = "lastgateresort@gmail.com";
-            string fromPassword = "dvrc yzqy isuw rlgm";
+            string fromPassword = "qlvymofmgmipxsjj";
 
             MailMessage message = new MailMessage(fromMail, userEmail);
             message.Subject = "OTP Confirmation";
@@ -94,4 +94,5 @@ class Program
             return false;
         }
     }
+
 }

@@ -605,6 +605,7 @@
             this.iconButton1.Size = new System.Drawing.Size(35, 35);
             this.iconButton1.TabIndex = 6;
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
             // label3
             // 
