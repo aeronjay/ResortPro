@@ -13,6 +13,7 @@ using System.Drawing.Drawing2D;
 using ResortPro.AllStaffForms;
 using System.Data.OleDb;
 using System.Windows.Markup;
+using Bunifu.UI.WinForms;
 
 namespace ResortPro
 {
@@ -142,6 +143,11 @@ namespace ResortPro
 
         private void dashboard_Load(object sender, EventArgs e)
         {
+            LoadDashboardValues();
+
+        }
+        void LoadDashboardValues()
+        {
             int activeroom = 0, familyroom = 0, people = 0, kubo = 0, functionhall = 0, gazebo = 0, treeHouse = 0;
 
             string query = "SELECT * FROM bookings WHERE Format(checkInDate, 'MM/dd/yyyy') = @currentDate";
@@ -191,23 +197,95 @@ namespace ResortPro
                 }
             }
 
-            activeRoomTextBox.Text = activeroom.ToString();
-            familyRoomTextBox.Text = familyroom.ToString();
-            treeHouseTextBox.Text = treeHouse.ToString();
+            activeRoomTextBox.Text = activeroom.ToString() + " /10";
+            familyRoomTextBox.Text = familyroom.ToString() + " /10";
+            treeHouseTextBox.Text = treeHouse.ToString() + " /10";
             peopleTextBox.Text = people.ToString();
-            kuboTextBox.Text = kubo.ToString();
-            functionHallTextBox.Text = functionhall.ToString();
-            gazeboTextBox.Text = gazebo.ToString();
-            
+            kuboTextBox.Text = kubo.ToString() + " /10";
+            functionHallTextBox.Text = functionhall.ToString() + " /10";
+            gazeboTextBox.Text = gazebo.ToString() + " /10";
+
+            loadGuest();
+            loadConfirmed();
+        }
+        void loadGuest()
+        {
+            string sql12 = "SELECT ID, fullName AS NAME, numberAdults + numberKids As people FROM bookings WHERE Format(checkInDate, 'MM/dd/yyyy') = @currentDate";
+            string currentDate = DateTime.Now.ToString("MM/dd/yyyy");
+
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+                {
+                    using (OleDbDataAdapter adapter = new OleDbDataAdapter(sql12, connection))
+                    {
+                        adapter.SelectCommand.Parameters.AddWithValue("@currentDate", currentDate);
+
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        guestDataGrid.Rows.Clear();
+
+                        foreach (DataRow row in dataTable.Rows)
+                        {
+                            int rowIndex = guestDataGrid.Rows.Add();
+
+                            guestDataGrid.Rows[rowIndex].Cells["ID"].Value = row["ID"];
+                            guestDataGrid.Rows[rowIndex].Cells["NAME1"].Value = row["NAME"];
+                            guestDataGrid.Rows[rowIndex].Cells["people"].Value = row["people"];
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading data: " + ex.Message);
+            }
+
 
         }
+        void loadConfirmed()
+        {
+            string sql12 = "SELECT ID, fullName AS NAME, paid FROM bookings WHERE Format(checkInDate, 'MM/dd/yyyy') = @currentDate AND paid = True";
+            string currentDate = DateTime.Now.ToString("MM/dd/yyyy");
+
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+                {
+                    using (OleDbDataAdapter adapter = new OleDbDataAdapter(sql12, connection))
+                    {
+                        adapter.SelectCommand.Parameters.AddWithValue("@currentDate", currentDate);
+
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        // Clear existing rows from the DataGridView
+                        confirmedReservation.Rows.Clear();
+
+                        // Populate existing columns with data from the DataTable
+                        foreach (DataRow row in dataTable.Rows)
+                        {
+                            // Add a new row to the DataGridView
+                            int rowIndex = confirmedReservation.Rows.Add();
+
+                            // Map data from the DataTable to corresponding DataGridView columns
+                            confirmedReservation.Rows[rowIndex].Cells["ID1"].Value = row["ID"];
+                            confirmedReservation.Rows[rowIndex].Cells["NAME2"].Value = row["NAME"];
+                            confirmedReservation.Rows[rowIndex].Cells["paid"].Value = row["paid"];
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading data: " + ex.Message);
+            }
+        }
+
+
 
         private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
