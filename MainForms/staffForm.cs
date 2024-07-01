@@ -1,6 +1,7 @@
 ﻿using FontAwesome.Sharp;
 using Guna.UI2.WinForms;
 using Krypton.Toolkit;
+using ResortPro.AllAdminForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -314,5 +315,14 @@ namespace ResortPro
         {
 
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            StaffSettings staffSettingsForm = new StaffSettings();
+            staffSettingsForm.Show();
+
+            
+        }
+
     }
 }

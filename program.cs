@@ -19,7 +19,7 @@ namespace ResortPro1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new staffForm("tnia"));
+            Application.Run(new loginForm());
         }
     }
 }

@@ -131,6 +131,12 @@
     <Compile Include="AllAdminForms\Manage Pricing.Designer.cs">
       <DependentUpon>Manage Pricing.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllAdminForms\StaffSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllAdminForms\StaffSettings.Designer.cs">
+      <DependentUpon>StaffSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllStaffForms\editReservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,7 @@
     <Compile Include="MainForms\loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForms\OTP SETTINGS.cs" />
     <Compile Include="MainForms\staffForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllAdminForms\Manage Pricing.resx">
       <DependentUpon>Manage Pricing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllAdminForms\StaffSettings.resx">
+      <DependentUpon>StaffSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllStaffForms\editReservation.resx">
       <DependentUpon>editReservation.cs</DependentUpon>
