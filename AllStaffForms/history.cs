@@ -72,10 +72,5 @@ namespace ResortPro
             }
 
         }
-
-        private void editRowButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ResortPro.AllAdminForms
+namespace ResortPro
 {
-    public partial class Manage_Supplies : Form
+    public partial class UserControlBlank : UserControl
     {
-        public Manage_Supplies()
+        public UserControlBlank()
         {
             InitializeComponent();
         }
