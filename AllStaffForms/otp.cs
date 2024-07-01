@@ -39,6 +39,7 @@ public static class EmailHelper
                         <li>Total Price: {totalPrice.ToString("C")}</li>
                     </ul>
                     <p>Thank you for choosing Last Gate Resort. We look forward to welcoming you!</p>
+                    <p>Please show this email at the front desk of the resort for confirmation of your accomodation.!</p>
                 </body>
                 </html>
                 ";
