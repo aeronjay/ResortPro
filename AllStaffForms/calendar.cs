@@ -81,6 +81,11 @@ namespace ResortPro
             }
         }
 
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void btnNext_Click(object sender, EventArgs e)
         {
             daycontainer.Controls.Clear();

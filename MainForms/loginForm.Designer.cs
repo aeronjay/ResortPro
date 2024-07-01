@@ -71,7 +71,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label3.Size = new System.Drawing.Size(97, 25);
+            this.label3.Size = new System.Drawing.Size(79, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "@AFLLL";
             // 
@@ -84,7 +84,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(139, 25);
+            this.label2.Size = new System.Drawing.Size(111, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Developed By ";
             // 
@@ -97,7 +97,7 @@
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(348, 25);
+            this.label1.Size = new System.Drawing.Size(287, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Last Gate Resort Management System";
             // 
@@ -135,7 +135,7 @@
             this.checkBox1.Location = new System.Drawing.Point(740, 414);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(68, 23);
+            this.checkBox1.Size = new System.Drawing.Size(56, 20);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Show";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -149,7 +149,7 @@
             this.LOGIN.Location = new System.Drawing.Point(730, 216);
             this.LOGIN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LOGIN.Name = "LOGIN";
-            this.LOGIN.Size = new System.Drawing.Size(163, 57);
+            this.LOGIN.Size = new System.Drawing.Size(132, 46);
             this.LOGIN.TabIndex = 5;
             this.LOGIN.Text = "LOGIN";
             // 
@@ -160,7 +160,7 @@
             this.label4.Location = new System.Drawing.Point(734, 274);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(282, 19);
+            this.label4.Size = new System.Drawing.Size(221, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Welcome back! Log In To Your Account.";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -228,7 +228,7 @@
             this.passwordLabel.Location = new System.Drawing.Point(740, 365);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.PasswordChar = '\0';
+            this.passwordLabel.PasswordChar = '●';
             this.passwordLabel.PlaceholderText = "";
             this.passwordLabel.SelectedText = "";
             this.passwordLabel.ShadowDecoration.Parent = this.passwordLabel;
@@ -242,7 +242,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.label5.Location = new System.Drawing.Point(726, 120);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(278, 79);
+            this.label5.Size = new System.Drawing.Size(222, 62);
             this.label5.TabIndex = 10;
             this.label5.Text = "Resort Pr";
             // 
@@ -267,7 +267,7 @@
             // 
             // loginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(1107, 672);

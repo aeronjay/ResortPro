@@ -1,6 +1,7 @@
 ﻿using FontAwesome.Sharp;
 using Guna.UI2.WinForms;
 using Krypton.Toolkit;
+using ResortPro.AllAdminForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -222,7 +223,8 @@ namespace ResortPro
 
         private void calendarButton_Click(object sender, EventArgs e)
         {
-            
+            Calendar calendar = new Calendar();
+            calendar.Show();
         }
 
         private void suppliesButton_Click(object sender, EventArgs e)
@@ -312,6 +314,12 @@ namespace ResortPro
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            StaffSettings staffSettingsForm = new StaffSettings();
+            staffSettingsForm.Show();
         }
     }
 }
