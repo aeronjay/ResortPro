@@ -398,5 +398,20 @@ namespace ResortPro
         {
 
         }
+
+        private void checkInDatePicker_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime selectedDate = checkInDatePicker.Value;
+            DateTime today = DateTime.Today;
+
+            // Check if selected date is in the past
+            if (selectedDate < today)
+            {
+                MessageBox.Show("Cannot select a date that is in the past!");
+
+                // Reset date picker to today's date
+                checkInDatePicker.Value = today;
+            }
+        }
     }
 }
