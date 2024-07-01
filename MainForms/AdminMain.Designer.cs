@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.topPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.iconPanel = new System.Windows.Forms.Panel();
             this.dashboardButton = new FontAwesome.Sharp.IconButton();
@@ -48,9 +49,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.topPanel.SuspendLayout();
+            this.iconPanel.SuspendLayout();
             this.navbarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // topPanel
@@ -72,6 +77,7 @@
             // iconPanel
             // 
             this.iconPanel.BackColor = System.Drawing.Color.White;
+            this.iconPanel.Controls.Add(this.iconPictureBox2);
             this.iconPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.iconPanel.Location = new System.Drawing.Point(0, 0);
             this.iconPanel.Name = "iconPanel";
@@ -293,6 +299,7 @@
             this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.Enabled = false;
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -332,7 +339,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(677, 37);
+            this.label3.Location = new System.Drawing.Point(642, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 28);
             this.label3.TabIndex = 11;
@@ -378,6 +385,25 @@
             this.guna2TextBox1.TabIndex = 9;
             this.guna2TextBox1.TextOffset = new System.Drawing.Point(50, 0);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.Crimson;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.LifeRing;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.Crimson;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 105;
+            this.iconPictureBox2.Location = new System.Drawing.Point(45, 3);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(111, 105);
+            this.iconPictureBox2.TabIndex = 0;
+            this.iconPictureBox2.TabStop = false;
+            // 
             // AdminMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,8 +418,10 @@
             this.Load += new System.EventHandler(this.AdminMain_Load);
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
+            this.iconPanel.ResumeLayout(false);
             this.navbarPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -420,5 +448,7 @@
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private System.Windows.Forms.Timer timer1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
     }
 }

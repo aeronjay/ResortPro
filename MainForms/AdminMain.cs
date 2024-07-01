@@ -27,6 +27,9 @@ namespace ResortPro.superUser
         private void AdminMain_Load(object sender, EventArgs e)
         {
             dashboardButton.PerformClick();
+            timer1.Interval = 1000; // Interval in milliseconds (1 second)
+            timer1.Start(); // Start the timer
+            UpdateDateTimeLabel();
         }
 
         private void initListIconMap()
@@ -116,7 +119,7 @@ namespace ResortPro.superUser
 
         private void dashboardButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new adminDashboard());
         }
 
         private void manageStaffButton_Click(object sender, EventArgs e)
@@ -147,6 +150,19 @@ namespace ResortPro.superUser
         private void panelChildForm_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            UpdateDateTimeLabel();
+        }
+        private void UpdateDateTimeLabel()
+        {
+            DateTime now = DateTime.Now;
+
+            string formattedDateTime = $"{now.ToString("dddd, M/d/yyyy")}\n       {now.ToString("h:mm:ss tt")}";
+
+            label3.Text = formattedDateTime;
         }
     }
 }

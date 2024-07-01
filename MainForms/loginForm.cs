@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using ResortPro.superUser;
+using System.Windows.Media.Animation;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ResortPro
 {
@@ -111,42 +114,53 @@ namespace ResortPro
             string username = usernameLabel.Text;
             string password = passwordLabel.Text;
 
-
-
-            using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+            if(username == "ResortPro" &&  password == "LastGate2024")
             {
-                try
+                AdminMain admin = new AdminMain();
+                admin.Show();
+
+                this.Hide();
+            }
+            else
+            {
+                using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
                 {
-                    connection.Open();
-
-                    string query = "SELECT COUNT(*) FROM staff WHERE staff_username = @username AND staff_password = @password";
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    try
                     {
-                        command.Parameters.AddWithValue("@username", username);
-                        command.Parameters.AddWithValue("@password", password);
+                        connection.Open();
 
-                        int count = (int)command.ExecuteScalar();
-
-                        if (count > 0)
+                        string query = "SELECT COUNT(*) FROM staff WHERE staff_username = @username AND staff_password = @password";
+                        using (OleDbCommand command = new OleDbCommand(query, connection))
                         {
-                            MessageBox.Show("Login successful!");
+                            command.Parameters.AddWithValue("@username", username);
+                            command.Parameters.AddWithValue("@password", password);
 
-                            staffForm form2 = new staffForm(username);
-                            form2.Show();
+                            int count = (int)command.ExecuteScalar();
 
-                            this.Hide();  // Hide Form1
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid username or password. Please try again.");
+                            if (count > 0)
+                            {
+                                MessageBox.Show("Login successful!");
+
+                                staffForm form2 = new staffForm(username);
+                                form2.Show();
+
+                                this.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Invalid username or password. Please try again.");
+                            }
                         }
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                    }
                 }
             }
+
+
+            
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)

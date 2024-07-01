@@ -124,7 +124,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(46, 47);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 5;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -178,7 +178,7 @@
             this.loginButton.Name = "loginButton";
             this.loginButton.ShadowDecoration.Parent = this.loginButton;
             this.loginButton.Size = new System.Drawing.Size(180, 45);
-            this.loginButton.TabIndex = 7;
+            this.loginButton.TabIndex = 4;
             this.loginButton.Text = "LOGIN";
             this.loginButton.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
@@ -206,7 +206,7 @@
             this.usernameLabel.SelectedText = "";
             this.usernameLabel.ShadowDecoration.Parent = this.usernameLabel;
             this.usernameLabel.Size = new System.Drawing.Size(311, 45);
-            this.usernameLabel.TabIndex = 8;
+            this.usernameLabel.TabIndex = 1;
             this.usernameLabel.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // passwordLabel
@@ -233,7 +233,7 @@
             this.passwordLabel.SelectedText = "";
             this.passwordLabel.ShadowDecoration.Parent = this.passwordLabel;
             this.passwordLabel.Size = new System.Drawing.Size(311, 45);
-            this.passwordLabel.TabIndex = 9;
+            this.passwordLabel.TabIndex = 2;
             // 
             // label5
             // 
