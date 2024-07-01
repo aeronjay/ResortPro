@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
             this.btnPrev = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
@@ -39,6 +40,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.LBDATE = new System.Windows.Forms.Label();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.closeButton = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // daycontainer
@@ -149,11 +152,32 @@
             this.LBDATE.Text = "MONTH YEAR";
             this.LBDATE.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this;
+            // 
+            // closeButton
+            // 
+            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeButton.FlatAppearance.BorderSize = 0;
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.closeButton.IconColor = System.Drawing.Color.Black;
+            this.closeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.closeButton.IconSize = 30;
+            this.closeButton.Location = new System.Drawing.Point(950, -2);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(43, 53);
+            this.closeButton.TabIndex = 11;
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
             // Calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(993, 694);
+            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.LBDATE);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -188,5 +212,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label LBDATE;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private FontAwesome.Sharp.IconButton closeButton;
     }
 }

@@ -222,7 +222,8 @@ namespace ResortPro
 
         private void calendarButton_Click(object sender, EventArgs e)
         {
-            
+            Calendar calendar = new Calendar();
+            calendar.Show();
         }
 
         private void suppliesButton_Click(object sender, EventArgs e)
