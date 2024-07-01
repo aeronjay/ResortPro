@@ -21,6 +21,7 @@ namespace ResortPro.AllStaffForms
         {
 
         }
+
         public void days(int numday)
         {
             lbDays.Text = numday.ToString();
