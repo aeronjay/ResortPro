@@ -1,4 +1,5 @@
 ﻿using ResortPro;
+using ResortPro.AllAdminForms;
 using ResortPro.superUser;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace ResortPro1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new staffForm());
+            Application.Run(new loginForm());
         }
     }
 }

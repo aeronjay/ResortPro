@@ -288,5 +288,10 @@ namespace ResortPro
         {
 
         }
+
+        private void guestDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
