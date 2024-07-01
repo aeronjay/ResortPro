@@ -19,7 +19,7 @@ namespace ResortPro
 {
     public partial class dashboard : Form
     {
-      
+
         private readonly Dictionary<Guna2CustomGradientPanel, Color> panelColors = new Dictionary<Guna2CustomGradientPanel, Color>();
         private Size formOriginalSize;
         private Dictionary<Guna2CustomGradientPanel, Rectangle> panelRectangles = new Dictionary<Guna2CustomGradientPanel, Rectangle>();
@@ -33,7 +33,7 @@ namespace ResortPro
             InitializeComponent();
             CustomizePanels();
             InitializeResizing();
-          
+
         }
 
         private void CustomizePanels()
@@ -54,7 +54,7 @@ namespace ResortPro
                 panel.FillColor3 = Color.FromArgb(255, 255, 255);
                 panel.FillColor4 = Color.FromArgb(255, 255, 255);
                 panel.BorderRadius = 10;
-                
+
             }
             foreach (Guna2Button button in panel2.Controls.OfType<Guna2Button>())
             {
@@ -140,7 +140,6 @@ namespace ResortPro
             c.Location = new Point(newX, newY);
             c.Size = new Size(newWidth, newHeight);
         }
-
         private void dashboard_Load(object sender, EventArgs e)
         {
             LoadDashboardValues();

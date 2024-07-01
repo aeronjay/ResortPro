@@ -312,5 +312,9 @@ namespace ResortPro
                 }
             }
 
+        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
