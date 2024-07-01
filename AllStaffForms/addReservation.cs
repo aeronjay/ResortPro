@@ -343,8 +343,8 @@ namespace ResortPro
 
                         if (rowsAffected > 0)
                         {
-
-                            bool emailSent = EmailHelper.SendBookingConfirmation(email, fullname, checkIn, adultCount, kidCount, accommodation, videoke, additionalMatress, paymentMethod, totalPrice);
+                            int reservationID = getLastInsertedID(connection);
+                            bool emailSent = EmailHelper.SendBookingConfirmation(reservationID, email, fullname, checkIn, adultCount, kidCount, accommodation, videoke, additionalMatress, paymentMethod, totalPrice);
 
                             MessageBox.Show("Booking added successfully and confirmation email sent!");
                             this.DialogResult = DialogResult.OK;
@@ -366,8 +366,23 @@ namespace ResortPro
             }
 
         }
+        private int getLastInsertedID(OleDbConnection connection)
+        {
+            int reservationID = 0;
+            string sql = "SELECT @@IDENTITY";
 
-        
+            using (OleDbCommand command = new OleDbCommand(sql, connection))
+            {
+                object result = command.ExecuteScalar();
+                if (result != null && result != DBNull.Value)
+                {
+                    reservationID = Convert.ToInt32(result);
+                }
+            }
+
+            return reservationID;
+        }
+
 
         private void emailTextBox_TextChanged(object sender, EventArgs e)
         {

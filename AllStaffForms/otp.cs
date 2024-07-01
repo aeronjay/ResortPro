@@ -6,14 +6,11 @@ using System.Windows.Forms;
 
 public static class EmailHelper
 {
-    // Assuming your connection string and database connection are not used in this scenario
-    // If not needed, remove these fields
     public static string connStr = "Provider=Microsoft.Jet.Oledb.4.0; data source =" + Application.StartupPath + "/database.mdb";
     public static OleDbConnection conn = new OleDbConnection(connStr);
 
-    // Function to send OTP (removed as per request)
 
-    public static bool SendBookingConfirmation(string userEmail, string fullName, DateTime checkInDate, int adultCount, int kidCount, string accommodation, bool videoke, int additionalMattress, string paymentMethod, decimal totalPrice)
+    public static bool SendBookingConfirmation(int ID, string userEmail, string fullName, string checkInDate, int adultCount, int kidCount, string accommodation, bool videoke, int additionalMattress, string paymentMethod, decimal totalPrice)
     {
         try
         {
@@ -31,7 +28,8 @@ public static class EmailHelper
                     <p>Your booking at Last Gate Resort has been confirmed.</p>
                     <p><strong>Details:</strong></p>
                     <ul>
-                        <li>Check-In Date: {checkInDate.ToShortDateString()}</li>
+                        <li>YOUR RESERVATION ID: {ID}</li>
+                        <li>Check-In Date: {checkInDate}</li>
                         <li>Number of Adults: {adultCount}</li>
                         <li>Number of Kids: {kidCount}</li>
                         <li>Accommodation Type: {accommodation}</li>
