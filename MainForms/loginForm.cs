@@ -93,7 +93,7 @@ namespace ResortPro
             {
                 passwordLabel.UseSystemPasswordChar = false; // Show password in plain text
             }
-            else
+            else  
             {
                 passwordLabel.UseSystemPasswordChar = true; // Hide password
             }
@@ -174,6 +174,11 @@ namespace ResortPro
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
 
         }
