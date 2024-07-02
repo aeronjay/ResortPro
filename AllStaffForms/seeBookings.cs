@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,21 +11,16 @@ using System.Windows.Forms;
 
 namespace ResortPro.AllStaffForms
 {
-    public partial class UserControlDays : UserControl
+    public partial class seeBookings : KryptonForm
     {
-        public UserControlDays()
+        public seeBookings()
         {
             InitializeComponent();
         }
 
-        private void UserControlDays_Load(object sender, EventArgs e)
+        private void seeBookings_Load(object sender, EventArgs e)
         {
 
-        }
-
-        public void days(int numday)
-        {
-            lbDays.Text = numday.ToString();
         }
     }
 }
