@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,19 +18,28 @@ namespace ResortPro.AllAdminForms
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Manage_Pricing_Load(object sender, EventArgs e)
         {
+            LoadSuppliesData();
+        }
+        private void LoadSuppliesData()
+        {
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+                {
+                    string query = "SELECT * FROM supplies"; // Update the table and columns according to your database schema
 
+                    OleDbDataAdapter adapter = new OleDbDataAdapter(query, connection);
+                    DataTable suppliesDataTable = new DataTable();
+                    adapter.Fill(suppliesDataTable);
+                    bunifuDataGridView1.DataSource = suppliesDataTable; // Assuming you have a DataGridView named 'datagridview'
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while loading supply data: {ex.Message}");
+            }
         }
     }
 }
