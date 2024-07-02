@@ -91,11 +91,11 @@ namespace ResortPro
         {
             if (checkBox1.Checked)
             {
-                passwordLabel.UseSystemPasswordChar = false; // Show password in plain text
+                passwordLabel.PasswordChar = '\0'; // Show password in plain text
             }
             else
             {
-                passwordLabel.UseSystemPasswordChar = true; // Hide password
+                passwordLabel.PasswordChar = '•'; // Hide password
             }
         }
 
