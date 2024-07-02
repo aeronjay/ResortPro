@@ -43,6 +43,7 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnPrev = new Guna.UI2.WinForms.Guna2Button();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -173,6 +174,7 @@
             this.closeButton.Size = new System.Drawing.Size(63, 65);
             this.closeButton.TabIndex = 0;
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // guna2Elipse1
             // 
@@ -197,6 +199,7 @@
             this.btnPrev.Size = new System.Drawing.Size(164, 55);
             this.btnPrev.TabIndex = 31;
             this.btnPrev.Text = "Previous";
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click_1);
             // 
             // btnNext
             // 
@@ -216,6 +219,11 @@
             this.btnNext.Size = new System.Drawing.Size(156, 50);
             this.btnNext.TabIndex = 32;
             this.btnNext.Text = "Next";
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click_1);
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this.guna2GradientPanel1;
             // 
             // Calendar
             // 
@@ -262,5 +270,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button btnNext;
         private Guna.UI2.WinForms.Guna2Button btnPrev;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
