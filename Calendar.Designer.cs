@@ -44,6 +44,8 @@
             this.btnPrev = new Guna.UI2.WinForms.Guna2Button();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +53,7 @@
             // 
             this.daycontainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.daycontainer.Location = new System.Drawing.Point(16, 116);
-            this.daycontainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.daycontainer.Margin = new System.Windows.Forms.Padding(4);
             this.daycontainer.Name = "daycontainer";
             this.daycontainer.Size = new System.Drawing.Size(1293, 585);
             this.daycontainer.TabIndex = 0;
@@ -152,7 +154,7 @@
             this.guna2GradientPanel1.Controls.Add(this.closeButton);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1324, 65);
@@ -169,7 +171,7 @@
             this.closeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.closeButton.IconSize = 30;
             this.closeButton.Location = new System.Drawing.Point(1261, 0);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(4);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(63, 65);
             this.closeButton.TabIndex = 0;
@@ -193,7 +195,7 @@
             this.btnPrev.HoverState.FillColor = System.Drawing.Color.LightGreen;
             this.btnPrev.HoverState.Parent = this.btnPrev;
             this.btnPrev.Location = new System.Drawing.Point(936, 713);
-            this.btnPrev.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrev.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.ShadowDecoration.Parent = this.btnPrev;
             this.btnPrev.Size = new System.Drawing.Size(164, 55);
@@ -213,7 +215,7 @@
             this.btnNext.HoverState.FillColor = System.Drawing.Color.LightGreen;
             this.btnNext.HoverState.Parent = this.btnNext;
             this.btnNext.Location = new System.Drawing.Point(1129, 713);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4);
             this.btnNext.Name = "btnNext";
             this.btnNext.ShadowDecoration.Parent = this.btnNext;
             this.btnNext.Size = new System.Drawing.Size(156, 50);
@@ -225,12 +227,34 @@
             // 
             this.guna2DragControl1.TargetControl = this.guna2GradientPanel1;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(34, 713);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(123, 20);
+            this.label8.TabIndex = 33;
+            this.label8.Text = "Green - Open";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(34, 743);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(206, 20);
+            this.label9.TabIndex = 34;
+            this.label9.Text = "Red - Reserved or Full ";
+            // 
             // Calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(233)))), ((int)(((byte)(225)))));
             this.ClientSize = new System.Drawing.Size(1324, 788);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.guna2GradientPanel1);
@@ -243,7 +267,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.daycontainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Calendar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";
@@ -271,5 +295,7 @@
         private Guna.UI2.WinForms.Guna2Button btnNext;
         private Guna.UI2.WinForms.Guna2Button btnPrev;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }
