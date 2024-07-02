@@ -144,7 +144,11 @@ namespace ResortPro.superUser
 
         private void logoutButton_Click(object sender, EventArgs e)
         {
+            loginForm stafform = new loginForm();
+            stafform.Show();
+            this.Close();
 
+                
         }
 
         private void panelChildForm_Paint(object sender, PaintEventArgs e)

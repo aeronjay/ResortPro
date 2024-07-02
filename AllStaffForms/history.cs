@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -71,6 +72,104 @@ namespace ResortPro
                 MessageBox.Show("Error loading data: " + ex.Message);
             }
 
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            PrintAllData("bookings");
+        }
+        private void PrintAllData(string tableName)
+        {
+            try
+            {
+                using (OleDbConnection conn = new OleDbConnection(dbOp.ConnectionString))
+                {
+                    conn.Open();
+
+                    string sql = $"SELECT * FROM {tableName}";
+                    OleDbDataAdapter adapter = new OleDbDataAdapter(sql, conn);
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds, tableName);
+
+                    // Determine column widths based on the maximum length of data in each column
+                    List<int> columnWidths = new List<int>();
+                    foreach (DataColumn col in ds.Tables[tableName].Columns)
+                    {
+                        int maxWidth = col.ColumnName.Length; // Start with column header width
+                        foreach (DataRow row in ds.Tables[tableName].Rows)
+                        {
+                            int cellWidth = row[col].ToString().Length;
+                            if (cellWidth > maxWidth)
+                            {
+                                maxWidth = cellWidth; // Update max width if cell content is longer
+                            }
+                        }
+                        // Scale the width to ensure proper spacing
+                        columnWidths.Add(maxWidth * 10); // Adjust multiplier as needed
+                    }
+
+                    // Show print preview dialog before printing
+                    PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
+                    PrintDocument printDocument = new PrintDocument();
+
+                    // Set up event handler for printing
+                    printDocument.PrintPage += (sender, e) =>
+                    {
+                        // Define font and line height for printing
+                        Font font = new Font("Arial", 10);
+                        int lineHeight = font.Height + 4;
+
+                        // Initialize variables for printing
+                        int xPos = e.MarginBounds.Left;
+                        int yPos = e.MarginBounds.Top;
+
+                        // Print table headers
+                        int colIndex = 0;
+                        foreach (DataColumn col in ds.Tables[tableName].Columns)
+                        {
+                            e.Graphics.DrawString(col.ColumnName, font, Brushes.Black, xPos, yPos);
+                            xPos += columnWidths[colIndex];
+                            colIndex++;
+                        }
+                        yPos += lineHeight;
+
+                        // Print table data
+                        foreach (DataRow row in ds.Tables[tableName].Rows)
+                        {
+                            xPos = e.MarginBounds.Left;
+                            colIndex = 0;
+                            foreach (DataColumn col in ds.Tables[tableName].Columns)
+                            {
+                                e.Graphics.DrawString(row[col].ToString(), font, Brushes.Black, xPos, yPos);
+                                xPos += columnWidths[colIndex];
+                                colIndex++;
+                            }
+                            yPos += lineHeight;
+                        }
+
+                        // Check if more pages are needed
+                        if (yPos + lineHeight < e.MarginBounds.Bottom)
+                        {
+                            e.HasMorePages = false;
+                        }
+                        else
+                        {
+                            e.HasMorePages = true;
+                        }
+                    };
+
+                    // Set custom page margins (adjust as needed)
+                    Margins margins = new Margins(50, 50, 50, 50); // Left, Right, Top, Bottom
+                    printDocument.DefaultPageSettings.Margins = margins;
+
+                    printPreviewDialog.Document = printDocument;
+                    printPreviewDialog.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error printing {tableName}: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
