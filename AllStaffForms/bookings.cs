@@ -1,4 +1,5 @@
 ﻿using Bunifu.UI.WinForms.BunifuButton;
+using ResortPro.AllStaffForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -316,5 +317,41 @@ namespace ResortPro
         {
 
         }
+
+        private void notif_Click(object sender, EventArgs e)
+        {
+            if (bunifuDataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = bunifuDataGridView1.SelectedRows[0];
+
+                int bookingID = (int)selectedRow.Cells["ID"].Value;
+                string userEmail = selectedRow.Cells["email"].Value.ToString();
+                string fullName = selectedRow.Cells["fullName"].Value.ToString();
+                string checkInDate = selectedRow.Cells["checkInDate"].Value.ToString(); // Ensure it's in a suitable format
+                int adultCount = Convert.ToInt32(selectedRow.Cells["numberAdults"].Value);
+                int kidCount = Convert.ToInt32(selectedRow.Cells["numberKids"].Value);
+                string accommodation = selectedRow.Cells["accommodationType"].Value.ToString();
+                bool videoke = Convert.ToBoolean(selectedRow.Cells["videoke"].Value);
+                int additionalMattress = Convert.ToInt32(selectedRow.Cells["additionalMattress"].Value);
+                string paymentMethod = selectedRow.Cells["paymentMethod"].Value.ToString();
+                decimal totalPrice = Convert.ToDecimal(selectedRow.Cells["totalPrice"].Value);
+
+                // Instantiate Notify object with your email credentials
+                Notify notifier = new Notify("lastgateresort@gmail.com", "ypoq ktvr imrm jdbt ");
+
+                // Send the booking confirmation email
+                bool result = notifier.SendBookingConfirmation(bookingID, userEmail, fullName, checkInDate, adultCount, kidCount, accommodation, videoke, additionalMattress, paymentMethod, totalPrice);
+
+                if (result)
+                {
+                    MessageBox.Show("Booking confirmation email sent successfully. Please check your email.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a booking to send notification.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
     }
 }

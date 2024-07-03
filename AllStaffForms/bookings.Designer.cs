@@ -62,6 +62,7 @@
             this.pendingButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.paidButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.selectAllButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.notif = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -602,12 +603,30 @@
             this.selectAllButton.UseDefaultRadiusAndThickness = true;
             this.selectAllButton.Click += new System.EventHandler(this.selectAllButton_Click);
             // 
+            // notif
+            // 
+            this.notif.BorderRadius = 10;
+            this.notif.CheckedState.Parent = this.notif;
+            this.notif.CustomImages.Parent = this.notif;
+            this.notif.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.notif.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.notif.ForeColor = System.Drawing.Color.Black;
+            this.notif.HoverState.Parent = this.notif;
+            this.notif.Location = new System.Drawing.Point(401, 464);
+            this.notif.Name = "notif";
+            this.notif.ShadowDecoration.Parent = this.notif;
+            this.notif.Size = new System.Drawing.Size(124, 45);
+            this.notif.TabIndex = 34;
+            this.notif.Text = "Notify";
+            this.notif.Click += new System.EventHandler(this.notif_Click);
+            // 
             // bookings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(21F, 39F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(975, 532);
+            this.Controls.Add(this.notif);
             this.Controls.Add(this.markAsDoneButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.editRowButton);
@@ -647,5 +666,6 @@
         private Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn Done;
         private Guna.UI2.WinForms.Guna2Button cancelButton;
         private Guna.UI2.WinForms.Guna2Button markAsDoneButton;
+        private Guna.UI2.WinForms.Guna2Button notif;
     }
 }

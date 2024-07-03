@@ -176,6 +176,7 @@
     <Compile Include="AllStaffForms\dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllStaffForms\Notify.cs" />
     <Compile Include="AllStaffForms\otp.cs" />
     <Compile Include="AllStaffForms\seeDateBookings.cs">
       <SubType>Form</SubType>
