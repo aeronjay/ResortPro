@@ -73,7 +73,7 @@
             this.label1.Location = new System.Drawing.Point(6, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 39);
+            this.label1.Size = new System.Drawing.Size(134, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Bookings";
             // 
@@ -605,6 +605,7 @@
             // 
             // notif
             // 
+            this.notif.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.notif.BorderRadius = 10;
             this.notif.CheckedState.Parent = this.notif;
             this.notif.CustomImages.Parent = this.notif;
@@ -622,7 +623,7 @@
             // 
             // bookings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(21F, 39F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
             this.ClientSize = new System.Drawing.Size(975, 532);

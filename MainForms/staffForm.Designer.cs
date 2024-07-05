@@ -30,34 +30,37 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.historyPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.historyButton = new Guna.UI2.WinForms.Guna2Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.suppliesPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.suppliesButton = new Guna.UI2.WinForms.Guna2Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.bookingsPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.bookingsButton = new Guna.UI2.WinForms.Guna2Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.statusPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.statusButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.dashboardPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.dashboardButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.signOutPicture = new FontAwesome.Sharp.IconPictureBox();
             this.signOutButton = new Guna.UI2.WinForms.Guna2Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.historyPicture = new FontAwesome.Sharp.IconPictureBox();
-            this.historyButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.suppliesPicture = new FontAwesome.Sharp.IconPictureBox();
-            this.suppliesButton = new Guna.UI2.WinForms.Guna2Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.calendarPicture = new FontAwesome.Sharp.IconPictureBox();
-            this.calendarButton = new Guna.UI2.WinForms.Guna2Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.bookingsPicture = new FontAwesome.Sharp.IconPictureBox();
-            this.bookingsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.statusPicture = new FontAwesome.Sharp.IconPictureBox();
-            this.statusButton = new Guna.UI2.WinForms.Guna2Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.dashboardPicture = new FontAwesome.Sharp.IconPictureBox();
-            this.dashboardButton = new Guna.UI2.WinForms.Guna2Button();
+            this.homeIcon = new FontAwesome.Sharp.IconPictureBox();
+            this.homeButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.addBookingPicture = new FontAwesome.Sharp.IconPictureBox();
             this.addBooking = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.calendarPicture = new FontAwesome.Sharp.IconPictureBox();
+            this.calendarButton = new Guna.UI2.WinForms.Guna2Button();
             this.topPanel = new System.Windows.Forms.Panel();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
@@ -67,32 +70,29 @@
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelChildForm = new Guna.UI2.WinForms.Guna2Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.homeIcon = new FontAwesome.Sharp.IconPictureBox();
-            this.homeButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).BeginInit();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).BeginInit();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.signOutPicture)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeIcon)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addBookingPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).BeginInit();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.homeIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,6 +115,191 @@
             this.panel1.Size = new System.Drawing.Size(223, 701);
             this.panel1.TabIndex = 0;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.historyPicture);
+            this.panel4.Controls.Add(this.historyButton);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 733);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(206, 80);
+            this.panel4.TabIndex = 1;
+            // 
+            // historyPicture
+            // 
+            this.historyPicture.BackColor = System.Drawing.Color.Transparent;
+            this.historyPicture.ForeColor = System.Drawing.SystemColors.Window;
+            this.historyPicture.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
+            this.historyPicture.IconColor = System.Drawing.SystemColors.Window;
+            this.historyPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.historyPicture.IconSize = 42;
+            this.historyPicture.Location = new System.Drawing.Point(27, 19);
+            this.historyPicture.Name = "historyPicture";
+            this.historyPicture.Size = new System.Drawing.Size(42, 42);
+            this.historyPicture.TabIndex = 13;
+            this.historyPicture.TabStop = false;
+            // 
+            // historyButton
+            // 
+            this.historyButton.BorderRadius = 25;
+            this.historyButton.CheckedState.Parent = this.historyButton;
+            this.historyButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.historyButton.CustomImages.Parent = this.historyButton;
+            this.historyButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.historyButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.historyButton.ForeColor = System.Drawing.Color.White;
+            this.historyButton.HoverState.BorderColor = System.Drawing.Color.White;
+            this.historyButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.historyButton.HoverState.FillColor = System.Drawing.Color.White;
+            this.historyButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.historyButton.HoverState.Parent = this.historyButton;
+            this.historyButton.Location = new System.Drawing.Point(14, 14);
+            this.historyButton.Name = "historyButton";
+            this.historyButton.ShadowDecoration.Parent = this.historyButton;
+            this.historyButton.Size = new System.Drawing.Size(183, 51);
+            this.historyButton.TabIndex = 12;
+            this.historyButton.Text = "History";
+            this.historyButton.TextOffset = new System.Drawing.Point(12, 0);
+            this.historyButton.Click += new System.EventHandler(this.historyButton_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.suppliesPicture);
+            this.panel7.Controls.Add(this.suppliesButton);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 653);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(206, 80);
+            this.panel7.TabIndex = 3;
+            // 
+            // suppliesPicture
+            // 
+            this.suppliesPicture.BackColor = System.Drawing.Color.Transparent;
+            this.suppliesPicture.IconChar = FontAwesome.Sharp.IconChar.BoxesPacking;
+            this.suppliesPicture.IconColor = System.Drawing.Color.White;
+            this.suppliesPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.suppliesPicture.IconSize = 42;
+            this.suppliesPicture.Location = new System.Drawing.Point(26, 18);
+            this.suppliesPicture.Name = "suppliesPicture";
+            this.suppliesPicture.Size = new System.Drawing.Size(42, 42);
+            this.suppliesPicture.TabIndex = 11;
+            this.suppliesPicture.TabStop = false;
+            // 
+            // suppliesButton
+            // 
+            this.suppliesButton.BorderRadius = 25;
+            this.suppliesButton.CheckedState.Parent = this.suppliesButton;
+            this.suppliesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.suppliesButton.CustomImages.Parent = this.suppliesButton;
+            this.suppliesButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.suppliesButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.suppliesButton.ForeColor = System.Drawing.Color.White;
+            this.suppliesButton.HoverState.BorderColor = System.Drawing.Color.White;
+            this.suppliesButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.suppliesButton.HoverState.FillColor = System.Drawing.Color.White;
+            this.suppliesButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.suppliesButton.HoverState.Parent = this.suppliesButton;
+            this.suppliesButton.Location = new System.Drawing.Point(13, 13);
+            this.suppliesButton.Name = "suppliesButton";
+            this.suppliesButton.ShadowDecoration.Parent = this.suppliesButton;
+            this.suppliesButton.Size = new System.Drawing.Size(183, 51);
+            this.suppliesButton.TabIndex = 10;
+            this.suppliesButton.Text = "Supplies";
+            this.suppliesButton.TextOffset = new System.Drawing.Point(12, 0);
+            this.suppliesButton.Click += new System.EventHandler(this.suppliesButton_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.bookingsPicture);
+            this.panel12.Controls.Add(this.bookingsButton);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(0, 571);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(206, 82);
+            this.panel12.TabIndex = 6;
+            // 
+            // bookingsPicture
+            // 
+            this.bookingsPicture.BackColor = System.Drawing.Color.Transparent;
+            this.bookingsPicture.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
+            this.bookingsPicture.IconColor = System.Drawing.Color.White;
+            this.bookingsPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bookingsPicture.IconSize = 42;
+            this.bookingsPicture.Location = new System.Drawing.Point(26, 21);
+            this.bookingsPicture.Name = "bookingsPicture";
+            this.bookingsPicture.Size = new System.Drawing.Size(42, 42);
+            this.bookingsPicture.TabIndex = 7;
+            this.bookingsPicture.TabStop = false;
+            // 
+            // bookingsButton
+            // 
+            this.bookingsButton.BorderRadius = 25;
+            this.bookingsButton.CheckedState.Parent = this.bookingsButton;
+            this.bookingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bookingsButton.CustomImages.Parent = this.bookingsButton;
+            this.bookingsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.bookingsButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookingsButton.ForeColor = System.Drawing.Color.White;
+            this.bookingsButton.HoverState.BorderColor = System.Drawing.Color.White;
+            this.bookingsButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.bookingsButton.HoverState.FillColor = System.Drawing.Color.White;
+            this.bookingsButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.bookingsButton.HoverState.Parent = this.bookingsButton;
+            this.bookingsButton.Location = new System.Drawing.Point(13, 16);
+            this.bookingsButton.Name = "bookingsButton";
+            this.bookingsButton.ShadowDecoration.Parent = this.bookingsButton;
+            this.bookingsButton.Size = new System.Drawing.Size(183, 51);
+            this.bookingsButton.TabIndex = 6;
+            this.bookingsButton.Text = "Bookings";
+            this.bookingsButton.TextOffset = new System.Drawing.Point(12, 0);
+            this.bookingsButton.Click += new System.EventHandler(this.bookingsButton_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.statusPicture);
+            this.panel9.Controls.Add(this.statusButton);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 485);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(206, 86);
+            this.panel9.TabIndex = 4;
+            // 
+            // statusPicture
+            // 
+            this.statusPicture.BackColor = System.Drawing.Color.Transparent;
+            this.statusPicture.IconChar = FontAwesome.Sharp.IconChar.Signal;
+            this.statusPicture.IconColor = System.Drawing.Color.White;
+            this.statusPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.statusPicture.IconSize = 42;
+            this.statusPicture.Location = new System.Drawing.Point(27, 19);
+            this.statusPicture.Name = "statusPicture";
+            this.statusPicture.Size = new System.Drawing.Size(42, 42);
+            this.statusPicture.TabIndex = 5;
+            this.statusPicture.TabStop = false;
+            // 
+            // statusButton
+            // 
+            this.statusButton.BorderRadius = 25;
+            this.statusButton.CheckedState.Parent = this.statusButton;
+            this.statusButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.statusButton.CustomImages.Parent = this.statusButton;
+            this.statusButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.statusButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusButton.ForeColor = System.Drawing.Color.White;
+            this.statusButton.HoverState.BorderColor = System.Drawing.Color.White;
+            this.statusButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.statusButton.HoverState.FillColor = System.Drawing.Color.White;
+            this.statusButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.statusButton.HoverState.Parent = this.statusButton;
+            this.statusButton.Location = new System.Drawing.Point(14, 14);
+            this.statusButton.Name = "statusButton";
+            this.statusButton.ShadowDecoration.Parent = this.statusButton;
+            this.statusButton.Size = new System.Drawing.Size(183, 51);
+            this.statusButton.TabIndex = 4;
+            this.statusButton.Text = "Status";
+            this.statusButton.TextOffset = new System.Drawing.Point(1, 0);
+            this.statusButton.Click += new System.EventHandler(this.statusButton_Click);
+            // 
             // panel11
             // 
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -122,6 +307,52 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(206, 33);
             this.panel11.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.dashboardPicture);
+            this.panel6.Controls.Add(this.dashboardButton);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 405);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(206, 80);
+            this.panel6.TabIndex = 3;
+            // 
+            // dashboardPicture
+            // 
+            this.dashboardPicture.BackColor = System.Drawing.Color.Transparent;
+            this.dashboardPicture.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
+            this.dashboardPicture.IconColor = System.Drawing.Color.White;
+            this.dashboardPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.dashboardPicture.IconSize = 42;
+            this.dashboardPicture.Location = new System.Drawing.Point(27, 19);
+            this.dashboardPicture.Name = "dashboardPicture";
+            this.dashboardPicture.Size = new System.Drawing.Size(42, 42);
+            this.dashboardPicture.TabIndex = 3;
+            this.dashboardPicture.TabStop = false;
+            // 
+            // dashboardButton
+            // 
+            this.dashboardButton.BorderRadius = 25;
+            this.dashboardButton.CheckedState.Parent = this.dashboardButton;
+            this.dashboardButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dashboardButton.CustomImages.Parent = this.dashboardButton;
+            this.dashboardButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.dashboardButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboardButton.ForeColor = System.Drawing.Color.White;
+            this.dashboardButton.HoverState.BorderColor = System.Drawing.Color.White;
+            this.dashboardButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.dashboardButton.HoverState.FillColor = System.Drawing.Color.White;
+            this.dashboardButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.dashboardButton.HoverState.Parent = this.dashboardButton;
+            this.dashboardButton.Location = new System.Drawing.Point(14, 14);
+            this.dashboardButton.Name = "dashboardButton";
+            this.dashboardButton.ShadowDecoration.Parent = this.dashboardButton;
+            this.dashboardButton.Size = new System.Drawing.Size(183, 51);
+            this.dashboardButton.TabIndex = 2;
+            this.dashboardButton.Text = "Dashboard";
+            this.dashboardButton.TextOffset = new System.Drawing.Point(18, 0);
+            this.dashboardButton.Click += new System.EventHandler(this.dashboardButton_Click);
             // 
             // panel10
             // 
@@ -169,53 +400,6 @@
             this.signOutButton.TextOffset = new System.Drawing.Point(18, 0);
             this.signOutButton.Click += new System.EventHandler(this.signOutButton_Click);
             // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.statusPicture);
-            this.panel9.Controls.Add(this.statusButton);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 485);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(206, 86);
-            this.panel9.TabIndex = 4;
-            // 
-            // historyPicture
-            // 
-            this.historyPicture.BackColor = System.Drawing.Color.Transparent;
-            this.historyPicture.ForeColor = System.Drawing.SystemColors.Window;
-            this.historyPicture.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
-            this.historyPicture.IconColor = System.Drawing.SystemColors.Window;
-            this.historyPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.historyPicture.IconSize = 42;
-            this.historyPicture.Location = new System.Drawing.Point(27, 19);
-            this.historyPicture.Name = "historyPicture";
-            this.historyPicture.Size = new System.Drawing.Size(42, 42);
-            this.historyPicture.TabIndex = 13;
-            this.historyPicture.TabStop = false;
-            // 
-            // historyButton
-            // 
-            this.historyButton.BorderRadius = 25;
-            this.historyButton.CheckedState.Parent = this.historyButton;
-            this.historyButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.historyButton.CustomImages.Parent = this.historyButton;
-            this.historyButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.historyButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.historyButton.ForeColor = System.Drawing.Color.White;
-            this.historyButton.HoverState.BorderColor = System.Drawing.Color.White;
-            this.historyButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.historyButton.HoverState.FillColor = System.Drawing.Color.White;
-            this.historyButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.historyButton.HoverState.Parent = this.historyButton;
-            this.historyButton.Location = new System.Drawing.Point(14, 14);
-            this.historyButton.Name = "historyButton";
-            this.historyButton.ShadowDecoration.Parent = this.historyButton;
-            this.historyButton.Size = new System.Drawing.Size(183, 51);
-            this.historyButton.TabIndex = 12;
-            this.historyButton.Text = "History";
-            this.historyButton.TextOffset = new System.Drawing.Point(12, 0);
-            this.historyButton.Click += new System.EventHandler(this.historyButton_Click);
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.homeIcon);
@@ -226,225 +410,41 @@
             this.panel5.Size = new System.Drawing.Size(206, 80);
             this.panel5.TabIndex = 2;
             // 
-            // suppliesPicture
+            // homeIcon
             // 
-            this.suppliesPicture.BackColor = System.Drawing.Color.Transparent;
-            this.suppliesPicture.IconChar = FontAwesome.Sharp.IconChar.BoxesPacking;
-            this.suppliesPicture.IconColor = System.Drawing.Color.White;
-            this.suppliesPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.suppliesPicture.IconSize = 42;
-            this.suppliesPicture.Location = new System.Drawing.Point(26, 18);
-            this.suppliesPicture.Name = "suppliesPicture";
-            this.suppliesPicture.Size = new System.Drawing.Size(42, 42);
-            this.suppliesPicture.TabIndex = 11;
-            this.suppliesPicture.TabStop = false;
+            this.homeIcon.BackColor = System.Drawing.Color.Transparent;
+            this.homeIcon.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
+            this.homeIcon.IconColor = System.Drawing.Color.White;
+            this.homeIcon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.homeIcon.IconSize = 42;
+            this.homeIcon.Location = new System.Drawing.Point(27, 22);
+            this.homeIcon.Name = "homeIcon";
+            this.homeIcon.Size = new System.Drawing.Size(42, 42);
+            this.homeIcon.TabIndex = 5;
+            this.homeIcon.TabStop = false;
             // 
-            // suppliesButton
+            // homeButton
             // 
-            this.suppliesButton.BorderRadius = 25;
-            this.suppliesButton.CheckedState.Parent = this.suppliesButton;
-            this.suppliesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.suppliesButton.CustomImages.Parent = this.suppliesButton;
-            this.suppliesButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.suppliesButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.suppliesButton.ForeColor = System.Drawing.Color.White;
-            this.suppliesButton.HoverState.BorderColor = System.Drawing.Color.White;
-            this.suppliesButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.suppliesButton.HoverState.FillColor = System.Drawing.Color.White;
-            this.suppliesButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.suppliesButton.HoverState.Parent = this.suppliesButton;
-            this.suppliesButton.Location = new System.Drawing.Point(13, 13);
-            this.suppliesButton.Name = "suppliesButton";
-            this.suppliesButton.ShadowDecoration.Parent = this.suppliesButton;
-            this.suppliesButton.Size = new System.Drawing.Size(183, 51);
-            this.suppliesButton.TabIndex = 10;
-            this.suppliesButton.Text = "Supplies";
-            this.suppliesButton.TextOffset = new System.Drawing.Point(12, 0);
-            this.suppliesButton.Click += new System.EventHandler(this.suppliesButton_Click);
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.calendarPicture);
-            this.panel8.Controls.Add(this.calendarButton);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(206, 80);
-            this.panel8.TabIndex = 3;
-            // 
-            // calendarPicture
-            // 
-            this.calendarPicture.BackColor = System.Drawing.Color.Transparent;
-            this.calendarPicture.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
-            this.calendarPicture.IconColor = System.Drawing.Color.White;
-            this.calendarPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.calendarPicture.IconSize = 42;
-            this.calendarPicture.Location = new System.Drawing.Point(32, 21);
-            this.calendarPicture.Name = "calendarPicture";
-            this.calendarPicture.Size = new System.Drawing.Size(42, 42);
-            this.calendarPicture.TabIndex = 9;
-            this.calendarPicture.TabStop = false;
-            // 
-            // calendarButton
-            // 
-            this.calendarButton.BorderRadius = 25;
-            this.calendarButton.CheckedState.Parent = this.calendarButton;
-            this.calendarButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.calendarButton.CustomImages.Parent = this.calendarButton;
-            this.calendarButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.calendarButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendarButton.ForeColor = System.Drawing.Color.White;
-            this.calendarButton.HoverState.BorderColor = System.Drawing.Color.White;
-            this.calendarButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.calendarButton.HoverState.FillColor = System.Drawing.Color.White;
-            this.calendarButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.calendarButton.HoverState.Parent = this.calendarButton;
-            this.calendarButton.Location = new System.Drawing.Point(19, 16);
-            this.calendarButton.Name = "calendarButton";
-            this.calendarButton.ShadowDecoration.Parent = this.calendarButton;
-            this.calendarButton.Size = new System.Drawing.Size(183, 51);
-            this.calendarButton.TabIndex = 8;
-            this.calendarButton.Text = "Calendar";
-            this.calendarButton.TextOffset = new System.Drawing.Point(12, 0);
-            this.calendarButton.Click += new System.EventHandler(this.calendarButton_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.dashboardPicture);
-            this.panel6.Controls.Add(this.dashboardButton);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 405);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(206, 80);
-            this.panel6.TabIndex = 3;
-            // 
-            // bookingsPicture
-            // 
-            this.bookingsPicture.BackColor = System.Drawing.Color.Transparent;
-            this.bookingsPicture.IconChar = FontAwesome.Sharp.IconChar.BookBookmark;
-            this.bookingsPicture.IconColor = System.Drawing.Color.White;
-            this.bookingsPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bookingsPicture.IconSize = 42;
-            this.bookingsPicture.Location = new System.Drawing.Point(26, 21);
-            this.bookingsPicture.Name = "bookingsPicture";
-            this.bookingsPicture.Size = new System.Drawing.Size(42, 42);
-            this.bookingsPicture.TabIndex = 7;
-            this.bookingsPicture.TabStop = false;
-            // 
-            // bookingsButton
-            // 
-            this.bookingsButton.BorderRadius = 25;
-            this.bookingsButton.CheckedState.Parent = this.bookingsButton;
-            this.bookingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bookingsButton.CustomImages.Parent = this.bookingsButton;
-            this.bookingsButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.bookingsButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookingsButton.ForeColor = System.Drawing.Color.White;
-            this.bookingsButton.HoverState.BorderColor = System.Drawing.Color.White;
-            this.bookingsButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.bookingsButton.HoverState.FillColor = System.Drawing.Color.White;
-            this.bookingsButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.bookingsButton.HoverState.Parent = this.bookingsButton;
-            this.bookingsButton.Location = new System.Drawing.Point(13, 16);
-            this.bookingsButton.Name = "bookingsButton";
-            this.bookingsButton.ShadowDecoration.Parent = this.bookingsButton;
-            this.bookingsButton.Size = new System.Drawing.Size(183, 51);
-            this.bookingsButton.TabIndex = 6;
-            this.bookingsButton.Text = "Bookings";
-            this.bookingsButton.TextOffset = new System.Drawing.Point(12, 0);
-            this.bookingsButton.Click += new System.EventHandler(this.bookingsButton_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.suppliesPicture);
-            this.panel7.Controls.Add(this.suppliesButton);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 653);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(206, 80);
-            this.panel7.TabIndex = 3;
-            // 
-            // statusPicture
-            // 
-            this.statusPicture.BackColor = System.Drawing.Color.Transparent;
-            this.statusPicture.IconChar = FontAwesome.Sharp.IconChar.Signal;
-            this.statusPicture.IconColor = System.Drawing.Color.White;
-            this.statusPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.statusPicture.IconSize = 42;
-            this.statusPicture.Location = new System.Drawing.Point(27, 19);
-            this.statusPicture.Name = "statusPicture";
-            this.statusPicture.Size = new System.Drawing.Size(42, 42);
-            this.statusPicture.TabIndex = 5;
-            this.statusPicture.TabStop = false;
-            // 
-            // statusButton
-            // 
-            this.statusButton.BorderRadius = 25;
-            this.statusButton.CheckedState.Parent = this.statusButton;
-            this.statusButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.statusButton.CustomImages.Parent = this.statusButton;
-            this.statusButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.statusButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusButton.ForeColor = System.Drawing.Color.White;
-            this.statusButton.HoverState.BorderColor = System.Drawing.Color.White;
-            this.statusButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.statusButton.HoverState.FillColor = System.Drawing.Color.White;
-            this.statusButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.statusButton.HoverState.Parent = this.statusButton;
-            this.statusButton.Location = new System.Drawing.Point(14, 14);
-            this.statusButton.Name = "statusButton";
-            this.statusButton.ShadowDecoration.Parent = this.statusButton;
-            this.statusButton.Size = new System.Drawing.Size(183, 51);
-            this.statusButton.TabIndex = 4;
-            this.statusButton.Text = "Status";
-            this.statusButton.TextOffset = new System.Drawing.Point(1, 0);
-            this.statusButton.Click += new System.EventHandler(this.statusButton_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.historyPicture);
-            this.panel4.Controls.Add(this.historyButton);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 733);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(206, 80);
-            this.panel4.TabIndex = 1;
-            // 
-            // dashboardPicture
-            // 
-            this.dashboardPicture.BackColor = System.Drawing.Color.Transparent;
-            this.dashboardPicture.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
-            this.dashboardPicture.IconColor = System.Drawing.Color.White;
-            this.dashboardPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.dashboardPicture.IconSize = 42;
-            this.dashboardPicture.Location = new System.Drawing.Point(27, 19);
-            this.dashboardPicture.Name = "dashboardPicture";
-            this.dashboardPicture.Size = new System.Drawing.Size(42, 42);
-            this.dashboardPicture.TabIndex = 3;
-            this.dashboardPicture.TabStop = false;
-            // 
-            // dashboardButton
-            // 
-            this.dashboardButton.BorderRadius = 25;
-            this.dashboardButton.CheckedState.Parent = this.dashboardButton;
-            this.dashboardButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dashboardButton.CustomImages.Parent = this.dashboardButton;
-            this.dashboardButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.dashboardButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dashboardButton.ForeColor = System.Drawing.Color.White;
-            this.dashboardButton.HoverState.BorderColor = System.Drawing.Color.White;
-            this.dashboardButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.dashboardButton.HoverState.FillColor = System.Drawing.Color.White;
-            this.dashboardButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.dashboardButton.HoverState.Parent = this.dashboardButton;
-            this.dashboardButton.Location = new System.Drawing.Point(14, 14);
-            this.dashboardButton.Name = "dashboardButton";
-            this.dashboardButton.ShadowDecoration.Parent = this.dashboardButton;
-            this.dashboardButton.Size = new System.Drawing.Size(183, 51);
-            this.dashboardButton.TabIndex = 2;
-            this.dashboardButton.Text = "Dashboard";
-            this.dashboardButton.TextOffset = new System.Drawing.Point(18, 0);
-            this.dashboardButton.Click += new System.EventHandler(this.dashboardButton_Click);
+            this.homeButton.BorderRadius = 25;
+            this.homeButton.CheckedState.Parent = this.homeButton;
+            this.homeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.homeButton.CustomImages.Parent = this.homeButton;
+            this.homeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.homeButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeButton.ForeColor = System.Drawing.Color.White;
+            this.homeButton.HoverState.BorderColor = System.Drawing.Color.White;
+            this.homeButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.homeButton.HoverState.FillColor = System.Drawing.Color.White;
+            this.homeButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.homeButton.HoverState.Parent = this.homeButton;
+            this.homeButton.Location = new System.Drawing.Point(14, 17);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.ShadowDecoration.Parent = this.homeButton;
+            this.homeButton.Size = new System.Drawing.Size(183, 51);
+            this.homeButton.TabIndex = 4;
+            this.homeButton.Text = "Homepage";
+            this.homeButton.TextOffset = new System.Drawing.Point(18, 0);
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // panel3
             // 
@@ -532,6 +532,52 @@
             this.iconPictureBox2.Size = new System.Drawing.Size(90, 83);
             this.iconPictureBox2.TabIndex = 2;
             this.iconPictureBox2.TabStop = false;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.calendarPicture);
+            this.panel8.Controls.Add(this.calendarButton);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(206, 80);
+            this.panel8.TabIndex = 3;
+            // 
+            // calendarPicture
+            // 
+            this.calendarPicture.BackColor = System.Drawing.Color.Transparent;
+            this.calendarPicture.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
+            this.calendarPicture.IconColor = System.Drawing.Color.White;
+            this.calendarPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.calendarPicture.IconSize = 42;
+            this.calendarPicture.Location = new System.Drawing.Point(32, 21);
+            this.calendarPicture.Name = "calendarPicture";
+            this.calendarPicture.Size = new System.Drawing.Size(42, 42);
+            this.calendarPicture.TabIndex = 9;
+            this.calendarPicture.TabStop = false;
+            // 
+            // calendarButton
+            // 
+            this.calendarButton.BorderRadius = 25;
+            this.calendarButton.CheckedState.Parent = this.calendarButton;
+            this.calendarButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.calendarButton.CustomImages.Parent = this.calendarButton;
+            this.calendarButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.calendarButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendarButton.ForeColor = System.Drawing.Color.White;
+            this.calendarButton.HoverState.BorderColor = System.Drawing.Color.White;
+            this.calendarButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.calendarButton.HoverState.FillColor = System.Drawing.Color.White;
+            this.calendarButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.calendarButton.HoverState.Parent = this.calendarButton;
+            this.calendarButton.Location = new System.Drawing.Point(19, 16);
+            this.calendarButton.Name = "calendarButton";
+            this.calendarButton.ShadowDecoration.Parent = this.calendarButton;
+            this.calendarButton.Size = new System.Drawing.Size(183, 51);
+            this.calendarButton.TabIndex = 8;
+            this.calendarButton.Text = "Calendar";
+            this.calendarButton.TextOffset = new System.Drawing.Point(12, 0);
+            this.calendarButton.Click += new System.EventHandler(this.calendarButton_Click);
             // 
             // topPanel
             // 
@@ -681,51 +727,6 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.bookingsPicture);
-            this.panel12.Controls.Add(this.bookingsButton);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 571);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(206, 82);
-            this.panel12.TabIndex = 6;
-            // 
-            // homeIcon
-            // 
-            this.homeIcon.BackColor = System.Drawing.Color.Transparent;
-            this.homeIcon.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
-            this.homeIcon.IconColor = System.Drawing.Color.White;
-            this.homeIcon.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.homeIcon.IconSize = 42;
-            this.homeIcon.Location = new System.Drawing.Point(27, 22);
-            this.homeIcon.Name = "homeIcon";
-            this.homeIcon.Size = new System.Drawing.Size(42, 42);
-            this.homeIcon.TabIndex = 5;
-            this.homeIcon.TabStop = false;
-            // 
-            // homeButton
-            // 
-            this.homeButton.BorderRadius = 25;
-            this.homeButton.CheckedState.Parent = this.homeButton;
-            this.homeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.homeButton.CustomImages.Parent = this.homeButton;
-            this.homeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.homeButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeButton.ForeColor = System.Drawing.Color.White;
-            this.homeButton.HoverState.BorderColor = System.Drawing.Color.White;
-            this.homeButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.homeButton.HoverState.FillColor = System.Drawing.Color.White;
-            this.homeButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
-            this.homeButton.HoverState.Parent = this.homeButton;
-            this.homeButton.Location = new System.Drawing.Point(14, 17);
-            this.homeButton.Name = "homeButton";
-            this.homeButton.ShadowDecoration.Parent = this.homeButton;
-            this.homeButton.Size = new System.Drawing.Size(183, 51);
-            this.homeButton.TabIndex = 4;
-            this.homeButton.Text = "Homepage";
-            this.homeButton.TextOffset = new System.Drawing.Point(18, 0);
-            // 
             // staffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -752,30 +753,30 @@
             this.Text = "ResortPro v1.0.0";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).EndInit();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).EndInit();
+            this.panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).EndInit();
+            this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).EndInit();
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).EndInit();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.signOutPicture)).EndInit();
-            this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.historyPicture)).EndInit();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.suppliesPicture)).EndInit();
-            this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).EndInit();
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bookingsPicture)).EndInit();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.statusPicture)).EndInit();
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeIcon)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.addBookingPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.calendarPicture)).EndInit();
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.homeIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
