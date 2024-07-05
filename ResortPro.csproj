@@ -429,5 +429,8 @@
   <ItemGroup>
     <None Include="Resources\Blue Minimalist Ocean Wave Logo %283%291.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
