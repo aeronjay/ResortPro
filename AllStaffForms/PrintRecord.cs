@@ -214,7 +214,7 @@ namespace ResortPro.AllStaffForms
                                 }
                             }
                             // Scale the width to ensure proper spacing
-                            columnWidths.Add(maxWidth * 10); // Adjust multiplier as needed
+                            columnWidths.Add((int)(maxWidth * 6.25)); // Further reduce multiplier to fit more columns
                         }
 
                         // Show print preview dialog before printing
@@ -224,9 +224,9 @@ namespace ResortPro.AllStaffForms
                         // Set up event handler for printing
                         printDocument.PrintPage += (sender, e) =>
                         {
-                            // Define font and line height for printing
-                            Font font = new Font("Arial", 10);
-                            int lineHeight = font.Height + 4;
+                            // Define even smaller font and line height for printing
+                            Font font = new Font("Arial", 8); // Further reduce font size
+                            int lineHeight = font.Height + 2; // Reduce line height
 
                             // Initialize variables for printing
                             int xPos = e.MarginBounds.Left;
@@ -268,7 +268,7 @@ namespace ResortPro.AllStaffForms
                         };
 
                         // Set custom page margins (adjust as needed)
-                        Margins margins = new Margins(50, 50, 50, 50); // Left, Right, Top, Bottom
+                        Margins margins = new Margins(10, 10, 10, 10); // Reduce margins further
                         printDocument.DefaultPageSettings.Margins = margins;
 
                         printPreviewDialog.Document = printDocument;
@@ -281,6 +281,8 @@ namespace ResortPro.AllStaffForms
                 MessageBox.Show($"Error printing {tableName}: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
 
 
     }
