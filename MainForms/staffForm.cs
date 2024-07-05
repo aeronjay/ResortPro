@@ -58,7 +58,9 @@ namespace ResortPro
                     { calendarButton, calendarPicture },
                     { suppliesButton, suppliesPicture },
                     { historyButton, historyPicture },
-                    { signOutButton, signOutPicture } // Add signOutButton here
+                    { signOutButton, signOutPicture },
+                    { homeButton, homeIcon }
+                    // Add signOutButton here
                 };
         }
 
