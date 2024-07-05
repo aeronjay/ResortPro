@@ -2,6 +2,7 @@
 using Guna.UI2.WinForms;
 using Krypton.Toolkit;
 using ResortPro.AllAdminForms;
+using ResortPro.AllStaffForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -322,6 +323,11 @@ namespace ResortPro
         {
             StaffSettings staffSettingsForm = new StaffSettings();
             staffSettingsForm.Show();
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Home());
         }
     }
 }

@@ -20,7 +20,11 @@ namespace ResortPro1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new staffForm(""));
+=======
+            Application.Run(new staffForm("asd"));
+>>>>>>> b11f76e44643863c291b1da36c9637e6b8b14f10
         }
     }
 }
