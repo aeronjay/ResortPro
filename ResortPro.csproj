@@ -59,10 +59,10 @@
       <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
-      <HintPath>..\..\..\..\..\prog\midtermProgLab\library\Bunifu\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+      <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
-      <HintPath>..\..\..\..\..\prog\midtermProgLab\library\Bunifu\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+      <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
@@ -182,6 +182,12 @@
     <Compile Include="AllStaffForms\dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllStaffForms\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStaffForms\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllStaffForms\Notify.cs" />
     <Compile Include="AllStaffForms\otp.cs" />
     <Compile Include="AllStaffForms\PrintRecord.cs">
@@ -299,6 +305,9 @@
     <EmbeddedResource Include="AllStaffForms\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllStaffForms\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllStaffForms\PrintRecord.resx">
       <DependentUpon>PrintRecord.cs</DependentUpon>
     </EmbeddedResource>
@@ -410,6 +419,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Minimalist Ocean Wave Logo %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Minimalist Ocean Wave Logo %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Minimalist Ocean Wave Logo %283%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
