@@ -16,20 +16,21 @@ namespace ResortPro.AllStaffForms
             _fromPassword = fromPassword;
         }
 
-        public bool SendBookingConfirmation(int ID, string userEmail, string fullName, string checkInDate, int adultCount, int kidCount, string accommodation, bool videoke, int additionalMattress, string paymentMethod, decimal totalPrice)
+        public bool SendBookingConfirmation(int ID, string userEmail, string fullName, string checkInDate, int adultCount, int kidCount, string accommodation, bool videoke, decimal totalPrice)
         {
             try
             {
                 MailMessage message = new MailMessage(_fromMail, userEmail);
-                message.Subject = "Booking Confirmation at Last Gate Resort";
+                message.Subject = "BOOKING REMINDER at Last Gate Resort!!";
                 message.IsBodyHtml = true;
                 message.Body = $@"
                     <html>
                     <body>
+                        <h2>Booking Reminder
                         <h2>Booking Confirmation</h2>
-                        <p>Dear {fullName}, take note of your reservation at LAST GATE FAMILY RESORT</p>
+                        <p>Dear {fullName},</p>
+                        <p>Take note of your reservation at LAST GATE FAMILY RESORT</p>
                         <p>Your booking at Last Gate Resort has been confirmed.</p>
-
                         <p><strong>Details:</strong></p>
                         <ul>
                             <li>YOUR RESERVATION ID: {ID}</li>
@@ -38,8 +39,6 @@ namespace ResortPro.AllStaffForms
                             <li>Number of Kids: {kidCount}</li>
                             <li>Accommodation Type: {accommodation}</li>
                             <li>Videoke Included: {(videoke ? "Yes" : "No")}</li>
-                            <li>Additional Mattresses: {additionalMattress}</li>
-                            <li>Payment Method: {paymentMethod}</li>
                             <li>Total Price: {totalPrice.ToString("C")}</li>
                         </ul>
                         <p>Thank you for choosing Last Gate Resort. We look forward to welcoming you!</p>
@@ -54,7 +53,7 @@ namespace ResortPro.AllStaffForms
                 smtpClient.EnableSsl = true;
 
                 smtpClient.Send(message);
-                MessageBox.Show("Booking confirmation email sent successfully. Please check your email.");
+                MessageBox.Show("Booking Notify email sent successfully. Please check your email.");
                 return true;
             }
             catch (Exception ex)

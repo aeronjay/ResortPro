@@ -317,30 +317,65 @@ namespace ResortPro
         {
 
         }
+        private string GetEmailByBookingID(int bookingID)
+        {
+            string email = string.Empty;
+            string sql = "SELECT email FROM bookings WHERE ID = @id";
 
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+                {
+                    using (OleDbCommand command = new OleDbCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@id", bookingID);
+                        connection.Open();
+
+                        using (OleDbDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                email = reader["email"].ToString();
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error retrieving email: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return email;
+        }
         private void notif_Click(object sender, EventArgs e)
         {
             if (bunifuDataGridView1.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = bunifuDataGridView1.SelectedRows[0];
-
                 int bookingID = (int)selectedRow.Cells["ID"].Value;
                 string userEmail = selectedRow.Cells["email"].Value.ToString();
                 string fullName = selectedRow.Cells["fullName"].Value.ToString();
-                string checkInDate = selectedRow.Cells["checkInDate"].Value.ToString(); // Ensure it's in a suitable format
-                int adultCount = Convert.ToInt32(selectedRow.Cells["numberAdults"].Value);
-                int kidCount = Convert.ToInt32(selectedRow.Cells["numberKids"].Value);
+                string checkInDate = selectedRow.Cells["checkInDate"].Value.ToString();
+                int peopleNumber = Convert.ToInt32(selectedRow.Cells["peopleNumber"].Value);
                 string accommodation = selectedRow.Cells["accommodationType"].Value.ToString();
-                bool videoke = Convert.ToBoolean(selectedRow.Cells["videoke"].Value);
-                int additionalMattress = Convert.ToInt32(selectedRow.Cells["additionalMattress"].Value);
-                string paymentMethod = selectedRow.Cells["paymentMethod"].Value.ToString();
+                bool paid = Convert.ToBoolean(selectedRow.Cells["paid"].Value);
                 decimal totalPrice = Convert.ToDecimal(selectedRow.Cells["totalPrice"].Value);
 
+                // Since 'additionalMattress', 'paymentMethod', and other parameters are required,
+                // providing default values or ensuring these fields exist in your DataGridView.
+
+
+                // These parameters are necessary, so set to default values
+                int adultCount = 0; // Default value
+                int kidCount = 0; // Default value
+                bool videoke = false; // Default value
+
                 // Instantiate Notify object with your email credentials
-                Notify notifier = new Notify("lastgateresort@gmail.com", "ypoq ktvr imrm jdbt ");
+                Notify notifier = new Notify("lastgateresort@gmail.com", "ypoq ktvr imrm jdbt");
 
                 // Send the booking confirmation email
-                bool result = notifier.SendBookingConfirmation(bookingID, userEmail, fullName, checkInDate, adultCount, kidCount, accommodation, videoke, additionalMattress, paymentMethod, totalPrice);
+                bool result = notifier.SendBookingConfirmation(bookingID, userEmail, fullName, checkInDate, adultCount, kidCount, accommodation, videoke, totalPrice);
 
                 if (result)
                 {
@@ -352,6 +387,8 @@ namespace ResortPro
                 MessageBox.Show("Please select a booking to send notification.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+
 
     }
 }
