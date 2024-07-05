@@ -67,6 +67,9 @@
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelChildForm = new Guna.UI2.WinForms.Guna2Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.homeIcon = new FontAwesome.Sharp.IconPictureBox();
+            this.homeButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.signOutPicture)).BeginInit();
@@ -88,31 +91,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.homeIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel12);
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.panel11);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(223, 683);
+            this.panel1.Size = new System.Drawing.Size(223, 701);
             this.panel1.TabIndex = 0;
             // 
             // panel11
             // 
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(0, 731);
+            this.panel11.Location = new System.Drawing.Point(0, 813);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(206, 33);
             this.panel11.TabIndex = 2;
@@ -122,7 +128,7 @@
             this.panel10.Controls.Add(this.signOutPicture);
             this.panel10.Controls.Add(this.signOutButton);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(0, 764);
+            this.panel10.Location = new System.Drawing.Point(0, 846);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(206, 85);
             this.panel10.TabIndex = 5;
@@ -165,10 +171,10 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.historyPicture);
-            this.panel9.Controls.Add(this.historyButton);
+            this.panel9.Controls.Add(this.statusPicture);
+            this.panel9.Controls.Add(this.statusButton);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 645);
+            this.panel9.Location = new System.Drawing.Point(0, 485);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(206, 86);
             this.panel9.TabIndex = 4;
@@ -181,7 +187,7 @@
             this.historyPicture.IconColor = System.Drawing.SystemColors.Window;
             this.historyPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.historyPicture.IconSize = 42;
-            this.historyPicture.Location = new System.Drawing.Point(28, 21);
+            this.historyPicture.Location = new System.Drawing.Point(27, 19);
             this.historyPicture.Name = "historyPicture";
             this.historyPicture.Size = new System.Drawing.Size(42, 42);
             this.historyPicture.TabIndex = 13;
@@ -201,7 +207,7 @@
             this.historyButton.HoverState.FillColor = System.Drawing.Color.White;
             this.historyButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.historyButton.HoverState.Parent = this.historyButton;
-            this.historyButton.Location = new System.Drawing.Point(15, 16);
+            this.historyButton.Location = new System.Drawing.Point(14, 14);
             this.historyButton.Name = "historyButton";
             this.historyButton.ShadowDecoration.Parent = this.historyButton;
             this.historyButton.Size = new System.Drawing.Size(183, 51);
@@ -212,10 +218,10 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.suppliesPicture);
-            this.panel5.Controls.Add(this.suppliesButton);
+            this.panel5.Controls.Add(this.homeIcon);
+            this.panel5.Controls.Add(this.homeButton);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 565);
+            this.panel5.Location = new System.Drawing.Point(0, 325);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(206, 80);
             this.panel5.TabIndex = 2;
@@ -227,7 +233,7 @@
             this.suppliesPicture.IconColor = System.Drawing.Color.White;
             this.suppliesPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.suppliesPicture.IconSize = 42;
-            this.suppliesPicture.Location = new System.Drawing.Point(28, 20);
+            this.suppliesPicture.Location = new System.Drawing.Point(26, 18);
             this.suppliesPicture.Name = "suppliesPicture";
             this.suppliesPicture.Size = new System.Drawing.Size(42, 42);
             this.suppliesPicture.TabIndex = 11;
@@ -247,7 +253,7 @@
             this.suppliesButton.HoverState.FillColor = System.Drawing.Color.White;
             this.suppliesButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.suppliesButton.HoverState.Parent = this.suppliesButton;
-            this.suppliesButton.Location = new System.Drawing.Point(15, 15);
+            this.suppliesButton.Location = new System.Drawing.Point(13, 13);
             this.suppliesButton.Name = "suppliesButton";
             this.suppliesButton.ShadowDecoration.Parent = this.suppliesButton;
             this.suppliesButton.Size = new System.Drawing.Size(183, 51);
@@ -261,7 +267,7 @@
             this.panel8.Controls.Add(this.calendarPicture);
             this.panel8.Controls.Add(this.calendarButton);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 485);
+            this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(206, 80);
             this.panel8.TabIndex = 3;
@@ -304,8 +310,8 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.bookingsPicture);
-            this.panel6.Controls.Add(this.bookingsButton);
+            this.panel6.Controls.Add(this.dashboardPicture);
+            this.panel6.Controls.Add(this.dashboardButton);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 405);
             this.panel6.Name = "panel6";
@@ -319,7 +325,7 @@
             this.bookingsPicture.IconColor = System.Drawing.Color.White;
             this.bookingsPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bookingsPicture.IconSize = 42;
-            this.bookingsPicture.Location = new System.Drawing.Point(32, 22);
+            this.bookingsPicture.Location = new System.Drawing.Point(26, 21);
             this.bookingsPicture.Name = "bookingsPicture";
             this.bookingsPicture.Size = new System.Drawing.Size(42, 42);
             this.bookingsPicture.TabIndex = 7;
@@ -339,7 +345,7 @@
             this.bookingsButton.HoverState.FillColor = System.Drawing.Color.White;
             this.bookingsButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.bookingsButton.HoverState.Parent = this.bookingsButton;
-            this.bookingsButton.Location = new System.Drawing.Point(19, 17);
+            this.bookingsButton.Location = new System.Drawing.Point(13, 16);
             this.bookingsButton.Name = "bookingsButton";
             this.bookingsButton.ShadowDecoration.Parent = this.bookingsButton;
             this.bookingsButton.Size = new System.Drawing.Size(183, 51);
@@ -350,10 +356,10 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.statusPicture);
-            this.panel7.Controls.Add(this.statusButton);
+            this.panel7.Controls.Add(this.suppliesPicture);
+            this.panel7.Controls.Add(this.suppliesButton);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 325);
+            this.panel7.Location = new System.Drawing.Point(0, 653);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(206, 80);
             this.panel7.TabIndex = 3;
@@ -365,7 +371,7 @@
             this.statusPicture.IconColor = System.Drawing.Color.White;
             this.statusPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.statusPicture.IconSize = 42;
-            this.statusPicture.Location = new System.Drawing.Point(32, 20);
+            this.statusPicture.Location = new System.Drawing.Point(27, 19);
             this.statusPicture.Name = "statusPicture";
             this.statusPicture.Size = new System.Drawing.Size(42, 42);
             this.statusPicture.TabIndex = 5;
@@ -385,7 +391,7 @@
             this.statusButton.HoverState.FillColor = System.Drawing.Color.White;
             this.statusButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.statusButton.HoverState.Parent = this.statusButton;
-            this.statusButton.Location = new System.Drawing.Point(19, 15);
+            this.statusButton.Location = new System.Drawing.Point(14, 14);
             this.statusButton.Name = "statusButton";
             this.statusButton.ShadowDecoration.Parent = this.statusButton;
             this.statusButton.Size = new System.Drawing.Size(183, 51);
@@ -396,10 +402,10 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.dashboardPicture);
-            this.panel4.Controls.Add(this.dashboardButton);
+            this.panel4.Controls.Add(this.historyPicture);
+            this.panel4.Controls.Add(this.historyButton);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 245);
+            this.panel4.Location = new System.Drawing.Point(0, 733);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(206, 80);
             this.panel4.TabIndex = 1;
@@ -411,7 +417,7 @@
             this.dashboardPicture.IconColor = System.Drawing.Color.White;
             this.dashboardPicture.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.dashboardPicture.IconSize = 42;
-            this.dashboardPicture.Location = new System.Drawing.Point(32, 22);
+            this.dashboardPicture.Location = new System.Drawing.Point(27, 19);
             this.dashboardPicture.Name = "dashboardPicture";
             this.dashboardPicture.Size = new System.Drawing.Size(42, 42);
             this.dashboardPicture.TabIndex = 3;
@@ -431,7 +437,7 @@
             this.dashboardButton.HoverState.FillColor = System.Drawing.Color.White;
             this.dashboardButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
             this.dashboardButton.HoverState.Parent = this.dashboardButton;
-            this.dashboardButton.Location = new System.Drawing.Point(19, 17);
+            this.dashboardButton.Location = new System.Drawing.Point(14, 14);
             this.dashboardButton.Name = "dashboardButton";
             this.dashboardButton.ShadowDecoration.Parent = this.dashboardButton;
             this.dashboardButton.Size = new System.Drawing.Size(183, 51);
@@ -446,7 +452,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.iconPictureBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Location = new System.Drawing.Point(0, 80);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(206, 245);
             this.panel3.TabIndex = 0;
@@ -666,7 +672,7 @@
             this.panelChildForm.Location = new System.Drawing.Point(223, 112);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.ShadowDecoration.Parent = this.panelChildForm;
-            this.panelChildForm.Size = new System.Drawing.Size(991, 571);
+            this.panelChildForm.Size = new System.Drawing.Size(991, 589);
             this.panelChildForm.TabIndex = 2;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
@@ -675,12 +681,57 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.bookingsPicture);
+            this.panel12.Controls.Add(this.bookingsButton);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(0, 571);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(206, 82);
+            this.panel12.TabIndex = 6;
+            // 
+            // homeIcon
+            // 
+            this.homeIcon.BackColor = System.Drawing.Color.Transparent;
+            this.homeIcon.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
+            this.homeIcon.IconColor = System.Drawing.Color.White;
+            this.homeIcon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.homeIcon.IconSize = 42;
+            this.homeIcon.Location = new System.Drawing.Point(27, 22);
+            this.homeIcon.Name = "homeIcon";
+            this.homeIcon.Size = new System.Drawing.Size(42, 42);
+            this.homeIcon.TabIndex = 5;
+            this.homeIcon.TabStop = false;
+            // 
+            // homeButton
+            // 
+            this.homeButton.BorderRadius = 25;
+            this.homeButton.CheckedState.Parent = this.homeButton;
+            this.homeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.homeButton.CustomImages.Parent = this.homeButton;
+            this.homeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.homeButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeButton.ForeColor = System.Drawing.Color.White;
+            this.homeButton.HoverState.BorderColor = System.Drawing.Color.White;
+            this.homeButton.HoverState.CustomBorderColor = System.Drawing.Color.White;
+            this.homeButton.HoverState.FillColor = System.Drawing.Color.White;
+            this.homeButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.homeButton.HoverState.Parent = this.homeButton;
+            this.homeButton.Location = new System.Drawing.Point(14, 17);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.ShadowDecoration.Parent = this.homeButton;
+            this.homeButton.Size = new System.Drawing.Size(183, 51);
+            this.homeButton.TabIndex = 4;
+            this.homeButton.Text = "Homepage";
+            this.homeButton.TextOffset = new System.Drawing.Point(18, 0);
+            // 
             // staffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
-            this.ClientSize = new System.Drawing.Size(1214, 683);
+            this.ClientSize = new System.Drawing.Size(1214, 701);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.panel1);
@@ -723,6 +774,8 @@
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.homeIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -767,5 +820,8 @@
         private Guna.UI2.WinForms.Guna2Panel panelChildForm;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private System.Windows.Forms.Panel panel12;
+        private FontAwesome.Sharp.IconPictureBox homeIcon;
+        private Guna.UI2.WinForms.Guna2Button homeButton;
     }
 }
