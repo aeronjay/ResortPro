@@ -58,6 +58,12 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\..\..\prog\midtermProgLab\library\Bunifu\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\..\prog\midtermProgLab\library\Bunifu\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>Libraries\Bunifu\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
     </Reference>
@@ -178,6 +184,12 @@
     </Compile>
     <Compile Include="AllStaffForms\Notify.cs" />
     <Compile Include="AllStaffForms\otp.cs" />
+    <Compile Include="AllStaffForms\PrintRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStaffForms\PrintRecord.Designer.cs">
+      <DependentUpon>PrintRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllStaffForms\seeDateBookings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllStaffForms\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStaffForms\PrintRecord.resx">
+      <DependentUpon>PrintRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllStaffForms\seeDateBookings.resx">
       <DependentUpon>seeDateBookings.cs</DependentUpon>
