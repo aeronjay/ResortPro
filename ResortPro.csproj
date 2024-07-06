@@ -146,6 +146,18 @@
     <Compile Include="AllAdminForms\Manage Pricing.Designer.cs">
       <DependentUpon>Manage Pricing.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllAdminForms\photo checking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllAdminForms\photo checking.Designer.cs">
+      <DependentUpon>photo checking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllAdminForms\photo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllAdminForms\photo.Designer.cs">
+      <DependentUpon>photo.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllAdminForms\StaffSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +298,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllAdminForms\Manage Pricing.resx">
       <DependentUpon>Manage Pricing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllAdminForms\photo checking.resx">
+      <DependentUpon>photo checking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllAdminForms\photo.resx">
+      <DependentUpon>photo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllAdminForms\StaffSettings.resx">
       <DependentUpon>StaffSettings.cs</DependentUpon>

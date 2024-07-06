@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.datagridview = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -51,6 +51,7 @@
             this.passwordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.lastNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Upload = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagridview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,18 +59,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 0);
+            this.label1.Location = new System.Drawing.Point(11, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 41);
+            this.label1.Size = new System.Drawing.Size(323, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Staff";
             // 
             // datagridview
             // 
             this.datagridview.AllowCustomTheming = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.datagridview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -77,14 +79,14 @@
             this.datagridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagridview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.datagridview.ColumnHeadersHeight = 40;
             this.datagridview.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.datagridview.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -104,28 +106,30 @@
             this.datagridview.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.datagridview.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.datagridview.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagridview.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagridview.DefaultCellStyle = dataGridViewCellStyle6;
             this.datagridview.EnableHeadersVisualStyles = false;
             this.datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.datagridview.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.datagridview.HeaderBgColor = System.Drawing.Color.Empty;
             this.datagridview.HeaderForeColor = System.Drawing.Color.White;
-            this.datagridview.Location = new System.Drawing.Point(304, 92);
+            this.datagridview.Location = new System.Drawing.Point(321, 100);
+            this.datagridview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.datagridview.Name = "datagridview";
             this.datagridview.RowHeadersVisible = false;
             this.datagridview.RowHeadersWidth = 51;
             this.datagridview.RowTemplate.Height = 40;
             this.datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagridview.Size = new System.Drawing.Size(614, 354);
+            this.datagridview.Size = new System.Drawing.Size(913, 436);
             this.datagridview.TabIndex = 1;
             this.datagridview.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.datagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridview_CellContentClick);
             // 
             // guna2Button1
             // 
@@ -136,12 +140,14 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.LightGreen;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(304, 42);
+            this.guna2Button1.Location = new System.Drawing.Point(350, 52);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(84, 29);
+            this.guna2Button1.Size = new System.Drawing.Size(112, 36);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Add";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
             // 
@@ -151,10 +157,11 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(394, 42);
+            this.guna2Button2.Location = new System.Drawing.Point(494, 52);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(84, 29);
+            this.guna2Button2.Size = new System.Drawing.Size(112, 36);
             this.guna2Button2.TabIndex = 3;
             this.guna2Button2.Text = "Edit";
             // 
@@ -167,10 +174,11 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.FillColor = System.Drawing.Color.LightCoral;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(484, 42);
+            this.guna2Button3.Location = new System.Drawing.Point(636, 53);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(84, 29);
+            this.guna2Button3.Size = new System.Drawing.Size(112, 36);
             this.guna2Button3.TabIndex = 4;
             this.guna2Button3.Text = "Delete";
             // 
@@ -188,14 +196,14 @@
             this.firstNameTextBox.FocusedState.Parent = this.firstNameTextBox;
             this.firstNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTextBox.HoverState.Parent = this.firstNameTextBox;
-            this.firstNameTextBox.Location = new System.Drawing.Point(53, 74);
-            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.firstNameTextBox.Location = new System.Drawing.Point(71, 91);
+            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.PasswordChar = '\0';
             this.firstNameTextBox.PlaceholderText = "Full Name";
             this.firstNameTextBox.SelectedText = "";
             this.firstNameTextBox.ShadowDecoration.Parent = this.firstNameTextBox;
-            this.firstNameTextBox.Size = new System.Drawing.Size(173, 32);
+            this.firstNameTextBox.Size = new System.Drawing.Size(231, 39);
             this.firstNameTextBox.TabIndex = 6;
             // 
             // addressTextBox
@@ -212,14 +220,14 @@
             this.addressTextBox.FocusedState.Parent = this.addressTextBox;
             this.addressTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.addressTextBox.HoverState.Parent = this.addressTextBox;
-            this.addressTextBox.Location = new System.Drawing.Point(54, 231);
-            this.addressTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addressTextBox.Location = new System.Drawing.Point(72, 284);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.PasswordChar = '\0';
             this.addressTextBox.PlaceholderText = "Address";
             this.addressTextBox.SelectedText = "";
             this.addressTextBox.ShadowDecoration.Parent = this.addressTextBox;
-            this.addressTextBox.Size = new System.Drawing.Size(172, 32);
+            this.addressTextBox.Size = new System.Drawing.Size(229, 39);
             this.addressTextBox.TabIndex = 7;
             // 
             // genderTextBox
@@ -236,14 +244,14 @@
             this.genderTextBox.FocusedState.Parent = this.genderTextBox;
             this.genderTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.genderTextBox.HoverState.Parent = this.genderTextBox;
-            this.genderTextBox.Location = new System.Drawing.Point(53, 290);
-            this.genderTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.genderTextBox.Location = new System.Drawing.Point(71, 357);
+            this.genderTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.genderTextBox.Name = "genderTextBox";
             this.genderTextBox.PasswordChar = '\0';
             this.genderTextBox.PlaceholderText = "Sex";
             this.genderTextBox.SelectedText = "";
             this.genderTextBox.ShadowDecoration.Parent = this.genderTextBox;
-            this.genderTextBox.Size = new System.Drawing.Size(173, 33);
+            this.genderTextBox.Size = new System.Drawing.Size(231, 41);
             this.genderTextBox.TabIndex = 8;
             // 
             // numberTextBox
@@ -261,49 +269,53 @@
             this.numberTextBox.FocusedState.Parent = this.numberTextBox;
             this.numberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.numberTextBox.HoverState.Parent = this.numberTextBox;
-            this.numberTextBox.Location = new System.Drawing.Point(54, 176);
-            this.numberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numberTextBox.Location = new System.Drawing.Point(72, 217);
+            this.numberTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.numberTextBox.Name = "numberTextBox";
             this.numberTextBox.PasswordChar = '\0';
             this.numberTextBox.PlaceholderText = "No.";
             this.numberTextBox.SelectedText = "";
             this.numberTextBox.ShadowDecoration.Parent = this.numberTextBox;
-            this.numberTextBox.Size = new System.Drawing.Size(172, 33);
+            this.numberTextBox.Size = new System.Drawing.Size(229, 41);
             this.numberTextBox.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(58, 59);
+            this.label2.Location = new System.Drawing.Point(77, 73);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 13);
+            this.label2.Size = new System.Drawing.Size(134, 16);
             this.label2.TabIndex = 11;
             this.label2.Text = "Employee FirstName";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(54, 214);
+            this.label4.Location = new System.Drawing.Point(72, 263);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 13);
+            this.label4.Size = new System.Drawing.Size(123, 16);
             this.label4.TabIndex = 13;
             this.label4.Text = "Employee Address";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(54, 275);
+            this.label5.Location = new System.Drawing.Point(72, 338);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 13);
+            this.label5.Size = new System.Drawing.Size(117, 16);
             this.label5.TabIndex = 14;
             this.label5.Text = "Employee Gender";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(54, 159);
+            this.label6.Location = new System.Drawing.Point(72, 196);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 13);
+            this.label6.Size = new System.Drawing.Size(135, 16);
             this.label6.TabIndex = 15;
             this.label6.Text = "Employee Phone No.";
             // 
@@ -323,31 +335,33 @@
             this.searchTextBox.FocusedState.Parent = this.searchTextBox;
             this.searchTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTextBox.HoverState.Parent = this.searchTextBox;
-            this.searchTextBox.Location = new System.Drawing.Point(718, 38);
-            this.searchTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchTextBox.Location = new System.Drawing.Point(957, 47);
+            this.searchTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.PasswordChar = '\0';
             this.searchTextBox.PlaceholderText = "Search";
             this.searchTextBox.SelectedText = "";
             this.searchTextBox.ShadowDecoration.Parent = this.searchTextBox;
-            this.searchTextBox.Size = new System.Drawing.Size(200, 36);
+            this.searchTextBox.Size = new System.Drawing.Size(267, 44);
             this.searchTextBox.TabIndex = 17;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 410);
+            this.label3.Location = new System.Drawing.Point(71, 505);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 13);
+            this.label3.Size = new System.Drawing.Size(132, 16);
             this.label3.TabIndex = 21;
             this.label3.Text = "Employee Password";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(53, 358);
+            this.label8.Location = new System.Drawing.Point(71, 441);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 13);
+            this.label8.Size = new System.Drawing.Size(135, 16);
             this.label8.TabIndex = 20;
             this.label8.Text = "Employee Username";
             // 
@@ -365,14 +379,14 @@
             this.usernameTextBox.FocusedState.Parent = this.usernameTextBox;
             this.usernameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextBox.HoverState.Parent = this.usernameTextBox;
-            this.usernameTextBox.Location = new System.Drawing.Point(52, 374);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameTextBox.Location = new System.Drawing.Point(69, 460);
+            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.PasswordChar = '•';
             this.usernameTextBox.PlaceholderText = "";
             this.usernameTextBox.SelectedText = "";
             this.usernameTextBox.ShadowDecoration.Parent = this.usernameTextBox;
-            this.usernameTextBox.Size = new System.Drawing.Size(173, 33);
+            this.usernameTextBox.Size = new System.Drawing.Size(231, 41);
             this.usernameTextBox.TabIndex = 18;
             // 
             // passwordTextBox
@@ -389,22 +403,23 @@
             this.passwordTextBox.FocusedState.Parent = this.passwordTextBox;
             this.passwordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextBox.HoverState.Parent = this.passwordTextBox;
-            this.passwordTextBox.Location = new System.Drawing.Point(52, 426);
-            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordTextBox.Location = new System.Drawing.Point(69, 524);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '•';
             this.passwordTextBox.PlaceholderText = "";
             this.passwordTextBox.SelectedText = "";
             this.passwordTextBox.ShadowDecoration.Parent = this.passwordTextBox;
-            this.passwordTextBox.Size = new System.Drawing.Size(173, 33);
+            this.passwordTextBox.Size = new System.Drawing.Size(231, 41);
             this.passwordTextBox.TabIndex = 22;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(55, 110);
+            this.label7.Location = new System.Drawing.Point(73, 135);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 13);
+            this.label7.Size = new System.Drawing.Size(134, 16);
             this.label7.TabIndex = 24;
             this.label7.Text = "Employee LastName";
             // 
@@ -422,22 +437,39 @@
             this.lastNameTextBox.FocusedState.Parent = this.lastNameTextBox;
             this.lastNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.lastNameTextBox.HoverState.Parent = this.lastNameTextBox;
-            this.lastNameTextBox.Location = new System.Drawing.Point(52, 124);
-            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lastNameTextBox.Location = new System.Drawing.Point(69, 153);
+            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.PasswordChar = '\0';
             this.lastNameTextBox.PlaceholderText = "Full Name";
             this.lastNameTextBox.SelectedText = "";
             this.lastNameTextBox.ShadowDecoration.Parent = this.lastNameTextBox;
-            this.lastNameTextBox.Size = new System.Drawing.Size(173, 32);
+            this.lastNameTextBox.Size = new System.Drawing.Size(231, 39);
             this.lastNameTextBox.TabIndex = 23;
+            // 
+            // Upload
+            // 
+            this.Upload.BorderRadius = 10;
+            this.Upload.CheckedState.Parent = this.Upload;
+            this.Upload.CustomImages.Parent = this.Upload;
+            this.Upload.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Upload.ForeColor = System.Drawing.Color.White;
+            this.Upload.HoverState.Parent = this.Upload;
+            this.Upload.Location = new System.Drawing.Point(770, 52);
+            this.Upload.Name = "Upload";
+            this.Upload.ShadowDecoration.Parent = this.Upload;
+            this.Upload.Size = new System.Drawing.Size(128, 36);
+            this.Upload.TabIndex = 25;
+            this.Upload.Text = "Upload Photo";
+            this.Upload.Click += new System.EventHandler(this.Upload_Click);
             // 
             // manage_staff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(949, 473);
+            this.ClientSize = new System.Drawing.Size(1265, 582);
+            this.Controls.Add(this.Upload);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.passwordTextBox);
@@ -458,6 +490,7 @@
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.datagridview);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "manage_staff";
             this.Text = " ";
             this.Load += new System.EventHandler(this.manage_staff_Load);
@@ -489,5 +522,6 @@
         private Guna.UI2.WinForms.Guna2TextBox passwordTextBox;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox lastNameTextBox;
+        private Guna.UI2.WinForms.Guna2Button Upload;
     }
 }
