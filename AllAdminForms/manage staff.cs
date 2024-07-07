@@ -168,7 +168,82 @@ namespace ResortPro
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            AddStaff();
+        }
+
+        private void AddStaff()
+        {
+            // Assuming you have textboxes for each staff detail
+            string firstName = firstNameTextBox.Text;
+            string lastName = lastNameTextBox.Text;
+            string staffNumber = numberTextBox.Text;
+            string address = addressTextBox.Text;
+            string gender = genderTextBox.Text;
+            string username = usernameTextBox.Text;
+            string password = passwordTextBox.Text;
+            string photoFileName = "default.png"; // Default photo file
+
+            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(staffNumber))
+            {
+                MessageBox.Show("Please fill out all required fields.");
+                return;
+            }
+
+            // Add to database
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+                {
+                    connection.Open();
+                    string query = @"INSERT INTO staff 
+                                     (staff_first_name, staff_last_name, staff_number, staff_address, staff_gender, staff_username, staff_password, staff_photo) 
+                                     VALUES (@FirstName, @LastName, @StaffNumber, @Address, @Gender, @Username, @Password, @Photo)";
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@FirstName", firstName);
+                        command.Parameters.AddWithValue("@LastName", lastName);
+                        command.Parameters.AddWithValue("@StaffNumber", staffNumber);
+                        command.Parameters.AddWithValue("@Address", address);
+                        command.Parameters.AddWithValue("@Gender", gender);
+                        command.Parameters.AddWithValue("@Username", username);
+                        command.Parameters.AddWithValue("@Password", password);
+                        command.Parameters.AddWithValue("@Photo", photoFileName);
+                        command.ExecuteNonQuery();
+                    }
+                }
+
+                // Add to DataGridView
+                DataRow newRow = staffDataTable.NewRow();
+                newRow["First Name"] = firstName;
+                newRow["Last Name"] = lastName;
+                newRow["Staff Number"] = staffNumber;
+                newRow["Address"] = address;
+                newRow["Gender"] = gender;
+                newRow["Username"] = username;
+                newRow["Password"] = password;
+                newRow["Photo"] = photoFileName;
+
+                // Load default image
+                string photoPath = Path.Combine(photoDirectory, photoFileName);
+                if (File.Exists(photoPath))
+                {
+                    newRow["Image"] = Image.FromFile(photoPath);
+                }
+
+                staffDataTable.Rows.Add(newRow);
+                MessageBox.Show("Staff member added successfully.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while adding the staff member: {ex.Message}");
+            }
+        }
+
+        private void firstNameTextBox_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
 }
+
+

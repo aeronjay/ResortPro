@@ -21,7 +21,7 @@ namespace ResortPro1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new photo_checking());
+            Application.Run(new manage_staff());
 
         }
     }
