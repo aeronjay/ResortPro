@@ -99,6 +99,7 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel12);
@@ -108,11 +109,10 @@
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel8);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(223, 701);
+            this.panel1.Size = new System.Drawing.Size(223, 955);
             this.panel1.TabIndex = 0;
             // 
             // panel4
@@ -120,9 +120,9 @@
             this.panel4.Controls.Add(this.historyPicture);
             this.panel4.Controls.Add(this.historyButton);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 733);
+            this.panel4.Location = new System.Drawing.Point(0, 653);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(206, 80);
+            this.panel4.Size = new System.Drawing.Size(223, 80);
             this.panel4.TabIndex = 1;
             // 
             // historyPicture
@@ -167,9 +167,9 @@
             this.panel7.Controls.Add(this.suppliesPicture);
             this.panel7.Controls.Add(this.suppliesButton);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 653);
+            this.panel7.Location = new System.Drawing.Point(0, 573);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(206, 80);
+            this.panel7.Size = new System.Drawing.Size(223, 80);
             this.panel7.TabIndex = 3;
             // 
             // suppliesPicture
@@ -213,9 +213,9 @@
             this.panel12.Controls.Add(this.bookingsPicture);
             this.panel12.Controls.Add(this.bookingsButton);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 571);
+            this.panel12.Location = new System.Drawing.Point(0, 491);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(206, 82);
+            this.panel12.Size = new System.Drawing.Size(223, 82);
             this.panel12.TabIndex = 6;
             // 
             // bookingsPicture
@@ -259,9 +259,9 @@
             this.panel9.Controls.Add(this.statusPicture);
             this.panel9.Controls.Add(this.statusButton);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 485);
+            this.panel9.Location = new System.Drawing.Point(0, 405);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(206, 86);
+            this.panel9.Size = new System.Drawing.Size(223, 86);
             this.panel9.TabIndex = 4;
             // 
             // statusPicture
@@ -303,9 +303,9 @@
             // panel11
             // 
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(0, 813);
+            this.panel11.Location = new System.Drawing.Point(0, 837);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(206, 33);
+            this.panel11.Size = new System.Drawing.Size(223, 33);
             this.panel11.TabIndex = 2;
             // 
             // panel6
@@ -313,9 +313,9 @@
             this.panel6.Controls.Add(this.dashboardPicture);
             this.panel6.Controls.Add(this.dashboardButton);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 405);
+            this.panel6.Location = new System.Drawing.Point(0, 325);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(206, 80);
+            this.panel6.Size = new System.Drawing.Size(223, 80);
             this.panel6.TabIndex = 3;
             // 
             // dashboardPicture
@@ -359,9 +359,9 @@
             this.panel10.Controls.Add(this.signOutPicture);
             this.panel10.Controls.Add(this.signOutButton);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(0, 846);
+            this.panel10.Location = new System.Drawing.Point(0, 870);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(206, 85);
+            this.panel10.Size = new System.Drawing.Size(223, 85);
             this.panel10.TabIndex = 5;
             // 
             // signOutPicture
@@ -405,9 +405,9 @@
             this.panel5.Controls.Add(this.homeIcon);
             this.panel5.Controls.Add(this.homeButton);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 325);
+            this.panel5.Location = new System.Drawing.Point(0, 245);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(206, 80);
+            this.panel5.Size = new System.Drawing.Size(223, 80);
             this.panel5.TabIndex = 2;
             // 
             // homeIcon
@@ -452,9 +452,9 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.iconPictureBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 80);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(206, 245);
+            this.panel3.Size = new System.Drawing.Size(223, 245);
             this.panel3.TabIndex = 0;
             // 
             // panel2
@@ -464,7 +464,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 136);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(206, 109);
+            this.panel2.Size = new System.Drawing.Size(223, 109);
             this.panel2.TabIndex = 2;
             // 
             // addBookingPicture
@@ -538,9 +538,9 @@
             this.panel8.Controls.Add(this.calendarPicture);
             this.panel8.Controls.Add(this.calendarButton);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Location = new System.Drawing.Point(0, 733);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(206, 80);
+            this.panel8.Size = new System.Drawing.Size(223, 80);
             this.panel8.TabIndex = 3;
             // 
             // calendarPicture
@@ -718,7 +718,7 @@
             this.panelChildForm.Location = new System.Drawing.Point(223, 112);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.ShadowDecoration.Parent = this.panelChildForm;
-            this.panelChildForm.Size = new System.Drawing.Size(991, 589);
+            this.panelChildForm.Size = new System.Drawing.Size(991, 843);
             this.panelChildForm.TabIndex = 2;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
@@ -732,7 +732,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(223)))), ((int)(((byte)(215)))));
-            this.ClientSize = new System.Drawing.Size(1214, 701);
+            this.ClientSize = new System.Drawing.Size(1214, 955);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.panel1);
