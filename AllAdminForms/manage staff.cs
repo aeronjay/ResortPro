@@ -243,6 +243,53 @@ namespace ResortPro
         {
 
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            DeleteStaff();
+        }
+
+        private void DeleteStaff()
+        {
+            if (selectedRowIndex >= 0)
+            {
+                string selectedStaffUsername = datagridview.Rows[selectedRowIndex].Cells["Username"].Value?.ToString();
+
+                if (!string.IsNullOrEmpty(selectedStaffUsername))
+                {
+                    // Delete from database
+                    try
+                    {
+                        using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
+                        {
+                            connection.Open();
+                            string query = "DELETE FROM staff WHERE staff_username = @StaffUsername";
+                            using (OleDbCommand command = new OleDbCommand(query, connection))
+                            {
+                                command.Parameters.AddWithValue("@StaffUsername", selectedStaffUsername);
+                                command.ExecuteNonQuery();
+                            }
+                        }
+
+                        // Delete from DataGridView
+                        staffDataTable.Rows[selectedRowIndex].Delete();
+                        MessageBox.Show("Staff member deleted successfully.");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"An error occurred while deleting the staff member: {ex.Message}");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Selected row does not contain a valid staff number.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a staff member to delete.");
+            }
+        }
     }
 }
 

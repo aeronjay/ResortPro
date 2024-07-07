@@ -35,7 +35,7 @@
             this.datagridview = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.Del = new Guna.UI2.WinForms.Guna2Button();
             this.firstNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.addressTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.genderTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -165,22 +165,23 @@
             this.guna2Button2.TabIndex = 3;
             this.guna2Button2.Text = "Edit";
             // 
-            // guna2Button3
+            // Del
             // 
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.LightCoral;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(636, 53);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(112, 36);
-            this.guna2Button3.TabIndex = 4;
-            this.guna2Button3.Text = "Delete";
+            this.Del.BorderRadius = 10;
+            this.Del.CheckedState.Parent = this.Del;
+            this.Del.CustomImages.Parent = this.Del;
+            this.Del.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Del.ForeColor = System.Drawing.Color.White;
+            this.Del.HoverState.FillColor = System.Drawing.Color.LightCoral;
+            this.Del.HoverState.Parent = this.Del;
+            this.Del.Location = new System.Drawing.Point(636, 53);
+            this.Del.Margin = new System.Windows.Forms.Padding(4);
+            this.Del.Name = "Del";
+            this.Del.ShadowDecoration.Parent = this.Del;
+            this.Del.Size = new System.Drawing.Size(112, 36);
+            this.Del.TabIndex = 4;
+            this.Del.Text = "Delete";
+            this.Del.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // firstNameTextBox
             // 
@@ -486,7 +487,7 @@
             this.Controls.Add(this.genderTextBox);
             this.Controls.Add(this.addressTextBox);
             this.Controls.Add(this.firstNameTextBox);
-            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.Del);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.datagridview);
@@ -507,7 +508,7 @@
         private Bunifu.UI.WinForms.BunifuDataGridView datagridview;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button Del;
         private Guna.UI2.WinForms.Guna2TextBox firstNameTextBox;
         private Guna.UI2.WinForms.Guna2TextBox addressTextBox;
         private Guna.UI2.WinForms.Guna2TextBox genderTextBox;
