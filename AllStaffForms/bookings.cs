@@ -31,7 +31,7 @@ namespace ResortPro
 
         public void LoadTable()
         {
-            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done FROM bookings WHERE Done = False ORDER BY ID DESC";
+            string sql = "SELECT ID, fullName, email, contactNumber, checkInDate, (numberAdults + numberKids) AS peopleNumber, accommodationType, paid, totalPrice, Done, Confirmed FROM bookings WHERE Done = False ORDER BY ID DESC";
 
             try
             {
@@ -62,6 +62,7 @@ namespace ResortPro
                             bunifuDataGridView1.Rows[rowIndex].Cells["paid"].Value = row["paid"];
                             bunifuDataGridView1.Rows[rowIndex].Cells["totalPrice"].Value = row["totalPrice"];
                             bunifuDataGridView1.Rows[rowIndex].Cells["Done"].Value = row["Done"];
+                            bunifuDataGridView1.Rows[rowIndex].Cells["Confirmed"].Value = row["Confirmed"];
 
                             bunifuDataGridView1.Columns["Done"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                             bunifuDataGridView1.Columns["paid"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
