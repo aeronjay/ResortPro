@@ -40,6 +40,10 @@ public static class EmailHelper
                     </ul>
                     <p>Thank you for choosing Last Gate Resort. We look forward to welcoming you!</p>
                     <p>Please show this email at the front desk of the resort for confirmation of your accomodation.!</p>
+                    <p>.</p>
+                    <p>.</p>
+                    <p>.</p>
+                    <p>Please Reply <b>'CONFIRMED'</b> to this email to Confirm your bookings<p>
                 </body>
                 </html>
                 ";
