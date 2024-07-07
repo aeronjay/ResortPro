@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace ResortPro
@@ -12,6 +13,8 @@ namespace ResortPro
         DataTable staffDataTable;
         private int selectedRowIndex = -1; // Store the selected row index
         private string photoDirectory = @"..\..\staff_photos\"; // Relative path for storing photos
+        private bool highlightingEnabled = true; // Assuming this is a class-level variable
+        private string connStr = "Your Connection String Here"; // Assuming this is your connection string
 
         public manage_staff()
         {
@@ -290,7 +293,82 @@ namespace ResortPro
                 MessageBox.Show("Please select a staff member to delete.");
             }
         }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = searchTextBox.Text.Trim();
+
+            if (highlightingEnabled && !string.IsNullOrEmpty(searchText))
+            {
+                try
+                {
+                    using (OleDbConnection conn = new OleDbConnection(connStr))
+                    {
+                        conn.Open();
+
+                        string sql = @"SELECT 
+                                staff_first_name AS [First Name], 
+                                staff_last_name AS [Last Name], 
+                                staff_number AS [Staff Number], 
+                                staff_email AS [Email], 
+                                staff_address AS [Address], 
+                                staff_gender AS [Gender], 
+                                staff_username AS [Username], 
+                                staff_password AS [Password],
+                                staff_photo AS [Photo]
+                            FROM staff
+                            WHERE staff_first_name LIKE @search OR
+                                staff_last_name LIKE @search OR
+                                staff_number LIKE @search OR
+                                staff_email LIKE @search OR
+                                staff_address LIKE @search OR
+                                staff_gender LIKE @search OR
+                                staff_username LIKE @search";
+
+                        OleDbDataAdapter adapter = new OleDbDataAdapter(sql, conn);
+                        adapter.SelectCommand.Parameters.AddWithValue("@search", "%" + searchText + "%");
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        datagridview.DataSource = dt;
+                        conn.Close();
+
+                        // Highlight rows that match the search text
+                        HighlightRows(searchText);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred while searching data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else if (string.IsNullOrEmpty(searchText))
+            {
+                LoadStaffData(); // Reload all data if search text is empty
+            }
+        }
+
+        private void HighlightRows(string searchText)
+        {
+            foreach (DataGridViewRow row in datagridview.Rows)
+            {
+                // Reset row style
+                row.DefaultCellStyle.BackColor = datagridview.DefaultCellStyle.BackColor;
+                row.DefaultCellStyle.ForeColor = datagridview.DefaultCellStyle.ForeColor;
+
+                // Check each cell value for match
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null &&
+                         cell.Value.ToString().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        // Highlight the row
+                        row.DefaultCellStyle.BackColor = Color.Yellow; // Highlight background
+                        row.DefaultCellStyle.ForeColor = Color.Black; // Highlight text color
+                        break; // No need to check other cells in this row
+                    }
+
+                }
+            }
+        }
     }
 }
-
-
