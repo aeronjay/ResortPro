@@ -45,7 +45,31 @@ namespace ResortPro.AllStaffForms
                 string emailAddress = message.From.Mailboxes.FirstOrDefault()?.Address;
                 if (emailAddress != null)
                 {
-                    UpdateBookingConfirmation(emailAddress);
+                    // Check if the booking is already confirmed
+                    if (!IsBookingConfirmed(emailAddress))
+                    {
+                        UpdateBookingConfirmation(emailAddress);
+                    }
+                }
+            }
+        }
+
+        private bool IsBookingConfirmed(string email)
+        {
+            string connectionString = dbOp.ConnectionString;
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT Confirmed FROM bookings WHERE email = ?";
+                using (OleDbCommand command = new OleDbCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("?", email);
+                    object result = command.ExecuteScalar();
+                    if (result != null && result != DBNull.Value)
+                    {
+                        return (bool)result;
+                    }
+                    return false; // Default to not confirmed if no record found
                 }
             }
         }
@@ -56,11 +80,11 @@ namespace ResortPro.AllStaffForms
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 connection.Open();
-                string query = "UPDATE bookings SET Confirmed = TRUE WHERE email = ?";
-                using (OleDbCommand command = new OleDbCommand(query, connection))
+                string updateQuery = "UPDATE bookings SET Confirmed = TRUE WHERE email = ?";
+                using (OleDbCommand updateCommand = new OleDbCommand(updateQuery, connection))
                 {
-                    command.Parameters.AddWithValue("?", email);
-                    int rowsAffected = command.ExecuteNonQuery();
+                    updateCommand.Parameters.AddWithValue("?", email);
+                    int rowsAffected = updateCommand.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show($"Booking for {email} has been confirmed.");
@@ -72,7 +96,5 @@ namespace ResortPro.AllStaffForms
                 }
             }
         }
-
-
     }
 }

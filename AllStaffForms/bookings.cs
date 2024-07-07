@@ -393,6 +393,7 @@ namespace ResortPro
         {
             EmailProcessor emailProcessor = new EmailProcessor();
             emailProcessor.RetrieveAndProcessEmails();
+            LoadTable();
         }
     }
 }
