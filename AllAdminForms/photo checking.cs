@@ -10,6 +10,8 @@ namespace ResortPro.AllAdminForms
 {
     public partial class photo_checking : Form
     {
+        private string selectedFilePath;
+
         public photo_checking()
         {
             InitializeComponent();
@@ -54,17 +56,27 @@ namespace ResortPro.AllAdminForms
                 using (OleDbConnection connection = new OleDbConnection(dbOp.ConnectionString))
                 {
                     connection.Open();
-                    string query = "SELECT staff_photo FROM staff WHERE staff_id = 4"; // Adjust the staff_id as needed
+                    string query = "SELECT TOP 1 staff_photo FROM staff WHERE staff_photo IS NOT NULL"; // Adjust the query as needed
 
                     using (OleDbCommand command = new OleDbCommand(query, connection))
                     {
-                        byte[] photoData = command.ExecuteScalar() as byte[];
+                        var result = command.ExecuteScalar();
 
-                        if (photoData != null)
+                        if (result != null && result != DBNull.Value)
                         {
-                            using (MemoryStream ms = new MemoryStream(photoData))
+                            string photoData = result as string;
+
+                            if (!string.IsNullOrEmpty(photoData))
                             {
-                                image = Image.FromStream(ms);
+                                byte[] photoBytes = Convert.FromBase64String(photoData);
+                                using (MemoryStream ms = new MemoryStream(photoBytes))
+                                {
+                                    image = Image.FromStream(ms);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("No photo found in the database.");
                             }
                         }
                     }
@@ -72,12 +84,11 @@ namespace ResortPro.AllAdminForms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error retrieving photo from database: " + ex.Message);
             }
 
             return image;
         }
-
 
         private bool CompareImages(Image img1, Image img2)
         {
@@ -105,12 +116,12 @@ namespace ResortPro.AllAdminForms
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     // Get the path of the selected file
-                    string filePath = openFileDialog.FileName;
+                    selectedFilePath = openFileDialog.FileName;
 
                     try
                     {
                         // Load the selected image into the PictureBox
-                        pictureBoxUpload.Image = Image.FromFile(filePath);
+                        pictureBoxUpload.Image = Image.FromFile(selectedFilePath);
                     }
                     catch (Exception ex)
                     {
@@ -118,6 +129,11 @@ namespace ResortPro.AllAdminForms
                     }
                 }
             }
+        }
+
+        private void photo_checking_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

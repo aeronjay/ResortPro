@@ -82,6 +82,7 @@
             this.Controls.Add(this.checkUpload);
             this.Name = "photo_checking";
             this.Text = "photo_checking";
+            this.Load += new System.EventHandler(this.photo_checking_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpload)).EndInit();
             this.ResumeLayout(false);
 
