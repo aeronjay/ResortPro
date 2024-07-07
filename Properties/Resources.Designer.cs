@@ -123,6 +123,16 @@ namespace ResortPro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Blue_Minimalist_Ocean_Wave_Logo__2_1 {
+            get {
+                object obj = ResourceManager.GetObject("Blue Minimalist Ocean Wave Logo (2)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Blue_Minimalist_Ocean_Wave_Logo__3_ {
             get {
                 object obj = ResourceManager.GetObject("Blue Minimalist Ocean Wave Logo (3)", resourceCulture);
