@@ -388,7 +388,10 @@ namespace ResortPro
             }
         }
 
-
-
+        private void refresh_Click(object sender, EventArgs e)
+        {
+            EmailProcessor emailProcessor = new EmailProcessor();
+            emailProcessor.RetrieveAndProcessEmails();
+        }
     }
 }
